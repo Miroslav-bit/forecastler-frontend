@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forecastler – General predictor</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://i.imgur.com/5dotoQI.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    header .language-select span {
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+      cursor: pointer;
+    }
+    .main-section {
+      background-color: rgba(135, 206, 235, 0.45);
+      color: white;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      box-sizing: border-box;
+    }
+    .illustration {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .illustration img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .main-section h1,
+    .main-section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #F0F8FF;
+    }
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 1rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    #kontekst {
+      height: 200px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    #pitanje {
+      height: 100px;
+    }
+    button {
+      background-color: #4b6cb7;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #3b5aa6;
+    }
+    .odgovor-box {
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: #e2e8f0;
+      border-left: 5px solid #4b6cb7;
+      color: black;
+    }
+    .language-select {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Forecastler</div>
+    <div class="language-select">
+      
+      <span onclick="setLanguage('de')">🇩🇪</span>
+      <span onclick="setLanguage('en')">🇬🇧</span>
+      <span onclick="setLanguage('es')">🇪🇸</span>
+      <span onclick="setLanguage('fr')">🇫🇷</span>
+      <span onclick="setLanguage('it')">🇮🇹</span>
+      <span onclick="setLanguage('pt')">🇵🇹</span>
+      <span onclick="setLanguage('ru')">🇷🇺</span>
+      <span onclick="setLanguage('sr')">🇷🇸</span>
+</div>
+  </header>
+
+  <div class="main-section" style="background: url('https://i.imgur.com/LLQulb1.jpg') no-repeat center center; background-size: cover; color: white; min-height: 280px; padding: 0 2rem; display: flex; flex-direction: column;">
+  
+    <h1 id="title" style="text-align: center; font-size: 2rem; margin-top: 2.5rem; margin-bottom: 0.5rem; color: white;">
+      GENERAL PREDICTOR
+    </h1>
+
+    <p id="welcome-text" style="text-align: center; font-size: 1.1rem; margin-top: auto; margin-bottom: 2.5rem;">
+      A page for predicting future events based on artificial intelligence and logical analysis.
+    </p>
+  </div>
+
+  <div class="main-section">
+    <p id="context-label">Write something about yourself or about persons, objects, places, or situations whose future you want to predict. It is optional, but the more information you provide, the more accurate the forecast will be:</p>
+    <textarea id="kontekst" placeholder=" "></textarea>
+
+    <p id="question-label">Ask a question about the future that can be answered with YES or NO:</p>
+    <textarea id="pitanje" placeholder=" "></textarea>
+
+    <br />
+    <button id="send-button" onclick="posaljiPitanje()">Submit question </button>
+
+    <div id="odgovor-tekst" class="odgovor-box" style="display:none;"></div>
+    <div id="odgovor-verovatnoca" class="odgovor-box" style="display:none;"></div>
+  </div>
+
+  <div class="main-section">
+    <h2 id="how-title">How does Forecastler work?</h2>
+    <p id="how-text-1">Forecastler does not use magic, horoscopes, or parapsychological powers for prediction. Instead, it is based on artificial intelligence that estimates the probability of future events using real data, statistics, and mathematical models.</p>
+    <p id="how-text-2">When you submit a question, the system first analyzes the textual information you provided — including context, relevant details, key terms, and possible cause-and-effect relationships.</p>
+    <p id="how-text-3">It then combines this data with its own knowledge base, which contains behavioral patterns, historical events, social and economic trends, and current scientific knowledge.</p>
+    <p id="how-text-4">Based on all this, the artificial intelligence simulates possible outcomes and calculates the probability of a specific event actually occurring.</p>
+    <p id="how-text-5">If that probability is greater than 50%, the answer is <strong>YES</strong>. If it is lower, the answer is <strong>NO</strong>.</p>
+    <p id="how-text-6">The more information you enter, the more accurate and reliable the forecast will be, as the algorithm will have more data for analysis and decision-making.</p>
+  </div>
+
+  <div class="main-section">
+    <h2 id="use-title">How to use Forecastler?</h2>
+    <ol id="use-list" style="line-height: 1.6; padding-left: 1rem;">
+      <li>Using Forecastler is completely free. No personal data, registration, or any kind of payment is required to submit a question.</li>
+      <li>(Optional): In the first field, you can enter additional information about the persons, objects, places, or situations the question refers to.<br>
+      The more details you provide, the stronger the basis the artificial intelligence will have for evaluation, and the forecast will be more accurate.<br>
+      If you are interested in the future of a person (including yourself), you can enter: name and surname, date of birth, occupation, habits, life circumstances, and other important data from the past or present.<br>
+      If you want an assessment of an object, item, or property, enter its purpose, characteristics, and history of use.<br>
+      For places and geographical locations: describe the position, significance, history, and current condition.<br>
+      For current situations: list all participants, the course of events so far, and key facts.</li>
+      <li>(Required): In the second field, enter a specific question about the future that can be answered with YES or NO.</li>
+      <li>Click the 'Submit Question' button. The system will process the data and calculate the probability.</li>
+      <li>You will receive a textual answer and a percentage of probability. After that, you can immediately ask a new question.</li>
+    </ol>
+    <p id="use-note" style="font-style: italic; text-align: center;">
+      If the question is not clearly formulated, the system will notify you.
+    </p>
+  </div>
+
+  <div class="main-section">
+    <h2 id="faq-title">What are the most frequently asked questions?</h2>
+    <p id="faq-text">Here are some examples of questions users most often ask Forecastler:</p>
+    <ul id="faq-list">
+      <li>Will I change jobs soon?</li>
+      <li>Will my partner and I stay together until the end of the year?</li>
+      <li>Will I get sick this month?</li>
+      <li>Will there be a storm next summer?</li>
+      <li>Will a new war break out in the world this year?</li>
+      <li>Will prices rise by 10% by the end of the year?</li>
+      <li>Will my favorite club win the championship next year?</li>
+    </ul>
+  </div>
+
+  <footer style="text-align: center; padding: 1rem; background-color: rgba(255, 255, 255, 0.85);">
+    Created by Miroslav Ostrogonac, 2025.
+  </footer>
+
+  <script src="lang.js"></script>
+
+  <script>
+    async function posaljiPitanje() {
+      const kontekst = document.getElementById("kontekst").value.trim();
+      const pitanje = document.getElementById("pitanje").value.trim();
+      const odgovorText = document.getElementById("odgovor-tekst");
+      const verovatnocaText = document.getElementById("odgovor-verovatnoca");
+
+      odgovorText.style.display = "none";
+      verovatnocaText.style.display = "none";
+      odgovorText.textContent = "";
+      verovatnocaText.textContent = "";
+
+      if (!pitanje) {
+        alert("Enter a question before submitting.");
+        return;
+      }
+
+      const dateRegex = /([0-3]?\d)[.\/\-]([01]?\d)[.\/\-](\d{4})/g;
+      let match;
+      let foundPastDate = false;
+
+      while ((match = dateRegex.exec(pitanje)) !== null) {
+        const [dan, mesec, godina] = [parseInt(match[1]), parseInt(match[2]), parseInt(match[3])];
+        const datumIzPitanja = new Date(godina, mesec - 1, dan);
+        const danasnjiDatum = new Date();
+        if (datumIzPitanja < danasnjiDatum) {
+          foundPastDate = true;
+          break;
+        }
+      }
+
+      if (foundPastDate) {
+        alert("Ask a question related to the future.");
+        return;
+      }
+
+      const danas = new Date().toLocaleDateString('sr-RS');
+      const uvodniTekst = `Današnji datum je ${danas}.`;
+      const pitanjeZaSlanje = uvodniTekst + "\n\n" + kontekst + "\n\nPitanje: " + pitanje;
+
+      try {
+        const res = await fetch("https://moj-vrac-api.onrender.com/api/v1/da-li-ce-se-desiti", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ pitanje: pitanjeZaSlanje })
+        });
+
+        if (res.status === 400) {
+          const podaci = await res.json();
+          alert(podaci.poruka || "The answer is not in a recognizable format.");
+          return;
+        }
+
+        const data = await res.json();
+        const [odgovorRaw, , procenat] = (data.odgovor || "").split(" ");
+        const odgovor = odgovorRaw.replace(",", "");
+
+        if (odgovor && procenat) {
+          const t = translations[trenutniJezik];
+          odgovorText.innerHTML = `<span style="color: ${odgovor === t.answers.yes ? "green" : "red"}">${t.dynamic.answerLabel} ${odgovor}</span>`;
+          verovatnocaText.innerHTML = `${t.dynamic.probabilityLabel} <strong>${procenat}</strong>`;
+          odgovorText.style.display = "block";
+          verovatnocaText.style.display = "block";
+        } else {
+          odgovorText.textContent = t.alerts.unrecognizedResponse;
+          odgovorText.style.display = "block";
+        }
+
+      } catch (err) {
+        odgovorText.textContent = t.alerts.serverError;
+        odgovorText.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
