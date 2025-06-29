@@ -550,6 +550,61 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
       no: "НІ"
     }
   },
+
+  tr: {
+    title: "GENEL TAHMİN SİSTEMİ",
+    welcomeText: "Gelecek olayların yapay zeka ve mantıksal analizle tahmin edildiği bir sayfa.",
+    contextLabel: "Kendiniz, diğer kişiler, nesneler, yerler veya geleceğini öğrenmek istediğiniz durumlar hakkında bir şeyler yazın. Zorunlu değil, ancak ne kadar fazla bilgi verirseniz tahmin o kadar isabetli olur:",
+    questionLabel: "Gelecekle ilgili EVET ya da HAYIR cevabı verilebilecek bir soru yazınız:",
+    sendButton: "Soruyu gönder",
+    howTitle: "Forecastler nasıl çalışır?",
+    howText1: "Forecastler, tahmin yapmak için ne büyü, ne burçlar ne de parapsikolojik güçler kullanır. Bunun yerine, gelecekteki olayların olasılığını gerçek veriler, istatistikler ve matematiksel modellerle hesaplayan bir yapay zeka temellidir.",
+    howText2: "Soru sorduğunuzda sistem önce girdiğiniz metinsel bilgileri analiz eder — bağlam, ilgili ayrıntılar, anahtar kavramlar ve olası neden-sonuç ilişkileri dahil.",
+    howText3: "Sonra bu verileri, davranış kalıpları, tarihî olaylar, toplumsal ve ekonomik eğilimler ve güncel bilimsel bulgular içeren kendi bilgi tabanıyla birleştirir.",
+    howText4: "Tüm bunlara dayanarak yapay zeka, olası senaryoları simüle eder ve belirli bir olayın gerçekleşme ihtimalini hesaplar.",
+    howText5: "Bu olasılık %50'nin üzerindeyse cevap EVET olur. Daha düşükse cevap HAYIR’dır.",
+    howText6: "Ne kadar çok bilgi verirseniz, tahmin o kadar doğru ve güvenilir olur, çünkü algoritma analiz için daha fazla veriye sahip olur.",
+    useTitle: "Forecastler nasıl kullanılır?",
+    useList: [
+      "Forecastler’i kullanmak tamamen ücretsizdir. Soru sormak için kişisel bilgi, kayıt veya ödeme gerekmez.",
+      `(İsteğe bağlı): İlk alana, sorunuzun ilgili olduğu kişiler, nesneler, yerler veya durumlarla ilgili ek bilgiler girebilirsiniz.
+Ne kadar fazla ayrıntı girerseniz, yapay zekanın değerlendirme temeli o kadar geniş olur ve tahmin daha doğru olur.
+Bir kişinin geleceğini merak ediyorsanız (kendiniz dahil), ad-soyad, doğum tarihi, meslek, alışkanlıklar, yaşam koşulları ve geçmişten ya da şimdiki zamandan önemli bilgileri girebilirsiniz.
+Bir nesne, yapı ya da mülkle ilgili tahmin istiyorsanız, amacını, özelliklerini ve kullanım geçmişini belirtin.
+Yerler ve coğrafi konumlar için: konum, önemi, geçmişi ve mevcut durumu tanımlayın.
+Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçekleri açıklayın.`,
+      "(Zorunlu): İkinci alana, gelecekle ilgili ve EVET ya da HAYIR cevabı verilebilecek net bir soru yazın.",
+      "'Soruyu gönder' düğmesine tıklayın. Sistem bilgileri analiz edecek ve olasılığı hesaplayacaktır.",
+      "Size metin tabanlı bir cevap ve olasılık yüzdesi verilecektir. Ardından hemen yeni bir soru sorabilirsiniz."
+    ],
+    useNote: "Eğer sorunuz açık biçimde yazılmamışsa, sistem sizi bu konuda bilgilendirecektir.",
+    faqTitle: "En sık sorulan sorular nelerdir?",
+    faqText: "İşte kullanıcıların Forecastler’e en sık sordukları bazı örnek sorular:",
+    faqList: [
+      "Yakında iş değiştirecek miyim?",
+      "Partnerimle yıl sonuna kadar birlikte kalacak mıyız?",
+      "Bu ay hastalanacak mıyım?",
+      "Gelecek yaz fırtına olacak mı?",
+      "Bu yıl dünyada yeni bir savaş çıkacak mı?",
+      "Yıl sonuna kadar fiyatlar %10 artacak mı?",
+      "Favori takımım gelecek yıl şampiyon olacak mı?"
+    ],
+    dynamic: {
+      answerLabel: "Cevap:",
+      probabilityLabel: "Olasılık:"
+    },
+    alerts: {
+      emptyQuestion: "Lütfen bir soru girin.",
+      invalidPrefix: "Soru, uygun bir kalıpla başlamalıdır.",
+      pastQuestion: "Lütfen geleceğe dair bir soru sorun.",
+      unrecognizedResponse: "Cevap tanınabilir formatta değil.",
+      serverError: "Sunucuyla iletişimde bir hata oluştu."
+    },
+    answers: {
+      yes: "EVET",
+      no: "HAYIR"
+    }
+  },
 };
 
 function setLanguage(lang) {
