@@ -101,9 +101,6 @@
       border-left: 5px solid #4b6cb7;
       color: black;
     }
-    .language-select {
-      display: none;
-    }
   </style>
 </head>
 <body>
@@ -111,16 +108,17 @@
   <header>
     <div class="logo">Forecastler</div>
     <div class="language-select">
-      
       <span onclick="setLanguage('de')">🇩🇪</span>
       <span onclick="setLanguage('en')">🇬🇧</span>
       <span onclick="setLanguage('es')">🇪🇸</span>
       <span onclick="setLanguage('fr')">🇫🇷</span>
       <span onclick="setLanguage('it')">🇮🇹</span>
+      <span onclick="setLanguage('pl')">🇵🇱</span>
       <span onclick="setLanguage('pt')">🇵🇹</span>
       <span onclick="setLanguage('ru')">🇷🇺</span>
       <span onclick="setLanguage('sr')">🇷🇸</span>
-</div>
+      <span onclick="setLanguage('uk')">🇺🇦</span>
+    </div>
   </header>
 
   <div class="main-section" style="background: url('https://i.imgur.com/LLQulb1.jpg') no-repeat center center; background-size: cover; color: white; min-height: 280px; padding: 0 2rem; display: flex; flex-direction: column;">
@@ -243,7 +241,10 @@
           headers: {
             "Content-Type": "application/json"
           },
-          body: JSON.stringify({ pitanje: pitanjeZaSlanje })
+          body: JSON.stringify({ 
+            pitanje: pitanjeZaSlanje,
+            jezik: trenutniJezik 
+          })
         });
 
         if (res.status === 400) {
