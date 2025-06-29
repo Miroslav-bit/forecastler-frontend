@@ -66,21 +66,21 @@ For current situations: list all participants, the course of events so far, and 
     howText1: "Forecastler za predviđanje ne koristi magiju, horoskope niti parapsihološke moći. Umesto toga, zasniva se na veštačkoj inteligenciji koja procenjuje verovatnoću budućih događaja pomoću stvarnih podataka, statistike i matematičkih modela.",
     howText2: "Kada postavite pitanje, sistem najpre analizira tekstualne informacije koje ste uneli — uključujući kontekst, relevantne detalje, ključne pojmove i moguće uzročno-posledične veze.",
     howText3: "Zatim te podatke kombinuje sa sopstvenom bazom znanja, koja sadrži obrasce ponašanja, istorijske događaje, društvene i ekonomske trendove i aktuelna naučna saznanja.",
-    howText4: "Na osnovu svega toga, veštačka inteligencija simulira moguće ishode i izračunava verovatnoću da se određeni događaj zaista dogodi.",
+    howText4: "Na osnovu svega toga, veštačka inteligencija simulira moguće ishode i izračunava verovatnoću da se određeni događaj zaista desi.",
     howText5: "Ako je ta verovatnoća veća od 50%, odgovor glasi DA. Ako je manja, odgovor je NE.",
     howText6: "Što više informacija unesete, prognoza postaje preciznija i pouzdanija, jer algoritam tada ima više podataka za analizu i donošenje zaključka.",
     useTitle: "Kako se koristi Forecastler?",
     useList: [
-      "Using Forecastler is completely free. No personal data, registration, or any kind of payment is required to submit a question.",
+      "Korišćenje Forecastlera je potpuno besplatno. Nisu potrebni lični podaci, registracija niti bilo kakva uplata da biste postavili pitanje.",
       `(Opciono): U prvom polju možete uneti dodatne informacije o osobama, predmetima, mestima ili situacijama na koje se pitanje odnosi.
 Što više detalja unesete, veštačka inteligencija će imati veću osnovu za procenu i prognoza će biti preciznija.
 Ako Vas zanima budućnost neke osobe (uključujući i Vas), možete uneti: ime i prezime, datum rođenja, zanimanje, navike, životne okolnosti i druge važne podatke iz prošlosti ili sadašnjosti.
 Ako želite procenu za neki predmet, objekat ili imovinu, unesite njegovu svrhu, karakteristike i istoriju upotrebe.
 Za mesta i geografske lokacije: opišite položaj, značaj, istoriju i sadašnje stanje.
 Za trenutne situacije: navedite sve učesnike, dosadašnji tok događaja i ključne činjenice.`,
-      "(Required): (Obavezno): U drugom polju postavite konkretno pitanje o budućnosti, na koje se može odgovoriti sa DA ili NE.",
+      "(Obavezno): U drugom polju postavite konkretno pitanje o budućnosti, na koje se može odgovoriti sa DA ili NE.",
       "Kliknite na dugme 'Pošaljite pitanje'. Sistem će obraditi podatke i izračunati verovatnoću.",
-      "You will receive a textual answer and a percentage of probability. After that, you can immediately ask a new question."
+      "Dobićete tekstualni odgovor i procenat verovatnoće. Nakon toga, možete odmah postaviti novo pitanje."
     ],
     useNote: "Ukoliko pitanje nije jasno formulisano, sistem će Vas o tome obavestiti.",
     faqTitle: "Koja su najčešća pitanja?",
@@ -117,7 +117,7 @@ Za trenutne situacije: navedite sve učesnike, dosadašnji tok događaja i klju�
     contextLabel: "Escriba algo sobre usted o sobre personas, objetos, lugares o situaciones cuyo futuro desea predecir. No es obligatorio, pero cuanto más información proporcione, más precisa será la predicción:",
     questionLabel: "Formule una pregunta sobre el futuro que pueda responderse con SÍ o NO:",
     sendButton: "Enviar pregunta",
-    howTitle: "¿Cómo funciona Forecastler",
+    howTitle: "¿Cómo funciona Forecastler?",
     howText1: "Forecastler no utiliza magia, horóscopos ni poderes parapsicológicos para hacer predicciones. En su lugar, se basa en inteligencia artificial que estima la probabilidad de eventos futuros utilizando datos reales, estadísticas y modelos matemáticos.",
     howText2: "Cuando usted formula una pregunta, el sistema primero analiza la información textual que ha ingresado — incluyendo el contexto, detalles relevantes, términos clave y posibles relaciones causa-efecto.",
     howText3: "Luego, combina esos datos con su propia base de conocimientos, que contiene patrones de comportamiento, eventos históricos, tendencias sociales y económicas, y conocimientos científicos actuales.",
@@ -155,7 +155,7 @@ Para situaciones actuales: indique todos los participantes, el desarrollo hasta 
     },
     alerts: {
       emptyQuestion: "Ingrese una pregunta antes de enviarla.",
-      invalidPrefix: "La pregunta debe comenzar con una forma adecuada ('¿Pasará...?', '¿Pasaré...?', '¿Pasaremos...?').",
+      invalidPrefix: "La pregunta debe comenzar con una forma adecuada ('¿Pasará...?', '¿Ocurrirá...?').",
       pastQuestion: "Formule una pregunta relacionada con el futuro.",
       unrecognizedResponse: "La respuesta no tiene un formato reconocible.",
       serverError: "Se produjo un error en la comunicación con el servidor."
@@ -189,7 +189,7 @@ Si vous souhaitez une évaluation concernant un objet, un bien ou une propriét�
 Pour des lieux ou des zones géographiques : décrivez leur emplacement, leur importance, leur histoire et leur état actuel.
 Pour des situations actuelles : indiquez tous les participants, le déroulement jusqu’à présent et les faits clés.`,
       "(Obligatoire) : Dans le second champ, posez une question concrète sur l’avenir, à laquelle on peut répondre par OUI ou NON.",
-      "Cliquez sur le bouton ' Envoyer la question '. Le système traitera les données et calculera la probabilité.",
+      "Cliquez sur le bouton 'Envoyer la question'. Le système traitera les données et calculera la probabilité.",
       "Vous recevrez une réponse sous forme de texte et un pourcentage de probabilité. Ensuite, vous pouvez poser immédiatement une nouvelle question."
     ],
     useNote: "Si la question n’est pas formulée clairement, le système vous en informera.",
@@ -222,7 +222,7 @@ Pour des situations actuelles : indiquez tous les participants, le déroulement 
   },
 
   de: {
-    title: "ALLGEMEINER PROGNOSE-GENERATOR",
+    title: "ALLGEMEINER PROGNOSTIKER",
     welcomeText: "Eine Seite zur Vorhersage zukünftiger Ereignisse auf der Grundlage von künstlicher Intelligenz und logischer Analyse.",
     contextLabel: "Schreiben Sie etwas über sich selbst oder über Personen, Objekte, Orte oder Situationen, deren Zukunft Sie vorhersagen möchten. Dies ist optional, aber je mehr Informationen Sie angeben, desto genauer wird die Prognose:",
     questionLabel: "Stellen Sie eine Frage über die Zukunft, die mit JA oder NEIN beantwortet werden kann:",
@@ -249,11 +249,11 @@ Für aktuelle Situationen: Nennen Sie alle Beteiligten, den bisherigen Verlauf u
     ],
     useNote: "Wenn die Frage nicht klar formuliert ist, wird das System Sie darüber informieren.",
     faqTitle: "Was sind die häufigsten Fragen?",
-    faqText: "Hier sind einige Beispiele für Fragen, die Benutzer Forecastler häufig stellen:",
+    faqText: "Hier sind einige Beispiele für häufig gestellte Fragen an Forecastler:",
     faqList: [
       "Werde ich bald meinen Job wechseln?",
       "Werden mein Partner und ich bis zum Jahresende zusammenbleiben?",
-      "Werde ich diesen Monat krank werden?",
+      "Werde ich diesen Monat krank?",
       "Wird es nächsten Sommer ein Unwetter geben?",
       "Wird dieses Jahr ein neuer Krieg in der Welt ausbrechen?",
       "Werden die Preise bis zum Jahresende um 10 % steigen?",
@@ -302,9 +302,9 @@ Para situações atuais: mencione todos os envolvidos, o andamento até o moment
       "Clique no botão 'Enviar pergunta'. O sistema processará os dados e calculará a probabilidade.",
       "Você receberá uma resposta em texto e um percentual de probabilidade. Depois disso, poderá imediatamente fazer uma nova pergunta."
     ],
-    useNote: "Se a pergunta não estiver claramente formulada, o sistema irá notificá-lo.",
+    useNote: "Se a pergunta não estiver formulada de forma clara, o sistema irá avisar você.",
     faqTitle: "Quais são as perguntas mais frequentes?",
-    faqText: "Aqui estão alguns exemplos de perguntas que os usuários mais frequentemente fazem ao Forecastler:",
+    faqText: "Veja alguns exemplos de perguntas que os usuários costumam fazer ao Forecastler:",
     faqList: [
       "Vou mudar de emprego em breve?",
       "Meu parceiro e eu vamos continuar juntos até o final do ano?",
@@ -363,7 +363,7 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
     faqList: [
       "Cambierò lavoro presto?",
       "Il mio partner e io resteremo insieme fino alla fine dell’anno?",
-      "Mi ammalerò questo mese?",
+      "Mi ammalerò nel corso di questo mese?",
       "Ci sarà una tempesta la prossima estate?",
       "Scoppierà una nuova guerra nel mondo quest’anno?",
       "I prezzi aumenteranno del 10% entro la fine dell’anno?",
@@ -375,7 +375,7 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
     },
     alerts: {
       emptyQuestion: "Inserisci una domanda prima di inviare.",
-      invalidPrefix: "La domanda deve iniziare con una forma appropriata ('Accadrà...', 'Accadrà a me...', 'Accadrà a noi...').",
+      invalidPrefix: "La domanda deve iniziare con una forma appropriata ('Accadrà...', 'Succederà...', 'Mi succederà...', 'Noi faremo...').",
       pastQuestion: "Fai una domanda riguardante il futuro.",
       unrecognizedResponse: "La risposta non è in un formato riconoscibile.",
       serverError: "Si è verificato un errore nella comunicazione con il server."
@@ -414,7 +414,7 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
     ],
     useNote: "Если вопрос сформулирован неясно, система уведомит вас об этом.",
     faqTitle: "Какие вопросы задают чаще всего?",
-    faqText: "Вот несколько примеров вопросов, которые пользователи чаще всего задают Forecastler:",
+    faqText: "Вот примеры часто задаваемых вопросов к Forecastler:",
     faqList: [
       "Сменю ли я работу в ближайшее время?",
       "Останемся ли мы с моим партнёром вместе до конца года?",
@@ -430,7 +430,7 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
     },
     alerts: {
       emptyQuestion: "Введите вопрос перед отправкой.",
-      invalidPrefix: "Вопрос должен начинаться с соответствующей формулировки ('Произойдёт ли...', 'Произойдёт ли со мной...', 'Произойдёт ли с нами...').",
+      invalidPrefix: "Вопрос должен начинаться с соответствующей формулировки ('Случится ли...', 'Произойдёт ли...', 'Будет ли...', 'Сможем ли мы...').",
       pastQuestion: "Задайте вопрос, связанный с будущим.",
       unrecognizedResponse: "Ответ не распознан по формату.",
       serverError: "Произошла ошибка при соединении с сервером."
@@ -438,6 +438,116 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
     answers: {
       yes: "ДА",
       no: "НЕТ"
+    }
+  },
+
+  pl: {
+    title: "OGÓLNY PRZEWIDYWACZ",
+    welcomeText: "Strona do przewidywania przyszłych wydarzeń na podstawie sztucznej inteligencji i analizy logicznej.",
+    contextLabel: "Napisz coś o sobie lub o osobach, przedmiotach, miejscach albo sytuacjach, których przyszłość chcesz przewidzieć. Nie jest to obowiązkowe, ale im więcej informacji podasz, tym dokładniejsza będzie prognoza:",
+    questionLabel: "Zadaj pytanie dotyczące przyszłości, na które można odpowiedzieć TAK lub NIE:",
+    sendButton: "Wyślij pytanie",
+    howTitle: "Jak działa Forecastler?",
+    howText1: "Forecastler nie korzysta z magii, horoskopów ani zdolności parapsychologicznych. Opiera się na sztucznej inteligencji, która ocenia prawdopodobieństwo przyszłych wydarzeń za pomocą danych, statystyki i modeli matematycznych.",
+    howText2: "Po zadaniu pytania system najpierw analizuje wprowadzone informacje tekstowe — w tym kontekst, istotne szczegóły, kluczowe pojęcia oraz możliwe związki przyczynowo-skutkowe.",
+    howText3: "Następnie łączy te dane z własną bazą wiedzy, zawierającą wzorce zachowań, wydarzenia historyczne, trendy społeczne i ekonomiczne oraz aktualne odkrycia naukowe.",
+    howText4: "Na tej podstawie sztuczna inteligencja symuluje możliwe scenariusze i oblicza prawdopodobieństwo wystąpienia danego wydarzenia.",
+    howText5: "Jeśli to prawdopodobieństwo przekracza 50%, odpowiedź brzmi TAK. Jeśli jest mniejsze — NIE.",
+    howText6: "Im więcej informacji podasz, tym prognoza będzie dokładniejsza i bardziej wiarygodna, ponieważ algorytm ma więcej danych do analizy i wnioskowania.",
+    useTitle: "Jak korzystać z Forecastlera?",
+    useList: [
+      "Korzystanie z Forecastlera jest całkowicie bezpłatne. Nie są wymagane dane osobowe, rejestracja ani jakakolwiek płatność.",
+      `(Opcjonalnie): W pierwszym polu możesz podać dodatkowe informacje o osobach, przedmiotach, miejscach lub sytuacjach, których dotyczy pytanie.
+Im więcej szczegółów podasz, tym większą bazę do analizy będzie miała sztuczna inteligencja, a prognoza będzie dokładniejsza.
+Jeśli chcesz przewidzieć przyszłość jakiejś osoby (w tym siebie), możesz podać: imię i nazwisko, datę urodzenia, zawód, nawyki, okoliczności życiowe i inne ważne dane z przeszłości lub teraźniejszości.
+Jeśli pytanie dotyczy przedmiotu, obiektu lub majątku – opisz jego przeznaczenie, cechy i historię użytkowania.
+W przypadku miejsc i lokalizacji geograficznych – opisz ich położenie, znaczenie, historię i obecny stan.
+Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarzeń i kluczowe fakty.`,
+      "(Wymagane): W drugim polu zadaj konkretne pytanie o przyszłość, na które można odpowiedzieć TAK lub NIE.",
+      "Kliknij przycisk „Wyślij pytanie”. System przetworzy dane i obliczy prawdopodobieństwo.",
+      "Otrzymasz odpowiedź tekstową i procent prawdopodobieństwa. Następnie możesz od razu zadać kolejne pytanie."
+    ],
+    useNote: "Jeśli pytanie będzie niejasne, system Cię o tym poinformuje.",
+    faqTitle: "Jakie są najczęstsze pytania?",
+    faqText: "Oto kilka przykładów pytań, które użytkownicy najczęściej zadają Forecastlerowi:",
+    faqList: [
+      "Czy wkrótce zmienię pracę?",
+      "Czy mój partner i ja pozostaniemy razem do końca roku?",
+      "Czy zachoruję w tym miesiącu?",
+      "Czy tego lata będzie burza?",
+      "Czy w tym roku wybuchnie nowa wojna na świecie?",
+      "Czy ceny wzrosną o 10% do końca roku?",
+      "Czy mój ulubiony klub zdobędzie mistrzostwo w przyszłym roku?"
+    ],
+    dynamic: {
+      answerLabel: "Odpowiedź:",
+      probabilityLabel: "Prawdopodobieństwo:"
+    },
+    alerts: {
+      emptyQuestion: "Wprowadź pytanie przed wysłaniem.",
+      invalidPrefix: "Pytanie musi zaczynać się od poprawnej formy (np. 'Czy...', 'Czy ja...', 'Czy my...').",
+      pastQuestion: "Zadaj pytanie dotyczące przyszłości.",
+      unrecognizedResponse: "Odpowiedź nie ma rozpoznawalnego formatu.",
+      serverError: "Wystąpił błąd podczas komunikacji z serwerem."
+    },
+    answers: {
+      yes: "TAK",
+      no: "NIE"
+    }
+  },
+
+  uk: {
+    title: "ЗАГАЛЬНИЙ ПРОГНОЗ",
+    welcomeText: "Сторінка для прогнозування майбутніх подій на основі штучного інтелекту та логічного аналізу.",
+    contextLabel: "Напишіть щось про себе або про осіб, об'єкти, місця чи ситуації, майбутнє яких ви хочете передбачити. Це не обов’язково, але чим більше інформації ви надасте, тим точнішим буде прогноз:",
+    questionLabel: "Задайте питання про майбутнє, на яке можна відповісти ТАК або НІ:",
+    sendButton: "Надіслати питання",
+    howTitle: "Як працює Forecastler?",
+    howText1: "Forecastler не використовує магію, гороскопи чи парапсихологічні здібності. Замість цього він базується на штучному інтелекті, який оцінює ймовірність майбутніх подій, використовуючи реальні дані, статистику та математичні моделі.",
+    howText2: "Коли ви ставите питання, система спочатку аналізує введену текстову інформацію — включаючи контекст, релевантні деталі, ключові поняття та можливі причинно-наслідкові зв’язки.",
+    howText3: "Потім ці дані поєднуються з власною базою знань, яка містить моделі поведінки, історичні події, соціальні та економічні тенденції, а також сучасні наукові відкриття.",
+    howText4: "На основі всього цього штучний інтелект моделює можливі результати та обчислює ймовірність того, що подія справді відбудеться.",
+    howText5: "Якщо ця ймовірність перевищує 50%, відповідь — ТАК. Якщо нижча — НІ.",
+    howText6: "Чим більше ви надасте інформації, тим точнішим і надійнішим буде прогноз, оскільки алгоритм матиме більше даних для аналізу та висновків.",
+    useTitle: "Як користуватися Forecastler?",
+    useList: [
+      "Користування Forecastler є повністю безкоштовним. Для надсилання питання не потрібні особисті дані, реєстрація чи будь-яка оплата.",
+      `(Необов’язково): У першому полі ви можете ввести додаткову інформацію про осіб, об'єкти, місця чи ситуації, до яких стосується ваше питання.
+Чим більше деталей ви вкажете, тим ширшою буде база для аналізу штучного інтелекту, і прогноз буде точнішим.
+Якщо вас цікавить майбутнє певної особи (включаючи себе), можна вказати: ім’я та прізвище, дату народження, професію, звички, життєві обставини та інші важливі дані з минулого або теперішнього.
+Якщо вас цікавить об’єкт чи майно – опишіть його призначення, характеристики та історію використання.
+Для місць та географічних локацій – опишіть їхнє розташування, значення, історію та поточний стан.
+Для поточних ситуацій – перелічіть усіх учасників, перебіг подій і ключові факти.`,
+      "(Обов’язково): У другому полі поставте чітке питання про майбутнє, на яке можна відповісти ТАК або НІ.",
+      "Натисніть кнопку «Надіслати питання». Система обробить дані та розрахує ймовірність.",
+      "Ви отримаєте текстову відповідь і відсоток ймовірності. Потім можете одразу ставити наступне питання."
+    ],
+    useNote: "Якщо питання сформульовано нечітко, система повідомить вас про це.",
+    faqTitle: "Які найпоширеніші питання?",
+    faqText: "Приклади найпоширеніших запитань до Forecastler:",
+    faqList: [
+      "Чи скоро я зміню роботу?",
+      "Чи залишимось ми разом із моїм партнером до кінця року?",
+      "Чи захворію я цього місяця?",
+      "Чи буде шторм цього літа?",
+      "Чи почнеться нова війна у світі цього року?",
+      "Чи зростуть ціни на 10% до кінця року?",
+      "Чи виграє мій улюблений клуб чемпіонат наступного року?"
+    ],
+    dynamic: {
+      answerLabel: "Відповідь:",
+      probabilityLabel: "Ймовірність:"
+    },
+    alerts: {
+      emptyQuestion: "Введіть питання перед надсиланням.",
+      invalidPrefix: "Питання повинно починатися з відповідної форми (напр., «Чи...», «Чи я...», «Чи ми...»).",
+      pastQuestion: "Поставте питання, яке стосується майбутнього.",
+      unrecognizedResponse: "Відповідь не має розпізнаваного формату.",
+      serverError: "Сталася помилка при зв’язку з сервером."
+    },
+    answers: {
+      yes: "ТАК",
+      no: "НІ"
     }
   },
 };
