@@ -131,25 +131,43 @@
     .header-left {
       display: flex;
       align-items: center;
+      gap: 1rem;
     }
 
     .logo-img {
-      height: 48px;
-      margin-right: 1rem;
+      height: 42px;
+      width: auto;
+      border-radius: 50%;
     }
 
     .site-title {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: bold;
-      white-space: nowrap;
+      color: white;
     }
 
     @media (max-width: 600px) {
-      .site-title {
-        display: none;
+      .header-left {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
       }
+
+      .site-title {
+        font-size: 1.2rem;
+      }
+
+      .language-select {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0.5rem;
+        width: 100%;
+      }
+
       header {
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
       }
     }
 
