@@ -118,12 +118,50 @@
       text-align: right;
     }
 
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      height: 48px;
+      margin-right: 1rem;
+    }
+
+    .site-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 600px) {
+      .site-title {
+        display: none;
+      }
+      header {
+        justify-content: space-between;
+      }
+    }
+
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">Forecastler</div>
+    <div class="header-left">
+      <img src="images/forecastler_logo_transparent.png" alt="Forecastler logo" class="logo-img" />
+      <div class="site-title">Forecastler</div>
+    </div>
     <div class="language-select">
       <span onclick="setLanguage('ar')"><img src="flags/sa.png" alt="AR" width="24" height="18"></span>
       <span onclick="setLanguage('de')"><img src="flags/de.png" alt="DE" width="24" height="18"></span>
