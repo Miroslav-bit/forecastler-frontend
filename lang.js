@@ -823,10 +823,10 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
 };
 
 function setLanguage(lang) {
+  localStorage.setItem('forecastlerLang', lang);
   if (!translations[lang]) return;
 
   trenutniJezik = lang;
-  localStorage.setItem("lang", lang);
   const t = translations[lang];
 
   document.getElementById("title").innerText = t.title;
@@ -867,7 +867,7 @@ function setLanguage(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const lang = localStorage.getItem("lang") || "en";
+  const lang = localStorage.getItem("forecastlerLang") || "en";
   trenutniJezik = lang;
   setLanguage(lang);
 });
