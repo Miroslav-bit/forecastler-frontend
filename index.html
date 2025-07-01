@@ -354,5 +354,25 @@
     }
   </script>
 
+  <script>
+    const supportedLanguages = [
+      'en', 'sr', 'es', 'fr', 'de', 'it', 'pt', 'pl',
+      'ru', 'uk', 'tr', 'ar', 'hi', 'zh', 'ja'
+    ];
+
+    function detectLanguage() {
+      const browserLang = navigator.language.slice(0, 2);
+      const fallbackLang = 'en';
+
+      if (supportedLanguages.includes(browserLang)) {
+        setLanguage(browserLang);
+      } else {
+        setLanguage(fallbackLang);
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', detectLanguage);
+  </script>
+
 </body>
 </html>
