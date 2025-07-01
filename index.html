@@ -361,6 +361,12 @@
     ];
 
     function detectLanguage() {
+      const savedLang = localStorage.getItem('forecastlerLang');
+      if (savedLang && supportedLanguages.includes(savedLang)) {
+        setLanguage(savedLang);
+        return;
+      }
+
       const browserLang = navigator.language.slice(0, 2);
       const fallbackLang = 'en';
 
