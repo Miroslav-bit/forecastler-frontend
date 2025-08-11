@@ -196,6 +196,34 @@
       .btn{ padding:.6rem }      /* kompaktnije */
       .btn-label{ display:none } /* samo ikonice */
     }
+
+    /* Omotač oko textarea da bismo mogli da pozicioniramo ikonice unutra */
+    .context-wrap{ position: relative; }
+
+    /* Daj prostora da tekst ne upadne ispod plutajućih dugmadi */
+    #kontekst{
+      padding-right: 92px;   /* prostor za dve ikonice desno */
+      padding-bottom: 56px;  /* malo prostora ispod */
+    }
+
+    /* Kontejner za ikonice u dnu textarea */
+    .floating-actions{
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      display: flex;
+      gap: 8px;
+    }
+
+    /* Kompaktno ikonično dugme (u tamno plavoj) */
+    .icon-btn{
+      width: 42px; height: 42px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border: none; border-radius: .6rem;
+      background: var(--btn-blue); color: #fff; cursor: pointer;
+    }
+    .icon-btn:hover, .icon-btn:focus{ background: var(--btn-blue-hover); outline: none; }
+
   </style>
 </head>
 <body>
@@ -266,24 +294,30 @@
     </div>
     <div id="subject-list" class="subject-list" style="display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem;"></div>
 
-    <textarea id="kontekst" placeholder=" "></textarea>
+    <div class="context-wrap">
+      <textarea id="kontekst" placeholder=" "></textarea>
 
-    <div class="save-row" style="display:flex;align-items:center;gap:.75rem;margin:-.5rem 0 1rem 0;">
-      <button type="button" id="save-context" class="btn" aria-label="Save description" title="Save description">
-        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M5 7h11l3 3v9H5zM9 7v6h6"/>
-        </svg>
-        <span class="btn-label">Save description</span>
-      </button>
+      <div class="floating-actions">
+        <!-- Save description (disk) -->
+        <button type="button" id="save-context" class="icon-btn" aria-label="Save description" title="Save description">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 7h11l3 3v9H5zM9 7v6h6"/>
+          </svg>
+        </button>
 
-      <button type="button" id="clear-context" class="btn" aria-label="Delete description" title="Delete description">
-        <svg class="btn-icon" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M6 6l12 12M18 6l-12 12"/>
-        </svg>
-        <span class="btn-label">Delete description</span>
-      </button>
+        <!-- Delete description (X) -->
+        <button type="button" id="clear-context" class="icon-btn" aria-label="Delete description" title="Delete description">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 6l12 12M18 6l-12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
 
+    <!-- Samo status poruka ostaje ispod polja -->
+    <div class="save-row" style="display:flex;align-items:center;gap:.75rem;margin:.25rem 0 1rem 0;">
       <span id="save-status" aria-live="polite" style="font-size:.9rem;opacity:.9"></span>
     </div>
 
