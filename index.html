@@ -215,6 +215,12 @@
     <p id="context-label">Write something about yourself or about persons, objects, places, or situations whose future you want to predict. It is optional, but the more information you provide, the more accurate the forecast will be:</p>
     <textarea id="kontekst" placeholder=" "></textarea>
 
+    <div class="save-row" style="display:flex;align-items:center;gap:.75rem;margin:-.5rem 0 1rem 0;">
+      <button type="button" id="save-context">Save description</button>
+      <button type="button" id="clear-context" style="background:#6b7280">Clear</button>
+      <span id="save-status" aria-live="polite" style="font-size:.9rem;opacity:.9"></span>
+    </div>
+
     <p id="question-label">Ask a question about the future that can be answered with YES or NO:</p>
     <textarea id="pitanje" placeholder=" "></textarea>
 
@@ -296,6 +302,60 @@
       this.value = this.value.trim().split(/\s+/).slice(0, 100).join(" ");
     }
   });
+
+  // Ključ u localStorage (po želji možeš i po jeziku: `${trenutniJezik}:forecastler:context`)
+    const CONTEXT_KEY = "forecastler:context:v1";
+
+    // Učitaj sačuvan opis pri učitavanju stranice
+    function loadSavedContext() {
+      const saved = localStorage.getItem(CONTEXT_KEY);
+      if (saved) {
+        const ta = document.getElementById("kontekst");
+        ta.value = saved;
+
+        // osiguraj limit od 1000 reči i posle učitavanja
+        const words = ta.value.trim().split(/\s+/).filter(Boolean);
+        if (words.length > 1000) {
+          ta.value = words.slice(0, 1000).join(" ");
+        }
+      }
+    }
+
+    // Ručno čuvanje klikom na dugme
+    function saveContext() {
+      const ta = document.getElementById("kontekst");
+      localStorage.setItem(CONTEXT_KEY, ta.value.trim());
+      const s = document.getElementById("save-status");
+      s.textContent = "Saved.";
+      setTimeout(() => (s.textContent = ""), 2000);
+    }
+
+    // Brisanje sačuvanog teksta
+    function clearContext() {
+      localStorage.removeItem(CONTEXT_KEY);
+      document.getElementById("kontekst").value = "";
+      const s = document.getElementById("save-status");
+      s.textContent = "Cleared.";
+      setTimeout(() => (s.textContent = ""), 2000);
+    }
+
+    // Auto-save sa debounce (prijatnije od stalnih alert-a)
+    let saveTimer;
+    document.getElementById("kontekst").addEventListener("input", () => {
+      clearTimeout(saveTimer);
+      saveTimer = setTimeout(() => {
+        localStorage.setItem(CONTEXT_KEY, document.getElementById("kontekst").value.trim());
+      }, 600);
+   });
+
+    // Poveži dugmad
+    document.addEventListener("DOMContentLoaded", () => {
+      const saveBtn = document.getElementById("save-context");
+      const clearBtn = document.getElementById("clear-context");
+      if (saveBtn) saveBtn.addEventListener("click", saveContext);
+      if (clearBtn) clearBtn.addEventListener("click", clearContext);
+      loadSavedContext(); // učitaj ako postoji
+    });
 
     async function posaljiPitanje() {
       const kontekst = document.getElementById("kontekst").value.trim();
