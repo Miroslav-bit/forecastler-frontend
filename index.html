@@ -275,6 +275,28 @@
   <script src="lang.js"></script>
 
   <script>
+  function countWords(text) {
+    return text.trim().split(/\s+/).filter(Boolean).length;
+  }
+
+  // Ograničenje za opis (max 1000 reči)
+  document.getElementById("kontekst").addEventListener("input", function() {
+    let words = countWords(this.value);
+    if (words > 1000) {
+      alert("Maksimalno je dozvoljeno 1000 reči u opisu.");
+      this.value = this.value.trim().split(/\s+/).slice(0, 1000).join(" ");
+    }
+  });
+
+  // Ograničenje za pitanje (max 100 reči)
+  document.getElementById("pitanje").addEventListener("input", function() {
+    let words = countWords(this.value);
+    if (words > 100) {
+      alert("Maksimalno je dozvoljeno 100 reči u pitanju.");
+      this.value = this.value.trim().split(/\s+/).slice(0, 100).join(" ");
+    }
+  });
+
     async function posaljiPitanje() {
       const kontekst = document.getElementById("kontekst").value.trim();
       const pitanje = document.getElementById("pitanje").value.trim();
