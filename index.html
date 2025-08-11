@@ -283,7 +283,7 @@
   document.getElementById("kontekst").addEventListener("input", function() {
     let words = countWords(this.value);
     if (words > 1000) {
-      alert("Maksimalno je dozvoljeno 1000 reči u opisu.");
+      alert("Maximum allowed is 1000 words in the description.");
       this.value = this.value.trim().split(/\s+/).slice(0, 1000).join(" ");
     }
   });
@@ -292,7 +292,7 @@
   document.getElementById("pitanje").addEventListener("input", function() {
     let words = countWords(this.value);
     if (words > 100) {
-      alert("Maksimalno je dozvoljeno 100 reči u pitanju.");
+      alert("Maximum allowed is 100 words in the question.");
       this.value = this.value.trim().split(/\s+/).slice(0, 100).join(" ");
     }
   });
