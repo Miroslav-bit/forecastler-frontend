@@ -172,9 +172,34 @@
       }
     }
 
-    .subject-chip{padding:.35rem .7rem;border-radius:999px;background:#ffe766;color:#111;cursor:pointer;font-weight:600;box-shadow:0 1px 0 rgba(0,0,0,.15)}
-    .subject-chip.active{outline:2px solid #111}
-    .subject-chip .x{margin-left:.5rem;font-weight:700;cursor:pointer}
+    :root{
+      --btn-blue:#1e3a8a;
+      --btn-blue-hover:#172554;
+      --chip-ice:#dbeafe;        /* nežno svetlo plava */
+      --chip-text:#0f172a;       /* tamnoplava za tekst na ice */
+    }
+
+    /* DEFAULT chip */
+    .subject-chip{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:.45rem .9rem;
+      border-radius:9999px;
+      background:var(--chip-ice);
+      color:var(--chip-text);
+      border:2px solid var(--btn-blue);
+      font-weight:600;
+      cursor:pointer;
+      box-shadow:0 1px 0 rgba(0,0,0,.12);
+      transition:transform .06s ease, background .15s ease;
+    }
+    .subject-chip:hover{ transform:translateY(-1px); }
+
+    /* AKTIVNI chip */
+    .subject-chip.active{
+      background:var(--btn-blue);
+      color:#fff;
+      border-color:var(--btn-blue);
+    }
 
     :root{
       --btn-blue:#1e3a8a;        /* tamno plava */
@@ -516,7 +541,6 @@
           const chip = document.createElement("span");
           chip.className = "subject-chip" + (key===cur ? " active" : "");
           chip.textContent = item.name;
-          chip.style.cssText = "padding:.35rem .7rem;border-radius:9999px;background:#ffe766;color:#111;cursor:pointer;font-weight:600;";
           chip.onclick = ()=> loadSubject(key);
           listBox.appendChild(chip);
         });
