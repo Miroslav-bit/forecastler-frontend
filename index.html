@@ -217,22 +217,23 @@
 
   <div class="main-section">
     <p id="context-label">Write something about yourself or about persons, objects, places, or situations whose future you want to predict. It is optional, but the more information you provide, the more accurate the forecast will be:</p>
+
+    <div class="subject-manager" style="display:flex;gap:.5rem;align-items:center;margin:.25rem 0 0.5rem;">
+      <button type="button" id="new-subject" style="background:#0ea5e9">New subject</button>
+      <input id="subject-name" type="text" placeholder="Subject name" 
+             style="flex:1;padding:.6rem .75rem;border:1px solid #ccc;border-radius:6px;">
+      <button type="button" id="save-subject">Save subject</button>
+      <button type="button" id="delete-subject" style="background:#dc2626">Delete subject</button>
+    </div>
+    <div id="subject-list" class="subject-list" style="display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem;"></div>
+
     <textarea id="kontekst" placeholder=" "></textarea>
 
     <div class="save-row" style="display:flex;align-items:center;gap:.75rem;margin:-.5rem 0 1rem 0;">
       <button type="button" id="save-context">Save description</button>
-      <button type="button" id="clear-context" style="background:#6b7280">Clear</button>
+      <button type="button" id="clear-context" style="background:#6b7280">Clear description</button>
       <span id="save-status" aria-live="polite" style="font-size:.9rem;opacity:.9"></span>
     </div>
-
-    <div class="subject-manager" style="display:flex;gap:.5rem;align-items:center;margin:.25rem 0 0.5rem;">
-      <button type="button" id="new-subject" style="background:#0ea5e9">New subject</button>
-      <input id="subject-name" type="text" placeholder="Subject label (e.g., “Mirko Mirković”)" 
-             style="flex:1;padding:.6rem .75rem;border:1px solid #ccc;border-radius:6px;">
-      <button type="button" id="save-subject">Save subject</button>
-      <button type="button" id="delete-subject" style="background:#dc2626">Delete</button>
-    </div>
-    <div id="subject-list" class="subject-list" style="display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem;"></div>
 
     <p id="question-label">Ask a question about the future that can be answered with YES or NO:</p>
     <textarea id="pitanje" placeholder=" "></textarea>
