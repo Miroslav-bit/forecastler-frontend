@@ -172,6 +172,10 @@
       }
     }
 
+    .subject-chip{padding:.35rem .7rem;border-radius:999px;background:#ffe766;color:#111;cursor:pointer;font-weight:600;box-shadow:0 1px 0 rgba(0,0,0,.15)}
+    .subject-chip.active{outline:2px solid #111}
+    .subject-chip .x{margin-left:.5rem;font-weight:700;cursor:pointer}
+
   </style>
 </head>
 <body>
@@ -220,6 +224,15 @@
       <button type="button" id="clear-context" style="background:#6b7280">Clear</button>
       <span id="save-status" aria-live="polite" style="font-size:.9rem;opacity:.9"></span>
     </div>
+
+    <div class="subject-manager" style="display:flex;gap:.5rem;align-items:center;margin:.25rem 0 0.5rem;">
+      <input id="subject-name" type="text" placeholder="Subject label (e.g., “Mirko Mirković”)" 
+             style="flex:1;padding:.6rem .75rem;border:1px solid #ccc;border-radius:6px;">
+      <button type="button" id="save-subject">Save subject</button>
+      <button type="button" id="delete-subject" style="background:#dc2626">Delete</button>
+    </div>
+
+    <div id="subject-list" class="subject-list" style="display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem;"></div>
 
     <p id="question-label">Ask a question about the future that can be answered with YES or NO:</p>
     <textarea id="pitanje" placeholder=" "></textarea>
@@ -355,6 +368,129 @@
       if (saveBtn) saveBtn.addEventListener("click", saveContext);
       if (clearBtn) clearBtn.addEventListener("click", clearContext);
       loadSavedContext(); // učitaj ako postoji
+    });
+
+    // ==== MULTI-SUBJECT STORAGE (localStorage) ====
+    const CONTEXTS_KEY = "forecastler:contexts:v1";   // mapa: { key: { name, text, ts } }
+    const CURRENT_KEY  = "forecastler:currentKey:v1"; // aktivni subjekat (key)
+
+    const ctxTA = document.getElementById("kontekst");
+    const nameInput = document.getElementById("subject-name");
+    const listBox = document.getElementById("subject-list");
+    const saveBtn = document.getElementById("save-subject");
+    const delBtn  = document.getElementById("delete-subject");
+
+    // util
+    function slugifyName(s){
+      return s.trim().toLowerCase()
+        .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+        .replace(/[^\w\s-]/g,"").replace(/\s+/g,"-").slice(0,80);
+    }
+    function getStore(){ try{return JSON.parse(localStorage.getItem(CONTEXTS_KEY))||{}}catch{ return {}; } }
+    function setStore(obj){ localStorage.setItem(CONTEXTS_KEY, JSON.stringify(obj)); }
+    function getCurrentKey(){ return localStorage.getItem(CURRENT_KEY) || ""; }
+    function setCurrentKey(k){ if(k) localStorage.setItem(CURRENT_KEY,k); else localStorage.removeItem(CURRENT_KEY); }
+
+    // render liste
+    function renderSubjects(){
+      const store = getStore();
+      const cur = getCurrentKey();
+      listBox.innerHTML = "";
+      Object.entries(store)
+        .sort((a,b)=> (b[1].ts||0)-(a[1].ts||0)) // najskoriji prvi
+        .forEach(([key, item])=>{
+          const chip = document.createElement("span");
+          chip.className = "subject-chip" + (key===cur ? " active" : "");
+          chip.textContent = item.name;
+          chip.style.cssText = "padding:.35rem .7rem;border-radius:9999px;background:#ffe766;color:#111;cursor:pointer;font-weight:600;";
+          chip.onclick = ()=> loadSubject(key);
+          listBox.appendChild(chip);
+        });
+      delBtn.disabled = !cur;
+    }
+
+    // učitaj subjekat u polje
+    function loadSubject(key){
+      const store = getStore();
+      const item = store[key];
+      if(!item) return;
+      setCurrentKey(key);
+      nameInput.value = item.name;
+
+      // poštuj limit 1000 reči i pri učitavanju
+      const words = item.text.trim().split(/\s+/).filter(Boolean);
+      ctxTA.value = words.length>1000 ? words.slice(0,1000).join(" ") : item.text;
+
+      // auto-upiši eventualno skraćen tekst nazad
+      if(words.length>1000){ 
+        store[key].text = ctxTA.value.trim(); 
+        setStore(store); 
+      }
+      renderSubjects();
+    }
+
+    // snimi/ ažuriraj subjekat
+    function saveSubject(){
+      const name = nameInput.value.trim();
+      if(!name){ alert("Enter subject label first."); return; }
+      const key = slugifyName(name);
+      if(!key){ alert("Subject label is not valid."); return; }
+
+      const store = getStore();
+      store[key] = {
+        name,
+        text: ctxTA.value.trim(),
+        ts: Date.now()
+      };
+      setStore(store);
+      setCurrentKey(key);
+      renderSubjects();
+
+      const s = document.getElementById("save-status");
+      if(s){ s.textContent = "Saved subject."; setTimeout(()=>s.textContent="", 1500); }
+    }
+
+    // obriši aktivni
+    function deleteSubject(){
+      const key = getCurrentKey();
+      if(!key) return;
+      if(!confirm("Delete the current subject?")) return;
+      const store = getStore();
+      delete store[key];
+      setStore(store);
+      setCurrentKey("");
+      nameInput.value = "";
+      ctxTA.value = "";
+      renderSubjects();
+    }
+
+    // autosave aktivnog pri kucanju (debounce)
+    let subjTimer;
+    ctxTA.addEventListener("input", ()=>{
+      clearTimeout(subjTimer);
+      subjTimer = setTimeout(()=>{
+        const key = getCurrentKey();
+        if(!key) return; // ništa ako nije izabran subjekat
+        const store = getStore();
+        if(store[key]){
+          // osiguraj limit pre upisa
+          const words = ctxTA.value.trim().split(/\s+/).filter(Boolean);
+          store[key].text = words.length>1000 ? words.slice(0,1000).join(" ") : ctxTA.value.trim();
+          store[key].ts = Date.now();
+          setStore(store);
+        }
+      }, 600);
+    });
+
+    // događaji dugmadi i inicijalizacija
+    saveBtn.addEventListener("click", saveSubject);
+    delBtn.addEventListener("click", deleteSubject);
+
+    // Ako postoji aktivni, učitaj; inače samo prikaži listu
+    document.addEventListener("DOMContentLoaded", ()=>{
+      renderSubjects();
+      const cur = getCurrentKey();
+      if(cur) loadSubject(cur);
     });
 
     async function posaljiPitanje() {
