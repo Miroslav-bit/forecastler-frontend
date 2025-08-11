@@ -176,6 +176,26 @@
     .subject-chip.active{outline:2px solid #111}
     .subject-chip .x{margin-left:.5rem;font-weight:700;cursor:pointer}
 
+    :root{
+      --btn-blue:#1e3a8a;        /* tamno plava */
+      --btn-blue-hover:#172554;  /* tamnija na hover/focus */
+    }
+
+    .btn{
+      display:inline-flex; align-items:center; gap:.5rem;
+      padding:.6rem 1rem; border:none; border-radius:.6rem;
+      background:var(--btn-blue); color:#fff; font-weight:600; cursor:pointer;
+    }
+    .btn:hover, .btn:focus{ background:var(--btn-blue-hover); outline:none }
+    .btn:disabled{ opacity:.5; cursor:not-allowed }
+
+    .btn-icon{ width:20px; height:20px; flex:0 0 20px }
+    .btn-label{ line-height:1 }
+
+    @media (max-width:640px){
+      .btn{ padding:.6rem }      /* kompaktnije */
+      .btn-label{ display:none } /* samo ikonice */
+    }
   </style>
 </head>
 <body>
@@ -219,19 +239,48 @@
     <p id="context-label">Write something about yourself or about persons, objects, places, or situations whose future you want to predict. It is optional, but the more information you provide, the more accurate the forecast will be:</p>
 
     <div class="subject-manager" style="display:flex;gap:.5rem;align-items:center;margin:.25rem 0 0.5rem;">
-      <button type="button" id="new-subject" style="background:#0ea5e9">New subject</button>
-      <input id="subject-name" type="text" placeholder="Subject name" 
+      <button type="button" id="new-subject" class="btn" aria-label="New subject" title="New subject">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 5v14M5 12h14"/>
+        </svg>
+        <span class="btn-label">New subject</span>
+      </button>
+
+      <input id="subject-name" type="text" placeholder="Subject name"
              style="flex:1;padding:.6rem .75rem;border:1px solid #ccc;border-radius:6px;">
-      <button type="button" id="save-subject">Save subject</button>
-      <button type="button" id="delete-subject" style="background:#dc2626">Delete subject</button>
+
+      <button type="button" id="save-subject" class="btn" aria-label="Save subject" title="Save subject">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 7h11l3 3v9H5zM9 7v6h6"/>
+        </svg>
+        <span class="btn-label">Save subject</span>
+      </button>
+
+      <button type="button" id="delete-subject" class="btn" aria-label="Delete subject" title="Delete subject">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 7h16M9 7V5h6v2M9 10v8M15 10v8"/>
+        </svg>
+        <span class="btn-label">Delete subject</span>
+      </button>
     </div>
     <div id="subject-list" class="subject-list" style="display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem;"></div>
 
     <textarea id="kontekst" placeholder=" "></textarea>
 
     <div class="save-row" style="display:flex;align-items:center;gap:.75rem;margin:-.5rem 0 1rem 0;">
-      <button type="button" id="save-context">Save description</button>
-      <button type="button" id="clear-context" style="background:#6b7280">Clear description</button>
+      <button type="button" id="save-context" class="btn" aria-label="Save description" title="Save description">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 7h11l3 3v9H5zM9 7v6h6"/>
+        </svg>
+        <span class="btn-label">Save description</span>
+      </button>
+
+      <button type="button" id="clear-context" class="btn" aria-label="Delete description" title="Delete description">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 7h16M9 7V5h6v2M9 10v8M15 10v8"/>
+        </svg>
+        <span class="btn-label">Delete description</span>
+      </button>
       <span id="save-status" aria-live="polite" style="font-size:.9rem;opacity:.9"></span>
     </div>
 
@@ -239,7 +288,12 @@
     <textarea id="pitanje" placeholder=" "></textarea>
 
     <br />
-    <button id="send-button" onclick="posaljiPitanje()">Submit question </button>
+    <button id="send-button" class="btn" onclick="posaljiPitanje()" aria-label="Submit question" title="Submit question">
+      <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M13 5l7 7-7 7"/>
+      </svg>
+      <span class="btn-label">Submit question</span>
+    </button>
 
     <div id="odgovor-tekst" class="odgovor-box" style="display:none;"></div>
     <div id="odgovor-verovatnoca" class="odgovor-box" style="display:none;"></div>
