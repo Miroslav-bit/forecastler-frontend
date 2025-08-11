@@ -226,12 +226,12 @@
     </div>
 
     <div class="subject-manager" style="display:flex;gap:.5rem;align-items:center;margin:.25rem 0 0.5rem;">
+      <button type="button" id="new-subject" style="background:#0ea5e9">New subject</button>
       <input id="subject-name" type="text" placeholder="Subject label (e.g., “Mirko Mirković”)" 
              style="flex:1;padding:.6rem .75rem;border:1px solid #ccc;border-radius:6px;">
       <button type="button" id="save-subject">Save subject</button>
       <button type="button" id="delete-subject" style="background:#dc2626">Delete</button>
     </div>
-
     <div id="subject-list" class="subject-list" style="display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem;"></div>
 
     <p id="question-label">Ask a question about the future that can be answered with YES or NO:</p>
@@ -379,6 +379,28 @@
     const listBox = document.getElementById("subject-list");
     const saveBtn = document.getElementById("save-subject");
     const delBtn  = document.getElementById("delete-subject");
+
+    const newBtn  = document.getElementById("new-subject");
+
+    function newSubject() {
+      // (opciono) upozorenje ako je nešto menjano u aktivnom subjektu
+      const cur = getCurrentKey();
+      if (cur) {
+        const store = getStore();
+        if (store[cur] && store[cur].text !== ctxTA.value.trim()) {
+          const ok = confirm("You have unsaved changes. Start a new subject anyway?");
+          if (!ok) return;
+        }
+     }
+      setCurrentKey("");          // nema aktivnog subjekta
+      nameInput.value = "";       // prazno ime
+      ctxTA.value = "";           // prazna deskripcija
+      renderSubjects();           // osveži listu (Delete se automatski disabluje)
+      const s = document.getElementById("save-status");
+      if (s) { s.textContent = "New subject."; setTimeout(()=> s.textContent="", 1500); }
+    }
+
+    newBtn.addEventListener("click", newSubject);
 
     // util
     function slugifyName(s){
@@ -553,9 +575,9 @@
         const data = await res.json();
         const [odgovorRaw, , procenat] = (data.odgovor || "").split(" ");
         const odgovor = odgovorRaw.replace(",", "");
+        const t = translations[trenutniJezik];
 
         if (odgovor && procenat) {
-          const t = translations[trenutniJezik];
           odgovorText.innerHTML = `<span style="color: ${odgovor === t.answers.yes ? "green" : "red"}">${t.dynamic.answerLabel} ${odgovor}</span>`;
           verovatnocaText.innerHTML = `${t.dynamic.probabilityLabel} <strong>${procenat}</strong>`;
           odgovorText.style.display = "block";
