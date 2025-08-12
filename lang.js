@@ -87,6 +87,14 @@ For current situations: list all participants, the course of events so far, and 
     placeholders: {
       subjectName: "Subject name"
     }
+    translations.en.footerLinks = {
+      disclaimer: "Disclaimer",
+      terms: "Terms of Use",
+      privacy: "Privacy Policy",
+      cookies: "Cookie Policy",
+      sitemap: "Sitemap",
+      faq: "FAQ"
+    }
   },
 
   sr: {
@@ -174,6 +182,15 @@ Za trenutne situacije: navedite sve učesnike, dosadašnji tok događaja i klju�
     },
     placeholders: {
       subjectName: "Naziv subjekta"
+    }
+    translations.sr = translations.sr || {};
+    translations.sr.footerLinks = {
+      disclaimer: "Odricanje od odgovornosti",
+      terms: "Uslovi korišćenja",
+      privacy: "Politika privatnosti",
+      cookies: "Politika kolačića",
+      sitemap: "Mapa sajta",
+      faq: "Česta pitanja"
     }
   },
 
@@ -264,6 +281,15 @@ Para situaciones actuales: indique todos los participantes, el desarrollo hasta 
     placeholders: {
       subjectName: "Nombre del sujeto"
     }
+    translations.es = translations.es || {};
+    translations.es.footerLinks = {
+      disclaimer: "Aviso legal",
+      terms: "Términos de uso",
+      privacy: "Política de privacidad",
+      cookies: "Política de cookies",
+      sitemap: "Mapa del sitio",
+      faq: "Preguntas frecuentes"
+    }
   },
 
 
@@ -352,6 +378,15 @@ Pour des situations actuelles : indiquez tous les participants, le déroulement 
     },
     placeholders: {
       subjectName: "Nom du sujet"
+    }
+    translations.fr = translations.fr || {};
+    translations.fr.footerLinks = {
+      disclaimer: "Avertissement",
+      terms: "Conditions d’utilisation",
+      privacy: "Politique de confidentialité",
+      cookies: "Politique de cookies",
+      sitemap: "Plan du site",
+      faq: "FAQ"
     }
   },
 
@@ -442,6 +477,15 @@ Für aktuelle Situationen: Nennen Sie alle Beteiligten, den bisherigen Verlauf u
     placeholders: {
       subjectName: "Betreffname"
     }
+    translations.de = translations.de || {};
+    translations.de.footerLinks = {
+      disclaimer: "Haftungsausschluss",
+      terms: "Nutzungsbedingungen",
+      privacy: "Datenschutzerklärung",
+      cookies: "Cookie-Richtlinie",
+      sitemap: "Sitemap",
+      faq: "FAQ"
+    }
   },
 
 
@@ -530,6 +574,15 @@ Para situações atuais: mencione todos os envolvidos, o andamento até o moment
     },
     placeholders: {
       subjectName: "Nome do assunto"
+    }
+    translations.pt = translations.pt || {};
+    translations.pt.footerLinks = {
+      disclaimer: "Isenção de responsabilidade",
+      terms: "Termos de uso",
+      privacy: "Política de privacidade",
+      cookies: "Política de cookies",
+      sitemap: "Mapa do site",
+      faq: "Perguntas frequentes"
     }
   },
 
@@ -620,6 +673,15 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
     placeholders: {
       subjectName: "Nome del soggetto"
     }
+    translations.it = translations.it || {};
+    translations.it.footerLinks = {
+      disclaimer: "Esclusione di responsabilità",
+      terms: "Termini di utilizzo",
+      privacy: "Informativa sulla privacy",
+      cookies: "Informativa sui cookie",
+      sitemap: "Mappa del sito",
+      faq: "FAQ"
+    }
   },
 
 
@@ -708,6 +770,15 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
     },
     placeholders: {
       subjectName: "Название темы"
+    }
+    translations.ru = translations.ru || {};
+    translations.ru.footerLinks = {
+      disclaimer: "Отказ от ответственности",
+      terms: "Условия использования",
+      privacy: "Политика конфиденциальности",
+      cookies: "Политика файлов cookie",
+      sitemap: "Карта сайта",
+      faq: "Часто задаваемые вопросы"
     }
   },
 
@@ -798,6 +869,15 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
     placeholders: {
       subjectName: "Nazwa tematu"
     }
+    translations.pl = translations.pl || {};
+    translations.pl.footerLinks = {
+      disclaimer: "Zrzeczenie się odpowiedzialności",
+      terms: "Warunki korzystania",
+      privacy: "Polityka prywatności",
+      cookies: "Polityka plików cookie",
+      sitemap: "Mapa strony",
+      faq: "Najczęściej zadawane pytania"
+    }
   },
 
 
@@ -886,6 +966,15 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
     },
     placeholders: {
       subjectName: "Назва теми"
+    }
+    translations.uk = translations.uk || {};
+    translations.uk.footerLinks = {
+      disclaimer: "Відмова від відповідальності",
+      terms: "Умови користування",
+      privacy: "Політика конфіденційності",
+      cookies: "Політика файлів cookie",
+      sitemap: "Карта сайту",
+      faq: "Поширені запитання"
     }
   },
 
@@ -976,6 +1065,15 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
     placeholders: {
       subjectName: "Konu adı"
     }
+    translations.tr = translations.tr || {};
+    translations.tr.footerLinks = {
+      disclaimer: "Sorumluluk Reddi",
+      terms: "Kullanım Şartları",
+      privacy: "Gizlilik Politikası",
+      cookies: "Çerez Politikası",
+      sitemap: "Site Haritası",
+      faq: "SSS"
+    }
   },
 
   ar: {
@@ -1063,6 +1161,15 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
     },
     placeholders: {
       subjectName: "اسم الموضوع"
+    }
+    translations.ar = translations.ar || {};
+    translations.ar.footerLinks = {
+      disclaimer: "إخلاء المسؤولية",
+      terms: "شروط الاستخدام",
+      privacy: "سياسة الخصوصية",
+      cookies: "سياسة ملفات تعريف الارتباط",
+      sitemap: "خريطة الموقع",
+      faq: "الأسئلة الشائعة"
     }
   },
 
@@ -1153,6 +1260,15 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
     placeholders: {
       subjectName: "विषय का नाम"
     }
+    translations.hi = translations.hi || {};
+    translations.hi.footerLinks = {
+      disclaimer: "अस्वीकरण",
+      terms: "उपयोग की शर्तें",
+      privacy: "गोपनीयता नीति",
+      cookies: "कुकी नीति",
+      sitemap: "साइटमैप",
+      faq: "अक्सर पूछे जाने वाले प्रश्न"
+    }
   },
 
 
@@ -1236,6 +1352,15 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
     },
     placeholders: {
       subjectName: "主题名称"
+    }
+    translations.zh = translations.zh || {};
+    translations.zh.footerLinks = {
+      disclaimer: "免责声明",
+      terms: "使用条款",
+      privacy: "隐私政策",
+      cookies: "Cookie 政策",
+      sitemap: "网站地图",
+      faq: "常见问题"
     }
   },
 
@@ -1326,6 +1451,15 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
     placeholders: {
       subjectName: "件名"
     }
+    translations.ja = translations.ja || {};
+    translations.ja.footerLinks = {
+      disclaimer: "免責事項",
+      terms: "利用規約",
+      privacy: "プライバシーポリシー",
+      cookies: "クッキーポリシー",
+      sitemap: "サイトマップ",
+      faq: "よくある質問"
+    }
   }
 };
 
@@ -1381,6 +1515,22 @@ function setLanguage(lang) {
   if (typeof applyRuntimeTranslations === "function") {
     applyRuntimeTranslations();
   }
+
+   // Footer links
+   const fl = t.footerLinks || translations.en.footerLinks;
+   const elDisc = document.getElementById("link-disclaimer");
+   const elTerms = document.getElementById("link-terms");
+   const elPriv  = document.getElementById("link-privacy");
+   const elCook  = document.getElementById("link-cookies");
+   const elMap   = document.getElementById("link-sitemap");
+   const elFaq   = document.getElementById("link-faq");
+
+   if (elDisc) elDisc.textContent = fl.disclaimer;
+   if (elTerms) elTerms.textContent = fl.terms;
+   if (elPriv)  elPriv.textContent  = fl.privacy;
+   if (elCook)  elCook.textContent  = fl.cookies;
+   if (elMap)   elMap.textContent   = fl.sitemap;
+   if (elFaq)   elFaq.textContent   = fl.faq;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
