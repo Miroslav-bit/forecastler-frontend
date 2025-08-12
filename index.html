@@ -419,7 +419,7 @@
   document.getElementById("kontekst").addEventListener("input", function() {
     let words = countWords(this.value);
     if (words > 1000) {
-      alert("Maximum allowed is 1000 words in the description.");
+      alert(T().limits.descriptionMax); // koristi prevod
       this.value = this.value.trim().split(/\s+/).slice(0, 1000).join(" ");
     }
   });
@@ -428,13 +428,60 @@
   document.getElementById("pitanje").addEventListener("input", function() {
     let words = countWords(this.value);
     if (words > 100) {
-      alert("Maximum allowed is 100 words in the question.");
+      alert(T().limits.questionMax); // koristi prevod
       this.value = this.value.trim().split(/\s+/).slice(0, 100).join(" ");
     }
   });
 
   // Ključ u localStorage (po želji možeš i po jeziku: `${trenutniJezik}:forecastler:context`)
     const CONTEXT_KEY = "forecastler:context:v1";
+
+  // Helper koji uvek vraća odgovarajući skup poruka
+  const T = () => (translations[trenutniJezik] || translations.en);
+
+  function applyRuntimeTranslations() {
+    const t = T();
+
+    // Dugmad (label)
+    const newBtn = document.querySelector("#new-subject .btn-label");
+    const saveBtn = document.querySelector("#save-subject .btn-label");
+    const delBtn  = document.querySelector("#delete-subject .btn-label");
+    if (newBtn) newBtn.textContent = t.buttons.new;
+    if (saveBtn) saveBtn.textContent = t.buttons.save;
+    if (delBtn)  delBtn.textContent  = t.buttons.delete;
+
+    // Ikonice nad opisom (title/aria-label)
+    const saveDesc = document.getElementById("save-context");
+    const delDesc  = document.getElementById("clear-context");
+    if (saveDesc) {
+      saveDesc.title = t.buttons.saveDescription;
+      saveDesc.setAttribute("aria-label", t.buttons.saveDescription);
+    }
+    if (delDesc) {
+      delDesc.title = t.buttons.deleteDescription;
+      delDesc.setAttribute("aria-label", t.buttons.deleteDescription);
+    }
+
+    // Placeholder za ime subjekta
+    const nameInput = document.getElementById("subject-name");
+    if (nameInput) nameInput.placeholder = t.placeholders.subjectName;
+
+    // Dugme za slanje pitanja (label + aria)
+    const sendBtn = document.getElementById("send-button");
+    if (sendBtn) {
+      sendBtn.querySelector(".btn-label").textContent = t.sendButton;
+      sendBtn.title = t.sendButton;
+      sendBtn.setAttribute("aria-label", t.sendButton);
+    }
+
+    // Dugmad za CRUD subjekta – title/aria-label
+    const btnNew = document.getElementById("new-subject");
+    const btnSave = document.getElementById("save-subject");
+    const btnDelete = document.getElementById("delete-subject");
+    if (btnNew)   { btnNew.title = t.buttons.new;   btnNew.setAttribute("aria-label", t.buttons.new); }
+    if (btnSave)  { btnSave.title = t.buttons.save; btnSave.setAttribute("aria-label", t.buttons.save); }
+    if (btnDelete){ btnDelete.title = t.buttons.delete; btnDelete.setAttribute("aria-label", t.buttons.delete); }
+  }
 
     // Učitaj sačuvan opis pri učitavanju stranice
     function loadSavedContext() {
@@ -456,16 +503,17 @@
       const ta = document.getElementById("kontekst");
       localStorage.setItem(CONTEXT_KEY, ta.value.trim());
       const s = document.getElementById("save-status");
-      s.textContent = "Saved.";
+      s.textContent = T().context.saved;
       setTimeout(() => (s.textContent = ""), 2000);
     }
 
     // Brisanje sačuvanog teksta
     function clearContext() {
+      if (!confirm(T().alerts.confirmDeleteDescription)) return;
       localStorage.removeItem(CONTEXT_KEY);
       document.getElementById("kontekst").value = "";
       const s = document.getElementById("save-status");
-      s.textContent = "Cleared.";
+      s.textContent = T().context.cleared;
       setTimeout(() => (s.textContent = ""), 2000);
     }
 
@@ -485,6 +533,7 @@
       if (saveBtn) saveBtn.addEventListener("click", saveContext);
       if (clearBtn) clearBtn.addEventListener("click", clearContext);
       loadSavedContext(); // učitaj ako postoji
+      applyRuntimeTranslations();
     });
 
     // ==== MULTI-SUBJECT STORAGE (localStorage) ====
@@ -505,7 +554,7 @@
       if (cur) {
         const store = getStore();
         if (store[cur] && store[cur].text !== ctxTA.value.trim()) {
-          const ok = confirm("You have unsaved changes. Start a new subject anyway?");
+          const ok = confirm(T().subjects.unsavedChangesConfirm);
           if (!ok) return;
         }
      }
@@ -514,7 +563,7 @@
       ctxTA.value = "";           // prazna deskripcija
       renderSubjects();           // osveži listu (Delete se automatski disabluje)
       const s = document.getElementById("save-status");
-      if (s) { s.textContent = "New subject."; setTimeout(()=> s.textContent="", 1500); }
+      if (s) { s.textContent = T().subjects.new; setTimeout(()=> s.textContent="", 1500); }
     }
 
     newBtn.addEventListener("click", newSubject);
