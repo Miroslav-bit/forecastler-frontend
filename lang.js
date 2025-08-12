@@ -1365,7 +1365,6 @@ function setLanguage(lang) {
   document.getElementById("welcome-text").innerText = t.welcomeText;
   document.getElementById("context-label").innerText = t.contextLabel;
   document.getElementById("question-label").innerText = t.questionLabel;
-  document.getElementById("send-button").innerText = t.sendButton;
   document.getElementById("how-title").innerText = t.howTitle;
   document.getElementById("how-text-1").innerText = t.howText1;
   document.getElementById("how-text-2").innerText = t.howText2;
