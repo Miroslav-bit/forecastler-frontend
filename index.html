@@ -709,7 +709,7 @@
     function deleteSubject(){
       const key = getCurrentKey();
       if(!key) return;
-      if (!confirm(T().alerts.confirmDelete)) return;
+      if (!confirm(T().subjects.confirmDelete)) return;
       const store = getStore();
       delete store[key];
       setStore(store);
@@ -760,7 +760,7 @@
       verovatnocaText.textContent = "";
 
       if (!pitanje) {
-        alert(T().alerts.enterQuestion);
+        alert(T().alerts.emptyQuestion); return; }
         return;
       }
 
@@ -779,7 +779,7 @@
       }
 
       if (foundPastDate) {
-        alert(T().alerts.askAboutFuture);
+        if (foundPastDate) { alert(T().alerts.pastQuestion); return; }
         return;
       }
 
