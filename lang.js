@@ -335,9 +335,9 @@ Pour des situations actuelles : indiquez tous les participants, le déroulement 
       questionMax: "Le maximum autorisé est de 100 mots dans la question."
     },
     buttons: {
-      new: "Nouveau",
+      new: "Créer",
       save: "Enregistrer",
-      delete: "Supprimer",
+      delete: "Effacer",
       saveDescription: "Enregistrer la description",
       deleteDescription: "Supprimer la description",
       cancel: "Annuler"
