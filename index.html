@@ -687,9 +687,9 @@
     // snimi/ ažuriraj subjekat
     function saveSubject(){
       const name = nameInput.value.trim();
-      if (!name) { alert(T().subjects.enterLabelFirst); return; }
+      if(!name){ alert("Enter subject label first."); return; }
       const key = slugifyName(name);
-      if (!key)  { alert(T().subjects.invalidLabel);  return; }
+      if(!key){ alert("Subject label is not valid."); return; }
 
       const store = getStore();
       store[key] = {
@@ -702,14 +702,14 @@
       renderSubjects();
 
       const s = document.getElementById("save-status");
-      if (s) { s.textContent = T().subjects.saved; setTimeout(()=> s.textContent="", 1500); }
+      if(s){ s.textContent = "Saved subject."; setTimeout(()=>s.textContent="", 1500); }
     }
 
     // obriši aktivni
     function deleteSubject(){
       const key = getCurrentKey();
       if(!key) return;
-      if (!confirm(T().subjects.confirmDelete)) return;
+      if(!confirm("Delete the current subject?")) return;
       const store = getStore();
       delete store[key];
       setStore(store);
@@ -760,7 +760,7 @@
       verovatnocaText.textContent = "";
 
       if (!pitanje) {
-        alert(T().alerts.emptyQuestion); return; }
+        alert("Enter a question before submitting.");
         return;
       }
 
@@ -779,7 +779,7 @@
       }
 
       if (foundPastDate) {
-        if (foundPastDate) { alert(T().alerts.pastQuestion); return; }
+        alert("Ask a question related to the future.");
         return;
       }
 
@@ -801,7 +801,7 @@
 
         if (res.status === 400) {
           const podaci = await res.json();
-          alert(podaci.poruka || T().alerts.unrecognizedResponse);
+          alert(podaci.poruka || "The answer is not in a recognizable format.");
           return;
         }
 
