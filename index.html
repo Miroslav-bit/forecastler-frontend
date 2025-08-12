@@ -267,9 +267,13 @@
       white-space: nowrap;
     }
 
-    /* (po želji) na jako uskim ekranima sve ide u jedan stupac */
     @media (max-width: 520px){
-      .subject-manager{ grid-template-columns: 1fr; }
+      .subject-manager{
+        grid-template-columns: auto minmax(120px, 1fr) auto auto; /* 4 kolone i na mobilnom */
+        column-gap: .4rem;
+      }
+      .btn{ padding:.5rem .6rem; }           /* kompaktnije dugmadi */
+      #subject-name{ min-width: 0; }         /* spreči prelivanje inputa */
     }
 
     /* === Fix: subject chips na mobilnom da ne zauzimaju punu širinu === */
