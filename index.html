@@ -272,6 +272,27 @@
       .subject-manager{ grid-template-columns: 1fr; }
     }
 
+    /* === Fix: subject chips na mobilnom da ne zauzimaju punu širinu === */
+    #subject-list{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:flex-start;
+    }
+
+    .subject-chip{
+      flex: 0 0 auto !important;   /* ne rasteži se */
+      white-space: nowrap;          /* ne lomi tekst u 2 reda */
+      max-width: 100%;
+    }
+
+    /* Na malim ekranima malo kompaktnije dugme-čipovi */
+    @media (max-width: 600px){
+      .subject-chip{
+        padding: .4rem .7rem;
+        font-size: .95rem;
+      }
+    }
   </style>
 </head>
 <body>
