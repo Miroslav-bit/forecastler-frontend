@@ -1342,6 +1342,10 @@ function setLanguage(lang) {
   });
 
   document.body.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
+
+  if (typeof applyRuntimeTranslations === "function") {
+    applyRuntimeTranslations();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
