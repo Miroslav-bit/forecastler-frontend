@@ -240,6 +240,21 @@
       gap: 8px;
     }
 
+    /* === Floating SEND unutar drugog placeholdera === */
+    .question-wrap { position: relative; }
+
+    /* da tekst ne upada ispod dugmeta */
+    #pitanje {
+      padding-right: 56px;
+      padding-bottom: 56px;
+    }
+
+    /* zadržavamo .btn-label zbog prevoda, ali je vizuelno krijemo */
+    .icon-btn .btn-label { display: none; }
+
+    /* (opciono) ako želite da u RTL režimu dugme bude dole levo */
+    body[dir="rtl"] .question-wrap .floating-actions { left: 8px; right: auto; }
+
     /* Kompaktno ikonično dugme (u tamno plavoj) */
     .icon-btn{
       width: 42px; height: 42px;
@@ -395,15 +410,20 @@
     </div>
 
     <p id="question-label">Ask a question about the future that can be answered with YES or NO:</p>
-    <textarea id="pitanje" placeholder=" "></textarea>
 
-    <br />
-    <button id="send-button" class="btn" onclick="posaljiPitanje()" aria-label="Submit question" title="Submit question">
-      <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M5 12h14M13 5l7 7-7 7"/>
-      </svg>
-      <span class="btn-label">Submit question</span>
-    </button>
+    <div class="question-wrap">
+      <textarea id="pitanje" placeholder=" "></textarea>
+
+      <div class="floating-actions">
+        <button id="send-button" class="icon-btn" onclick="posaljiPitanje()" aria-label="Submit question" title="Submit question">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+          <span class="btn-label"></span>
+        </button>
+      </div>
+    </div>
 
     <div id="odgovor-tekst" class="odgovor-box" style="display:none;"></div>
     <div id="odgovor-verovatnoca" class="odgovor-box" style="display:none;"></div>
