@@ -41,42 +41,50 @@ For current situations: list all participants, the course of events so far, and 
     ],
     dynamic: {
       answerLabel: "Answer:",
-      probabilityLabel: "Probability:"
+      probabilityLabel: "Probability:",
+      todayDatePrefix: "Today’s date is ${date}."
     },
     alerts: {
       emptyQuestion: "Enter a question before submitting.",
       invalidPrefix: "The question must begin with an appropriate form ('Will...', 'Will I...', 'Will we...').",
-      pastQuestion: "Ask a question related to the future.",
+      pastQuestion: "Ask a question related to the future, not the past.",
       unrecognizedResponse: "The answer is not in a recognizable format.",
-      serverError: "There was an error in communication with the server."
+      serverError: "There was an error in communication with the server.",
+      confirmClear: "Clear all fields?",
+      confirmDeleteDescription: "Delete the current description?",
+      savedChanges: "Your changes have been saved."
     },
     answers: {
       yes: "YES",
       no: "NO"
     },
-    subjects.saved: “Saved subject.”,
-    subjects.new: “New subject.“,
-    context.cleared: “Cleared.“,
-    context.saved: “Saved.“,
-    subjects.confirmDelete: “Delete the current subject?“,
-    subjects.enterLabelFirst: “Enter subject label first.“,
-    subjects.invalidLabel: “Subject label is not valid.“,
-    subjects.unsavedChangesConfirm: “You have unsaved changes. Start a new subject anyway?“,
-    alerts.emptyQuestion: “Enter a question before submitting.“,
-    alerts.pastQuestion: “Ask a question related to the future, not the past.“,
-    limits.descriptionMax: “Maximum allowed is 1000 words in the description.“,
-    limits.questionMax: “Maximum allowed is 100 words in the question.“,
-    buttons.new: “New“,
-    buttons.save: “Save“,
-    buttons.delete: “Delete“,
-    placeholders.subjectName: “Subject name“,
-    buttons.saveDescription: “Save description“,
-    buttons.deleteDescription: “Delete description“,
-    dynamic.todayDatePrefix: “Today’s date is ${date}.“,
-    buttons.cancel: “Cancel“,
-    alerts.confirmClear: “Clear all fields?“,
-    alerts.confirmDeleteDescription: “Delete the current description?“,
-    alerts.savedChanges: “Your changes have been saved.“
+    subjects: {
+      saved: "Saved subject.",
+      new: "New subject.",
+      confirmDelete: "Delete the current subject?",
+      enterLabelFirst: "Enter subject label first.",
+      invalidLabel: "Subject label is not valid.",
+      unsavedChangesConfirm: "You have unsaved changes. Start a new subject anyway?"
+    },
+    context: {
+      cleared: "Cleared.",
+      saved: "Saved."
+    },
+    limits: {
+      descriptionMax: "Maximum allowed is 1000 words in the description.",
+      questionMax: "Maximum allowed is 100 words in the question."
+    },
+    buttons: {
+      new: "New",
+      save: "Save",
+      delete: "Delete",
+      saveDescription: "Save description",
+      deleteDescription: "Delete description",
+      cancel: "Cancel"
+    },
+    placeholders: {
+      subjectName: "Subject name"
+    }
   },
 
   sr: {
@@ -119,43 +127,52 @@ Za trenutne situacije: navedite sve učesnike, dosadašnji tok događaja i klju�
     ],
     dynamic: {
       answerLabel: "Odgovor:",
-      probabilityLabel: "Verovatnoća:"
+      probabilityLabel: "Verovatnoća:",
+      todayDatePrefix: "Današnji datum je ${date}."
     },
     alerts: {
       emptyQuestion: "Unesite pitanje pre slanja.",
       invalidPrefix: "Pitanje mora početi odgovarajućim oblikom ('Will...', 'Will I...', 'Will we...').",
       pastQuestion: "Postavite pitanje koje se tiče budućnosti.",
       unrecognizedResponse: "Odgovor nije u prepoznatljivom formatu.",
-      serverError: "Došlo je do greške u komunikaciji sa serverom."
+      serverError: "Došlo je do greške u komunikaciji sa serverom.",
+      confirmClear: "Obrisati sva polja?",
+      confirmDeleteDescription: "Obrisati trenutni opis?",
+      savedChanges: "Vaše izmene su sačuvane."
     },
     answers: {
       yes: "DA",
       no: "NE"
     },
-    subjects.saved: “Subjekat je sačuvan.“,
-    subjects.new: “Novi subjekat.“,
-    context.cleared: “Obrisano.“,
-    context.saved: “Sačuvano.“,
-    subjects.confirmDelete: “Obrisati trenutni subjekat?“,
-    subjects.enterLabelFirst: “Najpre unesite oznaku subjekta.“,
-    subjects.invalidLabel: “Oznaka subjekta nije ispravna.“,
-    subjects.unsavedChangesConfirm: “Imate nesačuvane izmene. Želite li ipak da započnete novi subjekat?“,
-    alerts.emptyQuestion: “Unesite pitanje pre slanja.“,
-    alerts.pastQuestion: “Postavite pitanje koje se odnosi na budućnost, a ne na prošlost.“,
-    limits.descriptionMax: “Maksimalno je dozvoljeno 1000 reči u opisu.“,
-    limits.questionMax: “Maksimalno je dozvoljeno 100 reči u pitanju.“,
-    buttons.new: “Novi“,
-    buttons.save: “Sačuvaj“,
-    buttons.delete: “Obriši“,
-    placeholders.subjectName: “Naziv subjekta“,
-    buttons.saveDescription: “Sačuvaj opis“,
-    buttons.deleteDescription: “Obriši opis“,
-    dynamic.todayDatePrefix: “Današnji datum je ${date}.“,
-    buttons.cancel: “Otkaži“,
-    alerts.confirmClear: “Obrisati sva polja?“,
-    alerts.confirmDeleteDescription: “Obrisati trenutni opis?“,
-    alerts.savedChanges: “Vaše izmene su sačuvane.“
+    subjects: {
+      saved: "Subjekat je sačuvan.",
+      new: "Novi subjekat.",
+      confirmDelete: "Obrisati trenutni subjekat?",
+      enterLabelFirst: "Najpre unesite oznaku subjekta.",
+      invalidLabel: "Oznaka subjekta nije ispravna.",
+      unsavedChangesConfirm: "Imate nesačuvane izmene. Želite li ipak da započnete novi subjekat?"
+    },
+    context: {
+      cleared: "Obrisano.",
+      saved: "Sačuvano."
+    },
+    limits: {
+      descriptionMax: "Maksimalno je dozvoljeno 1000 reči u opisu.",
+      questionMax: "Maksimalno je dozvoljeno 100 reči u pitanju."
+    },
+    buttons: {
+      new: "Novi",
+      save: "Sačuvaj",
+      delete: "Obriši ",
+      saveDescription: "Sačuvaj opis",
+      deleteDescription: "Obriši opis",
+      cancel: "Otkaži"
+    },
+    placeholders: {
+      subjectName: "Naziv subjekta"
+    }
   },
+
 
   es: {
     title: "PRONOSTICADOR GENERAL",
@@ -197,43 +214,52 @@ Para situaciones actuales: indique todos los participantes, el desarrollo hasta 
     ],
     dynamic: {
       answerLabel: "Respuesta:",
-      probabilityLabel: "Probabilidad:"
+      probabilityLabel: "Probabilidad:",
+      todayDatePrefix: "La fecha de hoy es \${date}."
     },
     alerts: {
       emptyQuestion: "Ingrese una pregunta antes de enviarla.",
       invalidPrefix: "La pregunta debe comenzar con una forma adecuada ('¿Pasará...?', '¿Ocurrirá...?').",
       pastQuestion: "Formule una pregunta relacionada con el futuro.",
       unrecognizedResponse: "La respuesta no tiene un formato reconocible.",
-      serverError: "Se produjo un error en la comunicación con el servidor."
+      serverError: "Se produjo un error en la comunicación con el servidor.",
+      confirmClear: "¿Borrar todos los campos?",
+      confirmDeleteDescription: "¿Eliminar la descripción actual?",
+      savedChanges: "Sus cambios han sido guardados."
     },
     answers: {
       yes: "SÍ",
       no: "NO"
-    },
-    subjects.saved: “Sujeto guardado.“,
-    subjects.new: “Nuevo sujeto.“,
-    context.cleared: “Borrado.“,
-    context.saved: “Guardado.“,
-    subjects.confirmDelete: “¿Eliminar el sujeto actual?“,
-    subjects.enterLabelFirst: “Ingrese primero la etiqueta del sujeto.“,
-    subjects.invalidLabel: “La etiqueta del sujeto no es válida.“,
-    subjects.unsavedChangesConfirm: “Tiene cambios sin guardar. ¿Desea comenzar un nuevo sujeto de todos modos?“,
-    alerts.emptyQuestion: “Ingrese una pregunta antes de enviarla.“,
-    alerts.pastQuestion: “Haga una pregunta relacionada con el futuro, no con el pasado.“,
-    limits.descriptionMax: “El máximo permitido es de 1000 palabras en la descripción.“,
-    limits.questionMax: “El máximo permitido es de 100 palabras en la pregunta.“,
-    buttons.new: “Nuevo“,
-    buttons.save: “Guardar“,
-    buttons.delete: “Eliminar“,
-    placeholders.subjectName: “Nombre del sujeto“,
-    buttons.saveDescription: “Guardar descripción“,
-    buttons.deleteDescription: “Eliminar descripción“,
-    dynamic.todayDatePrefix: “La fecha de hoy es \${date}.“,
-    buttons.cancel: “Cancelar“,
-    alerts.confirmClear: “¿Borrar todos los campos?“,
-    alerts.confirmDeleteDescription: “¿Eliminar la descripción actual?“,
-    alerts.savedChanges: “Sus cambios han sido guardados.“
   },
+    subjects: {
+      saved: "Sujeto guardado.",
+      new: "Nuevo sujeto.",
+      confirmDelete: "¿Eliminar el sujeto actual?",
+      enterLabelFirst: "Ingrese primero la etiqueta del sujeto.",
+      invalidLabel: "La etiqueta del sujeto no es válida.",
+      unsavedChangesConfirm: "Tiene cambios sin guardar. ¿Desea comenzar un nuevo sujeto de todos modos?"
+    },
+    context: {
+      cleared: "Borrado.",
+      saved: "Guardado."
+    },
+    limits: {
+      descriptionMax: "El máximo permitido es de 1000 palabras en la descripción.",
+      questionMax: "El máximo permitido es de 100 palabras en la pregunta."
+    },
+    buttons: {
+      new: "Nuevo",
+      save: "Guardar",
+      delete: "Eliminar",
+      saveDescription: "Guardar descripción",
+      deleteDescription: "Eliminar descripción",
+      cancel: "Cancelar"
+    },
+    placeholders: {
+      subjectName: "Nombre del sujeto"
+    }
+  },
+
 
   fr: {
     title: "PRÉDICTEUR GÉNÉRAL",
@@ -275,43 +301,52 @@ Pour des situations actuelles : indiquez tous les participants, le déroulement 
     ],
     dynamic: {
       answerLabel: "Réponse :",
-      probabilityLabel: "Probabilité :"
+      probabilityLabel: "Probabilité :",
+      todayDatePrefix: "La date d’aujourd’hui est \${date}."
     },
     alerts: {
       emptyQuestion: "Veuillez entrer une question avant d’envoyer.",
       invalidPrefix: "La question doit commencer par une forme appropriée ('Est-ce que...', 'Est-ce que je...', 'Est-ce que nous...').",
       pastQuestion: "Posez une question qui concerne l’avenir.",
       unrecognizedResponse: "La réponse n’est pas dans un format reconnaissable.",
-      serverError: "Une erreur s’est produite lors de la communication avec le serveur."
+      serverError: "Une erreur s’est produite lors de la communication avec le serveur.",
+      confirmClear: "Effacer tous les champs ?",
+      confirmDeleteDescription: "Supprimer la description actuelle ?",
+      savedChanges: "Vos modifications ont été enregistrées."
     },
     answers: {
       yes: "OUI",
       no: "NON"
-    },
-    subjects.saved: “Sujet enregistré.“,
-    subjects.new: “Nouveau sujet.“,
-    context.cleared: “Effacé.“,
-    context.saved: “Enregistré.“,
-    subjects.confirmDelete: “Supprimer le sujet actuel ?“,
-    subjects.enterLabelFirst: “Saisissez d’abord l’étiquette du sujet.“,
-    subjects.invalidLabel: “L’étiquette du sujet n’est pas valide.“,
-    subjects.unsavedChangesConfirm: “Vous avez des modifications non enregistrées. Voulez-vous tout de même commencer un nouveau sujet ?“,
-    alerts.emptyQuestion: “Saisissez une question avant de l’envoyer.“,
-    alerts.pastQuestion: “Posez une question concernant l’avenir, pas le passé.“,
-    limits.descriptionMax: “Le maximum autorisé est de 1000 mots dans la description.“,
-    limits.questionMax: “Le maximum autorisé est de 100 mots dans la question.“,
-    buttons.new: “Nouveau“,
-    buttons.save: “Enregistrer“,
-    buttons.delete: “Supprimer“,
-    placeholders.subjectName: “Nom du sujet“,
-    buttons.saveDescription: “Enregistrer la description“,
-    buttons.deleteDescription: “Supprimer la description“,
-    dynamic.todayDatePrefix: “La date d’aujourd’hui est \${date}.“,
-    buttons.cancel: “Annuler“,
-    alerts.confirmClear: “Effacer tous les champs ?“,
-    alerts.confirmDeleteDescription: “Supprimer la description actuelle ?“,
-    alerts.savedChanges: “Vos modifications ont été enregistrées.“
   },
+    subjects: {
+      saved: "Sujet enregistré.",
+      new: "Nouveau sujet.",
+      confirmDelete: "Supprimer le sujet actuel ?",
+      enterLabelFirst: "Saisissez d’abord l’étiquette du sujet.",
+      invalidLabel: "L’étiquette du sujet n’est pas valide.",
+      unsavedChangesConfirm: "Vous avez des modifications non enregistrées. Voulez-vous tout de même commencer un nouveau sujet ?"
+    },
+    context: {
+      cleared: "Effacé.",
+      saved: "Enregistré."
+    },
+    limits: {
+      descriptionMax: "Le maximum autorisé est de 1000 mots dans la description.",
+      questionMax: "Le maximum autorisé est de 100 mots dans la question."
+    },
+    buttons: {
+      new: "Nouveau",
+      save: "Enregistrer",
+      delete: "Supprimer",
+      saveDescription: "Enregistrer la description",
+      deleteDescription: "Supprimer la description",
+      cancel: "Annuler"
+    },
+    placeholders: {
+      subjectName: "Nom du sujet"
+    }
+  },
+
 
   de: {
     title: "ALLGEMEINER PROGNOSTIKER",
@@ -353,43 +388,52 @@ Für aktuelle Situationen: Nennen Sie alle Beteiligten, den bisherigen Verlauf u
     ],
     dynamic: {
       answerLabel: "Antwort:",
-      probabilityLabel: "Wahrscheinlichkeit:"
+      probabilityLabel: "Wahrscheinlichkeit:",
+      todayDatePrefix: "Das heutige Datum ist \${date}."
     },
     alerts: {
       emptyQuestion: "Bitte geben Sie vor dem Absenden eine Frage ein.",
       invalidPrefix: "Die Frage muss mit einer passenden Form beginnen ('Wird...', 'Werde ich...', 'Werden wir...').",
       pastQuestion: "Stellen Sie eine Frage, die sich auf die Zukunft bezieht.",
       unrecognizedResponse: "Die Antwort hat kein erkennbares Format.",
-      serverError: "Es ist ein Fehler bei der Kommunikation mit dem Server aufgetreten."
+      serverError: "Es ist ein Fehler bei der Kommunikation mit dem Server aufgetreten.",
+      confirmClear: "Alle Felder löschen?",
+      confirmDeleteDescription: "Aktuelle Beschreibung löschen?",
+      savedChanges: "Ihre Änderungen wurden gespeichert."
     },
     answers: {
       yes: "JA",
       no: "NEIN"
-    },
-    subjects.saved: “Betreff gespeichert.“,
-    subjects.new: “Neuer Betreff.“,
-    context.cleared: “Gelöscht.“,
-    context.saved: “Gespeichert.“,
-    subjects.confirmDelete: “Aktuellen Betreff löschen?“,
-    subjects.enterLabelFirst: “Zuerst die Betreffbezeichnung eingeben.“,
-    subjects.invalidLabel: “Die Betreffbezeichnung ist ungültig.“,
-    subjects.unsavedChangesConfirm: “Sie haben ungespeicherte Änderungen. Möchten Sie trotzdem einen neuen Betreff beginnen?“,
-    alerts.emptyQuestion: “Geben Sie eine Frage ein, bevor Sie sie absenden.“,
-    alerts.pastQuestion: “Stellen Sie eine Frage zur Zukunft, nicht zur Vergangenheit.“,
-    limits.descriptionMax: “Maximal erlaubt sind 1000 Wörter in der Beschreibung.“,
-    limits.questionMax: “Maximal erlaubt sind 100 Wörter in der Frage.“,
-    buttons.new: “Neu“,
-    buttons.save: “Speichern“,
-    buttons.delete: “Löschen“,
-    placeholders.subjectName: “Betreffname“,
-    buttons.saveDescription: “Beschreibung speichern“,
-    buttons.deleteDescription: “Beschreibung löschen“,
-    dynamic.todayDatePrefix: “Das heutige Datum ist \${date}.“,
-    buttons.cancel: “Abbrechen“,
-    alerts.confirmClear: “Alle Felder löschen?“,
-    alerts.confirmDeleteDescription: “Aktuelle Beschreibung löschen?“,
-    alerts.savedChanges: “Ihre Änderungen wurden gespeichert.“
   },
+    subjects: {
+      saved: "Betreff gespeichert.",
+      new: "Neuer Betreff.",
+      confirmDelete: "Aktuellen Betreff löschen?",
+      enterLabelFirst: "Zuerst die Betreffbezeichnung eingeben.",
+      invalidLabel: "Die Betreffbezeichnung ist ungültig.",
+      unsavedChangesConfirm: "Sie haben ungespeicherte Änderungen. Möchten Sie trotzdem einen neuen Betreff beginnen?"
+    },
+    context: {
+      cleared: "Gelöscht.",
+      saved: "Gespeichert."
+    },
+    limits: {
+      descriptionMax: "Maximal erlaubt sind 1000 Wörter in der Beschreibung.",
+      questionMax: "Maximal erlaubt sind 100 Wörter in der Frage."
+    },
+    buttons: {
+      new: "Neu",
+      save: "Speichern",
+      delete: "Löschen",
+      saveDescription: "Beschreibung speichern",
+      deleteDescription: "Beschreibung löschen",
+      cancel: "Abbrechen"
+    },
+    placeholders: {
+      subjectName: "Betreffname"
+    }
+  },
+
 
   pt: {
     title: "PREVISOR GERAL",
@@ -431,43 +475,52 @@ Para situações atuais: mencione todos os envolvidos, o andamento até o moment
     ],
     dynamic: {
       answerLabel: "Resposta:",
-      probabilityLabel: "Probabilidade:"
+      probabilityLabel: "Probabilidade:",
+      todayDatePrefix: "A data de hoje é \${date}."
     },
     alerts: {
       emptyQuestion: "Insira uma pergunta antes de enviar.",
       invalidPrefix: "A pergunta deve começar com uma forma apropriada ('Será que...', 'Será que eu...', 'Será que nós...').",
       pastQuestion: "Faça uma pergunta relacionada ao futuro.",
       unrecognizedResponse: "A resposta não está em um formato reconhecível.",
-      serverError: "Ocorreu um erro na comunicação com o servidor."
+      serverError: "Ocorreu um erro na comunicação com o servidor.",
+      confirmClear: "Limpar todos os campos?",
+      confirmDeleteDescription: "Excluir a descrição atual?",
+      savedChanges: "Suas alterações foram salvas."
     },
     answers: {
       yes: "SIM",
       no: "NÃO"
-    },
-    subjects.saved: “Assunto salvo.“,
-    subjects.new: “Novo assunto.“,
-    context.cleared: “Limpo.“,
-    context.saved: “Salvo.“,
-    subjects.confirmDelete: “Excluir o assunto atual?“,
-    subjects.enterLabelFirst: “Insira primeiro o rótulo do assunto.“,
-    subjects.invalidLabel: “O rótulo do assunto não é válido.“,
-    subjects.unsavedChangesConfirm: “Você tem alterações não salvas. Deseja iniciar um novo assunto mesmo assim?“,
-    alerts.emptyQuestion: “Digite uma pergunta antes de enviar.“,
-    alerts.pastQuestion: “Faça uma pergunta relacionada ao futuro, não ao passado.“,
-    limits.descriptionMax: “O máximo permitido é 1000 palavras na descrição.“,
-    limits.questionMax: “O máximo permitido é 100 palavras na pergunta.“,
-    buttons.new: “Novo“,
-    buttons.save: “Salvar“,
-    buttons.delete: “Excluir“,
-    placeholders.subjectName: “Nome do assunto“,
-    buttons.saveDescription: “Salvar descrição“,
-    buttons.deleteDescription: “Excluir descrição“,
-    dynamic.todayDatePrefix: “A data de hoje é \${date}.“,
-    buttons.cancel: “Cancelar“,
-    alerts.confirmClear: “Limpar todos os campos?“,
-    alerts.confirmDeleteDescription: “Excluir a descrição atual?“,
-    alerts.savedChanges: “Suas alterações foram salvas.“
   },
+    subjects: {
+      saved: "Assunto salvo.",
+      new: "Novo assunto.",
+      confirmDelete: "Excluir o assunto atual?",
+      enterLabelFirst: "Insira primeiro o rótulo do assunto.",
+      invalidLabel: "O rótulo do assunto não é válido.",
+      unsavedChangesConfirm: "Você tem alterações não salvas. Deseja iniciar um novo assunto mesmo assim?"
+    },
+    context: {
+      cleared: "Limpo.",
+      saved: "Salvo."
+    },
+    limits: {
+      descriptionMax: "O máximo permitido é 1000 palavras na descrição.",
+      questionMax: "O máximo permitido é 100 palavras na pergunta."
+    },
+    buttons: {
+      new: "Novo",
+      save: "Salvar",
+      delete: "Excluir",
+      saveDescription: "Salvar descrição",
+      deleteDescription: "Excluir descrição",
+      cancel: "Cancelar"
+    },
+    placeholders: {
+      subjectName: "Nome do assunto"
+    }
+  },
+
 
   it: {
     title: "PREVISIONE GENERALE",
@@ -509,43 +562,52 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
     ],
     dynamic: {
       answerLabel: "Risposta:",
-      probabilityLabel: "Probabilità:"
+      probabilityLabel: "Probabilità:",
+      todayDatePrefix: "La data di oggi è \${date}."
     },
     alerts: {
       emptyQuestion: "Inserisci una domanda prima di inviare.",
       invalidPrefix: "La domanda deve iniziare con una forma appropriata ('Accadrà...', 'Succederà...', 'Mi succederà...', 'Noi faremo...').",
       pastQuestion: "Fai una domanda riguardante il futuro.",
       unrecognizedResponse: "La risposta non è in un formato riconoscibile.",
-      serverError: "Si è verificato un errore nella comunicazione con il server."
+      serverError: "Si è verificato un errore nella comunicazione con il server.",
+      confirmClear: "Cancellare tutti i campi?",
+      confirmDeleteDescription: "Eliminare la descrizione attuale?",
+      savedChanges: "Le tue modifiche sono state salvate."
     },
     answers: {
       yes: "SÌ",
       no: "NO"
-    },
-    subjects.saved: “Soggetto salvato.“,
-    subjects.new: “Nuovo soggetto.“,
-    context.cleared: “Cancellato.“,
-    context.saved: “Salvato.“,
-    subjects.confirmDelete: “Eliminare il soggetto attuale?“,
-    subjects.enterLabelFirst: “Inserire prima l’etichetta del soggetto.“,
-    subjects.invalidLabel: “L’etichetta del soggetto non è valida.“,
-    subjects.unsavedChangesConfirm: “Hai modifiche non salvate. Vuoi iniziare comunque un nuovo soggetto?“,
-    alerts.emptyQuestion: “Inserisci una domanda prima di inviare.“,
-    alerts.pastQuestion: “Fai una domanda relativa al futuro, non al passato.“,
-    limits.descriptionMax: “Il massimo consentito è di 1000 parole nella descrizione.“,
-    limits.questionMax: “Il massimo consentito è di 100 parole nella domanda.“,
-    buttons.new: “Nuovo“,
-    buttons.save: “Salva“,
-    buttons.delete: “Elimina“,
-    placeholders.subjectName: “Nome del soggetto“,
-    buttons.saveDescription: “Salva descrizione“,
-    buttons.deleteDescription: “Elimina descrizione“,
-    dynamic.todayDatePrefix: “La data di oggi è \${date}.“,
-    buttons.cancel: “Annulla“,
-    alerts.confirmClear: “Cancellare tutti i campi?“,
-    alerts.confirmDeleteDescription: “Eliminare la descrizione attuale?“,
-    alerts.savedChanges: “Le tue modifiche sono state salvate.“
   },
+    subjects: {
+      saved: "Soggetto salvato.",
+      new: "Nuovo soggetto.",
+      confirmDelete: "Eliminare il soggetto attuale?",
+      enterLabelFirst: "Inserire prima l’etichetta del soggetto.",
+      invalidLabel: "L’etichetta del soggetto non è valida.",
+      unsavedChangesConfirm: "Hai modifiche non salvate. Vuoi iniziare comunque un nuovo soggetto?"
+    },
+    context: {
+      cleared: "Cancellato.",
+      saved: "Salvato."
+    },
+    limits: {
+      descriptionMax: "Il massimo consentito è di 1000 parole nella descrizione.",
+      questionMax: "Il massimo consentito è di 100 parole nella domanda."
+    },
+    buttons: {
+      new: "Nuovo",
+      save: "Salva",
+      delete: "Elimina",
+      saveDescription: "Salva descrizione",
+      deleteDescription: "Elimina descrizione",
+      cancel: "Annulla"
+    },
+    placeholders: {
+      subjectName: "Nome del soggetto"
+    }
+  },
+
 
   ru: {
     title: "ОБЩИЙ ПРОГНОЗАТОР",
@@ -587,43 +649,52 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
     ],
     dynamic: {
       answerLabel: "Ответ:",
-      probabilityLabel: "Вероятность:"
+      probabilityLabel: "Вероятность:",
+      todayDatePrefix: "Сегодняшняя дата — \${date}."
     },
     alerts: {
       emptyQuestion: "Введите вопрос перед отправкой.",
       invalidPrefix: "Вопрос должен начинаться с соответствующей формулировки ('Случится ли...', 'Произойдёт ли...', 'Будет ли...', 'Сможем ли мы...').",
       pastQuestion: "Задайте вопрос, связанный с будущим.",
       unrecognizedResponse: "Ответ не распознан по формату.",
-      serverError: "Произошла ошибка при соединении с сервером."
+      serverError: "Произошла ошибка при соединении с сервером.",
+      confirmClear: "Очистить все поля?",
+      confirmDeleteDescription: "Удалить текущее описание?",
+      savedChanges: "Ваши изменения сохранены."
     },
     answers: {
       yes: "ДА",
       no: "НЕТ"
-    },
-    subjects.saved: “Тема сохранена.“,
-    subjects.new: “Новая тема.“,
-    context.cleared: “Очищено.“,
-    context.saved: “Сохранено.“,
-    subjects.confirmDelete: “Удалить текущую тему?“,
-    subjects.enterLabelFirst: “Сначала введите название темы.“,
-    subjects.invalidLabel: “Название темы недопустимо.“,
-    subjects.unsavedChangesConfirm: “У вас есть несохранённые изменения. Всё равно начать новую тему?“,
-    alerts.emptyQuestion: “Введите вопрос перед отправкой.“,
-    alerts.pastQuestion: “Задайте вопрос, касающийся будущего, а не прошлого.“,
-    limits.descriptionMax: “Максимально допустимо 1000 слов в описании.“,
-    limits.questionMax: “Максимально допустимо 100 слов в вопросе.“,
-    buttons.new: “Новая“,
-    buttons.save: “Сохранить“,
-    buttons.delete: “Удалить“,
-    placeholders.subjectName: “Название темы“,
-    buttons.saveDescription: “Сохранить описание“,
-    buttons.deleteDescription: “Удалить описание“,
-    dynamic.todayDatePrefix: “Сегодняшняя дата — \${date}.“,
-    buttons.cancel: “Отмена“,
-    alerts.confirmClear: “Очистить все поля?“,
-    alerts.confirmDeleteDescription: “Удалить текущее описание?“,
-    alerts.savedChanges: “Ваши изменения сохранены.“
   },
+    subjects: {
+      saved: "Тема сохранена.",
+      new: "Новая тема.",
+      confirmDelete: "Удалить текущую тему?",
+      enterLabelFirst: "Сначала введите название темы.",
+      invalidLabel: "Название темы недопустимо.",
+      unsavedChangesConfirm: "У вас есть несохранённые изменения. Всё равно начать новую тему?"
+    },
+    context: {
+      cleared: "Очищено.",
+      saved: "Сохранено."
+    },
+    limits: {
+      descriptionMax: "Максимально допустимо 1000 слов в описании.",
+      questionMax: "Максимально допустимо 100 слов в вопросе."
+    },
+    buttons: {
+      new: "Новая",
+      save: "Сохранить",
+      delete: "Удалить",
+      saveDescription: "Сохранить описание",
+      deleteDescription: "Удалить описание",
+      cancel: "Отмена"
+    },
+    placeholders: {
+      subjectName: "Название темы"
+    }
+  },
+
 
   pl: {
     title: "OGÓLNY PRZEWIDYWACZ",
@@ -665,43 +736,52 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
     ],
     dynamic: {
       answerLabel: "Odpowiedź:",
-      probabilityLabel: "Prawdopodobieństwo:"
+      probabilityLabel: "Prawdopodobieństwo:",
+      todayDatePrefix: "Dzisiejsza data to \${date}."
     },
     alerts: {
       emptyQuestion: "Wprowadź pytanie przed wysłaniem.",
       invalidPrefix: "Pytanie musi zaczynać się od poprawnej formy (np. 'Czy...', 'Czy ja...', 'Czy my...').",
       pastQuestion: "Zadaj pytanie dotyczące przyszłości.",
       unrecognizedResponse: "Odpowiedź nie ma rozpoznawalnego formatu.",
-      serverError: "Wystąpił błąd podczas komunikacji z serwerem."
+      serverError: "Wystąpił błąd podczas komunikacji z serwerem.",
+      confirmClear: "Wyczyścić wszystkie pola?",
+      confirmDeleteDescription: "Usunąć bieżący opis?",
+      savedChanges: "Twoje zmiany zostały zapisane."
     },
     answers: {
       yes: "TAK",
       no: "NIE"
-    },
-    subjects.saved: “Temat został zapisany.“,
-    subjects.new: “Nowy temat.“,
-    context.cleared: “Wyczyszczono.“,
-    context.saved: “Zapisano.“,
-    subjects.confirmDelete: “Usunąć bieżący temat?“,
-    subjects.enterLabelFirst: “Najpierw wprowadź etykietę tematu.“,
-    subjects.invalidLabel: “Etykieta tematu jest nieprawidłowa.“,
-    subjects.unsavedChangesConfirm: “Masz niezapisane zmiany. Czy mimo to chcesz rozpocząć nowy temat?“,
-    alerts.emptyQuestion: “Wprowadź pytanie przed wysłaniem.“,
-    alerts.pastQuestion: “Zadaj pytanie dotyczące przyszłości, a nie przeszłości.“,
-    limits.descriptionMax: “Maksymalna dozwolona liczba słów w opisie to 1000.“,
-    limits.questionMax: “Maksymalna dozwolona liczba słów w pytaniu to 100.“,
-    buttons.new: “Nowy“,
-    buttons.save: “Zapisz“,
-    buttons.delete: “Usuń“,
-    placeholders.subjectName: “Nazwa tematu“,
-    buttons.saveDescription: “Zapisz opis“,
-    buttons.deleteDescription: “Usuń opis“,
-    dynamic.todayDatePrefix: “Dzisiejsza data to \${date}.“,
-    buttons.cancel: “Anuluj“,
-    alerts.confirmClear: “Wyczyścić wszystkie pola?“,
-    alerts.confirmDeleteDescription: “Usunąć bieżący opis?“,
-    alerts.savedChanges: “Twoje zmiany zostały zapisane.“
   },
+    subjects: {
+      saved: "Temat został zapisany.",
+      new: "Nowy temat.",
+      confirmDelete: "Usunąć bieżący temat?",
+      enterLabelFirst: "Najpierw wprowadź etykietę tematu.",
+      invalidLabel: "Etykieta tematu jest nieprawidłowa.",
+      unsavedChangesConfirm: "Masz niezapisane zmiany. Czy mimo to chcesz rozpocząć nowy temat?"
+    },
+    context: {
+      cleared: "Wyczyszczono.",
+      saved: "Zapisano."
+    },
+    limits: {
+      descriptionMax: "Maksymalna dozwolona liczba słów w opisie to 1000.",
+      questionMax: "Maksymalna dozwolona liczba słów w pytaniu to 100."
+    },
+    buttons: {
+      new: "Nowy",
+      save: "Zapisz",
+      delete: "Usuń",
+      saveDescription: "Zapisz opis",
+      deleteDescription: "Usuń opis",
+      cancel: "Anuluj"
+    },
+    placeholders: {
+      subjectName: "Nazwa tematu"
+    }
+  },
+
 
   uk: {
     title: "ЗАГАЛЬНИЙ ПРОГНОЗ",
@@ -743,43 +823,52 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
     ],
     dynamic: {
       answerLabel: "Відповідь:",
-      probabilityLabel: "Ймовірність:"
+      probabilityLabel: "Ймовірність:",
+      todayDatePrefix: "Сьогоднішня дата — \${date}."
     },
     alerts: {
       emptyQuestion: "Введіть питання перед надсиланням.",
       invalidPrefix: "Питання повинно починатися з відповідної форми (напр., «Чи...», «Чи я...», «Чи ми...»).",
       pastQuestion: "Поставте питання, яке стосується майбутнього.",
       unrecognizedResponse: "Відповідь не має розпізнаваного формату.",
-      serverError: "Сталася помилка при зв’язку з сервером."
+      serverError: "Сталася помилка при зв’язку з сервером.",
+      confirmClear: "Очистити всі поля?",
+      confirmDeleteDescription: "Видалити поточний опис?",
+      savedChanges: "Ваші зміни збережено."
     },
     answers: {
       yes: "ТАК",
       no: "НІ"
-    },
-    subjects.saved: “Тему збережено.“,
-    subjects.new: “Нова тема.“,
-    context.cleared: “Очищено.“,
-    context.saved: “Збережено.“,
-    subjects.confirmDelete: “Видалити поточну тему?“,
-    subjects.enterLabelFirst: “Спочатку введіть мітку теми.“,
-    subjects.invalidLabel: “Мітка теми недійсна.“,
-    subjects.unsavedChangesConfirm: “У вас є незбережені зміни. Все одно розпочати нову тему?“,
-    alerts.emptyQuestion: “Введіть запитання перед надсиланням.“,
-    alerts.pastQuestion: “Поставте запитання, що стосується майбутнього, а не минулого.“,
-    limits.descriptionMax: “Максимально дозволено 1000 слів в описі.“,
-    limits.questionMax: “Максимально дозволено 100 слів у запитанні.“,
-    buttons.new: “Нова“,
-    buttons.save: “Зберегти“,
-    buttons.delete: “Видалити“,
-    placeholders.subjectName: “Назва теми“,
-    buttons.saveDescription: “Зберегти опис“,
-    buttons.deleteDescription: “Видалити опис“,
-    dynamic.todayDatePrefix: “Сьогоднішня дата — \${date}.“,
-    buttons.cancel: “Скасувати“,
-    alerts.confirmClear: “Очистити всі поля?“,
-    alerts.confirmDeleteDescription: “Видалити поточний опис?“,
-    alerts.savedChanges: “Ваші зміни збережено.“
   },
+    subjects: {
+      saved: "Тему збережено.",
+      new: "Нова тема.",
+      confirmDelete: "Видалити поточну тему?",
+      enterLabelFirst: "Спочатку введіть мітку теми.",
+      invalidLabel: "Мітка теми недійсна.",
+      unsavedChangesConfirm: "У вас є незбережені зміни. Все одно розпочати нову тему?"
+    },
+    context: {
+      cleared: "Очищено.",
+      saved: "Збережено."
+    },
+    limits: {
+      descriptionMax: "Максимально дозволено 1000 слів в описі.",
+      questionMax: "Максимально дозволено 100 слів у запитанні."
+    },
+    buttons: {
+      new: "Нова",
+      save: "Зберегти",
+      delete: "Видалити",
+      saveDescription: "Зберегти опис",
+      deleteDescription: "Видалити опис",
+      cancel: "Скасувати"
+    },
+    placeholders: {
+      subjectName: "Назва теми"
+    }
+  },
+
 
   tr: {
     title: "GENEL TAHMİN SİSTEMİ",
@@ -821,43 +910,52 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
     ],
     dynamic: {
       answerLabel: "Cevap:",
-      probabilityLabel: "Olasılık:"
+      probabilityLabel: "Olasılık:",
+      todayDatePrefix: "Bugünün tarihi \${date}."
     },
     alerts: {
       emptyQuestion: "Lütfen bir soru girin.",
       invalidPrefix: "Soru, uygun bir kalıpla başlamalıdır.",
       pastQuestion: "Lütfen geleceğe dair bir soru sorun.",
       unrecognizedResponse: "Cevap tanınabilir formatta değil.",
-      serverError: "Sunucuyla iletişimde bir hata oluştu."
+      serverError: "Sunucuyla iletişimde bir hata oluştu.",
+      confirmClear: "Tüm alanlar temizlensin mi?",
+      confirmDeleteDescription: "Geçerli açıklama silinsin mi?",
+      savedChanges: "Değişiklikleriniz kaydedildi."
     },
     answers: {
       yes: "EVET",
       no: "HAYIR"
-    },
-    subjects.saved: “Konu kaydedildi.“,
-    subjects.new: “Yeni konu.“,
-    context.cleared: “Temizlendi.“,
-    context.saved: “Kaydedildi.“,
-    subjects.confirmDelete: “Geçerli konu silinsin mi?“,
-    subjects.enterLabelFirst: “Önce konu etiketini girin.“,
-    subjects.invalidLabel: “Konu etiketi geçersiz.“,
-    subjects.unsavedChangesConfirm: “Kaydedilmemiş değişiklikleriniz var. Yine de yeni bir konu başlatmak istiyor musunuz?“,
-    alerts.emptyQuestion: “Göndermeden önce bir soru girin.“,
-    alerts.pastQuestion: “Gelecekle ilgili, geçmişle ilgili olmayan bir soru sorun.“,
-    limits.descriptionMax: “Açıklamada en fazla 1000 kelimeye izin verilir.“,
-    limits.questionMax: “Soru kısmında en fazla 100 kelimeye izin verilir.“,
-    buttons.new: “Yeni“,
-    buttons.save: “Kaydet“,
-    buttons.delete: “Sil“,
-    placeholders.subjectName: “Konu adı“,
-    buttons.saveDescription: “Açıklamayı kaydet“,
-    buttons.deleteDescription: “Açıklamayı sil“,
-    dynamic.todayDatePrefix: “Bugünün tarihi \${date}.“,
-    buttons.cancel: “İptal“,
-    alerts.confirmClear: “Tüm alanlar temizlensin mi?“,
-    alerts.confirmDeleteDescription: “Geçerli açıklama silinsin mi?“,
-    alerts.savedChanges: “Değişiklikleriniz kaydedildi.“
   },
+    subjects: {
+      saved: "Konu kaydedildi.",
+      new: "Yeni konu.",
+      confirmDelete: "Geçerli konu silinsin mi?",
+      enterLabelFirst: "Önce konu etiketini girin.",
+      invalidLabel: "Konu etiketi geçersiz.",
+      unsavedChangesConfirm: "Kaydedilmemiş değişiklikleriniz var. Yine de yeni bir konu başlatmak istiyor musunuz?"
+    },
+    context: {
+      cleared: "Temizlendi.",
+      saved: "Kaydedildi."
+    },
+    limits: {
+      descriptionMax: "Açıklamada en fazla 1000 kelimeye izin verilir.",
+      questionMax: "Soru kısmında en fazla 100 kelimeye izin verilir."
+    },
+    buttons: {
+      new: "Yeni",
+      save: "Kaydet",
+      delete: "Sil",
+      saveDescription: "Açıklamayı kaydet",
+      deleteDescription: "Açıklamayı sil",
+      cancel: "İptal"
+    },
+    placeholders: {
+      subjectName: "Konu adı"
+    }
+  },
+
 
   ar: {
     title: "نظام التنبؤ العام",
@@ -899,43 +997,52 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
     ],
     dynamic: {
       answerLabel: "الإجابة:",
-      probabilityLabel: "الاحتمال:"
+      probabilityLabel: "الاحتمال:",
+      todayDatePrefix: "تاريخ اليوم هو \${date}."
     },
     alerts: {
       emptyQuestion: "يرجى إدخال السؤال قبل الإرسال.",
       invalidPrefix: "يجب أن يبدأ السؤال بصيغة مناسبة.",
       pastQuestion: "يرجى طرح سؤال يتعلق بالمستقبل.",
       unrecognizedResponse: "لم يتم التعرف على تنسيق الإجابة.",
-      serverError: "حدث خطأ في الاتصال بالخادم."
+      serverError: "حدث خطأ في الاتصال بالخادم.",
+      confirmClear: "هل تريد مسح جميع الحقول؟",
+      confirmDeleteDescription: "هل تريد حذف الوصف الحالي؟",
+      savedChanges: "تم حفظ التغييرات."
     },
     answers: {
       yes: "نعم",
       no: "لا"
-    },
-    subjects.saved: “تم حفظ الموضوع.“,
-    subjects.new: “موضوع جديد.“,
-    context.cleared: “تم المسح.“,
-    context.saved: “تم الحفظ.“,
-    subjects.confirmDelete: “هل تريد حذف الموضوع الحالي؟“,
-    subjects.enterLabelFirst: “أدخل وسم الموضوع أولاً.“,
-    subjects.invalidLabel: “وسم الموضوع غير صالح.“,
-    subjects.unsavedChangesConfirm: “لديك تغييرات غير محفوظة. هل تريد بدء موضوع جديد على أي حال؟“,
-    alerts.emptyQuestion: “أدخل سؤالاً قبل الإرسال.“,
-    alerts.pastQuestion: “اطرح سؤالاً يتعلق بالمستقبل، وليس بالماضي.“,
-    limits.descriptionMax: “الحد الأقصى المسموح به هو 1000 كلمة في الوصف.“,
-    limits.questionMax: “الحد الأقصى المسموح به هو 100 كلمة في السؤال.“,
-    buttons.new: “جديد“,
-    buttons.save: “حفظ“,
-    buttons.delete: “حذف“,
-    placeholders.subjectName: “اسم الموضوع“,
-    buttons.saveDescription: “حفظ الوصف“,
-    buttons.deleteDescription: “حذف الوصف“,
-    dynamic.todayDatePrefix: “تاريخ اليوم هو \${date}.“,
-    buttons.cancel: “إلغاء“,
-    alerts.confirmClear: “هل تريد مسح جميع الحقول؟“,
-    alerts.confirmDeleteDescription: “هل تريد حذف الوصف الحالي؟“,
-    alerts.savedChanges: “تم حفظ التغييرات.“
   },
+    subjects: {
+      saved: "تم حفظ الموضوع.",
+      new: "موضوع جديد.",
+      confirmDelete: "هل تريد حذف الموضوع الحالي؟",
+      enterLabelFirst: "أدخل وسم الموضوع أولاً.",
+      invalidLabel: "وسم الموضوع غير صالح.",
+      unsavedChangesConfirm: "لديك تغييرات غير محفوظة. هل تريد بدء موضوع جديد على أي حال؟"
+    },
+    context: {
+      cleared: "تم المسح.",
+      saved: "تم الحفظ."
+    },
+    limits: {
+      descriptionMax: "الحد الأقصى المسموح به هو 1000 كلمة في الوصف.",
+      questionMax: "الحد الأقصى المسموح به هو 100 كلمة في السؤال."
+    },
+    buttons: {
+      new: "جديد",
+      save: "حفظ",
+      delete: "حذف",
+      saveDescription: "حفظ الوصف",
+      deleteDescription: "حذف الوصف",
+      cancel: "إلغاء"
+    },
+    placeholders: {
+      subjectName: "اسم الموضوع"
+    }
+  },
+
 
   hi: {
     title: "जनरल प्रेडिक्टर",
@@ -977,43 +1084,52 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
     ],
     dynamic: {
       answerLabel: "उत्तर:",
-      probabilityLabel: "संभाव्यता:"
+      probabilityLabel: "संभाव्यता:",
+      todayDatePrefix: "आज की तारीख है \${date}."
     },
     alerts: {
       emptyQuestion: "कृपया प्रश्न दर्ज करें।",
       invalidPrefix: "प्रश्न उपयुक्त प्रारूप में शुरू होना चाहिए।",
       pastQuestion: "कृपया भविष्य से संबंधित प्रश्न पूछें।",
       unrecognizedResponse: "उत्तर मान्यता प्राप्त प्रारूप में नहीं है।",
-      serverError: "सर्वर से संचार में त्रुटि हुई।"
+      serverError: "सर्वर से संचार में त्रुटि हुई।",
+      confirmClear: "सभी फ़ील्ड साफ़ करें?",
+      confirmDeleteDescription: "वर्तमान विवरण हटाएँ?",
+      savedChanges: "आपके परिवर्तन सहेज लिए गए हैं."
     },
     answers: {
       yes: "हाँ",
       no: "नहीं"
-    },
-    subjects.saved: “विषय सहेजा गया.“,
-    subjects.new: “नया विषय.“,
-    context.cleared: “साफ़ किया गया.“,
-    context.saved: “सहेजा गया.“,
-    subjects.confirmDelete: “वर्तमान विषय हटाएँ?“,
-    subjects.enterLabelFirst: “पहले विषय का लेबल दर्ज करें.“,
-    subjects.invalidLabel: “विषय का लेबल अमान्य है.“,
-    subjects.unsavedChangesConfirm: “आपके पास असहेजे गए परिवर्तन हैं. क्या आप फिर भी एक नया विषय शुरू करना चाहते हैं?“,
-    alerts.emptyQuestion: “भेजने से पहले एक प्रश्न दर्ज करें.“,
-    alerts.pastQuestion: “भविष्य से संबंधित, अतीत से नहीं, एक प्रश्न पूछें.“,
-    limits.descriptionMax: “विवरण में अधिकतम 1000 शब्दों की अनुमति है.“,
-    limits.questionMax: “प्रश्न में अधिकतम 100 शब्दों की अनुमति है.“,
-    buttons.new: “नया“,
-    buttons.save: “सहेजें“,
-    buttons.delete: “हटाएँ“,
-    placeholders.subjectName: “विषय का नाम“,
-    buttons.saveDescription: “विवरण सहेजें“,
-    buttons.deleteDescription: “विवरण हटाएँ“,
-    dynamic.todayDatePrefix: “आज की तारीख है \${date}.“,
-    buttons.cancel: “रद्द करें“,
-    alerts.confirmClear: “सभी फ़ील्ड साफ़ करें?“,
-    alerts.confirmDeleteDescription: “वर्तमान विवरण हटाएँ?“,
-    alerts.savedChanges: “आपके परिवर्तन सहेज लिए गए हैं.“
   },
+    subjects: {
+      saved: "विषय सहेजा गया.",
+      new: "नया विषय.",
+      confirmDelete: "वर्तमान विषय हटाएँ?",
+      enterLabelFirst: "पहले विषय का लेबल दर्ज करें.",
+      invalidLabel: "विषय का लेबल अमान्य है.",
+      unsavedChangesConfirm: "आपके पास असहेजे गए परिवर्तन हैं. क्या आप फिर भी एक नया विषय शुरू करना चाहते हैं?"
+    },
+    context: {
+      cleared: "साफ़ किया गया.",
+      saved:" सहेजा गया."
+    },
+    limits: {
+      descriptionMax: "विवरण में अधिकतम 1000 शब्दों की अनुमति है.",
+      questionMax: "प्रश्न में अधिकतम 100 शब्दों की अनुमति है."
+    },
+    buttons: {
+      new: "नया",
+      save: "सहेजें",
+      delete: "हटाएँ",
+      saveDescription: "विवरण सहेजें",
+      deleteDescription: "विवरण हटाएँ",
+      cancel: "रद्द करें"
+    },
+    placeholders: {
+      subjectName: "विषय का नाम"
+    }
+  },
+
 
   zh: {
     title: "通用预测器",
@@ -1050,43 +1166,52 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
     ],
     dynamic: {
       answerLabel: "答案：",
-      probabilityLabel: "概率："
+      probabilityLabel: "概率：",
+      todayDatePrefix: "今天的日期是 \${date}."
     },
     alerts: {
       emptyQuestion: "请在提交前输入问题。",
       invalidPrefix: "问题必须以合适的形式开始（例如：会…吗？）。",
       pastQuestion: "请提出与未来相关的问题。",
       unrecognizedResponse: "系统无法识别答案格式。",
-      serverError: "与服务器通信时发生错误。"
+      serverError: "与服务器通信时发生错误。",
+      confirmClear: "清除所有字段吗?",
+      confirmDeleteDescription: "删除当前描述吗?",
+      savedChanges: "您的更改已保存."
     },
     answers: {
       yes: "是",
       no: "否"
-    },
-    subjects.saved: “主题已保存.“,
-    subjects.new: “新主题.“,
-    context.cleared: “已清除.“,
-    context.saved: “已保存.“,
-    subjects.confirmDelete: “删除当前主题吗?“,
-    subjects.enterLabelFirst: “请先输入主题标签.“,
-    subjects.invalidLabel: “主题标签无效.“,
-    subjects.unsavedChangesConfirm: “您有未保存的更改。仍要开始新主题吗?“,
-    alerts.emptyQuestion: “提交前请输入问题.“,
-    alerts.pastQuestion: “请提出与未来相关的问题，而不是与过去相关的问题.“,
-    limits.descriptionMax: “描述中最多允许 1000 个字.“,
-    limits.questionMax: “问题中最多允许 100 个字.“,
-    buttons.new: “新建“,
-    buttons.save: “保存“,
-    buttons.delete: “«删除“,
-    placeholders.subjectName: “主题名称“,
-    buttons.saveDescription: “保存描述“,
-    buttons.deleteDescription: “删除描述“,
-    dynamic.todayDatePrefix: “今天的日期是 \${date}.“,
-    buttons.cancel: “取消“,
-    alerts.confirmClear: “清除所有字段吗?“,
-    alerts.confirmDeleteDescription: “删除当前描述吗?“,
-    alerts.savedChanges: “您的更改已保存.“
   },
+    subjects: {
+      saved: "主题已保存.",
+      new: "新主题.",
+      confirmDelete: "删除当前主题吗?",
+      enterLabelFirst: "请先输入主题标签.",
+      invalidLabel: "主题标签无效.",
+      unsavedChangesConfirm: "您有未保存的更改。仍要开始新主题吗?"
+    },
+    context: {
+      cleared: "已清除.",
+      saved: "已保存."
+    },
+    limits: {
+      descriptionMax: "描述中最多允许 1000 个字.",
+      questionMax: "问题中最多允许 100 个字."
+    },
+    buttons: {
+      new: "新建",
+      save: "保存",
+      delete: "删除",
+      saveDescription: "保存描述",
+      deleteDescription: "删除描述",
+      cancel: "取消"
+    },
+    placeholders: {
+      subjectName: "主题名称"
+    }
+  },
+
 
   ja: {
     title: "ジェネラル予測システム",
@@ -1128,43 +1253,51 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
     ],
     dynamic: {
       answerLabel: "回答：",
-      probabilityLabel: "確率："
+      probabilityLabel: "確率：",
+      todayDatePrefix: "本日の日付は \${date} です."
     },
     alerts: {
       emptyQuestion: "質問を入力してください。",
       invalidPrefix: "未来に関する質問を入力してください。",
       pastQuestion: "未来についての質問をしてください。",
       unrecognizedResponse: "回答が不明な形式です。",
-      serverError: "サーバーとの通信中にエラーが発生しました。"
+      serverError: "サーバーとの通信中にエラーが発生しました。",
+      confirmClear: "すべてのフィールドを消去しますか?",
+      confirmDeleteDescription: "現在の説明を削除しますか?",
+      savedChanges: "変更が保存されました."
     },
     answers: {
       yes: "はい",
       no: "いいえ"
-    },
-    subjects.saved: “件名が保存されました.“,
-    subjects.new: “新しい件名.“,
-    context.cleared: “消去されました.“,
-    context.saved: “保存されました.“,
-    subjects.confirmDelete: “現在の件名を削除しますか?“,
-    subjects.enterLabelFirst: “まず件名ラベルを入力してください.“,
-    subjects.invalidLabel: “件名ラベルが無効です.“,
-    subjects.unsavedChangesConfirm: “未保存の変更があります。それでも新しい件名を開始しますか?“,
-    alerts.emptyQuestion: “送信する前に質問を入力してください.“,
-    alerts.pastQuestion: “過去ではなく、未来に関する質問をしてください.“,
-    limits.descriptionMax: “説明は最大 1000 語まで入力できます.“,
-    limits.questionMax: “質問は最大 100 語まで入力できます.“,
-    buttons.new: “新規“,
-    buttons.save: “保存“,
-    buttons.delete: “削除“,
-    placeholders.subjectName: “件名“,
-    buttons.saveDescription: “説明を保存“,
-    buttons.deleteDescription: “説明を削除“,
-    dynamic.todayDatePrefix: “本日の日付は \${date} です.“,
-    buttons.cancel: “キャンセル“,
-    alerts.confirmClear: “すべてのフィールドを消去しますか?“,
-    alerts.confirmDeleteDescription: “現在の説明を削除しますか?“,
-    alerts.savedChanges: “変更が保存されました.“
   },
+    subjects: {
+      saved: "件名が保存されました.",
+      new: "新しい件名.",
+      confirmDelete: "現在の件名を削除しますか?",
+      enterLabelFirst: "まず件名ラベルを入力してください.",
+      invalidLabel: "件名ラベルが無効です.",
+      unsavedChangesConfirm: "未保存の変更があります。それでも新しい件名を開始しますか?"
+    },
+    context: {
+      cleared: "消去されました.",
+      saved: "保存されました."
+    },
+    limits: {
+      descriptionMax: "説明は最大 1000 語まで入力できます.",
+      questionMax: "質問は最大 100 語まで入力できます."
+    },
+    buttons: {
+      new: "新規",
+      save: "保存",
+      delete: "削除",
+      saveDescription: "説明を保存",
+      deleteDescription: "説明を削除",
+      cancel: "キャンセル"
+    },
+    placeholders: {
+      subjectName: "件名"
+    }
+  }
 };
 
 function setLanguage(lang) {
