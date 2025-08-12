@@ -165,7 +165,7 @@ Za trenutne situacije: navedite sve učesnike, dosadašnji tok događaja i klju�
       questionMax: "Maksimalno je dozvoljeno 100 reči u pitanju."
     },
     buttons: {
-      new: "Novi",
+      new: "Novo",
       save: "Sačuvaj",
       delete: "Obriši ",
       saveDescription: "Sačuvaj opis",
@@ -699,7 +699,7 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
       questionMax: "Максимально допустимо 100 слов в вопросе."
     },
     buttons: {
-      new: "Новая",
+      new: "Новое",
       save: "Сохранить",
       delete: "Удалить",
       saveDescription: "Сохранить описание",
@@ -788,7 +788,7 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
       questionMax: "Maksymalna dozwolona liczba słów w pytaniu to 100."
     },
     buttons: {
-      new: "Nowy",
+      new: "Nowe",
       save: "Zapisz",
       delete: "Usuń",
       saveDescription: "Zapisz opis",
@@ -877,7 +877,7 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
       questionMax: "Максимально дозволено 100 слів у запитанні."
     },
     buttons: {
-      new: "Нова",
+      new: "Нове",
       save: "Зберегти",
       delete: "Видалити",
       saveDescription: "Зберегти опис",
