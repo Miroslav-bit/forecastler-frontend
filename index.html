@@ -249,6 +249,29 @@
     }
     .icon-btn:hover, .icon-btn:focus{ background: var(--btn-blue-hover); outline: none; }
 
+    /* Ravnanje redova sa dugmadima i fleksibilnim inputom */
+    .subject-manager{
+      display: grid !important;
+      grid-template-columns: auto minmax(160px, 1fr) auto auto;
+      gap: .5rem;
+      align-items: center;
+    }
+
+    /* Input sme da se skupi ispod širine sadržaja */
+    #subject-name{
+      min-width: 0;
+    }
+
+    /* Spreči lomljenje teksta u dugmadi */
+    .btn-label{
+      white-space: nowrap;
+    }
+
+    /* (po želji) na jako uskim ekranima sve ide u jedan stupac */
+    @media (max-width: 520px){
+      .subject-manager{ grid-template-columns: 1fr; }
+    }
+
   </style>
 </head>
 <body>
@@ -291,7 +314,7 @@
   <div class="main-section">
     <p id="context-label">Write something about yourself or about persons, objects, places, or situations whose future you want to predict. It is optional, but the more information you provide, the more accurate the forecast will be:</p>
 
-    <div class="subject-manager" style="display:flex;gap:.5rem;align-items:center;margin:.25rem 0 0.5rem;">
+    <div class="subject-manager" style="margin:.25rem 0 0.5rem;">
       <button type="button" id="new-subject" class="btn" aria-label="New subject" title="New subject">
         <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 5v14M5 12h14"/>
@@ -300,7 +323,7 @@
       </button>
 
       <input id="subject-name" type="text" placeholder="Subject name"
-             style="flex:1;padding:.6rem .75rem;border:1px solid #ccc;border-radius:6px;">
+             style="padding:.6rem .75rem;border:1px solid #ccc;border-radius:6px;">
 
       <button type="button" id="save-subject" class="btn" aria-label="Save subject" title="Save subject">
         <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
