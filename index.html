@@ -208,13 +208,21 @@
       }
 
       .menu-btn {
-        background-color: #007BFF; /* Plava */
-        color: white;
-        font-size: 20px;
+        width: 42px;
+        height: 42px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         border: none;
-        padding: 8px 12px;
+        border-radius: .6rem;
+        background: var(--btn-blue);
+        color: #fff;
         cursor: pointer;
-        border-radius: 5px;
+      }
+      .menu-btn:hover,
+      .menu-btn:focus {
+        background: var(--btn-blue-hover);
+        outline: none;
       }
 
       .menu-dropdown {
@@ -457,9 +465,9 @@
     </div>
 
     <nav class="desktop-nav" aria-label="Primary">
-      <a href="index.html">Početna</a>
-      <a href="about.html">O nama</a>
-      <a href="contact.html">Kontakt</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
       <a href="blog.html">Blog</a>
     </nav>
 
