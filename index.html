@@ -393,6 +393,50 @@
         font-size: .95rem;
       }
     }
+
+    /* --- Desktop nav: po difoltu skrivena (mobilni prikaz) --- */
+    .desktop-nav{
+      display: none;
+    }
+
+    /* --- Linkovi u desktop navigaciji --- */
+    .desktop-nav a{
+      color: #fff;
+      text-decoration: none;
+      margin: 0 .9rem;
+      font-weight: 600;
+      line-height: 1;
+    }
+    .desktop-nav a:hover{
+      text-decoration: underline;
+    }
+
+    /* --- Desktop raspored (≥ 601px) --- */
+    @media (min-width: 601px){
+      /* sakrij hamburger na desktopu */
+      .menu-container{ display: none; }
+
+      /* centriraj nav u hederu */
+      header{
+        display:flex;
+        align-items:center;
+        gap: 1rem;
+      }
+      .header-left{ /* logo+naslov ostaju levo */
+        display:flex; align-items:center; gap:1rem;
+      }
+      .desktop-nav{
+        display:flex;            /* prikaži linkove */
+        flex: 1;                 /* zauzmi sredinu */
+        justify-content: center; /* centriraj vodoravno */
+        gap: .25rem;
+      }
+      .language-select{
+        margin-left: auto;       /* guraj zastavice desno */
+        display:flex; align-items:center; gap:.35rem;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -411,6 +455,14 @@
         </div>
       </div>
     </div>
+
+    <nav class="desktop-nav" aria-label="Primary">
+      <a href="index.html">Početna</a>
+      <a href="about.html">O nama</a>
+      <a href="contact.html">Kontakt</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+
     <div class="language-select">
       <span onclick="setLanguage('ar')"><img src="flags/sa.png" alt="AR" width="24" height="18"></span>
       <span onclick="setLanguage('de')"><img src="flags/de.png" alt="DE" width="24" height="18"></span>
