@@ -158,6 +158,49 @@
         font-size: 1.2rem;
       }
 
+      /* === Header menu (hamburger) === */
+.menu-wrap{ position: relative; }
+
+      .menu-button{
+        display:inline-flex; flex-direction:column; justify-content:center; gap:4px;
+        width:42px; height:42px; border:none; border-radius:.6rem;
+        background: var(--btn-blue); color:#fff; cursor:pointer;
+      }
+      .menu-button:hover, .menu-button:focus{ background: var(--btn-blue-hover); outline:none; }
+
+      /* tri vodoravne bele linije */
+      .menu-button .bar{
+        width:22px; height:2px; background:#fff; display:block; margin:0 auto;
+      }
+
+      /* padajuća lista */
+      .menu-dropdown{
+        position:absolute; top: calc(100% + 8px); right:0; /* poravnanje uz dugme */
+        min-width: 180px;
+        background: rgba(0,0,0,.9);
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0,0,0,.25);
+        padding:.4rem;
+        display:none;
+        z-index: 1200;
+      }
+      .menu-dropdown.open{ display:block; }
+
+      .menu-item{
+        display:block; padding:.6rem .8rem; border-radius:.5rem;
+        color:#fff; text-decoration:none; font-weight:600;
+      }
+      .menu-item:hover{ background: rgba(255,255,255,.12); }
+
+      /* RTL podrška: padajuće ulevo od dugmeta */
+      body[dir="rtl"] .menu-dropdown{ left:0; right:auto; }
+
+      /* Mali ekrani: menu dugme ostaje kompaktno uz logo i naslov */
+
+      @media (max-width:600px){
+        .menu-button{ width:40px; height:40px; }
+      }
+
       .language-select {
         display: flex;
         flex-wrap: wrap;
@@ -320,6 +363,21 @@
     <div class="header-left">
       <img src="images/transparentlogo.png" alt="Forecastler logo" class="logo-img" />
       <div class="site-title">Forecastler</div>
+      <!-- HAMBURGER MENU -->
+      <div class="menu-wrap">
+        <button id="menu-button" class="menu-button" aria-expanded="false" aria-haspopup="true" aria-label="Open menu" title="Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <nav id="menu-dropdown" class="menu-dropdown" aria-label="Primary">
+          <a href="index.html"  id="nav-home"   class="menu-item">Početna</a>
+          <a href="about.html"  id="nav-about"  class="menu-item">O nama</a>
+          <a href="contact.html" id="nav-contact" class="menu-item">Kontakt</a>
+          <a href="blog.html"   id="nav-blog"   class="menu-item">Blog</a>
+        </nav>
+      </div>
     </div>
     <div class="language-select">
       <span onclick="setLanguage('ar')"><img src="flags/sa.png" alt="AR" width="24" height="18"></span>
@@ -871,6 +929,59 @@
     }
 
     window.addEventListener('DOMContentLoaded', detectLanguage);
+
+  (function(){
+    const btn = document.getElementById('menu-button');
+    const dd  = document.getElementById('menu-dropdown');
+
+    if(!btn || !dd) return;
+
+    function closeMenu(){
+      dd.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+    }
+    function toggleMenu(e){
+      e.stopPropagation();
+      const isOpen = dd.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(isOpen));
+    }
+
+    btn.addEventListener('click', toggleMenu);
+
+    // Zatvaranje na klik van menija
+    document.addEventListener('click', (e)=>{
+      if(!dd.classList.contains('open')) return;
+      const clickedInside = dd.contains(e.target) || btn.contains(e.target);
+      if(!clickedInside) closeMenu();
+    });
+
+    // Zatvaranje na Escape
+    document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeMenu(); });
+
+    // Zatvori nakon klika na stavku menija
+    dd.querySelectorAll('.menu-item').forEach(a=>{
+      a.addEventListener('click', closeMenu);
+    });
+
+    // (opciono) Ako budeš želeo prevod naslova menija:
+    // ako u translations[lang].headerLinks postoji, primeni:
+    if (typeof T === 'function') {
+      const t = T();
+      if (t.headerLinks){
+        const map = {
+          'nav-home':'home',
+          'nav-about':'about',
+          'nav-contact':'contact',
+          'nav-blog':'blog'
+        };
+        Object.entries(map).forEach(([id,key])=>{
+          const el = document.getElementById(id);
+          if (el && t.headerLinks[key]) el.textContent = t.headerLinks[key];
+        });
+      }
+    }
+  })();
+
   </script>
 
 </body>
