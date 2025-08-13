@@ -201,6 +201,44 @@
         .menu-button{ width:40px; height:40px; }
       }
 
+      .menu-container {
+        position: relative;
+        display: inline-block;
+        margin-left: 15px;
+      }
+
+      .menu-btn {
+        background-color: #007BFF; /* Plava */
+        color: white;
+        font-size: 20px;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .menu-dropdown {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: rgba(0,0,0,0.9);
+        min-width: 150px;
+        z-index: 1000;
+        border-radius: 5px;
+      }
+
+      .menu-dropdown a {
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .menu-dropdown a:hover {
+        background-color: rgba(255,255,255,0.2);
+      }
+
       .language-select {
         display: flex;
         flex-wrap: wrap;
@@ -363,20 +401,14 @@
     <div class="header-left">
       <img src="images/transparentlogo.png" alt="Forecastler logo" class="logo-img" />
       <div class="site-title">Forecastler</div>
-      <!-- HAMBURGER MENU -->
-      <div class="menu-wrap">
-        <button id="menu-button" class="menu-button" aria-expanded="false" aria-haspopup="true" aria-label="Open menu" title="Menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-
-        <nav id="menu-dropdown" class="menu-dropdown" aria-label="Primary">
-          <a href="index.html"  id="nav-home"   class="menu-item">Početna</a>
-          <a href="about.html"  id="nav-about"  class="menu-item">O nama</a>
-          <a href="contact.html" id="nav-contact" class="menu-item">Kontakt</a>
-          <a href="blog.html"   id="nav-blog"   class="menu-item">Blog</a>
-        </nav>
+      <div class="menu-container">
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        <div class="menu-dropdown" id="menuDropdown">
+          <a href="index.html">Početna</a>
+          <a href="about.html">O nama</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="blog.html">Blog</a>
+        </div>
       </div>
     </div>
     <div class="language-select">
@@ -982,6 +1014,10 @@
     }
   })();
 
+  function toggleMenu() {
+    var menu = document.getElementById("menuDropdown");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+  }
   </script>
 
 </body>
