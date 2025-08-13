@@ -680,6 +680,24 @@
   function applyRuntimeTranslations() {
     const t = T();
 
+  const setTxt = (id, txt) => {
+      const el = document.getElementById(id);
+      if (el && typeof txt === "string") el.textContent = txt;
+    };
+
+    // Header links (desktop + mobile)
+    if (t.headerLinks){
+      setTxt("nav-home",     t.headerLinks.home);
+      setTxt("nav-about",    t.headerLinks.about);
+      setTxt("nav-contact",  t.headerLinks.contact);
+      setTxt("nav-blog",     t.headerLinks.blog);
+
+      setTxt("mnav-home",    t.headerLinks.home);
+      setTxt("mnav-about",   t.headerLinks.about);
+      setTxt("mnav-contact", t.headerLinks.contact);
+      setTxt("mnav-blog",    t.headerLinks.blog);
+    }
+
     // Dugmad (label)
     const newBtn = document.querySelector("#new-subject .btn-label");
     const saveBtn = document.querySelector("#save-subject .btn-label");
