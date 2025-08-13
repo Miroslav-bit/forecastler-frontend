@@ -2,6 +2,12 @@ let trenutniJezik = "en";
 
 const translations = {
   en: {
+    headerLinks: {
+      home: "Home",
+      about: "About Us",
+      contact: "Contact",
+      blog: "Blog"
+    },
     title: "GENERAL PREDICTOR",
     welcomeText: "A page for predicting future events based on artificial intelligence and logical analysis.",
     contextLabel: "Write something about yourself or about persons, objects, places, or situations whose future you want to predict. It is optional, but the more information you provide, the more accurate the forecast will be:",
@@ -90,6 +96,12 @@ For current situations: list all participants, the course of events so far, and 
   },
 
   sr: {
+    headerLinks: {
+      home: "Početna",
+      about: "O nama",
+      contact: "Kontakt",
+      blog: "Blog"
+    },
     title: "OPŠTI PROGNOZER",
     welcomeText: "Stranica za predviđanje budućih događaja zasnovano na veštačkoj inteligenciji i logičkoj analizi.",
     contextLabel: "Napišite nešto o sebi ili o osobama, predmetima, mestima ili situacijama čiju budućnost želite da predvidite. Nije obavezno, ali što više informacija unesete, prognoza će biti preciznija:",
@@ -179,6 +191,12 @@ Za trenutne situacije: navedite sve učesnike, dosadašnji tok događaja i klju�
 
 
   es: {
+    headerLinks: {
+      home: "Inicio",
+      about: "Sobre nosotros",
+      contact: "Contacto",
+      blog: "Blog"
+    },
     title: "PRONOSTICADOR GENERAL",
     welcomeText: "Página para predecir eventos futuros basada en inteligencia artificial y análisis lógico.",
     contextLabel: "Escriba algo sobre usted o sobre personas, objetos, lugares o situaciones cuyo futuro desea predecir. No es obligatorio, pero cuanto más información proporcione, más precisa será la predicción:",
@@ -266,8 +284,13 @@ Para situaciones actuales: indique todos los participantes, el desarrollo hasta 
     }
   },
 
-
   fr: {
+    headerLinks: {
+      home: "Accueil",
+      about: "À propos",
+      contact: "Contact",
+      blog: "Blog"
+    },
     title: "PRÉDICTEUR GÉNÉRAL",
     welcomeText: "Page de prédiction des événements futurs basée sur l’intelligence artificielle et l’analyse logique.",
     contextLabel: "Écrivez quelque chose sur vous-même ou sur des personnes, des objets, des lieux ou des situations dont vous souhaitez prévoir l’avenir. Ce n’est pas obligatoire, mais plus vous fournissez d’informations, plus la prévision sera précise :",
@@ -357,6 +380,12 @@ Pour des situations actuelles : indiquez tous les participants, le déroulement 
 
 
   de: {
+    headerLinks: {
+      home: "Startseite",
+      about: "Über uns",
+      contact: "Kontakt",
+      blog: "Blog"
+    },
     title: "ALLGEMEINER PROGNOSTIKER",
     welcomeText: "Eine Seite zur Vorhersage zukünftiger Ereignisse auf der Grundlage von künstlicher Intelligenz und logischer Analyse.",
     contextLabel: "Schreiben Sie etwas über sich selbst oder über Personen, Objekte, Orte oder Situationen, deren Zukunft Sie vorhersagen möchten. Dies ist optional, aber je mehr Informationen Sie angeben, desto genauer wird die Prognose:",
@@ -446,6 +475,12 @@ Für aktuelle Situationen: Nennen Sie alle Beteiligten, den bisherigen Verlauf u
 
 
   pt: {
+    headerLinks: {
+      home: "Início",
+      about: "Sobre nós",
+      contact: "Contato",
+      blog: "Blog"
+    },
     title: "PREVISOR GERAL",
     welcomeText: "Página para prever eventos futuros com base em inteligência artificial e análise lógica.",
     contextLabel: "Escreva algo sobre você ou sobre pessoas, objetos, lugares ou situações cujo futuro deseja prever. Não é obrigatório, mas quanto mais informações você fornecer, mais precisa será a previsão:",
@@ -535,6 +570,12 @@ Para situações atuais: mencione todos os envolvidos, o andamento até o moment
 
 
   it: {
+    headerLinks: {
+      home: "Pagina iniziale",          
+      about: "Chi siamo",
+      contact: "Contatti",
+      blog: "Blog"
+    },
     title: "PREVISIONE GENERALE",
     welcomeText: "Pagina per prevedere eventi futuri basata sull’intelligenza artificiale e sull’analisi logica.",
     contextLabel: "Scrivi qualcosa su di te oppure su persone, oggetti, luoghi o situazioni di cui desideri prevedere il futuro. Non è obbligatorio, ma più informazioni inserisci, più precisa sarà la previsione:",
@@ -624,6 +665,12 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
 
 
   ru: {
+    headerLinks: {
+      home: "Главная",
+      about: "О нас",
+      contact: "Контакты",
+      blog: "Блог"
+    },
     title: "ОБЩИЙ ПРОГНОЗАТОР",
     welcomeText: "Страница для предсказания будущих событий на основе искусственного интеллекта и логического анализа.",
     contextLabel: "Напишите что-нибудь о себе или о людях, предметах, местах или ситуациях, чьё будущее вы хотите предсказать. Это необязательно, но чем больше информации вы предоставите, тем точнее будет прогноз:",
@@ -713,6 +760,12 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
 
 
   pl: {
+    headerLinks: {
+      home: "Strona główna",
+      about: "O nas",
+      contact: "Kontakt",
+      blog: "Blog"
+    },
     title: "OGÓLNY PRZEWIDYWACZ",
     welcomeText: "Strona do przewidywania przyszłych wydarzeń na podstawie sztucznej inteligencji i analizy logicznej.",
     contextLabel: "Napisz coś o sobie lub o osobach, przedmiotach, miejscach albo sytuacjach, których przyszłość chcesz przewidzieć. Nie jest to obowiązkowe, ale im więcej informacji podasz, tym dokładniejsza będzie prognoza:",
@@ -802,6 +855,12 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
 
 
   uk: {
+    headerLinks: {
+      home: "Головна",
+      about: "Про нас",
+      contact: "Контакти",
+      blog: "Блог"
+    },
     title: "ЗАГАЛЬНИЙ ПРОГНОЗ",
     welcomeText: "Сторінка для прогнозування майбутніх подій на основі штучного інтелекту та логічного аналізу.",
     contextLabel: "Напишіть щось про себе або про осіб, об'єкти, місця чи ситуації, майбутнє яких ви хочете передбачити. Це не обов’язково, але чим більше інформації ви надасте, тим точнішим буде прогноз:",
@@ -891,6 +950,12 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
 
 
   tr: {
+    headerLinks: {
+      home: "Ana sayfa",
+      about: "Hakkımızda",
+      contact: "İletişim",
+      blog: "Blog"
+    },
     title: "GENEL TAHMİN SİSTEMİ",
     welcomeText: "Gelecek olayların yapay zeka ve mantıksal analizle tahmin edildiği bir sayfa.",
     contextLabel: "Kendiniz, diğer kişiler, nesneler, yerler veya geleceğini öğrenmek istediğiniz durumlar hakkında bir şeyler yazın. Zorunlu değil, ancak ne kadar fazla bilgi verirseniz tahmin o kadar isabetli olur:",
@@ -979,6 +1044,12 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
   },
 
   ar: {
+    headerLinks: {
+      home: "الرئيسية",
+      about: "من نحن",
+      contact: "اتصل بنا",
+      blog: "المدونة"
+    },
     title: "نظام التنبؤ العام",
     welcomeText: "صفحة لتوقّع الأحداث المستقبلية باستخدام الذكاء الاصطناعي والتحليل المنطقي.",
     contextLabel: "اكتب شيئًا عن نفسك أو عن الأشخاص أو الأشياء أو الأماكن أو الحالات التي تريد معرفة مستقبلها. هذه الخطوة اختيارية، لكن كلما زادت المعلومات، كانت التوقعات أدق:",
@@ -1068,6 +1139,12 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
 
 
   hi: {
+    headerLinks: {
+      home: "मुख्य पृष्ठ",      
+      about: "हमारे बारे में",
+      contact: "संपर्क",        
+      blog: "ब्लॉग"
+    },
     title: "जनरल प्रेडिक्टर",
     welcomeText: "यह पृष्ठ कृत्रिम बुद्धिमत्ता और तार्किक विश्लेषण पर आधारित भविष्य की घटनाओं की भविष्यवाणी करता है।",
     contextLabel: "अपने बारे में, उन व्यक्तियों, वस्तुओं, स्थानों या स्थितियों के बारे में कुछ लिखें जिनका भविष्य आप जानना चाहते हैं। यह अनिवार्य नहीं है, लेकिन आप जितनी अधिक जानकारी देंगे, भविष्यवाणी उतनी ही सटीक होगी:",
@@ -1157,6 +1234,12 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
 
 
   zh: {
+    headerLinks: {
+      home: "首页",
+      about: "关于我们",
+      contact: "联系我们", // može i "联系"
+      blog: "博客"
+    },
     title: "通用预测器",
     welcomeText: "这是一个基于人工智能和逻辑分析的未来事件预测页面。",
     contextLabel: "请写一些关于你自己、你想预测其未来的人、事物、地点或情况的信息。此项非必填，但提供的信息越多，预测越准确：",
@@ -1241,6 +1324,12 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
 
 
   ja: {
+    headerLinks: {
+      home: "ホーム",             
+      about: "私たちについて",     
+      contact: "お問い合わせ",
+      blog: "ブログ"
+    },
     title: "ジェネラル予測システム",
     welcomeText: "人工知能と論理的分析に基づいて未来の出来事を予測するページです。",
     contextLabel: "あなた自身、または未来を知りたい人、物、場所、状況について何か書いてください。必須ではありませんが、情報が多いほど予測は正確になります：",
