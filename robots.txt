@@ -1,0 +1,16 @@
+# robots.txt for Forecastler
+# Last updated: 2025-08-14
+
+User-agent: *
+Allow: /
+
+# If your site uses query parameters that cause duplicate content, you can block them by uncommenting:
+# Disallow: /*?*
+
+# Disallow any staging or temp paths (uncomment if you have them):
+# Disallow: /drafts/
+# Disallow: /tmp/
+# Disallow: /private/
+
+# Point crawlers to your sitemap (update domain if different):
+Sitemap: https://forecastler.com/sitemap.xml
