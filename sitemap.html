@@ -46,6 +46,8 @@
   </div>
 
 <script>
+const BASE = "https://forecastler.com";
+
 const routes = [
   // Core
   { path: "/index.html",  title: "Home",      group: "Core",
@@ -74,25 +76,6 @@ const routes = [
   // Meta
   { path: "/sitemap.html",title: "Sitemap",   group: "Core",
     lastmod: "2025-08-14", changefreq: "monthly", priority: 0.3 },
-];
-
-const BASE = "https://forecastler.com"; // ⬅️ promenite u Vaš domen
-const routes = [
-  // Core
-  { path: "/",              title: "Home",           group: "Core",       lastmod: "2025-08-14", changefreq: "weekly",  priority: 1.0 },
-  { path: "/about.html",    title: "About Us",       group: "Core",       lastmod: "2025-08-14", changefreq: "monthly", priority: 0.7 },
-  { path: "/contact.html",  title: "Contact",        group: "Core",       lastmod: "2025-08-14", changefreq: "monthly", priority: 0.6 },
-  { path: "/faq.html",      title: "FAQ",            group: "Core",       lastmod: "2025-08-14", changefreq: "monthly", priority: 0.6 },
-
-  // Legal
-  { path: "/privacy.html",    title: "Privacy Policy",   group: "Legal", lastmod: "2025-08-15", changefreq: "yearly",  priority: 0.8 },
-  { path: "/terms.html",      title: "Terms of Use",     group: "Legal", lastmod: "2025-08-14", changefreq: "yearly",  priority: 0.8 },
-  { path: "/disclaimer.html", title: "Disclaimer",       group: "Legal", lastmod: "2025-08-14", changefreq: "yearly",  priority: 0.6 },
-  { path: "/cookies.html",    title: "Cookies Policy",   group: "Legal", lastmod: "2025-08-15", changefreq: "yearly",  priority: 0.6 },
-
-  // Blog (primeri; obrišite ako nemate blog)
-  { path: "/blog/",                 title: "Blog (archive)", group: "Blog", lastmod: "2025-08-01", changefreq: "weekly", priority: 0.5 },
-  // { path: "/blog/what-is-forecastler.html", title: "What is Forecastler?", group: "Blog", lastmod: "2025-08-01", changefreq: "monthly", priority: 0.5 },
 ];
 
 /** 2) Grupišite po sekcijama */
