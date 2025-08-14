@@ -975,7 +975,7 @@
   }
 
   /* Data ------------------------------------------------------------------- */
-  const BASE = location.origin;
+  const BASE = "https://forecastler.com";
   const routes = [
     // Core
     { path: "/index.html",  title: "Home",      group: "Core",
@@ -986,21 +986,6 @@
       lastmod: "2025-08-14", changefreq: "monthly", priority: 0.6 },
     { path: "/faq.html",    title: "FAQ",       group: "Core",
       lastmod: "2025-08-14", changefreq: "monthly", priority: 0.6 },
-
-    async function enrichWithLastModified() {
-      await Promise.all(routes.map(async (r) => {
-        try {
-          const res = await fetch(r.path, { method: "HEAD" });
-          const lm = res.headers.get("Last-Modified");
-          if (lm) r.lastmod = new Date(lm).toISOString().slice(0,10);
-        } catch {}
-      }));
-      // badge i lista
-      const max = routes.reduce((m, r) => m > r.lastmod ? m : r.lastmod, "1970-01-01");
-      document.getElementById("last-updated").textContent = `Last updated: ${max}`;
-      renderBlocks(document.getElementById("sitemap-search").value || "");
-    }
-    enrichWithLastModified();
 
     // Legal
     { path: "/privacy.html",   title: "Privacy Policy", group: "Legal",
