@@ -78,6 +78,22 @@ const routes = [
     lastmod: "2025-08-14", changefreq: "monthly", priority: 0.3 },
 ];
 
+async function enrichWithLastModified() {
+  const updates = await Promise.all(routes.map(async (r) => {
+    try {
+      const res = await fetch(r.path, { method: 'HEAD' });
+      const lm = res.headers.get('Last-Modified');
+      if (lm) r.lastmod = (new Date(lm)).toISOString().slice(0,10);
+    } catch(e) {}
+    return r;
+  }));
+  // Osveži badge posle ažuriranja
+  const max = updates.reduce((m, r) => m > r.lastmod ? m : r.lastmod, "1970-01-01");
+  document.getElementById("last-updated").textContent = `Last updated: ${max}`;
+  renderSitemap(document.getElementById("sitemap-search").value || "");
+}
+enrichWithLastModified();
+
 /** 2) Grupišite po sekcijama */
 const groups = [
   { key: "Core",  title: "Main Pages" },
