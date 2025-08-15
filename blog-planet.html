@@ -509,6 +509,37 @@
       .prop-validation { position: static; justify-content: center; margin-top: 6px; }
     }
 
+    /* === BLOG: poravnanje i tipografija u desnom stubu === */
+    .main-section.prophecy .prophecy-content,
+    .main-section.prophecy .prophecy-content p,
+    .main-section.prophecy .prophecy-content .prop-lead,
+    .main-section.prophecy .prophecy-content .prop-q,
+    .main-section.prophecy .prophecy-content .prop-a{
+      text-align: left;   /* pregazi .main-section p { text-align:center } */
+    }
+
+    /* i na mobilnom ostaje levo */
+    @media (max-width: 900px){
+      .main-section.prophecy .prophecy-content{ text-align: left; }
+    }
+
+    /* jači i veći tekst samog pitanja/odgovora */
+    .main-section.prophecy .prop-q .q-text,
+    .main-section.prophecy .prop-a .a-text{
+      font-size: clamp(1.3rem, 2.4vw, 1.9rem); /* skoro kao h2 */
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: .2px;
+    }
+
+    /* labeli (“Pitanje za AI:”, “Odgovor AI:”) malo manji od teksta ispod */
+    .main-section.prophecy .prop-q .q-label,
+    .main-section.prophecy .prop-a .a-label{
+      font-size: clamp(1rem, 1.6vw, 1.15rem);
+      font-weight: 700;
+      opacity: .9;
+    }
+
   </style>
 </head>
 <body>
