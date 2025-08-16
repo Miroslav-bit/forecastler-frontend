@@ -540,6 +540,48 @@
       opacity: .9;
     }
 
+/* Omogućava apsolutno pozicioniranje unutar sadržaja */
+.prophecy .prophecy-content {
+  position: relative;
+}
+
+/* Gornji desni ugao: datum prognoze */
+.prophecy .prop-forecast-date {
+  position: absolute;
+  top: .6rem;
+  right: .8rem;
+  font-size: .875rem;
+  line-height: 1.2;
+  opacity: .85;
+  font-weight: 500;
+  /* po želji: background blur/tag
+  background: rgba(0,0,0,.04);
+  padding: .25rem .5rem;
+  border-radius: .5rem;
+  */
+}
+
+/* Donji desni ugao: kontejner */
+.prophecy .prop-foot {
+  position: absolute;
+  right: .8rem;
+  bottom: .8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: .4rem; /* razmak između linka i validacije */
+}
+
+/* Link ka izvoru potvrde */
+.prophecy .prop-source {
+  font-size: .875rem;
+  text-decoration: underline;
+}
+.prophecy .prop-source:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
   </style>
 </head>
 <body>
@@ -600,6 +642,12 @@
 
       <!-- Desna kolona: uvod + pitanje + odgovor -->
       <div class="prophecy-content">
+
+        <div class="prop-forecast-date" aria-label="Forecast date">
+          <span id="planet-1-forecast-date-en">Forecast date: 15 August 2025</span>
+          <span id="planet-1-forecast-date-sr" style="display:none">Datum prognoze: 15. avgust 2025.</span>
+        </div>
+
         <!-- 2) Uvodni tekst (sitniji) -->
         <p class="prop-lead" id="planet-1-lead-en">
           Kamchatka was struck by a magnitude 8.8 earthquake...
@@ -619,12 +667,20 @@
           <span class="a-text" id="planet-1-a-text-en">NO. Probability 20%</span>
         </p>
 
-        <!-- 5) Validacija (donji desni ugao bloka) -->
-        <div class="prop-validation success">
-          <span class="validation-text" id="planet-1-valid-en">AI forecast came true</span>
-          <span class="validation-mark" aria-hidden="true">✓</span>
+        <!-- Donji desni ugao: VALIDACIJA pa IZVOR (izvor ima ID-ove po jeziku) -->
+        <div class="prop-foot">
+          <div class="prop-validation success">
+            <span class="validation-text" id="planet-1-valid-en">AI forecast came true</span>
+            <span class="validation-mark" aria-hidden="true">✓</span>
+          </div>
+
+          <a class="prop-source"
+             href="https://www.usgs.gov/news/featured-story/usgs-releases-aftershock-forecast-m88-russian-kamchatka-peninsula-earthquake"
+             target="_blank" rel="noopener noreferrer">
+            <span id="planet-1-source-en">Confirmation source</span>
+            <span id="planet-1-source-sr" style="display:none">Izvor potvrde</span>
+          </a>
         </div>
-        <!-- Za neuspeh: class="prop-validation fail" i znak ✕ -->
       </div>
     </div>
   </div>
