@@ -540,47 +540,74 @@
       opacity: .9;
     }
 
-/* Omogućava apsolutno pozicioniranje unutar sadržaja */
-.prophecy .prophecy-content {
-  position: relative;
-}
+    /* Omogućava apsolutno pozicioniranje unutar sadržaja */
+    .prophecy .prophecy-content {
+      position: relative;
+    }
 
-/* Gornji desni ugao: datum prognoze */
-.prophecy .prop-forecast-date {
-  position: absolute;
-  top: .6rem;
-  right: .8rem;
-  font-size: .875rem;
-  line-height: 1.2;
-  opacity: .85;
-  font-weight: 500;
-  /* po želji: background blur/tag
-  background: rgba(0,0,0,.04);
-  padding: .25rem .5rem;
-  border-radius: .5rem;
-  */
-}
+    /* Gornji desni ugao: datum prognoze */
+    .prophecy .prop-forecast-date {
+      position: absolute;
+      top: .6rem;
+      right: .8rem;
+      font-size: .875rem;
+      line-height: 1.2;
+      opacity: .85;
+      font-weight: 500;
+      /* po želji: background blur/tag
+      background: rgba(0,0,0,.04);
+      padding: .25rem .5rem;
+      border-radius: .5rem;
+      */
+    }
 
-/* Donji desni ugao: kontejner */
-.prophecy .prop-foot {
-  position: absolute;
-  right: .8rem;
-  bottom: .8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: .4rem; /* razmak između linka i validacije */
-}
+    /* Donji desni ugao: kontejner */
+    .prophecy .prop-foot {
+      position: absolute;
+      right: .8rem;
+      bottom: .8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: .4rem; /* razmak između linka i validacije */
+    }
 
-/* Link ka izvoru potvrde */
-.prophecy .prop-source {
-  font-size: .875rem;
-  text-decoration: underline;
-}
-.prophecy .prop-source:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
-}
+    /* Link ka izvoru potvrde */
+    .prophecy .prop-source {
+      font-size: .875rem;
+      text-decoration: underline;
+    }
+    .prophecy .prop-source:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
+
+    /* === BLOG-PLANET: linijski raspored novih tekstova === */
+
+    /* 1) Datum prognoze: posebna linija iznad uvoda, desno poravnat */
+    .main-section.prophecy .prop-forecast-date{
+      position: static;        /* skini absolute */
+      display: block;          /* zauzmi ceo red */
+      text-align: right;       /* desno poravnanje */
+      margin-bottom: .4rem;    /* malo razmaka ispod */
+    }
+
+    /* 2) Validacija i izvor: posebne linije ispod odgovora, desno poravnate */
+    .main-section.prophecy .prop-foot{
+      position: static;        /* skini absolute dnu kartice */
+      margin-top: .5rem;       /* razmak iznad */
+      display: flex;
+      flex-direction: column;  /* jedan ispod drugog */
+      align-items: flex-end;   /* desno poravnanje */
+      gap: .3rem;              /* razmak između validacije i linka */
+    }
+
+    /* 3) Ako je negde ostao absolute na validaciji – poništi ga unutar .prop-foot */
+    .main-section.prophecy .prop-foot .prop-validation{
+      position: static;
+      right: auto;
+      bottom: auto;
+    }
 
   </style>
 </head>
