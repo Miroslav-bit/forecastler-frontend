@@ -609,6 +609,14 @@
       bottom: auto;
     }
 
+    /* Utility za bele linkove */
+    .link-white,
+    .link-white:visited { color:#fff !important; }
+
+    .link-white:hover { color:#fff; text-decoration: underline; opacity:.95; }
+
+    .link-white:focus-visible { outline:2px solid #fff; outline-offset:2px; }
+
   </style>
 </head>
 <body>
@@ -704,8 +712,10 @@
           <a class="prop-source"
              href="https://www.usgs.gov/news/featured-story/usgs-releases-aftershock-forecast-m88-russian-kamchatka-peninsula-earthquake"
              target="_blank" rel="noopener noreferrer">
-            <span id="planet-1-source-en">Confirmation source</span>
-            <span id="planet-1-source-sr" style="display:none">Izvor potvrde</span>
+             <a class="prop-source link-white" ...> 
+               <span id="planet-1-source-en">Confirmation source</span>
+               <span id="planet-1-source-sr" style="display:none">Izvor potvrde</span>
+             </a>
           </a>
         </div>
       </div>
@@ -720,7 +730,7 @@
       You can also ask the AI about your future or the future of other people, objects, places, and events.
     </p>
     <p>
-      <a id="blog-cta-2-en" class="cta-link" href="index.html">HERE</a>
+      <a class="link-white" id="blog-cta-2-en" class="cta-link" href="index.html">HERE</a>
     </p>
   </div>
 
