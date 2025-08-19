@@ -5,76 +5,76 @@ const translations = {
   en: {
     headerLinks: { home: "Home", about: "About Us", contact: "Contact", blog: "Blog" },
     footerLinks: { disclaimer:"Disclaimer", terms:"Terms of Use", privacy:"Privacy Policy", cookies:"Cookie Policy", sitemap:"Sitemap", faq:"FAQ" },
-    page: { title: "Artificial Intelligence Forecasts for Crime, Tragic Events, and Crime Reports" },
+    page: { title: "Artificial Intelligence Forecasts for the Economy and Industry" },
     cta: {
       p1: "You can also ask the AI about your future or the future of other people, objects, places, and events",
       here: "HERE"
     },
     s1: {
       forecast: "Forecast date: 17.06.2025.",
-      lead: "In the first half of 2025, terrorist attacks were recorded in several European cities, with around ten fatalities in total. Following Israel’s strikes on Iranian nuclear sites and U.S. support for those actions, the risk has increased of new attacks by lone actors and of pro-Iranian cyber activities in the near term.",
+      lead: "Bitcoin first exceeded 100,000 U.S. dollars in December 2024. On June 15, 2025, its price stood at 105,595 dollars.",
       qLabel: "Question for AI:",
-      qText: "In July 2025, will terrorist attacks in European and U.S. cities result in more than 10 casualties?,
+      qText: "Will Bitcoin surpass 120,000 dollars by the end of the year?",
       aLabel: "AI answer:",
-      aText: "NO. Probability 40%",
+      aText: "YES. Probability 95%",
       valid: "AI forecast came true",
       source: "Confirmation source"
     },
     s2: {
       forecast: "Forecast date: 17.06.2025.",
-      lead: "In 2025, drug trafficking intensified, especially cocaine smuggling from the Andes toward Northern Europe. In the first half of 2025, more than 16 tons of cocaine were seized in Europe.",
+      lead: "The poorest countries are largely in Sub-Saharan Africa. In 2021, 2.4 million children died from the consequences of malnutrition. In 2023, 281 million people faced hunger, and in 2024 a record 295 million.",
       qLabel: "Question for AI:",
-      qText: "By the end of 2025, will at least one cocaine shipment weighing more than one metric ton be seized?",
+      qText: "During 2025, will the number of people facing hunger worldwide exceed 300 million?",
       aLabel: "AI answer:",
-      aText: "YES. Probability 75%",
-      valid: "AI forecast came true",
-      source: "Confirmation source"
+      aText: "YES. Probability 65%"
     },
     s3: {
       forecast: "Forecast date: 17.06.2025.",
-      lead: "The most recent fatal attack on a senior political official occurred in Colombia on June 7, 2025. Last year, attempted assassinations of Donald Trump and Slovak Prime Minister Robert Fico were recorded.",
+      lead: "In recent years, individual wealth creation has been driven mainly by financial investments and IT technologies. The number of U.S.-dollar billionaires totaled 2,640 in 2023 and 2,781 in 2024.",
       qLabel: "Question for AI:",
-      qText: "By the end of 2025, will an assassination with a fatal outcome target a president or prime minister of any country?",
+      qText: "In 2025, will there be more than 3,000 billionaires worldwide?",
       aLabel: "AI answer:",
-      aText: "NO. Probability 5%"
+      aText: "YES. Probability 99%",
+      valid: "AI forecast came true",
+      source: "Confirmation source"
     }
   },
 
   sr: {
     headerLinks: { home: "Početna", about: "O nama", contact: "Kontakt", blog: "Blog" },
     footerLinks: { disclaimer:"Odricanje od odgovornosti", terms:"Uslovi korišćenja", privacy:"Politika privatnosti", cookies:"Politika kolačića", sitemap:"Mapa sajta", faq:"FAQ" },
-    page: { title: "Prognoze veštačke inteligencije za kriminalitet, tragične događaje i crnu hroniku" },
+    page: { title: "Prognoze veštačke inteligencije za ekonomiju i privredu" },
     cta: {
       p1: "Možete pitati AI i o svojoj budućnosti ili o budućnosti drugih ljudi, predmeta, mesta i događaja",
       here: "OVDE"
     },
     s1: {
       forecast: "Datum prognoze: 15. avgust 2025.",
-      lead: "Tokom prve polovine 2025. godine zabeleženi su teroristički napadi u više evropskih gradova, sa ukupno oko deset žrtava. Nakon izraelskih napada na iranske nuklearne lokacije i američke podrške tim akcijama, povećala se pretnja od novih napada usamljenih napadača i proiranskih sajber-aktivnosti u skorijem periodu.",
+      lead: "Vrednost bitkoina prvi put je prešla 100.000 američkih dolara u decembru 2024. Dana 15.06.2025. vrednost bitkoina iznosila je 105.595 dolara.",
       qLabel: "Pitanje za AI:",
-      qText: "Da li će tokom jula 2025. godine u evropskim i američkim gradovima biti izvedeni teroristički napadi čiji će broj žrtava premašiti 10?",
+      qText: "Da li će do kraja godine vrednost bitkoina premašiti 120.000 dolara?",
       aLabel: "Odgovor AI:",
-      aText: "NE. Verovatnoća 40%",
+      aText: "DA. Verovatnoća 95%",
       valid: "Prognoza AI se obistinila",
       source: "Izvor potvrde"
     },
     s2: {
       forecast: "Datum prognoze: 17.06.2025.",
-      lead: "Tokom 2025. godine intenzivirala se trgovina opojnim sredstvima, naročito kokainom, švercom iz područja Anda ka severnoj Evropi. Tokom prve polovine 2025. u Evropi je zaplenjeno preko 16 tona kokaina.",
+      lead: "Najsiromašnije zemlje sveta uglavnom se nalaze u podsaharskoj Africi. Tokom 2021. godine od posledica neuhranjenosti umrlo je 2,4 miliona dece. Tokom 2023. godine 281 milion ljudi suočio se sa glađu, a 2024. godine rekordnih 295 miliona.",
       qLabel: "Pitanje za AI:",
-      qText: "Da li će do kraja 2025. godine uslediti zaplena makar jednog tovara kokaina teškog preko jedne tone?",
+      qText: "Da li će tokom 2025. godine broj ljudi suočenih sa glađu u svetu premašiti 300 miliona?",
       aLabel: "Odgovor AI:",
-      aText: "DA. Verovatnoća 75%",
-      valid: "Prognoza AI se obistinila",
-      source: "Izvor potvrde"
+      aText: "DA. Verovatnoća 65%"
     },
     s3: {
       forecast: "Datum prognoze: 17.06.2025.",
-      lead: "Poslednji napad na visokog političkog zvaničnika sa smrtnim ishodom dogodio se u Kolumbiji 7. juna 2025. Prošle godine zabeleženi su pokušaji ubistva Donalda Trampa i slovačkog premijera Roberta Fica.",
+      lead: "Poslednjih godina pojedinci se najviše bogate kroz finansijska ulaganja i IT tehnologije. Broj milijardera (u američkim dolarima) iznosio je 2.640 u 2023, odnosno 2.781 u 2024. godini.",
       qLabel: "Pitanje za AI:",
-      qText: "Da li će se do kraja 2025. godine dogoditi atentat sa smrtnim ishodom na predsednika ili premijera bilo koje države?",
+      qText: "Da li će 2025. godine u svetu biti više od 3.000 milijardera?",
       aLabel: "Odgovor AI:",
-      aText: "NE. Verovatnoća 5%"
+      aText: "DA. Verovatnoća 99%",
+      valid: "Prognoza AI se obistinila",
+      source: "Izvor potvrde"
     }
   }
 };
@@ -137,11 +137,7 @@ function setLanguage(lang) {
   setTxtAny("planet-2-q-text",        t.s2.qText);
   setTxtAny("planet-2-a-label",       t.s2.aLabel);
   setTxtAny("planet-2-a-text",        t.s2.aText);
-  setTxtAny("planet-2-valid",         t.s2.valid);
-  setTxtAny("planet-2-source",        t.s2.source);
   togglePair("planet-2-forecast-date", lang);
-  togglePair("planet-2-source",        lang);
-
 
   // Sekcija 3
   setTxtAny("planet-3-forecast-date", t.s3.forecast);
@@ -150,7 +146,11 @@ function setLanguage(lang) {
   setTxtAny("planet-3-q-text",        t.s3.qText);
   setTxtAny("planet-3-a-label",       t.s3.aLabel);
   setTxtAny("planet-3-a-text",        t.s3.aText);
+  setTxtAny("planet-3-valid",         t.s3.valid);
+  setTxtAny("planet-3-source",        t.s3.source);
   togglePair("planet-3-forecast-date", lang);
+  togglePair("planet-3-source",        lang);
+
 
   // CTA
   setTxtAny("blog-cta-1", t.cta.p1);
