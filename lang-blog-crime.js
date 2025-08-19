@@ -1,5 +1,3 @@
-lang-blog-politics.js
-
 // lang-blog-planet.js (robustan za blog-planet.html sa -en sufiksima)
 let trenutniJezik = localStorage.getItem('forecastlerLang') || 'en';
 
@@ -7,76 +5,76 @@ const translations = {
   en: {
     headerLinks: { home: "Home", about: "About Us", contact: "Contact", blog: "Blog" },
     footerLinks: { disclaimer:"Disclaimer", terms:"Terms of Use", privacy:"Privacy Policy", cookies:"Cookie Policy", sitemap:"Sitemap", faq:"FAQ" },
-    page: { title: "Artificial Intelligence Forecasts for Geopolitics and International Relations" },
+    page: { title: "Artificial Intelligence Forecasts for Crime, Tragic Events, and Crime Reports" },
     cta: {
-      p1: "You can also ask the AI about your future or the future of other people, objects, places, and events.",
+      p1: "You can also ask the AI about your future or the future of other people, objects, places, and events",
       here: "HERE"
     },
     s1: {
       forecast: "Forecast date: 17.06.2025.",
-      lead: "U.S.–Russia relations have been marked by crisis in recent years, especially after the Russia–Ukraine conflict; after February 2023, political contacts between Russia and the United States were reduced to a minimum. Following the election of Donald Trump as U.S. president, attempts were renewed to deepen political ties with Russia in order to address the Ukraine crisis.",
+      lead: "In the first half of 2025, terrorist attacks were recorded in several European cities, with around ten fatalities in total. Following Israel’s strikes on Iranian nuclear sites and U.S. support for those actions, the risk has increased of new attacks by lone actors and of pro-Iranian cyber activities in the near term.",
       qLabel: "Question for AI:",
-      qText: "In 2025, will the presidents of the United States and Russia hold a meeting?",
+      qText: "In July 2025, will terrorist attacks in European and U.S. cities result in more than 10 casualties?,
       aLabel: "AI answer:",
-      aText: "YES. Probability 85%",
+      aText: "NO. Probability 40%",
       valid: "AI forecast came true",
       source: "Confirmation source"
     },
     s2: {
       forecast: "Forecast date: 17.06.2025.",
-      lead: "After Hamas’s attack on Israel on October 7, 2023, Israel launched an offensive in Gaza that has so far claimed more than 60,000 lives. The conflict has heightened tensions across the region and led to clashes between Israel and Hezbollah, the Houthis, and Iran, with Israel conducting military operations in Lebanon, Syria, Iraq, Iran, and Yemen.",
+      lead: "In 2025, drug trafficking intensified, especially cocaine smuggling from the Andes toward Northern Europe. In the first half of 2025, more than 16 tons of cocaine were seized in Europe.",
       qLabel: "Question for AI:",
-      qText: "In the second half of 2025, will Israel carry out another attack on a foreign country?",
+      qText: "By the end of 2025, will at least one cocaine shipment weighing more than one metric ton be seized?",
       aLabel: "AI answer:",
-      aText: "YES. Probability 80%",
+      aText: "YES. Probability 75%",
       valid: "AI forecast came true",
       source: "Confirmation source"
     },
     s3: {
       forecast: "Forecast date: 17.06.2025.",
-      lead: "The last confirmed explosive nuclear test was conducted in September 2017 in North Korea. Some states have carried out tests without a chain reaction. North Korea has repeatedly signaled readiness for a seventh nuclear test.",
+      lead: "The most recent fatal attack on a senior political official occurred in Colombia on June 7, 2025. Last year, attempted assassinations of Donald Trump and Slovak Prime Minister Robert Fico were recorded.",
       qLabel: "Question for AI:",
-      qText: "By the end of 2025, will any country conduct an explosive test of a nuclear bomb?",
+      qText: "By the end of 2025, will an assassination with a fatal outcome target a president or prime minister of any country?",
       aLabel: "AI answer:",
-      aText: "NO. Probability 25%"
+      aText: "NO. Probability 5%"
     }
   },
 
   sr: {
     headerLinks: { home: "Početna", about: "O nama", contact: "Kontakt", blog: "Blog" },
     footerLinks: { disclaimer:"Odricanje od odgovornosti", terms:"Uslovi korišćenja", privacy:"Politika privatnosti", cookies:"Politika kolačića", sitemap:"Mapa sajta", faq:"FAQ" },
-    page: { title: " Prognoze veštačke inteligencije za geopolitiku i međunarodne odnose" },
+    page: { title: "Prognoze veštačke inteligencije za kriminalitet, tragične događaje i crnu hroniku" },
     cta: {
-      p1: "Možete pitati AI i o svojoj budućnosti ili o budućnosti drugih ljudi, predmeta, mesta i događaja.",
+      p1: "Možete pitati AI i o svojoj budućnosti ili o budućnosti drugih ljudi, predmeta, mesta i događaja",
       here: "OVDE"
     },
     s1: {
       forecast: "Datum prognoze: 15. avgust 2025.",
-      lead: "Rusko-američke odnose poslednjih godina obeležila je kriza, naročito posle rusko-ukrajinskog sukoba, a nakon februara 2023. politički kontakti Rusije i Sjedinjenih Američkih Država svedeni su na minimum. Nakon izbora Donalda Trampa za predsednika SAD, obnovljeni su pokušaji produbljivanja političkih odnosa sa Rusijom radi rešavanja ukrajinske krize.",
+      lead: "Tokom prve polovine 2025. godine zabeleženi su teroristički napadi u više evropskih gradova, sa ukupno oko deset žrtava. Nakon izraelskih napada na iranske nuklearne lokacije i američke podrške tim akcijama, povećala se pretnja od novih napada usamljenih napadača i proiranskih sajber-aktivnosti u skorijem periodu.",
       qLabel: "Pitanje za AI:",
-      qText: "Da li će tokom 2025. godine doći do susreta predsednika SAD i Rusije?",
+      qText: "Da li će tokom jula 2025. godine u evropskim i američkim gradovima biti izvedeni teroristički napadi čiji će broj žrtava premašiti 10?",
       aLabel: "Odgovor AI:",
-      aText: "DA. Verovatnoća 85%",
+      aText: "NE. Verovatnoća 40%",
       valid: "Prognoza AI se obistinila",
       source: "Izvor potvrde"
     },
     s2: {
       forecast: "Datum prognoze: 17.06.2025.",
-      lead: "Nakon napada Hamasa na Izrael 7. oktobra 2023, usledila je izraelska ofanziva u Gazi koja je do sada odnela preko 60.000 života. Taj sukob izazvao je tenzije u čitavom regionu i sukobe Izraela sa Hezbolahom, Hutima i Iranom, usled čega je Izrael sprovodio vojne akcije na području Libana, Sirije, Iraka, Irana i Jemena.",
+      lead: "Tokom 2025. godine intenzivirala se trgovina opojnim sredstvima, naročito kokainom, švercom iz područja Anda ka severnoj Evropi. Tokom prve polovine 2025. u Evropi je zaplenjeno preko 16 tona kokaina.",
       qLabel: "Pitanje za AI:",
-      qText: "Da li će u drugoj polovini 2025. godine Izrael sprovesti novi napad na neku drugu zemlju?",
+      qText: "Da li će do kraja 2025. godine uslediti zaplena makar jednog tovara kokaina teškog preko jedne tone?",
       aLabel: "Odgovor AI:",
-      aText: "DA. Verovatnoća 80%",
+      aText: "DA. Verovatnoća 75%",
       valid: "Prognoza AI se obistinila",
       source: "Izvor potvrde"
     },
     s3: {
       forecast: "Datum prognoze: 17.06.2025.",
-      lead: "Poslednji potvrđeni eksplozivni nuklearni test izveden je u septembru 2017. u Severnoj Koreji. Pojedine države izvodile su testove bez lančane reakcije. Severna Koreja više puta signalizira spremnost za sedmi nuklearni test.",
+      lead: "Poslednji napad na visokog političkog zvaničnika sa smrtnim ishodom dogodio se u Kolumbiji 7. juna 2025. Prošle godine zabeleženi su pokušaji ubistva Donalda Trampa i slovačkog premijera Roberta Fica.",
       qLabel: "Pitanje za AI:",
-      qText: "Da li će do kraja 2025. godine u bilo kojoj državi biti obavljeno eksplozivno testiranje nuklearne bombe?",
+      qText: "Da li će se do kraja 2025. godine dogoditi atentat sa smrtnim ishodom na predsednika ili premijera bilo koje države?",
       aLabel: "Odgovor AI:",
-      aText: "NE. Verovatnoća 25%"
+      aText: "NE. Verovatnoća 5%"
     }
   }
 };
@@ -139,8 +137,8 @@ function setLanguage(lang) {
   setTxtAny("planet-2-q-text",        t.s2.qText);
   setTxtAny("planet-2-a-label",       t.s2.aLabel);
   setTxtAny("planet-2-a-text",        t.s2.aText);
-  setTxtAny("planet-2-valid",         t.s1.valid);
-  setTxtAny("planet-2-source",        t.s1.source);
+  setTxtAny("planet-2-valid",         t.s2.valid);
+  setTxtAny("planet-2-source",        t.s2.source);
   togglePair("planet-2-forecast-date", lang);
   togglePair("planet-2-source",        lang);
 
