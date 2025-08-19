@@ -1,5 +1,4 @@
-<!-- lang-about.js (drop-in za about.html) -->
-<script>
+// lang-about.js (čista verzija samo za about.html)
 let trenutniJezik = localStorage.getItem('forecastlerLang') || 'en';
 
 const translations = {
@@ -44,7 +43,7 @@ const translations = {
       p1: "Ljudi oduvek žele da zavire u sopstvenu budućnost — da smanje neizvesnost, donose bolje odluke i zaštite ono što im je važno. Kroz istoriju su postojali mnogi pokušaji da se predvide ishodi: od gledanja u dlan i bacanja kockica ili kostiju, preko vračeva i proroka, do astroloških sistema modernog doba.",
       p2: "Iako kulturno i simbolički značajne, te metode imaju ograničenu tačnost i proverljivost. Naučni pristup polazi od uzroka i posledice: ako su svi relevantni parametri poznati i potčinjeni stabilnim zakonima, ishod se može proceniti — ponekad i izračunati — sa visokom preciznošću.",
       p3: "Vremenska prognoza je klasičan primer: uz kvalitetna merenja, modele i matematiku, dobri podaci daju korisna predviđanja. Međutim, u stvarnosti retko imamo potpune podatke; sistemi su složeni i osetljivi na početne uslove, pa je praktičnije govoriti o verovatnoći nego o sigurnosti.",
-      p4: "U filozofiji nauke postoji metafora Laplasovog demona — idean intelekt koji bi, kad bi znao položaj i brzinu svake čestice u univerzumu, mogao da izračuna i prošlost i budućnost. U praksi, takvo potpuno znanje ne postoji.",
+      p4: "U filozofiji nauke postoji metafora Laplasovog demona — idealan intelekt koji bi, kad bi znao položaj i brzinu svake čestice u univerzumu, mogao da izračuna i prošlost i budućnost. U praksi, takvo potpuno znanje ne postoji.",
       p5: "Ipak, ideja ističe ključnu poentu: što su podaci potpuniji i kvalitetniji, to su prognoze pouzdanije. Tu je moderna veštačka inteligencija korisna — kao alat koji brzo integriše velike količine informacija i daje procene verovatnoće budućih ishoda."
     },
     work: {
@@ -75,8 +74,8 @@ function setLanguage(lang) {
   localStorage.setItem('forecastlerLang', lang);
   trenutniJezik = lang;
 
-  const setTxt = (id, txt) => { const el = document.getElementById(id); if (el && typeof txt === "string") el.textContent = txt; };
-  const setHTML = (id, html) => { const el = document.getElementById(id); if (el && typeof html === "string") el.innerHTML = html; };
+  const setTxt  = (id, txt)  => { const el = document.getElementById(id); if (el && typeof txt  === "string") el.textContent = txt; };
+  const setHTML = (id, html) => { const el = document.getElementById(id); if (el && typeof html === "string") el.innerHTML   = html; };
 
   // Header (desktop + mobile)
   if (t.headerLinks){
@@ -92,15 +91,15 @@ function setLanguage(lang) {
   }
 
   // HOW
-  setTxt("how-title", t.how.title);
-  setTxt("how-text-1", t.how.p1);
-  setTxt("how-text-2", t.how.p2);
-  setTxt("how-text-3", t.how.p3);
-  setTxt("how-text-4", t.how.p4);
-  setTxt("how-text-5", t.how.p5);
+  setTxt ("how-title",  t.how.title);
+  setTxt ("how-text-1", t.how.p1);
+  setTxt ("how-text-2", t.how.p2);
+  setTxt ("how-text-3", t.how.p3);
+  setTxt ("how-text-4", t.how.p4);
+  setTxt ("how-text-5", t.how.p5);
 
-  // WORK (ima HTML <strong> u nekim stavkama)
-  setTxt("work-title", t.work.title);
+  // WORK (ima <strong>)
+  setTxt ("work-title",  t.work.title);
   setHTML("work-text-1", t.work.p1);
   setHTML("work-text-2", t.work.p2);
   setHTML("work-text-3", t.work.p3);
@@ -109,8 +108,8 @@ function setLanguage(lang) {
   setHTML("work-text-6", t.work.p6);
   setHTML("work-text-7", t.work.p7);
 
-  // DEV (takođe ima poneki <strong>)
-  setTxt("dev-title", t.dev.title);
+  // DEV (takođe ima <strong>)
+  setTxt ("dev-title",  t.dev.title);
   setHTML("dev-text-1", t.dev.p1);
   setHTML("dev-text-2", t.dev.p2);
   setHTML("dev-text-3", t.dev.p3);
@@ -132,6 +131,7 @@ function setLanguage(lang) {
   document.body.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
 }
 
+// Inicijalizacija
 document.addEventListener("DOMContentLoaded", () => {
   const saved = localStorage.getItem('forecastlerLang');
   const browser = (navigator.language || 'en').slice(0,2);
@@ -141,4 +141,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // izloži funkciju za klik na zastavice
 window.setLanguage = setLanguage;
-</script>
