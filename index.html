@@ -445,14 +445,20 @@
       }
     }
 
+    .logo-link { display:inline-flex; align-items:center; padding:4px; }
+    .site-title-link { display:inline-block; text-decoration:none; color:inherit; padding:4px; }
+    .site-title-link:hover, .site-title-link:focus { text-decoration:underline; }
+
   </style>
 </head>
 <body>
 
   <header>
     <div class="header-left">
-      <img src="images/transparentlogo.png" alt="Forecastler logo" class="logo-img" />
-      <div class="site-title">Forecastler</div>
+      <a href="index.html" class="logo-link" aria-label="Go to home">
+        <img src="images/transparentlogo.png" alt="Forecastler logo" class="logo-img" />
+      </a>
+      <a href="index.html" class="site-title-link">Forecastler</a>
       <div class="menu-container">
         <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
         <div class="menu-dropdown" id="menuDropdown">
