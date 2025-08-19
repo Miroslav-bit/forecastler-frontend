@@ -118,7 +118,6 @@ function setLanguage(lang) {
   setTxtAny("planet-1-a-text",        t.s1.aText);
   // Ako postoje -en/-sr parovi, prebaci vidljivost
   togglePair("planet-1-forecast-date", lang);
-  togglePair("planet-1-source",        lang);
 
   // Sekcija 2
   setTxtAny("planet-2-forecast-date", t.s2.forecast);
