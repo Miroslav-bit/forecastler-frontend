@@ -14,7 +14,7 @@ const translations = {
       forecast: "Forecast date: 17.06.2025.",
       lead: "In the first half of 2025, terrorist attacks were recorded in several European cities, with around ten fatalities in total. Following Israel’s strikes on Iranian nuclear sites and U.S. support for those actions, the risk has increased of new attacks by lone actors and of pro-Iranian cyber activities in the near term.",
       qLabel: "Question for AI:",
-      qText: "In July 2025, will terrorist attacks in European and U.S. cities result in more than 10 casualties?,
+      qText: "In July 2025, will terrorist attacks in European and U.S. cities result in more than 10 casualties?",
       aLabel: "AI answer:",
       aText: "NO. Probability 40%",
       valid: "AI forecast came true",
