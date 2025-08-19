@@ -5,7 +5,7 @@ const translations = {
   en: {
     headerLinks: { home: "Home", about: "About Us", contact: "Contact", blog: "Blog" },
     footerLinks: { disclaimer:"Disclaimer", terms:"Terms of Use", privacy:"Privacy Policy", cookies:"Cookie Policy", sitemap:"Sitemap", faq:"FAQ" },
-    page: { title: "Artificial Intelligence Forecasts for Population, Social Relations, and Religion." },
+    page: { title: "Artificial Intelligence Forecasts for Population, Social Relations, and Religion" },
     cta: {
       p1: "You can also ask the AI about your future or the future of other people, objects, places, and events.",
       here: "HERE"
@@ -14,7 +14,7 @@ const translations = {
       forecast: "Forecast date: 17.06.2025.",
       lead: "The Earth’s population reached 5 billion in 1987 and rose to 8 billion by 2022. The fastest growth is occurring in Eastern Africa and in South and Southeast Asia.",
       qLabel: "Question for AI:",
-      qText: "Will the global population exceed 9 billion by 2030?,
+      qText: "Will the global population exceed 9 billion by 2030?",
       aLabel: "AI answer:",
       aText: "NO. Probability 5%"
     },
@@ -39,7 +39,7 @@ const translations = {
   sr: {
     headerLinks: { home: "Početna", about: "O nama", contact: "Kontakt", blog: "Blog" },
     footerLinks: { disclaimer:"Odricanje od odgovornosti", terms:"Uslovi korišćenja", privacy:"Politika privatnosti", cookies:"Politika kolačića", sitemap:"Mapa sajta", faq:"FAQ" },
-    page: { title: "Prognoze veštačke inteligencije za stanovništvo, društvene odnose i religiju." },
+    page: { title: "Prognoze veštačke inteligencije za stanovništvo, društvene odnose i religiju" },
     cta: {
       p1: "Možete pitati AI i o svojoj budućnosti ili o budućnosti drugih ljudi, predmeta, mesta i događaja.",
       here: "OVDE"
