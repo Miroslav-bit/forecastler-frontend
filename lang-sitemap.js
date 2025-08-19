@@ -1,103 +1,144 @@
-let trenutniJezik = "en";
+// lang-sitemap.js (robustan za sitemap.html; radi i ako kasnije dodaš -en sufikse)
+let trenutniJezik = localStorage.getItem('forecastlerLang') || 'en';
 
 const translations = {
-  sr: {
-    headerLinks: {
-      home: "Početna",
-      about: "O nama",
-      contact: "Kontakt",
-      blog: "Blog"
-    },
+  en: {
+    headerLinks: { home: "Home", about: "About Us", contact: "Contact", blog: "Blog" },
+    footerLinks: { disclaimer:"Disclaimer", terms:"Terms of Use", privacy:"Privacy Policy", cookies:"Cookie Policy", sitemap:"Sitemap", faq:"FAQ" },
 
-    howTitle: "Kako funkcioniše Forecastler?",
-    howText1: "Forecastler za predviđanje ne koristi magiju, horoskope niti parapsihološke moći. Umesto toga, zasniva se na veštačkoj inteligenciji koja procenjuje verovatnoću budućih događaja pomoću stvarnih podataka, statistike i matematičkih modela.",
-    howText2: "Kada postavite pitanje, sistem najpre analizira tekstualne informacije koje ste uneli — uključujući kontekst, relevantne detalje, ključne pojmove i moguće uzročno-posledične veze.",
-    howText3: "Zatim te podatke kombinuje sa sopstvenom bazom znanja, koja sadrži obrasce ponašanja, istorijske događaje, društvene i ekonomske trendove i aktuelna naučna saznanja.",
-    howText4: "Na osnovu svega toga, veštačka inteligencija simulira moguće ishode i izračunava verovatnoću da se određeni događaj zaista desi.",
-    howText5: "Ako je ta verovatnoća veća od 50%, odgovor glasi DA. Ako je manja, odgovor je NE.",
-
-    disclaimerTitle: "Odricanje od odgovornosti",
-    disclaimerText: "Forecastler ne garantuje tačnost, potpunost ili pouzdanost odgovora generisanih veštačkom inteligencijom i ne snosi odgovornost za bilo kakve posledice, štete ili gubitke nastale njihovim korišćenjem, uključujući i posledice zlonamerne ili neovlašćene upotrebe od strane korisnika ili trećih lica.",
+    ui: {
+      pageTitle: "Sitemap",
+      tagline: "Find any public page on Forecastler. Use the search box to filter links.",
+      quickSearch: "Quick search",
+      placeholder: "Type to filter… (e.g. privacy, faq, blog)",
+      lastUpdated: "Last updated:",
+      exportXml: "Export XML",
+      exportXmlAria: "Export XML sitemap",
+      counts: "Listed pages:",
+      groups: { main: "Main Pages", legal: "Legal", blog: "Blog" }
+    }
   },
 
+  sr: {
+    headerLinks: { home: "Početna", about: "O nama", contact: "Kontakt", blog: "Blog" },
+    footerLinks: { disclaimer:"Odricanje od odgovornosti", terms:"Uslovi korišćenja", privacy:"Politika privatnosti", cookies:"Politika kolačića", sitemap:"Mapa sajta", faq:"FAQ" },
 
-// Primeni mapu na postojeći objekat prevoda
-for (const [lang, links] of Object.entries(footerLinksMap)) {
-  translations[lang] = translations[lang] || {};
-  translations[lang].footerLinks = links;
+    ui: {
+      pageTitle: "Mapa sajta",
+      tagline: "Pronađite bilo koju javnu stranicu na Forecastler-u. Koristite polje za pretragu da filtrirate linkove.",
+      quickSearch: "Brza pretraga",
+      placeholder: "Kucajte za filtriranje… (npr. privacy, faq, blog)",
+      lastUpdated: "Poslednje ažuriranje:",
+      exportXml: "Izvezi XML",
+      exportXmlAria: "Izvezi XML mapu sajta",
+      counts: "Prikazane stranice:",
+      groups: { main: "Glavne stranice", legal: "Pravna dokumenta", blog: "Blog" }
+    }
+  }
+};
+
+// Helperi: pokušaj bez sufiksa, pa sa "-en"
+function byId(id){ return document.getElementById(id) || document.getElementById(id + "-en"); }
+function setTxtAny(id, txt){ const el = byId(id); if (el && typeof txt === "string") el.textContent = txt; }
+function setHTMLAny(id, html){ const el = byId(id); if (el && typeof html === "string") el.innerHTML = html; }
+function setAttrAny(id, attr, val){ const el = byId(id); if (el && attr) el.setAttribute(attr, val); }
+
+// Pomoćne funkcije za specifične delove stranice
+function updateTagline(t){
+  // prvi .main-section > p.sitemap-muted (uvodni pasus)
+  const p = document.querySelector(".main-section p.sitemap-muted");
+  if (p) p.textContent = t.ui.tagline;
+}
+function updateQuickSearch(t){
+  const lbl = document.querySelector('label[for="sitemap-search"]');
+  if (lbl) lbl.textContent = t.ui.quickSearch;
+  const input = byId("sitemap-search");
+  if (input){
+    input.placeholder = t.ui.placeholder;
+    input.setAttribute("aria-label", t.ui.quickSearch);
+  }
+  // Counts (zadrži broj, promeni prefiks)
+  const c = byId("counts");
+  if (c){
+    const m = c.textContent.match(/\d+/);
+    c.textContent = t.ui.counts + (m ? " " + m[0] : "");
+  }
+}
+function updateLastUpdated(t){
+  const pill = byId("last-updated");
+  if (!pill) return;
+  // Izvuci datum iz postojeće vrednosti (npr. "Last updated: 2025-08-14")
+  const m = pill.textContent.match(/(\d{4}-\d{2}-\d{2})/);
+  const date = m ? m[1] : "—";
+  pill.textContent = t.ui.lastUpdated + " " + date;
+}
+function updateExportXml(t){
+  const btn = byId("export-xml");
+  if (btn){
+    btn.textContent = t.ui.exportXml;
+    btn.setAttribute("aria-label", t.ui.exportXmlAria);
+  }
+}
+function updateGroupTitles(t){
+  // Naslovi sekcija koje renderuje inline skript (Main Pages / Legal / Blog)
+  // ograniči na blokove unutar #sitemap-blocks
+  document.querySelectorAll("#sitemap-blocks .main-section h2").forEach(h=>{
+    const txt = (h.textContent || "").trim();
+    if (txt === "Main Pages") h.textContent = t.ui.groups.main;
+    else if (txt === "Legal") h.textContent = t.ui.groups.legal;
+    else if (txt === "Blog") h.textContent = t.ui.groups.blog;
+  });
 }
 
 function setLanguage(lang) {
+  const t = translations[lang] || translations.en;
   localStorage.setItem('forecastlerLang', lang);
-  if (!translations[lang]) return;
-
   trenutniJezik = lang;
-  const t = translations[lang];
 
-  document.getElementById("title").innerText = t.title;
-  document.getElementById("welcome-text").innerText = t.welcomeText;
-  document.getElementById("context-label").innerText = t.contextLabel;
-  document.getElementById("question-label").innerText = t.questionLabel;
-  document.getElementById("how-title").innerText = t.howTitle;
-  document.getElementById("how-text-1").innerText = t.howText1;
-  document.getElementById("how-text-2").innerText = t.howText2;
-  document.getElementById("how-text-3").innerText = t.howText3;
-  document.getElementById("how-text-4").innerText = t.howText4;
-  document.getElementById("how-text-5").innerHTML = t.howText5;
-  document.getElementById("how-text-6").innerText = t.howText6;
-  document.getElementById("use-title").innerText = t.useTitle;
+  // Header (desktop + mobile)
+  if (t.headerLinks){
+    setTxtAny("nav-home", t.headerLinks.home);
+    setTxtAny("nav-about", t.headerLinks.about);
+    setTxtAny("nav-contact", t.headerLinks.contact);
+    setTxtAny("nav-blog", t.headerLinks.blog);
 
-  const useList = document.getElementById("use-list");
-  useList.innerHTML = "";
-  t.useList.forEach(item => {
-    const li = document.createElement("li");
-    li.innerHTML = item;
-    useList.appendChild(li);
-  });
-
-  document.getElementById("use-note").innerText = t.useNote;
-  document.getElementById("faq-title").innerText = t.faqTitle;
-  document.getElementById("faq-text").innerText = t.faqText;
-
-  const faqList = document.getElementById("faq-list");
-  faqList.innerHTML = "";
-  t.faqList.forEach(item => {
-    const li = document.createElement("li");
-    li.innerText = item;
-    faqList.appendChild(li);
-  });
-
-  const disTitleEl = document.getElementById("disclaimer-title");
-  if (disTitleEl) disTitleEl.textContent = t.disclaimerTitle;
-
-  const disTextEl = document.getElementById("disclaimer-text");
-  if (disTextEl) disTextEl.textContent = t.disclaimerText;
-
-  document.body.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
-
-  if (typeof applyRuntimeTranslations === "function") {
-    applyRuntimeTranslations();
+    setTxtAny("mnav-home", t.headerLinks.home);
+    setTxtAny("mnav-about", t.headerLinks.about);
+    setTxtAny("mnav-contact", t.headerLinks.contact);
+    setTxtAny("mnav-blog", t.headerLinks.blog);
   }
 
-   // Footer links
-   const fl = t.footerLinks || translations.en.footerLinks;
-   const elDisc = document.getElementById("link-disclaimer");
-   const elTerms = document.getElementById("link-terms");
-   const elPriv  = document.getElementById("link-privacy");
-   const elCook  = document.getElementById("link-cookies");
-   const elMap   = document.getElementById("link-sitemap");
-   const elFaq   = document.getElementById("link-faq");
+  // META/UI
+  setTxtAny("sitemap-title", t.ui.pageTitle);
+  updateTagline(t);
+  updateQuickSearch(t);
+  updateLastUpdated(t);
+  updateExportXml(t);
+  updateGroupTitles(t);
 
-   if (elDisc) elDisc.textContent = fl.disclaimer;
-   if (elTerms) elTerms.textContent = fl.terms;
-   if (elPriv)  elPriv.textContent  = fl.privacy;
-   if (elCook)  elCook.textContent  = fl.cookies;
-   if (elMap)   elMap.textContent   = fl.sitemap;
-   if (elFaq)   elFaq.textContent   = fl.faq;
+  // Footer
+  if (t.footerLinks){
+    setTxtAny("link-disclaimer", t.footerLinks.disclaimer);
+    setTxtAny("link-terms",      t.footerLinks.terms);
+    setTxtAny("link-privacy",    t.footerLinks.privacy);
+    setTxtAny("link-cookies",    t.footerLinks.cookies);
+    setTxtAny("link-sitemap",    t.footerLinks.sitemap);
+    setTxtAny("link-faq",        t.footerLinks.faq);
+  }
+
+  // RTL samo za arapski
+  document.body.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
 }
 
+// Inicijalizacija (bez dupliranja logike u inline skripti)
 document.addEventListener("DOMContentLoaded", () => {
-  const lang = localStorage.getItem("forecastlerLang") || "en";
-  trenutniJezik = lang;
-  setLanguage(lang);
+  const saved   = localStorage.getItem('forecastlerLang');
+  const browser = (navigator.language || 'en').slice(0,2);
+  const initial = saved || (browser === 'sr' ? 'sr' : 'en');
+  setLanguage(initial);
 });
+
+// Izloži za zastavice i za inline skriptu koja koristi T()
+window.setLanguage = setLanguage;
+window.T = function(){ return translations[trenutniJezik] || translations.en; };
+
