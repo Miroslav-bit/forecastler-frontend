@@ -653,6 +653,7 @@
 
   /* Render ----------------------------------------------------------------- */
   function renderBlocks(filter = "") {
+    const t = (typeof T === 'function') ? T() : null;                 // NEW
     const root = document.getElementById("sitemap-blocks");
     root.innerHTML = "";
     const f = (filter || "").toLowerCase();
@@ -669,7 +670,16 @@
 
       const sec = document.createElement("div");
       sec.className = "main-section";
-      sec.innerHTML = `<h2>${g.title}</h2>`;
+
+      // NEW: mapiranje naslova grupa po ključu, preko prevoda
+      const groupTitle = t
+        ? (g.key === "Core"  ? t.ui.groups.main
+           : g.key === "Legal"? t.ui.groups.legal
+           : g.key === "Blog" ? t.ui.groups.blog
+           : g.title)
+        : g.title;
+
+      sec.innerHTML = `<h2>${groupTitle}</h2>`;
 
       const ul = document.createElement("ul");
       ul.className = "sitemap-list";
@@ -695,6 +705,12 @@
       sec.appendChild(ul);
       root.appendChild(sec);
     });
+
+  // NEW: brojač drži lokalizovani prefiks, broj ostaje isti
+    const countsEl = document.getElementById("counts");
+    if (countsEl){
+      countsEl.textContent = (t ? t.ui.counts : "Listed pages:") + " " + total;
+    }
 
     document.getElementById("counts").textContent = "Listed pages: " + total;
   }
