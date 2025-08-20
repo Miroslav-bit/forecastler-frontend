@@ -5,23 +5,23 @@ const translations = {
   en: {
     headerLinks: { home: "Home", about: "About Us", contact: "Contact", blog: "Blog" },
     footerLinks: { disclaimer:"Disclaimer", terms:"Terms of Use", privacy:"Privacy Policy", cookies:"Cookie Policy", sitemap:"Sitemap", faq:"FAQ" },
-    page: { title: "Artificial Intelligence Forecasts for Planet Earth." },
+    page: { title: "Artificial Intelligence Forecasts for Planet Earth" },
     cta: {
-      p1: "You can also ask the AI about your future or the future of other people, objects, places, and events.",
+      p1: "You can also ask the AI about your future or the future of other people, objects, places, and events",
       here: "HERE"
     },
     s1: {
-      forecast: "Forecast date: 17.06.2025.",
+      forecast: "Forecast date: 18.06.2025.",
       lead: "By June 2025, five earthquakes of magnitude above 7 on the Richter scale had been recorded worldwide, the strongest of which struck Myanmar on March 28. The last earthquake exceeding magnitude 8 on the Richter scale occurred on August 12, 2021, in the South Sandwich Islands.",
       qLabel: "Question for AI:",
       qText: "Will planet Earth be hit by an earthquake exceeding magnitude 8 on the Richter scale during 2025?",
       aLabel: "AI answer:",
       aText: "YES. Probability 65%",
-      valid: "AI forecast came true",
+      valid: "Forecast came true",
       source: "Confirmation source"
     },
     s2: {
-      forecast: "Forecast date: 17.06.2025.",
+      forecast: "Forecast date: 18.06.2025.",
       lead: "Asteroids pose a potential threat to planet Earth. The last significant impact event occurred on February 15, 2013, when, after entering Earth’s atmosphere, a celestial body exploded over the Russian city of Chelyabinsk, damaging about 7,000 buildings and injuring roughly 1,500 people.",
       qLabel: "Question for AI:",
       qText: "By 2030, will an asteroid strike Earth, causing casualties and material damage?",
@@ -29,7 +29,7 @@ const translations = {
       aText: "NO. Probability 5%"
     },
     s3: {
-      forecast: "Forecast date: 17.06.2025.",
+      forecast: "Forecast date: 18.06.2025.",
       lead: "Human influence has contributed to the warming of the atmosphere, oceans, and land, with consequences that include increasingly frequent extreme heat. The year 2024 was recorded as the warmest on record, about 1.55 degrees Celsius above the pre-industrial average.",
       qLabel: "Question for AI:",
       qText: "Will 2025 be the warmest year on record?",
@@ -41,26 +41,26 @@ const translations = {
   sr: {
     headerLinks: { home: "Početna", about: "O nama", contact: "Kontakt", blog: "Blog" },
     footerLinks: { disclaimer:"Odricanje od odgovornosti", terms:"Uslovi korišćenja", privacy:"Politika privatnosti", cookies:"Politika kolačića", sitemap:"Mapa sajta", faq:"FAQ" },
-    page: { title: "Prognoze veštačke inteligencije za planetu Zemlju." },
+    page: { title: "Prognoze veštačke inteligencije za planetu Zemlju" },
     cta: {
-      p1: "Možete pitati AI i o svojoj budućnosti ili o budućnosti drugih ljudi, predmeta, mesta i događaja.",
+      p1: "Možete pitati AI i o svojoj budućnosti ili o budućnosti drugih ljudi, predmeta, mesta i događaja",
       here: "OVDE"
     },
     s1: {
-      forecast: "Datum prognoze: 15. avgust 2025.",
+      forecast: "Datum prognoze: 17.06.2025.",
       lead: "Do juna 2025. godine zabeleženo je pet zemljotresa magnitude iznad 7 po Rihteru širom sveta, od kojih je najjači pogodio Mjanmar 28. marta. Poslednji zemljotres jači od magnitude 8 dogodio se 12. avgusta 2021. na Južnosandvičkim ostrvima.",
       qLabel: "Pitanje za AI:",
-      qText: "Da li će planetu Zemlju tokom 2025. pogoditi zemljotres jači od 8 po Rihteru?",
+      qText: "Da li će planetu Zemlju tokom 2025. godine pogoditi zemljotres jači od 8 po Rihteru?",
       aLabel: "Odgovor AI:",
       aText: "DA. Verovatnoća 65%",
-      valid: "Prognoza AI se obistinila",
+      valid: "Prognoza se obistinila",
       source: "Izvor potvrde"
     },
     s2: {
       forecast: "Datum prognoze: 17.06.2025.",
       lead: "Asteroidi predstavljaju potencijalnu pretnju planeti Zemlji. Poslednji značajan događaj zabeležen je 15. februara 2013, kada je nebesko telo eksplodiralo iznad ruskog grada Čeljabinska oštetivši oko 7.000 objekata i povredivši približno 1.500 ljudi.",
       qLabel: "Pitanje za AI:",
-      qText: "Hoće li do 2030. asteroid pogoditi Zemlju i prouzrokovati žrtve i materijalnu štetu?",
+      qText: "Hoće li do 2030. godine asteroid pogoditi Zemlju i prouzrokovati žrtve i materijalnu štetu?",
       aLabel: "Odgovor AI:",
       aText: "NE. Verovatnoća 5%"
     },
@@ -68,7 +68,7 @@ const translations = {
       forecast: "Datum prognoze: 17.06.2025.",
       lead: "Ljudski uticaj doprineo je zagrevanju atmosfere, okeana i kopna, sa posledicama koje uključuju sve češće ekstremne vrućine. Godina 2024. zabeležena je kao najtoplija do sada, za oko 1,55 °C iznad predindustrijskog proseka.",
       qLabel: "Pitanje za AI:",
-      qText: "Da li će 2025. biti najtoplija godina do sada?",
+      qText: "Da li će 2025. godina biti najtoplija godina do sada?",
       aLabel: "Odgovor AI:",
       aText: "NE. Verovatnoća 25%"
     }
