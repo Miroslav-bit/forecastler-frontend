@@ -224,7 +224,7 @@ const translations = {
     s22: { title: "22) Kontakt",
            p1: "Forecastler tim",
            p2: "Imejl: forecastlerteam@gmail.com" }
-  }
+  },
 
 es: {
   headerLinks: { home: "Inicio", about: "Sobre nosotros", contact: "Contacto", blog: "Blog" },
