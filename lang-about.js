@@ -71,7 +71,6 @@ const translations = {
 es: {
   headerLinks: { home: "Inicio", about: "Sobre nosotros", contact: "Contacto", blog: "Blog" },
   footerLinks: { disclaimer:"Aviso legal", terms:"Términos de uso", privacy:"Política de privacidad", cookies:"Política de cookies", sitemap:"Mapa del sitio", faq:"Preguntas frecuentes" },
-},
   how: {
     title: "Predecir el futuro",
     p1: "Las personas siempre han querido asomarse a su propio futuro — para reducir la incertidumbre, tomar mejores decisiones y proteger lo que les importa. A lo largo de la historia ha habido numerosos intentos de predecir resultados: desde la lectura de la palma y el echar suertes o lanzar huesos, pasando por videntes y profetas, hasta los sistemas astrológicos de la era moderna.",
@@ -106,7 +105,6 @@ es: {
 fr: {
   headerLinks: { home: "Accueil", about: "À propos", contact: "Contact", blog: "Blog" },
   footerLinks: { disclaimer:"Mentions légales", terms:"Conditions d'utilisation", privacy:"Politique de confidentialité", cookies:"Politique relative aux cookies", sitemap:"Plan du site", faq:"FAQ" },
-},
   how: {
     title: "Prédire l’avenir",
     p1: "Les gens ont toujours voulu jeter un coup d’œil sur leur propre avenir — pour réduire l’incertitude, prendre de meilleures décisions et protéger ce qui compte pour eux. Au cours de l’histoire, de nombreuses tentatives ont été faites pour prédire les issues : de la lecture de la paume et du tirage au sort ou du jet d’ossements, aux voyants et prophètes, jusqu’aux systèmes astrologiques de l’époque moderne.",
@@ -140,7 +138,6 @@ fr: {
 de: {
   headerLinks: { home: "Startseite", about: "Über uns", contact: "Kontakt", blog: "Blog" },
   footerLinks: { disclaimer:"Haftungsausschluss", terms:"Nutzungsbedingungen", privacy:"Datenschutzerklärung", cookies:"Cookie-Richtlinie", sitemap:"Sitemap", faq:"FAQ" },
-},
   how: {
     title: "Die Zukunft vorhersagen",
     p1: "Menschen wollten schon immer einen Blick in ihre eigene Zukunft werfen — um Unsicherheit zu verringern, bessere Entscheidungen zu treffen und das zu schützen, was ihnen wichtig ist. Im Lauf der Geschichte gab es viele Versuche, Ergebnisse vorherzusagen: von Handlinienlesen und Loswerfen oder Knochenorakel über Seher und Propheten bis hin zu den astrologischen Systemen der Moderne.",
@@ -174,7 +171,6 @@ de: {
 pt: {
   headerLinks: { home: "Início", about: "Sobre nós", contact: "Contato", blog: "Blog" },
   footerLinks: { disclaimer:"Aviso legal", terms:"Termos de uso", privacy:"Política de Privacidade", cookies:"Política de Cookies", sitemap:"Mapa do site", faq:"Perguntas frequentes" },
-},
   how: {
     title: "Prevendo o futuro",
     p1: "As pessoas sempre quiseram espiar o próprio futuro — para reduzir a incerteza, tomar melhores decisões e proteger o que lhes é importante. Ao longo da história, houve muitas tentativas de prever resultados: da leitura das mãos e do tirar sortes ou lançar ossos, a videntes e profetas, até os sistemas astrológicos da era moderna.",
@@ -208,7 +204,6 @@ pt: {
 it: {
   headerLinks: { home: "Home", about: "Chi siamo", contact: "Contatti", blog: "Blog" },
   footerLinks: { disclaimer:"Note legali", terms:"Termini di utilizzo", privacy:"Informativa sulla privacy", cookies:"Informativa sui cookie", sitemap:"Mappa del sito", faq:"FAQ" },
-},
   how: {
     title: "Prevedere il futuro",
     p1: "Le persone hanno sempre desiderato dare uno sguardo al proprio futuro — per ridurre l’incertezza, prendere decisioni migliori e proteggere ciò che per loro conta. Nel corso della storia ci sono stati molti tentativi di prevedere gli esiti: dalla lettura della mano e dal sorteggio o lancio di ossa, ai veggenti e ai profeti, fino ai sistemi astrologici dell’era moderna.",
@@ -242,7 +237,6 @@ it: {
 pl: {
   headerLinks: { home: "Strona główna", about: "O nas", contact: "Kontakt", blog: "Blog" },
   footerLinks: { disclaimer:"Nota prawna", terms:"Warunki korzystania", privacy:"Polityka prywatności", cookies:"Polityka plików cookie", sitemap:"Mapa strony", faq:"FAQ" },
-},
   how: {
     title: "Przewidywanie przyszłości",
     p1: "Ludzie od zawsze chcieli zajrzeć we własną przyszłość — by zmniejszyć niepewność, podejmować lepsze decyzje i chronić to, co ważne. W historii podejmowano wiele prób przewidywania wyników: od czytania z dłoni i losowania lub wróżenia z kości, przez jasnowidzów i proroków, po współczesne systemy astrologiczne.",
@@ -276,7 +270,6 @@ pl: {
 uk: {
   headerLinks: { home: "Головна", about: "Про нас", contact: "Контакти", blog: "Блог" },
   footerLinks: { disclaimer:"Відмова від відповідальності", terms:"Умови використання", privacy:"Політика конфіденційності", cookies:"Політика щодо файлів cookie", sitemap:"Карта сайту", faq:"Поширені запитання" },
-},
   how: {
     title: "Прогнозування майбутнього",
     p1: "Люди завжди прагнули зазирнути у власне майбутнє — щоб зменшити невизначеність, ухвалювати кращі рішення та захищати те, що для них важливо. Впродовж історії було багато спроб передбачати результати: від читання по долоні та кидання жеребу чи кісток, до провидців і пророків, а також астрологічних систем новітньої доби.",
@@ -310,7 +303,6 @@ uk: {
 ru: {
   headerLinks: { home: "Главная", about: "О нас", contact: "Контакты", blog: "Блог" },
   footerLinks: { disclaimer:"Отказ от ответственности", terms:"Условия использования", privacy:"Политика конфиденциальности", cookies:"Политика в отношении файлов cookie", sitemap:"Карта сайта", faq:"Частые вопросы" },
-},
   how: {
     title: "Предсказание будущего",
     p1: "Люди всегда хотели заглянуть в собственное будущее — чтобы снизить неопределённость, принимать более взвешенные решения и защищать то, что для них важно. На протяжении истории предпринимались многие попытки предсказывать исходы: от хиромантии и бросания жребия или костей до провидцев и пророков, а также астрологических систем современной эпохи.",
@@ -344,7 +336,6 @@ ru: {
 tr: {
   headerLinks: { home: "Ana sayfa", about: "Hakkımızda", contact: "İletişim", blog: "Blog" },
   footerLinks: { disclaimer:"Yasal Uyarı", terms:"Kullanım Şartları", privacy:"Gizlilik Politikası", cookies:"Çerez Politikası", sitemap:"Site haritası", faq:"SSS" },
-},
   how: {
     title: "Geleceği Tahmin Etmek",
     p1: "İnsanlar belirsizliği azaltmak, daha iyi kararlar almak ve kendileri için önemli olanı korumak için her zaman kendi geleceklerine göz atmak istemiştir. Tarih boyunca sonuçları öngörmeye yönelik pek çok girişim olmuştur: avuç içi okuma ve kura çekme ya da kemiklerle faldan, kâhinler ve peygamberlere ve modern çağın astrolojik sistemlerine kadar.",
@@ -378,7 +369,6 @@ tr: {
 ar: {
   headerLinks: { home: "الصفحة الرئيسية", about: "من نحن", contact: "اتصل بنا", blog: "المدونة" },
   footerLinks: { disclaimer:"إخلاء المسؤولية", terms:"شروط الاستخدام", privacy:"سياسة الخصوصية", cookies:"سياسة ملفات تعريف الارتباط", sitemap:"خريطة الموقع", faq:"الأسئلة الشائعة" },
-},
   how: {
     title: "التنبؤ بالمستقبل",
     p1: "لطالما أراد الناس إلقاء نظرة على مستقبلهم لتقليل عدم اليقين، واتخاذ قرارات أفضل، وحماية ما يهمهم. عبر التاريخ كانت هناك محاولات عديدة للتنبؤ بالنتائج: من قراءة الكفّ والقرعة أو رمي العظام، إلى العرّافين والأنبياء، وصولاً إلى الأنظمة الفلكية في العصر الحديث.",
@@ -412,7 +402,6 @@ ar: {
 hi: {
   headerLinks: { home: "मुखपृष्ठ", about: "हमारे बारे में", contact: "संपर्क करें", blog: "ब्लॉग" },
   footerLinks: { disclaimer:"अस्वीकरण", terms:"उपयोग की शर्तें", privacy:"गोपनीयता नीति", cookies:"कुकी नीति", sitemap:"साइटमैप", faq:"सामान्य प्रश्न" },
-},
   how: {
     title: "भविष्य की भविष्यवाणी",
     p1: "लोग हमेशा अपने भविष्य की एक झलक देखना चाहते रहे हैं — अनिश्चितता कम करने, बेहतर निर्णय लेने और अपनी महत्वपूर्ण चीज़ों की रक्षा करने के लिए। इतिहास भर में परिणामों की भविष्यवाणी के अनेक प्रयास हुए हैं: हथेली पढ़ने और चिट्ठियाँ निकालने या हड्डियाँ फेंकने से लेकर द्रष्टाओं और भविष्यवक्ताओं तक, तथा आधुनिक युग की ज्योतिषीय प्रणालियों तक।",
@@ -446,7 +435,6 @@ hi: {
 zh: {
   headerLinks: { home: "首页", about: "关于我们", contact: "联系我们", blog: "博客" },
   footerLinks: { disclaimer:"免责声明", terms:"使用条款", privacy:"隐私政策", cookies:"Cookie 政策", sitemap:"网站地图", faq:"常见问题" },
-},
   how: {
     title: "预测未来",
     p1: "人们一直希望窥见自己的未来——以减少不确定性、做出更好的决策，并保护对自己重要的事物。纵观历史，人类尝试过许多预测方式：从看手相、抽签或掷骨占卜，到占卜者与先知，再到近现代的占星体系。",
@@ -480,7 +468,6 @@ zh: {
 ja: {
   headerLinks: { home: "ホーム", about: "私たちについて", contact: "お問い合わせ", blog: "ブログ" },
   footerLinks: { disclaimer:"免責事項", terms:"利用規約", privacy:"プライバシーポリシー", cookies:"クッキーポリシー", sitemap:"サイトマップ", faq:"よくある質問" },
-},
   how: {
     title: "未来を予測する",
     p1: "人はいつの時代も、自分の未来をのぞき見たいと願ってきました——不確実性を減らし、より良い意思決定を行い、大切なものを守るために。歴史を通じて、結果を予測しようとする多くの試みがありました。手相占い、くじや骨を投げる占い、占い師や予言者、そして近代の占星術体系まで。",
