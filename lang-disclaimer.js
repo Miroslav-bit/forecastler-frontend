@@ -225,6 +225,1735 @@ const translations = {
            p1: "Forecastler tim",
            p2: "Imejl: forecastlerteam@gmail.com" }
   }
+
+es: {
+  headerLinks: { home: "Inicio", about: "Sobre nosotros", contact: "Contacto", blog: "Blog" },
+  footerLinks: { disclaimer:"Aviso legal", terms:"Términos de uso", privacy:"Política de privacidad", cookies:"Política de cookies", sitemap:"Mapa del sitio", faq:"Preguntas frecuentes" },
+  meta: {
+    title: "Aviso legal",
+    effective: "Fecha de entrada en vigor: 17 de junio de 2025",
+    updated:  "Última actualización: 15 de agosto de 2025",
+    intro: "Este documento establece los descargos de responsabilidad y avisos generales relativos al uso de la plataforma Forecastler (la \"Plataforma\", \"nosotros\", \"nos\", \"nuestro\"). Al utilizar la Plataforma, aceptas este Aviso legal junto con los Términos de uso y la Política de privacidad. Si no estás de acuerdo, por favor no uses la Plataforma."
+  },
+  s1: {
+    title: "1) Descripción del servicio y finalidad informativa",
+    p1: "La Plataforma ofrece respuestas informativas generadas por inteligencia artificial (una respuesta SÍ/NO y un porcentaje de probabilidad).",
+    p2: "El contenido y las evaluaciones no constituyen asesoramiento jurídico, financiero, de inversión, médico, psicológico, de seguridad, fiscal ni de ningún otro tipo profesional.",
+    p3: "No garantizamos la exactitud, integridad, actualidad ni idoneidad de ninguna respuesta para su situación específica. Usted utiliza el contenido bajo su exclusiva responsabilidad."
+  },
+  s2: {
+    title: "2) Límites de las previsiones y estimaciones estadísticas",
+    p1: "Las estimaciones de probabilidad son heurísticas y se basan en modelos con limitaciones estadísticas, posibles sesgos y errores.",
+    p2: "La Plataforma no predice el futuro ni garantiza que un evento ocurra o deje de ocurrir.",
+    p3: "Los resultados dependen del contexto introducido, de la calidad de la información proporcionada y de los cambios en las circunstancias externas."
+  },
+  s3: {
+    title: "3) Responsabilidad personal y toma de decisiones",
+    p1: "Usted asume plena responsabilidad por las decisiones y acciones que tome basándose en el contenido de la Plataforma.",
+    p2: "Para decisiones con consecuencias (p. ej., médicas, financieras, jurídicas, de seguridad), consulte a un profesional cualificado.",
+    p3: "En situaciones de emergencia, póngase en contacto con los servicios competentes (emergencias médicas, policía, bomberos)."
+  },
+  s4: {
+    title: "4) Salud, derecho, finanzas y otras áreas sensibles",
+    p1: "Nada en la Plataforma constituye consejo médico, diagnóstico o tratamiento; consulte a un profesional de la salud.",
+    p2: "Nada en la Plataforma constituye asesoramiento jurídico; consulte a un abogado.",
+    p3: "Nada en la Plataforma constituye asesoramiento de inversión/financiero; consulte a un asesor autorizado.",
+    p4: "En contextos de alto riesgo, nuestras respuestas no deben ser la base única ni predominante de sus decisiones."
+  },
+  s5: {
+    title: "5) Derechos personales y exhibición pública de resultados",
+    p1: "Está prohibido realizar pronósticos sobre personas físicas que hayan prohibido pública o directamente tal uso.",
+    p2: "Está prohibida la exhibición pública o promoción de resultados de pronósticos relativos a terceros, instituciones, organizaciones, naciones o sistemas sin su permiso expreso u otra base jurídica válida.",
+    p3: "Para reportar vulneraciones del honor o de derechos personales, consulte la Sección 18 (Avisos y retirada de contenido)."
+  },
+  s6: {
+    title: "6) Contenido del usuario y conducta",
+    p1: "Eres el único responsable del contenido que envías (texto, imágenes, enlaces, datos). El contenido no debe ser ilícito, falso, ofensivo, difamatorio, discriminatorio, amenazante ni infringir derechos de terceros.",
+    p2: "Está prohibido el uso indebido de la Plataforma (p. ej., violaciones de seguridad, extracción automatizada de datos (scraping), spam, desinformación, manipulación, elusión de límites)."
+  },
+  s7: {
+    title: "7) Propiedad intelectual y prohibición de compartir sin autorización",
+    p1: "El contenido de la Plataforma está protegido por derechos de propiedad intelectual. Se prohíbe estrictamente la copia, distribución o compartición no autorizadas del contenido —incluidas las capturas de pantalla—.",
+    p2: "Las normas detalladas sobre licencias y usos permitidos figuran en los Términos de uso."
+  },
+  s8: {
+    title: "8) Información de interés público y reputación",
+    p1: "La Plataforma no es una fuente oficial de información pública, alertas o estadísticas.",
+    p2: "No asumimos responsabilidad por la confianza depositada en información de interés público (p. ej., alertas de seguridad, elecciones, salud pública) ni garantizamos su exactitud.",
+    p3: "Respetamos la dignidad y la reputación de las personas, empresas y comunidades. Si considera que algún contenido es perjudicial, difamatorio o inexacto, contáctenos (véase la Sección 22)."
+  },
+  s9: {
+    title: "9) Disponibilidad técnica y rendimiento",
+    p1: "El servicio se presta \"tal cual\" y \"según disponibilidad\". No garantizamos disponibilidad ininterrumpida, plena compatibilidad con todos los dispositivos/navegadores/extensiones/plugins, ni un funcionamiento sin errores.",
+    p2: "Pueden producirse interrupciones, retrasos, pérdida de datos, mantenimiento, actualizaciones y cambios funcionales sin previo aviso.",
+    p3: "No somos responsables de los daños derivados de caídas, problemas técnicos, malware o ataques de terceros, salvo en la medida exigida por la legislación aplicable."
+  },
+  s10: {
+    title: "10) Exactitud, actualidad y fuentes",
+    p1: "Las respuestas de IA pueden ser inexactas, desactualizadas, incompletas, ambiguas o sesgadas.",
+    p2: "La Plataforma puede usar datos que envíes y/o información de acceso público; no siempre realizamos una verificación independiente.",
+    p3: "Debes verificar la información antes de basarte en ella."
+  },
+  s11: {
+    title: "11) Enlaces y servicios de terceros",
+    p1: "La Plataforma puede contener enlaces a sitios web independientes y servicios de terceros.",
+    p2: "No controlamos, avalamos ni asumimos responsabilidad por su contenido o prácticas. El uso corre por tu cuenta y riesgo."
+  },
+  s12: {
+    title: "12) Cuentas, seguridad y datos",
+    p1: "Eres responsable de las actividades realizadas en tu cuenta, salvo que el uso indebido sea exclusivamente culpa nuestra.",
+    p2: "Para detalles sobre el tratamiento de datos, consulta la Política de privacidad."
+  },
+  s13: {
+    title: "13) Restricciones de edad",
+    p1: "Las personas menores de 13 años no pueden usar la Plataforma.",
+    p2: "Las personas de 13–18 años pueden usar la Plataforma con el consentimiento y la supervisión de sus padres/tutores, de conformidad con la legislación aplicable."
+  },
+  s14: {
+    title: "14) Sesgos, ética y antidiscriminación",
+    p1: "Los modelos de IA pueden reflejar sesgos presentes en sus datos.",
+    p2: "Está prohibido usar la Plataforma con fines discriminatorios o ilícitos. Usted es responsable de cumplir con las leyes y las normas éticas aplicables."
+  },
+  s15: {
+    title: "15) Funciones beta y experimentos",
+    p1: "Algunas funciones pueden estar en beta y se proporcionan sin garantías, solo para pruebas, y pueden contener errores, interrupciones o cambios."
+  },
+  s16: {
+    title: "16) Limitación de responsabilidad (en la medida permitida por la ley)",
+    p1: "En la máxima medida permitida por la ley, nosotros y nuestros socios, afiliados, empleados y agentes no somos responsables de daños indirectos, incidentales, especiales, consecuentes o punitivos; pérdida de beneficios, ingresos, datos o reputación; interrupción del negocio; adquisición de servicios de reemplazo; ni de daños derivados de la confianza en el contenido de la Plataforma.",
+    p2: "Cuando la responsabilidad no pueda excluirse totalmente, se limita al importe total que usted haya pagado por usar la Plataforma en los dos (2) meses anteriores al hecho que dio lugar a la reclamación.",
+    p3: "Nada de esta sección excluye ni limita la responsabilidad por dolo, negligencia grave u otros derechos irrenunciables en virtud de la legislación aplicable (p. ej., derechos del consumidor)."
+  },
+  s17: {
+    title: "17) Indemnización y exoneración (indemnity)",
+    lead: "Aceptas indemnizarnos y exonerarnos de reclamaciones de terceros, responsabilidades, daños, pérdidas y costos (incluidos honorarios razonables de abogados) que surjan de:",
+    a: "a) tu contenido o el uso de la Plataforma en contra de estas reglas o de la ley;",
+    b: "b) la vulneración de derechos de terceros;",
+    c: "c) el uso indebido de tu cuenta."
+  },
+  s18: {
+    title: "18) Avisos y retirada de contenido (notice & action)",
+    lead: "Si consideras que algún contenido en la Plataforma infringe tus derechos (p. ej., difamación, infracción de marca/copyright/privacidad), envía un aviso a forecastlerteam@gmail.com que incluya:",
+    i1: "• tu nombre completo y datos de contacto;",
+    i2: "• una descripción clara y la ubicación del contenido (URL, captura de pantalla);",
+    i3: "• la base legal de tu solicitud (p. ej., “difamación”, “infracción de derechos de autor”);",
+    i4: "• una declaración en la que confirmas la veracidad de lo alegado.",
+    foot: "Durante la revisión podemos limitar temporalmente o retirar el contenido en disputa, solicitar información adicional y actuar en un plazo razonable conforme a la ley aplicable."
+  },
+  s19: {
+    title: "19) Versiones idiomáticas y traducciones",
+    p1: "La Plataforma puede estar disponible en varios idiomas. En caso de discrepancia entre las traducciones de este Aviso legal, prevalece la versión en inglés, salvo que la legislación local exija expresamente lo contrario."
+  },
+  s20: {
+    title: "20) Cambios y actualizaciones",
+    p1: "Podemos modificar o actualizar este Aviso legal en cualquier momento. Los cambios surten efecto al publicarse en esta página con la fecha actualizada. Tu uso continuado de la Plataforma tras los cambios implica que los aceptas."
+  },
+  s21: {
+    title: "21) Ley aplicable y jurisdicción",
+    p1: "Este Aviso legal se rige por las leyes de la República de Serbia (salvo que las normas imperativas de tu lugar de residencia dispongan otra cosa). El tribunal de Subotica tendrá competencia material y territorial, salvo que la ley exija otra cosa."
+  },
+  s22: {
+    title: "22) Contacto",
+    p1: "Equipo Forecastler",
+    p2: "Correo electrónico: forecastlerteam@gmail.com"
+  }
+},
+
+fr: {
+  headerLinks: { home: "Accueil", about: "À propos", contact: "Contact", blog: "Blog" },
+  footerLinks: { disclaimer:"Mentions légales", terms:"Conditions d'utilisation", privacy:"Politique de confidentialité", cookies:"Politique relative aux cookies", sitemap:"Plan du site", faq:"FAQ" },
+  meta: {
+    title: "Avertissement légal",
+    effective: "Date d’entrée en vigueur : 17 juin 2025",
+    updated:  "Dernière mise à jour : 15 août 2025",
+    intro: "Le présent document énonce les clauses de non-responsabilité et les avis généraux relatifs à l’utilisation de la plateforme Forecastler (« la \"Plateforme\", \"nous\", \"nous\", \"notre/nos\" »). En utilisant la Plateforme, vous acceptez le présent avertissement légal avec les Conditions d’utilisation et la Politique de confidentialité. Si vous n’êtes pas d’accord, veuillez ne pas utiliser la Plateforme."
+  },
+  s1: {
+    title: "1) Description du service et finalité informative",
+    p1: "La Plateforme fournit des réponses informatives générées par l’intelligence artificielle (une réponse OUI/NON et un pourcentage de probabilité).",
+    p2: "Le contenu et les évaluations ne constituent pas des conseils juridiques, financiers, d’investissement, médicaux, psychologiques, de sécurité, fiscaux ou tout autre conseil professionnel.",
+    p3: "Nous ne garantissons pas l’exactitude, l’exhaustivité, l’actualité ni l’adéquation de toute réponse à votre situation particulière. Vous utilisez le contenu à vos propres risques."
+  },
+  s2: {
+    title: "2) Limites de la prévision et des estimations statistiques",
+    p1: "Les estimations de probabilité sont heuristiques et reposent sur des modèles comportant des limitations statistiques, des biais possibles et des erreurs.",
+    p2: "La Plateforme ne prédit pas l’avenir et ne garantit pas qu’un événement se produira ou ne se produira pas.",
+    p3: "Les résultats dépendent du contexte saisi, de la qualité des informations fournies et de l’évolution des circonstances extérieures."
+  },
+  s3: {
+    title: "3) Responsabilité personnelle et prise de décision",
+    p1: "Vous assumez l’entière responsabilité des décisions et actions que vous entreprenez sur la base du contenu de la Plateforme.",
+    p2: "Pour les décisions à conséquences (p. ex. médicales, financières, juridiques, de sécurité), consultez un professionnel qualifié.",
+    p3: "En cas d’urgence, contactez les services compétents (urgences médicales, police, pompiers)."
+  },
+  s4: {
+    title: "4) Santé, droit, finances et autres domaines sensibles",
+    p1: "Rien sur la Plateforme ne constitue un conseil médical, un diagnostic ou un traitement ; consultez un professionnel de santé.",
+    p2: "Rien sur la Plateforme ne constitue un conseil juridique ; consultez un avocat.",
+    p3: "Rien sur la Plateforme ne constitue un conseil d’investissement/financier ; consultez un conseiller agréé.",
+    p4: "Dans des contextes à haut risque, nos réponses ne doivent pas être l’unique ou la principale base de vos décisions."
+  },
+  s5: {
+    title: "5) Droits personnels et affichage public des résultats",
+    p1: "Il est interdit d’établir des prévisions concernant des personnes physiques ayant publiquement ou directement interdit un tel usage.",
+    p2: "Il est interdit d’afficher publiquement ou de promouvoir des résultats de prévisions concernant des tiers, des établissements, des organisations, des nations ou des systèmes sans leur autorisation expresse ou un autre fondement juridique valable.",
+    p3: "Pour signaler une atteinte à la réputation ou aux droits personnels, voir la Section 18 (Notifications et retrait de contenu)."
+  },
+  s6: {
+    title: "6) Contenu utilisateur et conduite",
+    p1: "Vous êtes seul responsable du contenu que vous soumettez (texte, images, liens, données). Le contenu ne doit pas être illicite, faux, offensant, diffamatoire, discriminatoire, menaçant, ni porter atteinte aux droits d’autrui.",
+    p2: "L’usage abusif de la Plateforme est interdit (p. ex. violations de sécurité, aspiration de données (scraping), spam, désinformation, manipulation, contournement des limites)."
+  },
+  s7: {
+    title: "7) Propriété intellectuelle et interdiction du partage non autorisé",
+    p1: "Le contenu de la Plateforme est protégé par des droits de propriété intellectuelle. La copie, la distribution ou le partage non autorisés — y compris des captures d’écran — sont strictement interdits.",
+    p2: "Les règles détaillées relatives aux licences et aux usages permis figurent dans les Conditions d’utilisation."
+  },
+  s8: {
+    title: "8) Informations d’intérêt public et réputation",
+    p1: "La Plateforme n’est pas une source officielle d’informations publiques, d’alertes ou de statistiques.",
+    p2: "Nous n’assumons aucune responsabilité quant à la confiance accordée aux informations d’intérêt public (p. ex. alertes de sécurité, élections, santé publique) et n’en garantissons pas l’exactitude.",
+    p3: "Nous respectons la dignité et la réputation des personnes, des entreprises et des communautés. Si vous estimez qu’un contenu est nuisible, diffamatoire ou inexact, contactez-nous (voir Section 22)."
+  },
+  s9: {
+    title: "9) Disponibilité technique et performances",
+    p1: "Le service est fourni \"tel quel\" et \"selon la disponibilité\". Nous ne garantissons ni une disponibilité ininterrompue, ni une compatibilité totale avec tous les appareils/navigateurs/extensions/plugins, ni un fonctionnement sans erreur.",
+    p2: "Des pannes, retards, pertes de données, opérations de maintenance, mises à jour et changements fonctionnels peuvent survenir sans préavis.",
+    p3: "Nous déclinons toute responsabilité pour les dommages résultant d'indisponibilités, de problèmes techniques, de logiciels malveillants ou d'attaques de tiers, sauf dans la mesure requise par la loi applicable."
+  },
+  s10: {
+    title: "10) Exactitude, actualité et sources",
+    p1: "Les réponses de l'IA peuvent être inexactes, obsolètes, incomplètes, ambiguës ou biaisées.",
+    p2: "La Plateforme peut utiliser les données que vous soumettez et/ou des informations publiques ; nous n'effectuons pas toujours de vérification indépendante.",
+    p3: "Vous devez vérifier les informations avant de vous y fier."
+  },
+  s11: {
+    title: "11) Liens et services tiers",
+    p1: "La Plateforme peut contenir des liens vers des sites indépendants et des services tiers.",
+    p2: "Nous ne contrôlons pas, n’approuvons pas et n’assumons aucune responsabilité quant à leur contenu ou leurs pratiques. L’utilisation se fait à vos risques."
+  },
+  s12: {
+    title: "12) Comptes, sécurité et données",
+    p1: "Vous êtes responsable des activités effectuées via votre compte, sauf si l’usage abusif résulte exclusivement de notre faute.",
+    p2: "Pour les détails sur le traitement des données, voir la Politique de confidentialité."
+  },
+  s13: {
+    title: "13) Restrictions d’âge",
+    p1: "Les personnes de moins de 13 ans ne peuvent pas utiliser la Plateforme.",
+    p2: "Les personnes âgées de 13–18 ans peuvent utiliser la Plateforme avec le consentement et la supervision d’un parent/tuteur, conformément au droit applicable."
+  },
+  s14: {
+    title: "14) Biais, éthique et lutte contre la discrimination",
+    p1: "Les modèles d’IA peuvent refléter les biais présents dans leurs données.",
+    p2: "L’utilisation de la Plateforme à des fins discriminatoires ou illégales est interdite. Vous êtes responsable du respect des lois et des standards éthiques applicables."
+  },
+  s15: {
+    title: "15) Fonctionnalités bêta et expérimentations",
+    p1: "Certaines fonctionnalités peuvent être en bêta, fournies sans garantie, uniquement à des fins de test, et susceptibles de comporter des erreurs, interruptions ou modifications."
+  },
+  s16: {
+    title: "16) Limitation de responsabilité (dans la mesure permise par la loi)",
+    p1: "Dans toute la mesure permise par la loi, nous, ainsi que nos partenaires, affiliés, employés et agents, déclinons toute responsabilité pour les dommages indirects, accessoires, spéciaux, consécutifs ou punitifs ; la perte de profits, de chiffre d’affaires, de données ou d’image ; l’interruption d’activité ; les coûts d’obtention de services de remplacement ; ou les dommages résultant de la confiance accordée au contenu de la Plateforme.",
+    p2: "Lorsque la responsabilité ne peut pas être totalement exclue, elle est limitée au montant total que vous avez pu payer pour utiliser la Plateforme au cours des deux (2) mois précédant l’événement à l’origine de la réclamation.",
+    p3: "Aucune disposition du présent article n’exclut ni ne limite la responsabilité en cas de faute intentionnelle, de négligence grave, ou d’autres droits impératifs prévus par la loi applicable (ex. droits des consommateurs)."
+  },
+  s17: {
+    title: "17) Indemnisation et exonération (indemnity)",
+    lead: "Vous acceptez de nous indemniser et de nous tenir quittes de toute réclamation de tiers, responsabilité, dommage, perte et coût (y compris des honoraires raisonnables d’avocat) résultant de :",
+    a: "a) votre contenu ou l’utilisation de la Plateforme en violation des présentes règles ou de la loi ;",
+    b: "b) l’atteinte aux droits de tiers ;",
+    c: "c) l’utilisation abusive de votre compte."
+  },
+  s18: {
+    title: "18) Notifications et retrait de contenu (notice & action)",
+    lead: "Si vous estimez qu’un contenu sur la Plateforme porte atteinte à vos droits (ex. diffamation, atteinte à la marque/au droit d’auteur/à la vie privée), envoyez une notification à forecastlerteam@gmail.com contenant :",
+    i1: "• vos nom complet et coordonnées ;",
+    i2: "• une description claire et l’emplacement du contenu (URL, capture d’écran) ;",
+    i3: "• le fondement juridique de votre demande (ex. « diffamation », « atteinte au droit d’auteur ») ;",
+    i4: "• une déclaration attestant la véracité de vos allégations.",
+    foot: "Pendant l’examen, nous pouvons limiter temporairement ou retirer le contenu contesté, demander des informations supplémentaires et agir dans un délai raisonnable conformément au droit applicable."
+  },
+  s19: {
+    title: "19) Versions linguistiques et traductions",
+    p1: "La Plateforme peut être disponible en plusieurs langues. En cas d’incohérence entre des traductions du présent Avertissement légal, la version anglaise prévaut, sauf si le droit local exige expressément le contraire."
+  },
+  s20: {
+    title: "20) Modifications et mises à jour",
+    p1: "Nous pouvons modifier ou mettre à jour le présent Avertissement légal à tout moment. Les modifications prennent effet lors de leur publication sur cette page avec une date mise à jour. La poursuite de l’utilisation de la Plateforme vaut acceptation."
+  },
+  s21: {
+    title: "21) Droit applicable et juridiction",
+    p1: "Le présent Avertissement légal est régi par les lois de la République de Serbie (sauf si des règles impératives de votre résidence en disposent autrement). Le tribunal de Subotica a compétence matérielle et territoriale, sauf exigence légale contraire."
+  },
+  s22: {
+    title: "22) Contact",
+    p1: "Équipe Forecastler",
+    p2: "E-mail : forecastlerteam@gmail.com"
+  }
+},
+
+de: {
+  headerLinks: { home: "Startseite", about: "Über uns", contact: "Kontakt", blog: "Blog" },
+  footerLinks: { disclaimer:"Haftungsausschluss", terms:"Nutzungsbedingungen", privacy:"Datenschutzerklärung", cookies:"Cookie-Richtlinie", sitemap:"Sitemap", faq:"FAQ" },
+  meta: {
+    title: "Haftungsausschluss",
+    effective: "Geltungsdatum: 17. Juni 2025",
+    updated:  "Zuletzt aktualisiert: 15. August 2025",
+    intro: "Dieses Dokument legt allgemeine Haftungsausschlüsse und Hinweise zur Nutzung der Forecastler-Plattform (die \"Plattform\", \"wir\", \"uns\", \"unser\") fest. Durch die Nutzung der Plattform akzeptieren Sie diesen Haftungsausschluss zusammen mit den Nutzungsbedingungen und der Datenschutzerklärung. Wenn Sie nicht einverstanden sind, nutzen Sie die Plattform bitte nicht."
+  },
+  s1: {
+    title: "1) Dienstbeschreibung und informativer Zweck",
+    p1: "Die Plattform stellt von Künstlicher Intelligenz generierte, informative Antworten bereit (eine JA/NEIN-Antwort sowie einen Wahrscheinlichkeitswert in Prozent).",
+    p2: "Inhalte und Einschätzungen stellen keine Rechts-, Finanz-, Anlage-, medizinische, psychologische, sicherheitsbezogene, steuerliche oder sonstige professionelle Beratung dar.",
+    p3: "Wir übernehmen keine Gewähr für Richtigkeit, Vollständigkeit, Aktualität oder Eignung irgendeiner Antwort für Ihre spezifische Situation. Die Nutzung der Inhalte erfolgt auf eigenes Risiko."
+  },
+  s2: {
+    title: "2) Grenzen von Vorhersagen und statistischen Schätzungen",
+    p1: "Wahrscheinlichkeitsabschätzungen sind heuristisch und beruhen auf Modellen mit statistischen Einschränkungen, möglichen Verzerrungen und Fehlern.",
+    p2: "Die Plattform sagt die Zukunft nicht voraus und garantiert nicht, dass ein Ereignis eintreten wird oder nicht eintreten wird.",
+    p3: "Die Ergebnisse hängen vom eingegebenen Kontext, der Qualität der bereitgestellten Informationen und Veränderungen der äußeren Umstände ab."
+  },
+  s3: {
+    title: "3) Persönliche Verantwortung und Entscheidungsfindung",
+    p1: "Sie tragen die volle Verantwortung für Entscheidungen und Handlungen, die Sie auf Grundlage der Plattforminhalte treffen.",
+    p2: "Bei folgenreichen Entscheidungen (z. B. medizinischen, finanziellen, rechtlichen, sicherheitsbezogenen) wenden Sie sich an eine qualifizierte Fachperson.",
+    p3: "In Notfällen kontaktieren Sie die zuständigen Dienste (Rettungsdienst, Polizei, Feuerwehr)."
+  },
+  s4: {
+    title: "4) Gesundheit, Recht, Finanzen und andere sensible Bereiche",
+    p1: "Nichts auf der Plattform stellt medizinischen Rat, eine Diagnose oder Behandlung dar; wenden Sie sich an eine medizinische Fachperson.",
+    p2: "Nichts auf der Plattform stellt Rechtsberatung dar; wenden Sie sich an eine Rechtsanwältin oder einen Rechtsanwalt.",
+    p3: "Nichts auf der Plattform stellt Anlage-/Finanzberatung dar; wenden Sie sich an eine zugelassene Fachperson.",
+    p4: "In Hochrisikokontexten dürfen unsere Antworten nicht die einzige oder überwiegende Grundlage Ihrer Entscheidungen sein."
+  },
+  s5: {
+    title: "5) Persönlichkeitsrechte und öffentliche Darstellung von Ergebnissen",
+    p1: "Es ist untersagt, Prognosen über natürliche Personen zu erstellen, die eine solche Nutzung öffentlich oder direkt untersagt haben.",
+    p2: "Es ist untersagt, Vorhersageergebnisse zu Dritten, Einrichtungen, Organisationen, Nationen oder Systemen ohne deren ausdrückliche Zustimmung oder eine andere gültige Rechtsgrundlage öffentlich darzustellen oder zu bewerben.",
+    p3: "Zur Meldung von Verletzungen des Rufs oder der Persönlichkeitsrechte siehe Abschnitt 18 (Mitteilungen und Inhaltsentfernung)."
+  },
+  s6: {
+    title: "6) Nutzerinhalte und Verhalten",
+    p1: "Sie sind allein für die von Ihnen eingereichten Inhalte verantwortlich (Text, Bilder, Links, Daten). Inhalte dürfen nicht rechtswidrig, falsch, beleidigend, verleumderisch, diskriminierend oder bedrohend sein und keine Rechte Dritter verletzen.", 
+    p2: "Missbrauch der Plattform ist verboten (z. B. Sicherheitsverletzungen, Scraping/automatisches Auslesen, Spam, Desinformation, Manipulation, Umgehung von Beschränkungen)."
+  },
+  s7: {
+    title: "7) Geistiges Eigentum und Verbot unbefugter Weitergabe",
+    p1: "Plattforminhalte sind durch Rechte des geistigen Eigentums geschützt. Unbefugtes Kopieren, Verbreiten oder Weitergeben von Inhalten — einschließlich Screenshots — ist strikt untersagt.",
+    p2: "Detaillierte Regeln zu Lizenzen und zulässiger Nutzung sind in den Nutzungsbedingungen festgelegt."
+  },
+  s8: {
+    title: "8) Informationen von öffentlichem Interesse und Reputation",
+    p1: "Die Plattform ist keine offizielle Quelle für öffentliche Informationen, Warnungen oder Statistiken.",
+    p2: "Wir übernehmen keine Verantwortung für das Vertrauen in Informationen von öffentlichem Interesse (z. B. Sicherheitswarnungen, Wahlen, öffentliche Gesundheit) und garantieren nicht deren Richtigkeit.",
+    p3: "Wir respektieren die Würde und den Ruf von Personen, Unternehmen und Gemeinschaften. Wenn Sie der Meinung sind, dass Inhalte schädlich, verleumderisch oder ungenau sind, kontaktieren Sie uns (siehe Abschnitt 22)."
+  },
+  s9: {
+    title: "9) Technische Verfügbarkeit und Leistung",
+    p1: "Der Dienst wird \"wie besehen\" und \"nach Verfügbarkeit\" bereitgestellt. Wir garantieren keine unterbrechungsfreie Verfügbarkeit, keine vollständige Kompatibilität mit allen Geräten/Browsern/Erweiterungen/Plugins und keinen fehlerfreien Betrieb.",
+    p2: "Ausfälle, Verzögerungen, Datenverlust, Wartung, Updates und Funktionsänderungen können ohne Vorankündigung auftreten.",
+    p3: "Wir haften nicht für Schäden infolge von Ausfallzeiten, technischen Problemen, Schadsoftware oder Angriffen Dritter, soweit nicht geltendes Recht etwas anderes verlangt."
+  },
+  s10: {
+    title: "10) Genauigkeit, Aktualität und Quellen",
+    p1: "KI-Antworten können ungenau, veraltet, unvollständig, mehrdeutig oder verzerrt sein.",
+    p2: "Die Plattform kann von Ihnen übermittelte Daten und/oder öffentlich verfügbare Informationen verwenden; wir nehmen nicht immer eine unabhängige Überprüfung vor.",
+    p3: "Sie müssen Informationen prüfen, bevor Sie sich darauf verlassen."
+  },
+  s11: {
+    title: "11) Links und Dienste Dritter",
+    p1: "Die Plattform kann Links zu unabhängigen Websites und Diensten Dritter enthalten.",
+    p2: "Wir kontrollieren oder befürworten deren Inhalte oder Praktiken nicht und übernehmen keine Verantwortung dafür. Die Nutzung erfolgt auf eigenes Risiko."
+  },
+  s12: {
+    title: "12) Konten, Sicherheit und Daten",
+    p1: "Sie sind für Aktivitäten verantwortlich, die unter Ihrem Konto stattfinden, sofern der Missbrauch nicht ausschließlich auf unser Verschulden zurückzuführen ist.",
+    p2: "Einzelheiten zur Datenverarbeitung finden Sie in der Datenschutzrichtlinie."
+  },
+  s13: {
+    title: "13) Altersbeschränkungen",
+    p1: "Personen unter 13 Jahren dürfen die Plattform nicht nutzen.",
+    p2: "Personen im Alter von 13–18 Jahren dürfen die Plattform mit Zustimmung und Aufsicht der Eltern/Erziehungsberechtigten gemäß geltendem Recht nutzen."
+  },
+  s14: {
+    title: "14) Voreingenommenheit, Ethik und Antidiskriminierung",
+    p1: "KI-Modelle können die in ihren Daten vorhandenen Verzerrungen widerspiegeln.",
+    p2: "Die Nutzung der Plattform zu diskriminierenden oder rechtswidrigen Zwecken ist untersagt. Sie sind für die Einhaltung der geltenden Gesetze und ethischen Standards verantwortlich."
+  },
+  s15: {
+    title: "15) Beta-Funktionen und Experimente",
+    p1: "Einige Funktionen können sich in der Beta-Phase befinden, werden ohne Gewähr ausschließlich zu Testzwecken bereitgestellt und können Fehler, Unterbrechungen oder Änderungen enthalten."
+  },
+  s16: {
+    title: "16) Haftungsbeschränkung (im gesetzlich zulässigen Umfang)",
+    p1: "Im größtmöglichen, gesetzlich zulässigen Umfang haften wir sowie unsere Partner, verbundenen Unternehmen, Mitarbeitenden und Beauftragten nicht für indirekte, zufällige, besondere, Folgeschäden oder Strafschadensersatz; für Gewinn-, Umsatz-, Daten- oder Reputationsverluste; für Betriebsunterbrechungen; für die Beschaffung von Ersatzleistungen; oder für Schäden aus dem Vertrauen auf Inhalte der Plattform.",
+    p2: "Soweit eine Haftung nicht vollständig ausgeschlossen werden kann, ist sie auf den Gesamtbetrag begrenzt, den Sie in den zwei (2) Monaten vor dem schadensauslösenden Ereignis für die Nutzung der Plattform gezahlt haben.",
+    p3: "Nichts in diesem Abschnitt schließt eine Haftung für Vorsatz, grobe Fahrlässigkeit oder andere unverzichtbare Rechte nach geltendem Recht (z. B. Verbraucherrechte) aus oder beschränkt sie."
+  },
+  s17: {
+    title: "17) Freistellung und Schadloshaltung (Indemnity)",
+    lead: "Sie erklären sich einverstanden, uns von Ansprüchen Dritter, Haftungen, Schäden, Verlusten und Kosten (einschließlich angemessener Anwaltskosten) freizustellen und schadlos zu halten, die entstehen durch:",
+    a: "a) Ihre Inhalte oder die Nutzung der Plattform entgegen diesen Regeln oder dem Gesetz;",
+    b: "b) die Verletzung von Rechten Dritter;",
+    c: "c) den Missbrauch Ihres Kontos."
+  },
+  s18: {
+    title: "18) Hinweise und Entfernung von Inhalten (Notice & Action)",
+    lead: "Wenn Sie der Ansicht sind, dass Inhalte auf der Plattform Ihre Rechte verletzen (z. B. Verleumdung, Marken-/Urheberrechts-/Privatsphärenverletzung), senden Sie eine Mitteilung an forecastlerteam@gmail.com mit:",
+    i1: "• Ihrem vollständigen Namen und Ihren Kontaktdaten;",
+    i2: "• einer klaren Beschreibung und der Fundstelle des Inhalts (URL, Screenshot);",
+    i3: "• der rechtlichen Grundlage Ihres Begehrens (z. B. „Verleumdung“, „Urheberrechtsverletzung“);",
+    i4: "• einer Erklärung, mit der Sie die Richtigkeit der Angaben bestätigen.",
+    foot: "Während der Prüfung können wir den strittigen Inhalt vorübergehend einschränken oder entfernen, zusätzliche Informationen anfordern und innerhalb angemessener Frist gemäß geltendem Recht handeln."
+  },
+  s19: {
+    title: "19) Sprachversionen und Übersetzungen",
+    p1: "Die Plattform kann in mehreren Sprachen verfügbar sein. Bei Widersprüchen zwischen Übersetzungen dieses Haftungsausschlusses ist die englische Fassung maßgeblich, sofern nicht zwingendes lokales Recht etwas anderes verlangt."
+  },
+  s20: {
+    title: "20) Änderungen und Aktualisierungen",
+    p1: "Wir können diesen Haftungsausschluss jederzeit ändern oder aktualisieren. Änderungen treten mit Veröffentlichung auf dieser Seite unter aktualisiertem Datum in Kraft. Ihre fortgesetzte Nutzung der Plattform nach Änderungen gilt als Zustimmung."
+  },
+  s21: {
+    title: "21) Anwendbares Recht und Gerichtsstand",
+    p1: "Dieser Haftungsausschluss unterliegt dem Recht der Republik Serbien (sofern nicht zwingende Vorschriften Ihres Wohnsitzes etwas anderes vorsehen). Zuständig in sachlicher und örtlicher Hinsicht ist das Gericht in Subotica, sofern gesetzlich nicht zwingend anderes bestimmt ist."
+  },
+  s22: {
+    title: "22) Kontakt",
+    p1: "Forecastler-Team",
+    p2: "E-Mail: forecastlerteam@gmail.com"
+  }
+},
+
+pt: {
+  headerLinks: { home: "Início", about: "Sobre nós", contact: "Contato", blog: "Blog" },
+  footerLinks: { disclaimer:"Aviso legal", terms:"Termos de uso", privacy:"Política de Privacidade", cookies:"Política de Cookies", sitemap:"Mapa do site", faq:"Perguntas frequentes" },
+  meta: {
+    title: "Aviso legal",
+    effective: "Data de vigência: 17 de junho de 2025",
+    updated:  "Última atualização: 15 de agosto de 2025",
+    intro: "Este documento estabelece isenções de responsabilidade e avisos gerais relativos ao uso da plataforma Forecastler (\"Plataforma\", \"nós\", \"nos\", \"nosso\"). Ao utilizar a Plataforma, você aceita este Aviso legal juntamente com os Termos de Uso e a Política de Privacidade. Se não concordar, não utilize a Plataforma."
+  },
+  s1: {
+    title: "1) Descrição do serviço e finalidade informativa",
+    p1: "A Plataforma fornece respostas informativas geradas por inteligência artificial (uma resposta SIM/NÃO e um percentual de probabilidade).",
+    p2: "O conteúdo e as avaliações não constituem aconselhamento jurídico, financeiro, de investimentos, médico, psicológico, de segurança, tributário ou qualquer outro aconselhamento profissional.",
+    p3: "Não garantimos a exatidão, a integridade, a atualidade ou a adequação de qualquer resposta para a sua situação específica. Você utiliza o conteúdo por sua própria conta e risco."
+  },
+  s2: {
+    title: "2) Limites de previsão e estimativas estatísticas",
+    p1: "As estimativas de probabilidade são heurísticas e baseiam-se em modelos com limitações estatísticas, possíveis vieses e erros.",
+    p2: "A Plataforma não prevê o futuro nem garante que um evento ocorrerá ou deixará de ocorrer.",
+    p3: "Os resultados dependem do contexto inserido, da qualidade das informações fornecidas e de mudanças nas circunstâncias externas."
+  },
+  s3: {
+    title: "3) Responsabilidade pessoal e tomada de decisão",
+    p1: "Você assume total responsabilidade pelas decisões e ações tomadas com base no conteúdo da Plataforma.",
+    p2: "Para decisões com consequências (por exemplo, médicas, financeiras, jurídicas, de segurança), consulte um profissional qualificado.",
+    p3: "Em situações de emergência, contate os serviços competentes (socorro médico, polícia, bombeiros)."
+  },
+  s4: {
+    title: "4) Saúde, direito, finanças e outras áreas sensíveis",
+    p1: "Nada na Plataforma constitui conselho médico, diagnóstico ou tratamento; procure um profissional de saúde.",
+    p2: "Nada na Plataforma constitui aconselhamento jurídico; consulte um advogado.",
+    p3: "Nada na Plataforma constitui aconselhamento de investimento/financeiro; consulte um consultor licenciado.",
+    p4: "Em contextos de alto risco, nossas respostas não devem ser a base única ou predominante de suas decisões."
+  },
+  s5: {
+    title: "5) Direitos pessoais e exibição pública de resultados",
+    p1: "É proibido fazer previsões sobre pessoas físicas que tenham proibido pública ou diretamente tal uso.",
+    p2: "É proibida a exibição pública ou promoção de resultados de previsões relativos a terceiros, instituições, organizações, nações ou sistemas sem sua autorização expressa ou outro fundamento jurídico válido.",
+    p3: "Para comunicar violações de reputação ou de direitos de personalidade, consulte a Seção 18 (Notificações e remoção de conteúdo)."
+  },
+  s6: {
+    title: "6) Conteúdo do usuário e conduta",
+    p1: "Você é o único responsável pelo conteúdo que envia (texto, imagens, links, dados). O conteúdo não deve ser ilícito, falso, ofensivo, difamatório, discriminatório, ameaçador nem violar direitos de terceiros.",
+    p2: "É proibido o uso indevido da Plataforma (ex.: violações de segurança, raspagem de dados (scraping), spam, desinformação, manipulação, burla de limites)."
+  },
+  s7: {
+    title: "7) Propriedade intelectual e proibição de compartilhamento não autorizado",
+    p1: "O conteúdo da Plataforma é protegido por direitos de propriedade intelectual. É estritamente proibida a cópia, distribuição ou compartilhamento não autorizados de conteúdo — incluindo capturas de tela.",
+    p2: "Regras detalhadas sobre licenças e uso permitido constam nos Termos de Uso."
+  },
+  s8: {
+    title: "8) Informações de interesse público e reputação",
+    p1: "A Plataforma não é uma fonte oficial de informações públicas, alertas ou estatísticas.",
+    p2: "Não assumimos responsabilidade pela confiança em informações de interesse público (ex.: alertas de segurança, eleições, saúde pública) nem garantimos sua exatidão.",
+    p3: "Respeitamos a dignidade e a reputação de indivíduos, empresas e comunidades. Se você entender que algum conteúdo é prejudicial, difamatório ou impreciso, entre em contato conosco (veja a Seção 22)."
+  },
+  s9: {
+    title: "9) Disponibilidade técnica e desempenho",
+    p1: "O serviço é fornecido \"no estado em que se encontra\" e \"conforme a disponibilidade\". Não garantimos disponibilidade ininterrupta, compatibilidade total com todos os dispositivos/navegadores/extensões/plugins, nem operação sem erros.",
+    p2: "Podem ocorrer indisponibilidades, atrasos, perda de dados, manutenção, atualizações e alterações funcionais sem aviso prévio.",
+    p3: "Não nos responsabilizamos por danos decorrentes de indisponibilidade, problemas técnicos, malware ou ataques de terceiros, salvo na medida exigida pela lei aplicável."
+  },
+  s10: {
+    title: "10) Exatidão, atualidade e fontes",
+    p1: "As respostas da IA podem ser imprecisas, desatualizadas, incompletas, ambíguas ou enviesadas.",
+    p2: "A Plataforma pode usar dados que você enviar e/ou informações publicamente disponíveis; nem sempre realizamos verificação independente.",
+    p3: "Você deve verificar as informações antes de nelas confiar."
+  },
+  s11: {
+    title: "11) Links e serviços de terceiros",
+    p1: "A Plataforma pode conter links para sites independentes e serviços de terceiros.",
+    p2: "Não controlamos, endossamos nem assumimos responsabilidade por seu conteúdo ou práticas. O uso é por sua conta e risco."
+  },
+  s12: {
+    title: "12) Contas, segurança e dados",
+    p1: "Você é responsável pelas atividades realizadas em sua conta, salvo se o uso indevido tiver sido exclusivamente nossa culpa.",
+    p2: "Para detalhes sobre o tratamento de dados, consulte a Política de Privacidade."
+  },
+  s13: {
+    title: "13) Restrições de idade",
+    p1: "Menores de 13 anos não podem usar a Plataforma.",
+    p2: "Pessoas de 13–18 anos podem usar a Plataforma com consentimento e supervisão dos pais/responsáveis, conforme a lei aplicável."
+  },
+  s14: {
+    title: "14) Vieses, ética e antidiscriminação",
+    p1: "Modelos de IA podem refletir vieses presentes em seus dados.",
+    p2: "É proibido usar a Plataforma para fins discriminatórios ou ilegais. Você é responsável por cumprir as leis e padrões éticos aplicáveis."
+  },
+  s15: {
+    title: "15) Recursos beta e experimentos",
+    p1: "Alguns recursos podem estar em beta e são fornecidos sem garantias, exclusivamente para testes, podendo conter erros, interrupções ou alterações."
+  },
+  s16: {
+    title: "16) Limitação de responsabilidade (na medida permitida por lei)",
+    p1: "Na máxima medida permitida por lei, nós e nossos parceiros, afiliadas, funcionários e agentes não nos responsabilizamos por danos indiretos, incidentais, especiais, consequentes ou punitivos; perda de lucros, receita, dados ou reputação; interrupção de negócios; aquisição de serviços substitutos; ou danos decorrentes da confiança no conteúdo da Plataforma.",
+    p2: "Quando a responsabilidade não puder ser totalmente excluída, ela fica limitada ao valor total que você tenha pago para usar a Plataforma nos dois (2) meses anteriores ao evento que deu origem à reclamação.",
+    p3: "Nada nesta seção exclui ou limita a responsabilidade por dolo, negligência grave ou outros direitos irrenunciáveis previstos na legislação aplicável (ex.: direitos do consumidor)."
+  },
+  s17: {
+    title: "17) Indenização e isenção de responsabilidade (indemnity)",
+    lead: "Você concorda em nos indenizar e isentar de reivindicações de terceiros, responsabilidades, danos, perdas e custos (incluindo honorários advocatícios razoáveis) decorrentes de:",
+    a: "a) seu conteúdo ou uso da Plataforma em desacordo com estas regras ou com a lei;",
+    b: "b) violação de direitos de terceiros;",
+    c: "c) uso indevido da sua conta."
+  },
+  s18: {
+    title: "18) Notificações e remoção de conteúdo (notice & action)",
+    lead: "Se você acredita que algum conteúdo na Plataforma viola seus direitos (ex.: difamação, violação de marca/direitos autorais/privacidade), envie um aviso para forecastlerteam@gmail.com contendo:",
+    i1: "• seu nome completo e dados de contato;",
+    i2: "• descrição clara e localização do conteúdo (URL, captura de tela);",
+    i3: "• a base legal do seu pedido (ex.: “difamação”, “violação de direitos autorais”);",
+    i4: "• declaração confirmando a veracidade das alegações.",
+    foot: "Durante a análise, podemos limitar temporariamente ou remover o conteúdo em disputa, solicitar informações adicionais e agir em prazo razoável conforme a lei aplicável."
+  },
+  s19: {
+    title: "19) Versões de idioma e traduções",
+    p1: "A Plataforma pode estar disponível em vários idiomas. Em caso de inconsistência entre traduções deste Aviso legal, prevalece a versão em inglês, salvo quando a lei local exigir expressamente o contrário."
+  },
+  s20: {
+    title: "20) Alterações e atualizações",
+    p1: "Podemos alterar ou atualizar este Aviso legal a qualquer momento. As mudanças entram em vigor quando publicadas nesta página com a data atualizada. O uso contínuo da Plataforma após as mudanças implica aceitação."
+  },
+  s21: {
+    title: "21) Lei aplicável e jurisdição",
+    p1: "Este Aviso legal é regido pelas leis da República da Sérvia (salvo se normas obrigatórias do seu domicílio dispuserem de outra forma). O tribunal de Subotica tem competência material e territorial, salvo determinação legal em contrário."
+  },
+  s22: {
+    title: "22) Contato",
+    p1: "Equipe Forecastler",
+    p2: "E-mail: forecastlerteam@gmail.com"
+  }
+},
+
+it: {
+  headerLinks: { home: "Home", about: "Chi siamo", contact: "Contatti", blog: "Blog" },
+  footerLinks: { disclaimer:"Note legali", terms:"Termini di utilizzo", privacy:"Informativa sulla privacy", cookies:"Informativa sui cookie", sitemap:"Mappa del sito", faq:"FAQ" },
+  meta: {
+    title: "Disclaimer",
+    effective: "Data di entrata in vigore: 17 giugno 2025",
+    updated:  "Ultimo aggiornamento: 15 agosto 2025",
+    intro: "Il presente documento definisce le esclusioni di responsabilità e gli avvisi generali relativi all’uso della piattaforma Forecastler (la \"Piattaforma\", \"noi\", \"ci\", \"nostro\"). Utilizzando la Piattaforma accetti il presente Disclaimer insieme ai Termini di utilizzo e all’Informativa sulla privacy. Se non sei d’accordo, ti preghiamo di non utilizzare la Piattaforma."
+  },
+  s1: {
+    title: "1) Descrizione del servizio e finalità informativa",
+    p1: "La Piattaforma fornisce risposte informative generate dall’intelligenza artificiale (una risposta SÌ/NO e una percentuale di probabilità).",
+    p2: "I contenuti e le valutazioni non costituiscono consulenza legale, finanziaria, d’investimento, medica, psicologica, sulla sicurezza, fiscale o altra consulenza professionale.",
+    p3: "Non garantiamo l’accuratezza, la completezza, l’attualità o l’idoneità di alcuna risposta per la tua situazione specifica. Fai affidamento sui contenuti a tuo esclusivo rischio."
+  },
+  s2: {
+    title: "2) Limiti delle previsioni e delle stime statistiche",
+    p1: "Le stime di probabilità sono euristiche e si basano su modelli con limitazioni statistiche, possibili bias ed errori.",
+    p2: "La Piattaforma non predice il futuro e non garantisce che un evento accada o non accada.",
+    p3: "I risultati dipendono dal contesto inserito, dalla qualità delle informazioni fornite e dai cambiamenti delle circostanze esterne."
+  },
+  s3: {
+    title: "3) Responsabilità personale e decisioni",
+    p1: "Assumi piena responsabilità per le decisioni e le azioni intraprese sulla base dei contenuti della Piattaforma.",
+    p2: "Per decisioni con conseguenze (ad es. mediche, finanziarie, legali, di sicurezza), consulta un professionista qualificato.",
+    p3: "In situazioni di emergenza, rivolgiti ai servizi competenti (soccorso sanitario, polizia, vigili del fuoco)."
+  },
+  s4: {
+    title: "4) Salute, diritto, finanza e altre aree sensibili",
+    p1: "Nulla sulla Piattaforma costituisce consiglio medico, diagnosi o trattamento; rivolgiti a un professionista sanitario.",
+    p2: "Nulla sulla Piattaforma costituisce consulenza legale; rivolgiti a un avvocato.",
+    p3: "Nulla sulla Piattaforma costituisce consulenza d’investimento/finanziaria; rivolgiti a un consulente abilitato.",
+    p4: "Nei contesti ad alto rischio, le nostre risposte non devono essere l’unica o la principale base delle tue decisioni."
+  },
+  s5: {
+    title: "5) Diritti personali e divulgazione pubblica dei risultati",
+    p1: "È vietato formulare previsioni su persone fisiche che abbiano vietato pubblicamente o direttamente tale uso.",
+    p2: "È vietata la divulgazione pubblica o la promozione di risultati di previsioni relativi a terzi, enti, organizzazioni, nazioni o sistemi senza il loro consenso esplicito o altro valido fondamento giuridico.",
+    p3: "Per segnalare lesioni della reputazione o dei diritti della persona, vedi Sezione 18 (Avvisi e rimozione dei contenuti)."
+  },
+  s6: {
+    title: "6) Contenuti dell’utente e condotta",
+    p1: "Sei l’unico responsabile dei contenuti che invii (testi, immagini, link, dati). I contenuti non devono essere illeciti, falsi, offensivi, diffamatori, discriminatori, minacciosi né violare i diritti altrui.",
+    p2: "L’uso improprio della Piattaforma è vietato (es. violazioni di sicurezza, scraping, spam, disinformazione, manipolazione, elusione dei limiti)."
+  },
+  s7: {
+    title: "7) Proprietà intellettuale e divieto di condivisione non autorizzata",
+    p1: "I contenuti della Piattaforma sono protetti da diritti di proprietà intellettuale. È severamente vietata la copia, distribuzione o condivisione non autorizzata dei contenuti — incluse le schermate (screenshot).",
+    p2: "Le regole dettagliate su licenze e usi consentiti sono definite nei Termini di utilizzo."
+  },
+  s8: {
+    title: "8) Informazioni di interesse pubblico e reputazione",
+    p1: "La Piattaforma non è una fonte ufficiale di informazioni pubbliche, allerte o statistiche.",
+    p2: "Non assumiamo responsabilità per l’affidamento su informazioni di interesse pubblico (es. allerte di sicurezza, elezioni, sanità pubblica) e non ne garantiamo l’accuratezza.",
+    p3: "Rispettiamo la dignità e la reputazione di individui, aziende e comunità. Se ritieni che un contenuto sia dannoso, diffamatorio o inesatto, contattaci (vedi Sezione 22)."
+  },
+  s9: {
+    title: "9) Disponibilità tecnica e prestazioni",
+    p1: "Il servizio è fornito \"così com'è\" e \"in base alla disponibilità\". Non garantiamo disponibilità ininterrotta, piena compatibilità con tutti i dispositivi/browser/estensioni/plugin, né un funzionamento privo di errori.",
+    p2: "Possono verificarsi interruzioni, ritardi, perdita di dati, manutenzioni, aggiornamenti e modifiche funzionali senza preavviso.",
+    p3: "Non siamo responsabili dei danni derivanti da downtime, problemi tecnici, malware o attacchi di terzi, salvo nei limiti previsti dalla legge applicabile."
+  },
+  s10: {
+    title: "10) Accuratezza, tempestività e fonti",
+    p1: "Le risposte dell'IA possono essere inesatte, non aggiornate, incomplete, ambigue o distorte.",
+    p2: "La Piattaforma può utilizzare dati da te inviati e/o informazioni pubblicamente disponibili; non effettuiamo sempre verifiche indipendenti.",
+    p3: "Devi verificare le informazioni prima di farvi affidamento."
+  },
+  s11: {
+    title: "11) Collegamenti e servizi di terze parti",
+    p1: "La Piattaforma può contenere collegamenti a siti indipendenti e servizi di terze parti.",
+    p2: "Non controlliamo, approviamo né ci assumiamo responsabilità per i loro contenuti o pratiche. L’uso avviene a tuo rischio."
+  },
+  s12: {
+    title: "12) Account, sicurezza e dati",
+    p1: "Sei responsabile delle attività svolte tramite il tuo account, salvo che l’uso improprio sia dovuto esclusivamente a nostra colpa.",
+    p2: "Per i dettagli sul trattamento dei dati, vedi l’Informativa sulla privacy."
+  },
+  s13: {
+    title: "13) Limiti di età",
+    p1: "Le persone di età inferiore a 13 anni non possono utilizzare la Piattaforma.",
+    p2: "Le persone di 13–18 anni possono utilizzare la Piattaforma con il consenso e la supervisione dei genitori/tutori, in conformità alla normativa applicabile."
+  },
+  s14: {
+    title: "14) Pregiudizi, etica e antidiscriminazione",
+    p1: "I modelli di IA possono riflettere i pregiudizi presenti nei dati.",
+    p2: "È vietato utilizzare la Piattaforma per fini discriminatori o illeciti. Sei responsabile del rispetto delle leggi e degli standard etici applicabili."
+  },
+  s15: {
+    title: "15) Funzionalità beta ed esperimenti",
+    p1: "Alcune funzionalità possono essere in beta, fornite senza garanzie, ai soli fini di test, e possono contenere errori, interruzioni o modifiche."
+  },
+  s16: {
+    title: "16) Limitazione di responsabilità (nei limiti consentiti dalla legge)",
+    p1: "Nella misura massima consentita dalla legge, noi e i nostri partner, affiliati, dipendenti e agenti non siamo responsabili per danni indiretti, accidentali, speciali, consequenziali o punitivi; perdita di profitti, ricavi, dati o reputazione; interruzioni di attività; acquisizione di servizi sostitutivi; o danni derivanti dall’affidamento sui contenuti della Piattaforma.",
+    p2: "Laddove la responsabilità non possa essere completamente esclusa, essa è limitata all’importo totale da te eventualmente pagato per utilizzare la Piattaforma nei due (2) mesi precedenti l’evento che ha dato origine alla pretesa.",
+    p3: "Nulla di quanto in questa sezione esclude o limita la responsabilità per dolo, colpa grave o altri diritti indisponibili ai sensi della legge applicabile (ad es. diritti dei consumatori)."
+  },
+  s17: {
+    title: "17) Indennizzo e manleva (indemnity)",
+    lead: "Accetti di indennizzarci e tenerci indenni da richieste di terzi, responsabilità, danni, perdite e costi (incluse ragionevoli spese legali) derivanti da:",
+    a: "a) i tuoi contenuti o l’uso della Piattaforma in violazione di queste regole o della legge;",
+    b: "b) la violazione di diritti di terzi;",
+    c: "c) l’uso improprio del tuo account."
+  },
+  s18: {
+    title: "18) Segnalazioni e rimozione dei contenuti (notice & action)",
+    lead: "Se ritieni che un contenuto sulla Piattaforma violi i tuoi diritti (es. diffamazione, violazione di marchio/copyright/privacy), invia una segnalazione a forecastlerteam@gmail.com contenente:",
+    i1: "• il tuo nome completo e i dati di contatto;",
+    i2: "• una chiara descrizione e la posizione del contenuto (URL, screenshot);",
+    i3: "• la base giuridica della tua richiesta (es. “diffamazione”, “violazione del diritto d’autore”);",
+    i4: "• una dichiarazione che confermi la veridicità delle affermazioni.",
+    foot: "Durante la valutazione potremo limitare temporaneamente o rimuovere il contenuto contestato, richiedere ulteriori informazioni e agire entro un termine ragionevole in conformità alla legge applicabile."
+  },
+  s19: {
+    title: "19) Versioni linguistiche e traduzioni",
+    p1: "La Piattaforma può essere disponibile in più lingue. In caso di difformità tra le traduzioni del presente Disclaimer, prevale la versione inglese, salvo diversa prescrizione espressa della legge locale."
+  },
+  s20: {
+    title: "20) Modifiche e aggiornamenti",
+    p1: "Possiamo modificare o aggiornare questo Disclaimer in qualsiasi momento. Le modifiche hanno effetto al momento della pubblicazione su questa pagina con data aggiornata. L’uso continuato della Piattaforma dopo le modifiche implica accettazione."
+  },
+  s21: {
+    title: "21) Legge applicabile e foro competente",
+    p1: "Il presente Disclaimer è disciplinato dalle leggi della Repubblica di Serbia (salvo quanto diversamente imposto dalle norme imperative del tuo luogo di residenza). Il tribunale di Subotica è competente per materia e territorio, salvo diversa previsione di legge."
+  },
+  s22: {
+    title: "22) Contatti",
+    p1: "Team Forecastler",
+    p2: "Email: forecastlerteam@gmail.com"
+  }
+},
+
+pl: {
+  headerLinks: { home: "Strona główna", about: "O nas", contact: "Kontakt", blog: "Blog" },
+  footerLinks: { disclaimer:"Nota prawna", terms:"Warunki korzystania", privacy:"Polityka prywatności", cookies:"Polityka plików cookie", sitemap:"Mapa strony", faq:"FAQ" },
+  meta: {
+    title: "Zastrzeżenia (Disclaimer)",
+    effective: "Data wejścia w życie: 17 czerwca 2025 r.",
+    updated:  "Ostatnia aktualizacja: 15 sierpnia 2025 r.",
+    intro: "Niniejszy dokument określa ogólne zastrzeżenia i informacje dotyczące korzystania z platformy Forecastler (\"Platforma\", \"my\", \"nas\", \"nasze\"). Korzystając z Platformy, akceptujesz niniejsze Zastrzeżenia wraz z Regulaminem i Polityką prywatności. Jeśli się nie zgadzasz, nie korzystaj z Platformy."
+  },
+  s1: {
+    title: "1) Opis usługi i cel informacyjny",
+    p1: "Platforma udostępnia odpowiedzi informacyjne generowane przez sztuczną inteligencję (odpowiedź TAK/NIE oraz procent prawdopodobieństwa).",
+    p2: "Treści i oceny nie stanowią porady prawnej, finansowej, inwestycyjnej, medycznej, psychologicznej, dotyczącej bezpieczeństwa, podatkowej ani żadnej innej profesjonalnej porady.",
+    p3: "Nie gwarantujemy dokładności, kompletności, aktualności ani przydatności jakiejkolwiek odpowiedzi do Twojej konkretnej sytuacji. Korzystasz z treści na własne ryzyko."
+  },
+  s2: {
+    title: "2) Granice przewidywań i szacunków statystycznych",
+    p1: "Oszacowania prawdopodobieństwa mają charakter heurystyczny i opierają się na modelach z ograniczeniami statystycznymi, możliwymi stronniczościami i błędami.",
+    p2: "Platforma nie przewiduje przyszłości i nie gwarantuje, że dane zdarzenie nastąpi lub nie nastąpi.",
+    p3: "Wyniki zależą od wprowadzonego kontekstu, jakości dostarczonych informacji oraz zmian okoliczności zewnętrznych."
+  },
+  s3: {
+    title: "3) Odpowiedzialność osobista i podejmowanie decyzji",
+    p1: "Ponosisz pełną odpowiedzialność za decyzje i działania podjęte na podstawie treści Platformy.",
+    p2: "W przypadku decyzji niosących konsekwencje (np. medycznych, finansowych, prawnych, dotyczących bezpieczeństwa) skonsultuj się z wykwalifikowanym specjalistą.",
+    p3: "W nagłych wypadkach skontaktuj się z odpowiednimi służbami (pogotowie, policja, straż pożarna)."
+  },
+  s4: {
+    title: "4) Zdrowie, prawo, finanse i inne wrażliwe obszary",
+    p1: "Nic na Platformie nie stanowi porady medycznej, diagnozy ani leczenia; skonsultuj się ze specjalistą ochrony zdrowia.",
+    p2: "Nic na Platformie nie stanowi porady prawnej; skonsultuj się z prawnikiem.",
+    p3: "Nic na Platformie nie stanowi porady inwestycyjnej/finansowej; skonsultuj się z licencjonowanym doradcą.",
+    p4: "W kontekstach wysokiego ryzyka nasze odpowiedzi nie mogą być jedyną ani dominującą podstawą Twoich decyzji."
+  },
+  s5: {
+    title: "5) Prawa osobiste i publiczne prezentowanie wyników",
+    p1: "Zabrania się tworzenia prognoz dotyczących osób fizycznych, które publicznie lub bezpośrednio zakazały takiego wykorzystania.",
+    p2: "Zabrania się publicznego prezentowania lub promowania wyników prognoz dotyczących osób trzecich, instytucji, organizacji, narodów lub systemów bez ich wyraźnej zgody lub innej ważnej podstawy prawnej.",
+    p3: "Aby zgłosić naruszenia dóbr osobistych lub reputacji, zobacz Sekcję 18 (Zawiadomienia i usuwanie treści)."
+  },
+  s6: {
+    title: "6) Treści użytkownika i zasady zachowania",
+    p1: "Jesteś wyłącznie odpowiedzialny za treści, które przesyłasz (tekst, obrazy, linki, dane). Treści nie mogą być bezprawne, fałszywe, obraźliwe, zniesławiające, dyskryminujące, grożące ani naruszać praw innych osób.",
+    p2: "Nadużywanie Platformy jest zabronione (np. naruszenia bezpieczeństwa, scraping/automatyczne pozyskiwanie danych, spam, dezinformacja, manipulacja, obchodzenie limitów)."
+  },
+  s7: {
+    title: "7) Własność intelektualna i zakaz nieuprawnionego udostępniania",
+    p1: "Treści Platformy są chronione prawami własności intelektualnej. Nieuprawnione kopiowanie, rozpowszechnianie lub udostępnianie treści — w tym zrzutów ekranu — jest surowo zabronione.",
+    p2: "Szczegółowe zasady dotyczące licencji i dozwolonego użytku określa Regulamin."
+  },
+  s8: {
+    title: "8) Informacje w interesie publicznym i reputacja",
+    p1: "Platforma nie jest oficjalnym źródłem informacji publicznych, alertów ani statystyk.",
+    p2: "Nie ponosimy odpowiedzialności za poleganie na informacjach w interesie publicznym (np. alertach bezpieczeństwa, wyborach, zdrowiu publicznym) i nie gwarantujemy ich dokładności.",
+    p3: "Szanujemy godność i reputację osób, firm i społeczności. Jeśli uważasz, że jakaś treść jest szkodliwa, zniesławiająca lub nieścisła, skontaktuj się z nami (zob. Sekcja 22)."
+  },
+  s9: {
+    title: "9) Dostępność techniczna i wydajność",
+    p1: "Usługa jest świadczona \"w stanie takim, w jakim jest\" oraz \"w miarę dostępności\". Nie gwarantujemy nieprzerwanej dostępności, pełnej zgodności ze wszystkimi urządzeniami/przeglądarkami/rozszerzeniami/wtyczkami ani działania wolnego od błędów.",
+    p2: "Awarie, opóźnienia, utrata danych, prace serwisowe, aktualizacje i zmiany funkcjonalne mogą wystąpić bez uprzedniego powiadomienia.",
+    p3: "Nie ponosimy odpowiedzialności za szkody wynikłe z przestojów, problemów technicznych, złośliwego oprogramowania lub ataków osób trzecich, chyba że obowiązujące prawo stanowi inaczej."
+  },
+  s10: {
+    title: "10) Dokładność, aktualność i źródła",
+    p1: "Odpowiedzi SI mogą być niedokładne, nieaktualne, niekompletne, niejednoznaczne lub obciążone stronniczością.",
+    p2: "Platforma może wykorzystywać dane przekazane przez Ciebie i/lub publicznie dostępne informacje; nie zawsze dokonujemy niezależnej weryfikacji.",
+    p3: "Musisz zweryfikować informacje, zanim na nich polegasz."
+  },
+  s11: {
+    title: "11) Linki i usługi stron trzecich",
+    p1: "Platforma może zawierać linki do niezależnych witryn i usług stron trzecich.",
+    p2: "Nie kontrolujemy, nie popieramy ani nie ponosimy odpowiedzialności za ich treści czy praktyki. Korzystasz na własne ryzyko."
+  },
+  s12: {
+    title: "12) Konta, bezpieczeństwo i dane",
+    p1: "Odpowiadasz za działania podejmowane w ramach Twojego konta, chyba że nadużycie wynika wyłącznie z naszej winy.",
+    p2: "Szczegóły dotyczące przetwarzania danych znajdziesz w Polityce prywatności."
+  },
+  s13: {
+    title: "13) Ograniczenia wiekowe",
+    p1: "Osoby poniżej 13 roku życia nie mogą korzystać z Platformy.",
+    p2: "Osoby w wieku 13–18 lat mogą korzystać z Platformy za zgodą i pod nadzorem rodzica/opiekuna, zgodnie z obowiązującym prawem."
+  },
+  s14: {
+    title: "14) Uprzedzenia, etyka i przeciwdziałanie dyskryminacji",
+    p1: "Modele SI mogą odzwierciedlać uprzedzenia obecne w danych.",
+    p2: "Wykorzystywanie Platformy do celów dyskryminacyjnych lub bezprawnych jest zabronione. Odpowiadasz za zgodność z obowiązującym prawem i standardami etycznymi."
+  },
+  s15: {
+    title: "15) Funkcje beta i eksperymenty",
+    p1: "Niektóre funkcje mogą być w wersji beta, udostępniane bez gwarancji, wyłącznie do testów, i mogą zawierać błędy, przerwy lub zmiany."
+  },
+  s16: {
+    title: "16) Ograniczenie odpowiedzialności (w zakresie dozwolonym przez prawo)",
+    p1: "W najszerszym zakresie dozwolonym przez prawo my oraz nasi partnerzy, podmioty stowarzyszone, pracownicy i agenci nie ponosimy odpowiedzialności za szkody pośrednie, uboczne, szczególne, wynikowe lub karne; utratę zysków, przychodów, danych lub renomy; przerwy w działalności; koszty pozyskania usług zastępczych; ani szkody wynikłe z polegania na treściach Platformy.",
+    p2: "Jeśli odpowiedzialności nie można całkowicie wyłączyć, jest ona ograniczona do łącznej kwoty, jaką zapłaciłeś/aś za korzystanie z Platformy w okresie dwóch (2) miesięcy poprzedzających zdarzenie stanowiące podstawę roszczenia.",
+    p3: "Żadne postanowienie niniejszej sekcji nie wyłącza ani nie ogranicza odpowiedzialności za umyślne działanie, rażące niedbalstwo lub inne prawa, z których nie można zrezygnować na mocy obowiązującego prawa (np. prawa konsumentów)."
+  },
+  s17: {
+    title: "17) Odszkodowanie i zwolnienie z odpowiedzialności (indemnity)",
+    lead: "Zgadzasz się zwolnić nas z odpowiedzialności i zrekompensować roszczenia osób trzecich, zobowiązania, szkody, straty i koszty (w tym uzasadnione koszty obsługi prawnej) powstałe w wyniku:",
+    a: "a) Twoich treści lub korzystania z Platformy niezgodnie z niniejszymi zasadami lub prawem;",
+    b: "b) naruszenia praw osób trzecich;",
+    c: "c) nadużycia Twojego konta."
+  },
+  s18: {
+    title: "18) Zawiadomienia i usuwanie treści (notice & action)",
+    lead: "Jeśli uważasz, że treść na Platformie narusza Twoje prawa (np. zniesławienie, naruszenie znaku towarowego/praw autorskich/prywatności), wyślij zawiadomienie na adres forecastlerteam@gmail.com zawierające:",
+    i1: "• Twoje imię i nazwisko oraz dane kontaktowe;",
+    i2: "• jasny opis i lokalizację treści (URL, zrzut ekranu);",
+    i3: "• podstawę prawną żądania (np. „zniesławienie”, „naruszenie praw autorskich”);",
+    i4: "• oświadczenie potwierdzające prawdziwość podanych informacji.",
+    foot: "W trakcie rozpatrywania możemy tymczasowo ograniczyć lub usunąć sporną treść, poprosić o dodatkowe informacje i działać w rozsądnym terminie zgodnie z obowiązującym prawem."
+  },
+  s19: {
+    title: "19) Wersje językowe i tłumaczenia",
+    p1: "Platforma może być dostępna w wielu językach. W razie rozbieżności między tłumaczeniami niniejszych Zastrzeżeń rozstrzygająca jest wersja angielska, chyba że lokalne prawo wyraźnie stanowi inaczej."
+  },
+  s20: {
+    title: "20) Zmiany i aktualizacje",
+    p1: "Możemy wprowadzać zmiany lub aktualizacje niniejszych Zastrzeżeń w dowolnym czasie. Zmiany obowiązują z chwilą publikacji na tej stronie z uaktualnioną datą. Dalsze korzystanie z Platformy oznacza ich akceptację."
+  },
+  s21: {
+    title: "21) Prawo właściwe i jurysdykcja",
+    p1: "Niniejsze Zastrzeżenia podlegają prawu Republiki Serbii (chyba że bezwzględnie obowiązujące przepisy miejsca zamieszkania stanowią inaczej). Właściwy rzeczowo i miejscowo jest sąd w Suboticy, o ile prawo nie stanowi inaczej."
+  },
+  s22: {
+    title: "22) Kontakt",
+    p1: "Zespół Forecastlera",
+    p2: "E-mail: forecastlerteam@gmail.com"
+  }
+},
+
+uk: {
+  headerLinks: { home: "Головна", about: "Про нас", contact: "Контакти", blog: "Блог" },
+  footerLinks: { disclaimer:"Відмова від відповідальності", terms:"Умови використання", privacy:"Політика конфіденційності", cookies:"Політика щодо файлів cookie", sitemap:"Карта сайту", faq:"Поширені запитання" },
+  meta: {
+    title: "Застереження (Disclaimer)",
+    effective: "Дата набрання чинності: 17 червня 2025 року",
+    updated:  "Останнє оновлення: 15 серпня 2025 року",
+    intro: "Цей документ встановлює загальні застереження та повідомлення щодо використання платформи Forecastler (\"Платформа\", \"ми\", \"нас\", \"наші\"). Користуючись Платформою, ви приймаєте це Застереження разом з Умовами використання та Політикою конфіденційності. Якщо ви не згодні, будь ласка, не користуйтеся Платформою."
+  },
+  s1: {
+    title: "1) Опис сервісу та інформаційна мета",
+    p1: "Платформа надає інформаційні відповіді, згенеровані штучним інтелектом (відповідь ТАК/НІ та відсоток ймовірності).",
+    p2: "Вміст і оцінки не є юридичною, фінансовою, інвестиційною, медичною, психологічною, з питань безпеки, податковою чи будь-якою іншою професійною консультацією.",
+    p3: "Ми не гарантуємо точність, повноту, актуальність або придатність будь-якої відповіді для вашої конкретної ситуації. Ви покладаєтесь на вміст на власний ризик."
+  },
+  s2: {
+    title: "2) Межі прогнозування та статистичних оцінок",
+    p1: "Оцінки ймовірності мають евристичний характер і базуються на моделях зі статистичними обмеженнями, можливими упередженнями та помилками.",
+    p2: "Платформа не передбачає майбутнє і не гарантує, що подія станеться чи не станеться.",
+    p3: "Результати залежать від введеного контексту, якості наданої інформації та змін зовнішніх обставин."
+  },
+  s3: {
+    title: "3) Особиста відповідальність і ухвалення рішень",
+    p1: "Ви несете повну відповідальність за рішення та дії, які здійснюєте на підставі вмісту Платформи.",
+    p2: "Для рішень із наслідками (напр., медичних, фінансових, юридичних, безпекових) звертайтеся до кваліфікованого фахівця.",
+    p3: "У надзвичайних ситуаціях звертайтеся до відповідних служб (швидка допомога, поліція, пожежна служба)."
+  },
+  s4: {
+    title: "4) Здоров’я, право, фінанси та інші чутливі сфери",
+    p1: "Ніщо на Платформі не є медичною порадою, діагностикою чи лікуванням; зверніться до фахівця охорони здоров’я.",
+    p2: "Ніщо на Платформі не є юридичною порадою; зверніться до адвоката.",
+    p3: "Ніщо на Платформі не є інвестиційною/фінансовою порадою; зверніться до ліцензованого консультанта.",
+    p4: "У високоризикових контекстах наші відповіді не повинні бути єдиною чи переважною підставою ваших рішень."
+  },
+  s5: {
+    title: "5) Особисті права та публічне відображення результатів",
+    p1: "Заборонено робити прогнози щодо фізичних осіб, які публічно або безпосередньо заборонили таке використання.",
+    p2: "Заборонено публічно відображати або просувати результати прогнозів, що стосуються третіх осіб, установ, організацій, націй або систем, без їхнього явного дозволу чи іншої належної правової підстави.",
+    p3: "Щоб повідомити про порушення репутації або особистих прав, див. Розділ 18 (Повідомлення та видалення контенту)."
+  },
+  s6: {
+    title: "6) Вміст користувача та поведінка",
+    p1: "Ви несете повну відповідальність за вміст, який подаєте (текст, зображення, посилання, дані). Вміст не повинен бути протиправним, неправдивим, образливим, наклепницьким, дискримінаційним, таким, що містить погрози, або порушувати права інших осіб.",
+    p2: "Зловживання Платформою заборонено (напр., порушення безпеки, скрейпінг, спам, дезінформація, маніпуляції, обходження обмежень)."
+  },
+  s7: {
+    title: "7) Інтелектуальна власність і заборона несанкціонованого поширення",
+    p1: "Вміст Платформи захищено правами інтелектуальної власності. Несанкціоноване копіювання, розповсюдження чи поширення вмісту — включно зі скріншотами — суворо заборонено.",
+    p2: "Детальні правила щодо ліцензій і дозволеного використання викладено в Умовах використання."
+  },
+  s8: {
+    title: "8) Інформація суспільного інтересу та репутація",
+    p1: "Платформа не є офіційним джерелом публічної інформації, сповіщень чи статистики.",
+    p2: "Ми не несемо відповідальності за покладання на інформацію суспільного інтересу (напр., попередження з безпеки, вибори, громадське здоров’я) і не гарантуємо її точність.",
+    p3: "Ми поважаємо гідність і репутацію осіб, компаній і спільнот. Якщо вважаєте, що будь-який вміст є шкідливим, наклепницьким або неточним, зв’яжіться з нами (див. Розділ 22)."
+  },
+  s9: {
+    title: "9) Технічна доступність та продуктивність",
+    p1: "Сервіс надається \"як є\" та \"за наявності\". Ми не гарантуємо безперервну доступність, повну сумісність з усіма пристроями/браузерами/розширеннями/плагінами чи безпомилкову роботу.",
+    p2: "Перебої, затримки, втрата даних, техобслуговування, оновлення та функціональні зміни можуть відбуватися без попередження.",
+    p3: "Ми не несемо відповідальності за шкоду внаслідок простою, технічних проблем, шкідливого ПЗ або атак третіх осіб, окрім випадків, передбачених чинним законодавством."
+  },
+  s10: {
+    title: "10) Точність, актуальність і джерела",
+    p1: "Відповіді ШІ можуть бути неточними, застарілими, неповними, неоднозначними або упередженими.",
+    p2: "Платформа може використовувати дані, які ви подаєте, та/або публічно доступну інформацію; ми не завжди проводимо незалежну перевірку.",
+    p3: "Ви повинні перевіряти інформацію, перш ніж покладатися на неї."
+  },
+  s11: {
+    title: "11) Посилання та сервіси третіх сторін",
+    p1: "Платформа може містити посилання на незалежні вебсайти та сервіси третіх сторін.",
+    p2: "Ми не контролюємо, не схвалюємо і не несемо відповідальності за їхній вміст чи практики. Використання — на ваш власний ризик."
+  },
+  s12: {
+    title: "12) Облікові записи, безпека та дані",
+    p1: "Ви відповідаєте за дії, що відбуваються у межах вашого облікового запису, якщо зловживання не сталося виключно з нашої вини.",
+    p2: "Докладніше про обробку даних — у Політиці конфіденційності."
+  },
+  s13: {
+    title: "13) Вікові обмеження",
+    p1: "Особи молодше 13 років не можуть користуватися Платформою.",
+    p2: "Особи віком 13–18 років можуть користуватися Платформою за згодою та під наглядом батьків/опікунів відповідно до чинного законодавства."
+  },
+  s14: {
+    title: "14) Упередження, етика та недискримінація",
+    p1: "Моделі ШІ можуть відображати упередження, притаманні їхнім даним.",
+    p2: "Використання Платформи з дискримінаційною чи незаконною метою заборонено. Ви несете відповідальність за дотримання чинного законодавства та етичних стандартів."
+  },
+  s15: {
+    title: "15) Бета-функції та експерименти",
+    p1: "Деякі функції можуть бути у бета-версії, надаються без гарантій, лише для тестування, і можуть містити помилки, перерви або зміни."
+  },
+  s16: {
+    title: "16) Обмеження відповідальності (у межах, дозволених законом)",
+    p1: "У максимально дозволених законом межах ми та наші партнери, афілійовані особи, працівники й агенти не відповідаємо за непрямі, випадкові, спеціальні, наслідкові або штрафні збитки; втрату прибутку, доходу, даних або репутації; переривання діяльності; витрати на отримання замінних послуг; чи збитки, що виникають внаслідок покладання на контент Платформи.",
+    p2: "Якщо відповідальність не може бути повністю виключена, вона обмежується загальною сумою, сплаченою вами за користування Платформою протягом двох (2) місяців, що передували події, яка стала підставою для претензії.",
+    p3: "Ніщо в цьому розділі не виключає і не обмежує відповідальність за умисні дії, грубу недбалість або інші невідмовні права згідно із застосовним законодавством (наприклад, права споживачів)."
+  },
+  s17: {
+    title: "17) Відшкодування збитків і звільнення від відповідальності (indemnity)",
+    lead: "Ви погоджуєтеся відшкодувати нам збитки та захистити нас від вимог третіх осіб, зобов’язань, шкоди, втрат і витрат (включно з розумними витратами на адвокатів), що виникають унаслідок:",
+    a: "a) вашого контенту або використання Платформи всупереч цим правилам чи закону;",
+    b: "b) порушення прав третіх осіб;",
+    c: "c) зловживання вашим обліковим записом."
+  },
+  s18: {
+    title: "18) Повідомлення та видалення контенту (notice & action)",
+    lead: "Якщо вважаєте, що контент на Платформі порушує ваші права (наприклад, наклеп, порушення торговельної марки/авторського права/приватності), надішліть повідомлення на forecastlerteam@gmail.com, яке містить:",
+    i1: "• ваше повне ім’я та контактні дані;",
+    i2: "• чіткий опис і місцезнаходження контенту (URL, скриншот);",
+    i3: "• правову підставу вашої вимоги (наприклад, «наклеп», «порушення авторського права»);",
+    i4: "• заяву про підтвердження правдивості викладеного.",
+    foot: "Під час розгляду ми можемо тимчасово обмежити або видалити спірний контент, запросити додаткову інформацію та діяти у розумний строк відповідно до чинного законодавства."
+  },
+  s19: {
+    title: "19) Мовні версії та переклади",
+    p1: "Платформа може бути доступною кількома мовами. У разі невідповідностей між перекладами цього Застереження переважає англійська версія, якщо інше прямо не вимагається місцевим законодавством."
+  },
+  s20: {
+    title: "20) Зміни та оновлення",
+    p1: "Ми можемо змінювати або оновлювати це Застереження будь-коли. Зміни набирають чинності з моменту їх публікації на цій сторінці з оновленою датою. Подальше користування Платформою після змін означає їх прийняття."
+  },
+  s21: {
+    title: "21) Застосовне право та юрисдикція",
+    p1: "Це Застереження регулюється законами Республіки Сербія (якщо імперативні норми вашого місця проживання не передбачають інше). Суд у місті Суботиця має предметну та територіальну юрисдикцію, якщо законом не встановлено інакше."
+  },
+  s22: {
+    title: "22) Контакти",
+    p1: "Команда Forecastler",
+    p2: "Електронна пошта: forecastlerteam@gmail.com"
+  }
+},
+
+ru: {
+  headerLinks: { home: "Главная", about: "О нас", contact: "Контакты", blog: "Блог" },
+  footerLinks: { disclaimer:"Отказ от ответственности", terms:"Условия использования", privacy:"Политика конфиденциальности", cookies:"Политика в отношении файлов cookie", sitemap:"Карта сайта", faq:"Частые вопросы" },
+  meta: {
+    title: "Отказ от ответственности",
+    effective: "Дата вступления в силу: 17 июня 2025 г.",
+    updated:  "Последнее обновление: 15 августа 2025 г.",
+    intro: "Настоящий документ устанавливает общие оговорки и уведомления, касающиеся использования платформы Forecastler (\"Платформа\", \"мы\", \"нас\", \"наши\"). Пользуясь Платформой, вы принимаете настоящий отказ от ответственности вместе с Условиями использования и Политикой конфиденциальности. Если вы не согласны, пожалуйста, не используйте Платформу."
+  },
+  s1: {
+    title: "1) Описание сервиса и информационная цель",
+    p1: "Платформа предоставляет информационные ответы, сгенерированные искусственным интеллектом (ответ ДА/НЕТ и процент вероятности).",
+    p2: "Содержимое и оценки не являются юридической, финансовой, инвестиционной, медицинской, психологической, по безопасности, налоговой или иной профессиональной консультацией.",
+    p3: "Мы не гарантируем точность, полноту, актуальность или пригодность какой-либо ответа для вашей конкретной ситуации. Использование материалов осуществляется на ваш риск."
+  },
+  s2: {
+    title: "2) Границы предсказаний и статистических оценок",
+    p1: "Оценки вероятности являются эвристическими и основаны на моделях со статистическими ограничениями, возможными смещениями и ошибками.",
+    p2: "Платформа не предсказывает будущее и не гарантирует, что событие произойдёт или не произойдёт.",
+    p3: "Результаты зависят от введённого контекста, качества предоставленной информации и изменений внешних обстоятельств."
+  },
+  s3: {
+    title: "3) Личная ответственность и принятие решений",
+    p1: "Вы несёте полную ответственность за решения и действия, предпринятые на основе материалов Платформы.",
+    p2: "По вопросам, имеющим последствия (например, медицинским, финансовым, юридическим, связанным с безопасностью), обращайтесь к квалифицированному специалисту.",
+    p3: "В экстренных ситуациях обращайтесь в соответствующие службы (скорая помощь, полиция, пожарная охрана)."
+  },
+  s4: {
+    title: "4) Здоровье, право, финансы и другие чувствительные области",
+    p1: "Ничто на Платформе не является медицинским советом, диагнозом или лечением; обратитесь к медицинскому специалисту.",
+    p2: "Ничто на Платформе не является юридической консультацией; обратитесь к адвокату.",
+    p3: "Ничто на Платформе не является инвестиционной/финансовой рекомендацией; обратитесь к лицензированному консультанту.",
+    p4: "В условиях повышенного риска наши ответы не должны быть единственной или преобладающей основой ваших решений."
+  },
+  s5: {
+    title: "5) Личные права и публичное отображение результатов",
+    p1: "Запрещено делать прогнозы о физических лицах, которые публично или напрямую запретили такое использование.",
+    p2: "Запрещено публично демонстрировать или продвигать результаты прогнозов, относящиеся к третьим лицам, учреждениям, организациям, нациям или системам, без их явного разрешения либо иного действительного правового основания.",
+    p3: "Для сообщения о нарушениях репутации или личных прав см. Раздел 18 (Уведомления и удаление контента)."
+  },
+  s6: {
+    title: "6) Контент пользователя и поведение",
+    p1: "Вы несёте исключительную ответственность за контент, который отправляете (тексты, изображения, ссылки, данные). Контент не должен быть незаконным, ложным, оскорбительным, клеветническим, дискриминационным, угрожающим или нарушать права других лиц.",
+    p2: "Запрещено неправомерное использование Платформы (например, нарушения безопасности, скрейпинг, спам, дезинформация, манипуляции, обход ограничений)."
+  },
+  s7: {
+    title: "7) Интеллектуальная собственность и запрет на несанкционированное распространение",
+    p1: "Содержимое Платформы защищено правами интеллектуальной собственности. Несанкционированное копирование, распространение или передача контента — включая скриншоты — строго запрещены.",
+    p2: "Подробные правила о лицензиях и допустимом использовании изложены в Условиях использования."
+  },
+  s8: {
+    title: "8) Информация, представляющая общественный интерес, и репутация",
+    p1: "Платформа не является официальным источником публичной информации, оповещений или статистики.",
+    p2: "Мы не берём на себя ответственность за доверие к информации, представляющей общественный интерес (например, предупреждения по безопасности, выборы, общественное здравоохранение), и не гарантируем её точность.",
+    p3: "Мы уважаем достоинство и репутацию людей, компаний и сообществ. Если вы считаете, что какой-либо контент вреден, клеветнически или неточен, свяжитесь с нами (см. Раздел 22)."
+  },
+  s9: {
+    title: "9) Техническая доступность и производительность",
+    p1: "Сервис предоставляется \"как есть\" и \"по мере доступности\". Мы не гарантируем бесперебойную доступность, полную совместимость со всеми устройствами/браузерами/расширениями/плагинами или работу без ошибок.",
+    p2: "Перебои, задержки, потеря данных, обслуживание, обновления и функциональные изменения могут происходить без уведомления.",
+    p3: "Мы не несём ответственности за ущерб, вызванный простоями, техническими проблемами, вредоносным ПО или атаками третьих лиц, за исключением случаев, предусмотренных применимым законодательством."
+  },
+  s10: {
+    title: "10) Точность, актуальность и источники",
+    p1: "Ответы ИИ могут быть неточными, устаревшими, неполными, двусмысленными или предвзятыми.",
+    p2: "Платформа может использовать предоставленные вами данные и/или общедоступную информацию; мы не всегда выполняем независимую проверку.",
+    p3: "Вы должны проверять информацию, прежде чем на неё полагаться."
+  },
+  s11: {
+    title: "11) Ссылки и сервисы третьих лиц",
+    p1: "Платформа может содержать ссылки на независимые веб-сайты и сервисы третьих лиц.",
+    p2: "Мы не контролируем, не одобряем и не несём ответственности за их содержание или практики. Использование — на ваш риск."
+  },
+  s12: {
+    title: "12) Учётные записи, безопасность и данные",
+    p1: "Вы несёте ответственность за действия в рамках вашей учётной записи, если злоупотребление не произошло исключительно по нашей вине.",
+    p2: "Подробности обработки данных см. в Политике конфиденциальности."
+  },
+  s13: {
+    title: "13) Возрастные ограничения",
+    p1: "Лицам младше 13 лет нельзя использовать Платформу.",
+    p2: "Лица в возрасте 13–18 лет могут пользоваться Платформой с согласия и под присмотром родителей/опекунов в соответствии с применимым законодательством."
+  },
+  s14: {
+    title: "14) Предвзятость, этика и недискриминация",
+    p1: "Модели ИИ могут отражать смещения, присутствующие в их данных.",
+    p2: "Использование Платформы в дискриминационных или незаконных целях запрещено. Вы несёте ответственность за соблюдение применимого законодательства и этических норм."
+  },
+  s15: {
+    title: "15) Бета-функции и эксперименты",
+    p1: "Некоторые функции могут находиться на стадии бета-тестирования, предоставляются без гарантий, исключительно для тестов и могут содержать ошибки, перерывы или изменения."
+  },
+  s16: {
+    title: "16) Ограничение ответственности (в пределах, разрешённых законом)",
+    p1: "В максимально допустимой законом степени мы, наши партнёры, аффилированные лица, сотрудники и агенты не несём ответственности за косвенные, случайные, особые, последующие или штрафные убытки; потерю прибыли, выручки, данных или деловой репутации; перерывы в работе; расходы на приобретение заменяющих услуг; либо убытки, возникшие вследствие доверия к содержимому Платформы.",
+    p2: "Если ответственность не может быть полностью исключена, она ограничивается общей суммой, которую вы могли уплатить за пользование Платформой в течение двух (2) месяцев, предшествовавших событию, послужившему основанием для претензии.",
+    p3: "Ничто в данном разделе не исключает и не ограничивает ответственность за умышленное неправомерное поведение, грубую небрежность или иные неотчуждаемые права по применимому законодательству (например, права потребителей)."
+  },
+  s17: {
+    title: "17) Возмещение убытков и освобождение от ответственности (indemnity)",
+    lead: "Вы соглашаетесь возместить нам убытки и оградить нас от претензий третьих лиц, обязательств, ущерба, потерь и расходов (включая разумные расходы на адвокатов), возникших вследствие:",
+    a: "a) вашего контента или использования Платформы в нарушение настоящих правил или закона;",
+    b: "b) нарушения прав третьих лиц;",
+    c: "c) неправомерного использования вашей учётной записи."
+  },
+  s18: {
+    title: "18) Уведомления и удаление контента (notice & action)",
+    lead: "Если вы считаете, что контент на Платформе нарушает ваши права (например, клевета, нарушение товарного знака/авторского права/частной жизни), отправьте уведомление на forecastlerteam@gmail.com, включив:",
+    i1: "• ваши полное имя и контактные данные;",
+    i2: "• чёткое описание и местоположение контента (URL, скриншот);",
+    i3: "• правовое основание требования (например, «клевета», «нарушение авторских прав»);",
+    i4: "• заявление, подтверждающее достоверность изложенного.",
+    foot: "На время рассмотрения мы можем временно ограничить или удалить спорный контент, запросить дополнительную информацию и действовать в разумные сроки в соответствии с применимым законодательством."
+  },
+  s19: {
+    title: "19) Языковые версии и переводы",
+    p1: "Платформа может быть доступна на нескольких языках. В случае расхождений между переводами настоящего отказа от ответственности приоритет имеет английская версия, если иное прямо не требуется местным законодательством."
+  },
+  s20: {
+    title: "20) Изменения и обновления",
+    p1: "Мы можем в любое время изменять или обновлять настоящий отказ от ответственности. Изменения вступают в силу с момента публикации на этой странице с обновлённой датой. Продолжая пользоваться Платформой после изменений, вы принимаете их."
+  },
+  s21: {
+    title: "21) Применимое право и юрисдикция",
+    p1: "Настоящий отказ от ответственности регулируется законодательством Республики Сербия (если императивные нормы вашего места проживания не предусматривают иное). Компетентным по предмету и территории является суд города Суботица, если иное не требуется законом."
+  },
+  s22: {
+    title: "22) Контакты",
+    p1: "Команда Forecastler",
+    p2: "Эл. почта: forecastlerteam@gmail.com"
+  }
+},
+
+tr: {
+  headerLinks: { home: "Ana sayfa", about: "Hakkımızda", contact: "İletişim", blog: "Blog" },
+  footerLinks: { disclaimer:"Yasal Uyarı", terms:"Kullanım Şartları", privacy:"Gizlilik Politikası", cookies:"Çerez Politikası", sitemap:"Site haritası", faq:"SSS" },
+  meta: {
+    title: "Feragatname",
+    effective: "Yürürlük Tarihi: 17 Haziran 2025",
+    updated:  "Son Güncelleme: 15 Ağustos 2025",
+    intro: "Bu belge, Forecastler platformasının (\"Platform\", \"biz\", \"bize\", \"bizim\") kullanımına ilişkin genel feragat ve bildirimleri ortaya koyar. Platformu kullanarak bu Feragatname’yi, Kullanım Şartları ve Gizlilik Politikası ile birlikte kabul etmiş olursunuz. Kabul etmiyorsanız lütfen Platformu kullanmayın."
+  },
+  s1: {
+    title: "1) Hizmet açıklaması ve bilgilendirme amacı",
+    p1: "Platform, yapay zekâ tarafından üretilen bilgilendirici yanıtlar sağlar (EVET/HAYIR yanıtı ve olasılık yüzdesi).",
+    p2: "İçerik ve değerlendirmeler; hukuki, finansal, yatırım, tıbbi, psikolojik, güvenlik, vergi veya başka herhangi bir profesyonel tavsiye niteliği taşımaz.",
+    p3: "Herhangi bir yanıtın doğruluğu, eksiksizliği, güncelliği veya özel durumunuza uygunluğu garanti edilmez. İçeriğe güvenmeniz kendi sorumluluğunuzdadır."
+  },
+  s2: {
+    title: "2) Tahminlerin ve istatistiksel kestirimlerin sınırları",
+    p1: "Olasılık tahminleri sezgiseldir ve istatistiksel sınırlamalar, olası önyargılar ve hatalar içeren modellere dayanır.",
+    p2: "Platform gelecek hakkında kehanette bulunmaz ve herhangi bir olayın gerçekleşeceğini ya da gerçekleşmeyeceğini garanti etmez.",
+    p3: "Sonuçlar girilen bağlama, sağlanan bilgilerin kalitesine ve dış koşullardaki değişikliklere bağlıdır."
+  },
+  s3: {
+    title: "3) Kişisel sorumluluk ve karar verme",
+    p1: "Platform içeriğine dayanarak aldığınız kararlar ve yaptığınız eylemlerden tamamen siz sorumlusunuz.",
+    p2: "Sonuç doğuran kararlar için (ör. tıbbi, finansal, hukuki, güvenlikle ilgili) nitelikli bir uzmana danışın.",
+    p3: "Acil durumlarda ilgili hizmetlerle iletişime geçin (acil sağlık, polis, itfaiye)."
+  },
+  s4: {
+    title: "4) Sağlık, hukuk, finans ve diğer hassas alanlar",
+    p1: "Platformdaki hiçbir şey tıbbi tavsiye, teşhis veya tedavi niteliği taşımaz; bir sağlık profesyoneline başvurun.",
+    p2: "Platformdaki hiçbir şey hukuki danışmanlık değildir; bir avukata danışın.",
+    p3: "Platformdaki hiçbir şey yatırım/finansal tavsiye değildir; lisanslı bir danışmana başvurun.",
+    p4: "Yüksek riskli bağlamlarda yanıtlarımız kararlarınız için tek veya baskın dayanak olmamalıdır."
+  },
+  s5: {
+    title: "5) Kişisel haklar ve sonuçların kamuya açık gösterimi",
+    p1: "Kamuya açık veya doğrudan böyle bir kullanımı yasaklamış gerçek kişiler hakkında tahmin üretmek yasaktır.",
+    p2: "Üçüncü kişiler, kurumlar, örgütler, uluslar veya sistemlerle ilgili tahmin sonuçlarının, açık izinleri veya başka geçerli bir hukuki dayanak olmadan, kamuya açık biçimde gösterilmesi veya tanıtılması yasaktır.",
+    p3: "İtibarın veya kişilik haklarının ihlallerini bildirmek için bkz. Bölüm 18 (Bildirim ve içerik kaldırma)."
+  },
+  s6: {
+    title: "6) Kullanıcı içeriği ve davranış",
+    p1: "Gönderdiğiniz içerikten (metin, görsel, bağlantı, veri) yalnızca siz sorumlusunuz. İçerik; hukuka aykırı, yanlış, saldırgan, iftira niteliğinde, ayrımcı, tehditkâr olmamalı veya başkalarının haklarını ihlal etmemelidir.",
+    p2: "Platformun kötüye kullanımı yasaktır (örn. güvenlik ihlalleri, veri kazıma (scraping), spam, dezenformasyon, manipülasyon, sınırların aşılması/etrafından dolaşılması)."
+  },
+  s7: {
+    title: "7) Fikri mülkiyet ve izinsiz paylaşım yasağı",
+    p1: "Platform içeriği fikri mülkiyet haklarıyla korunur. İçeriğin — ekran görüntüleri dâhil — izinsiz kopyalanması, dağıtılması veya paylaşılması kesinlikle yasaktır.",
+    p2: "Lisanslar ve izin verilen kullanım ile ilgili ayrıntılı kurallar Kullanım Şartları’nda yer alır."
+  },
+  s8: {
+    title: "8) Kamu yararı bilgileri ve itibar",
+    p1: "Platform, kamuya yönelik resmî bilgi, uyarı veya istatistik kaynağı değildir.",
+    p2: "Kamu yararı kapsamındaki bilgilere (örn. güvenlik uyarıları, seçimler, halk sağlığı) dayanılmasından sorumluluk kabul etmeyiz ve bunların doğruluğunu garanti etmeyiz.",
+    p3: "Bireylerin, şirketlerin ve toplulukların onur ve itibarına saygı duyarız. Herhangi bir içeriğin zararlı, iftira niteliğinde veya yanlış olduğunu düşünüyorsanız bizimle iletişime geçin (bkz. Bölüm 22)."
+  },
+  s9: {
+    title: "9) Teknik kullanılabilirlik ve performans",
+    p1: "Hizmet \"olduğu gibi\" ve \"mevcut olduğu ölçüde\" sunulur. Kesintisiz kullanılabilirlik, tüm cihazlar/tarayıcılar/uzantılar/eklentilerle tam uyumluluk veya hatasız çalışmayı garanti etmeyiz.",
+    p2: "Kesintiler, gecikmeler, veri kaybı, bakım, güncellemeler ve işlevsel değişiklikler önceden bildirim olmaksızın meydana gelebilir.",
+    p3: "Uygulanabilir hukukun gerektirdiği ölçü dışında, kesinti, teknik sorunlar, kötü amaçlı yazılım veya üçüncü taraf saldırılarından doğan zararlardan sorumlu değiliz."
+  },
+  s10: {
+    title: "10) Doğruluk, güncellik ve kaynaklar",
+    p1: "YZ yanıtları hatalı, eski, eksik, muğlak veya önyargılı olabilir.",
+    p2: "Platform, gönderdiğiniz verileri ve/或 kamuya açık bilgileri kullanabilir; her zaman bağımsız doğrulama yapmayız.",
+    p3: "Güvenmeden önce bilgileri doğrulamanız gerekir."
+  },
+  s11: {
+    title: "11) Üçüncü taraf bağlantılar ve hizmetler",
+    p1: "Platform, bağımsız web sitelerine ve üçüncü taraf hizmetlere bağlantılar içerebilir.",
+    p2: "Bu içerik veya uygulamaları kontrol etmeyiz, onaylamayız ve sorumluluk kabul etmeyiz. Kullanım riski size aittir."
+  },
+  s12: {
+    title: "12) Hesaplar, güvenlik ve veriler",
+    p1: "Kötüye kullanım tamamen bizim hatamızdan kaynaklanmadıkça, hesabınız altında gerçekleşen faaliyetlerden siz sorumlusunuz.",
+    p2: "Veri işleme ayrıntıları için Gizlilik Politikası’na bakın."
+  },
+  s13: {
+    title: "13) Yaş sınırlamaları",
+    p1: "13 yaşın altındakiler Platformu kullanamaz.",
+    p2: "13–18 yaşındakiler, yürürlükteki mevzuata uygun olarak veli/vasi onayı ve gözetimiyle Platformu kullanabilir."
+  },
+  s14: {
+    title: "14) Önyargı, etik ve ayrımcılık karşıtlığı",
+    p1: "YZ modelleri, verilerinde bulunan önyargıları yansıtabilir.",
+    p2: "Platformun ayrımcı veya yasa dışı amaçlarla kullanımı yasaktır. Yürürlükteki yasalara ve etik standartlara uyumdan siz sorumlusunuz."
+  },
+  s15: {
+    title: "15) Beta özellikler ve deneyler",
+    p1: "Bazı özellikler beta aşamasında olabilir; garantisiz olarak yalnızca test amaçlı sunulur ve hata, kesinti veya değişiklik içerebilir."
+  },
+  s16: {
+    title: "16) Sorumluluk sınırlaması (hukukun izin verdiği ölçüde)",
+    p1: "Yürürlükteki hukukun izin verdiği azami ölçüde, biz ve ortaklarımız, iştiraklerimiz, çalışanlarımız ve temsilcilerimiz; dolaylı, arızi, özel, sonuçsal veya cezai (örnek niteliğinde) zararlardan; kâr, gelir, veri veya itibar kaybından; iş kesintisinden; ikame hizmet tedarik maliyetlerinden; ya da Platform içeriğine güvenmekten doğan zararlardan sorumlu tutulamayız.",
+    p2: "Sorumluluğun tamamen dışlanamadığı hallerde, sorumluluk; talebe yol açan olaydan önceki iki (2) ay içinde Platformu kullanmak için ödediğiniz toplam tutarla sınırlıdır.",
+    p3: "Bu bölümdeki hiçbir hüküm, kasıt, ağır ihmal veya uygulanabilir hukuk uyarınca vazgeçilemeyen diğer haklara (ör. tüketici hakları) ilişkin sorumluluğu bertaraf etmez veya sınırlamaz."
+  },
+  s17: {
+    title: "17) Tazmin ve muafiyet (indemnity)",
+    lead: "Aşağıdakilerden doğan üçüncü taraf talepleri, yükümlülükler, zararlar, kayıplar ve masraflar (makul avukatlık ücretleri dâhil) karşısında bizi tazmin edeceğinizi ve zarar görmez kılacağınızı kabul edersiniz:",
+    a: "a) bu kurallara veya kanuna aykırı içerikleriniz ya da Platformu kullanımınız;",
+    b: "b) üçüncü kişilerin haklarının ihlali;",
+    c: "c) hesabınızın kötüye kullanımı."
+  },
+  s18: {
+    title: "18) Bildirim ve içerik kaldırma (notice & action)",
+    lead: "Platformdaki içeriğin haklarınızı ihlal ettiğini düşünüyorsanız (örn. hakaret, marka/telif hakkı/mahremiyet ihlali), aşağıdakileri içeren bir bildirimi forecastlerteam@gmail.com adresine gönderin:",
+    i1: "• tam adınız ve iletişim bilgileriniz;",
+    i2: "• içeriğin net açıklaması ve konumu (URL, ekran görüntüsü);",
+    i3: "• talebinizin yasal dayanağı (örn. “hakaret”, “telif hakkı ihlali”);",
+    i4: "• beyanlarınızın doğruluğunu onaylayan bir açıklama.",
+    foot: "İnceleme sürecinde, itiraz edilen içeriği geçici olarak kısıtlayabilir veya kaldırabilir, ek bilgi talep edebilir ve yürürlükteki hukuka uygun makul bir süre içinde işlem yapabiliriz."
+  },
+  s19: {
+    title: "19) Dil sürümleri ve çeviriler",
+    p1: "Platform birden çok dilde sunulabilir. Bu Feragatnamenin çevirileri arasında tutarsızlık olması hâlinde, yerel hukukun açıkça aksi yönde gerektirdiği durumlar dışında İngilizce sürüm geçerlidir."
+  },
+  s20: {
+    title: "20) Değişiklikler ve güncellemeler",
+    p1: "Bu Feragatnameyi dilediğimiz zaman değiştirebilir veya güncelleyebiliriz. Değişiklikler, güncellenmiş tarih ile bu sayfada yayımlandığı anda yürürlüğe girer. Değişikliklerden sonra Platformu kullanmaya devam etmeniz, bunları kabul ettiğiniz anlamına gelir."
+  },
+  s21: {
+    title: "21) Uygulanacak hukuk ve yargı yetkisi",
+    p1: "Bu Feragatname, Sırbistan Cumhuriyeti hukukuna tabidir (ikamet ettiğiniz yerin emredici kuralları aksi yönde düzenlemedikçe). Kanunen zorunlu olmadıkça, konu ve yer bakımından yetkili mahkeme Subotica’daki mahkemedir."
+  },
+  s22: {
+    title: "22) İletişim",
+    p1: "Forecastler Ekibi",
+    p2: "E-posta: forecastlerteam@gmail.com"
+  }
+},
+
+ar: {
+  headerLinks: { home: "الصفحة الرئيسية", about: "من نحن", contact: "اتصل بنا", blog: "المدونة" },
+  footerLinks: { disclaimer:"إخلاء المسؤولية", terms:"شروط الاستخدام", privacy:"سياسة الخصوصية", cookies:"سياسة ملفات تعريف الارتباط", sitemap:"خريطة الموقع", faq:"الأسئلة الشائعة" },
+  meta: {
+    title: "إخلاء المسؤولية",
+    effective: "تاريخ السريان: 17 يونيو 2025",
+    updated:  "آخر تحديث: 15 أغسطس 2025",
+    intro: "يضع هذا المستند إخلاءات المسؤولية العامة والإشعارات المتعلقة باستخدام منصة Forecastler (\"المنصة\", \"نحن\", \"لنا\", \"خاصتنا\"). باستخدامك المنصة، فإنك تقبل إشعار إخلاء المسؤولية هذا مع شروط الاستخدام وسياسة الخصوصية. إذا كنت لا توافق، فالرجاء عدم استخدام المنصة."
+  },
+  s1: {
+    title: "1) وصف الخدمة والغرض المعلوماتي",
+    p1: "توفّر المنصّة إجابات معلوماتية يولّدها الذكاء الاصطناعي (إجابة نعم/لا ونسبة مئوية للاحتمال).",
+    p2: "لا يُعدّ المحتوى والتقييمات نصيحة قانونية أو مالية أو استثمارية أو طبية أو نفسية أو متعلقة بالسلامة أو ضريبية أو أي نصيحة مهنية أخرى.",
+    p3: "لا نضمن دقة أي إجابة أو اكتمالها أو حداثتها أو ملاءمتها لوضعك الخاص. اعتمادك على المحتوى يكون على مسؤوليتك الخاصة."
+  },
+  s2: {
+    title: "2) حدود التنبؤ والتقديرات الإحصائية",
+    p1: "تقديرات الاحتمال ذات طابع إرشادي وتعتمد على نماذج لها حدود إحصائية وتحمل احتمالات للتحيز والأخطاء.",
+    p2: "لا تتنبأ المنصّة بالمستقبل ولا تضمن حدوث أي حدث أو عدم حدوثه.",
+    p3: "تعتمد النتائج على السياق المُدخل، وجودة المعلومات المقدَّمة، والتغيّرات في الظروف الخارجية."
+  },
+  s3: {
+    title: "3) المسؤولية الشخصية واتخاذ القرار",
+    p1: "أنت وحدك تتحمل المسؤولية الكاملة عن القرارات والإجراءات التي تتخذها بناءً على محتوى المنصّة.",
+    p2: "بالنسبة للقرارات ذات العواقب (مثل الطبية أو المالية أو القانونية أو المتعلقة بالسلامة)، يُرجى استشارة مختص مؤهل.",
+    p3: "في حالات الطوارئ، تواصل مع الجهات المختصة (الإسعاف، الشرطة، الدفاع المدني/الإطفاء)."
+  },
+  s4: {
+    title: "4) الصحة والقانون والتمويل ومجالات حساسة أخرى",
+    p1: "لا يُعدّ أي شيء على المنصّة نصيحة طبية أو تشخيصًا أو علاجًا؛ يُرجى مراجعة مختص رعاية صحية.",
+    p2: "لا يُعدّ أي شيء على المنصّة نصيحة قانونية؛ يُرجى مراجعة محامٍ.",
+    p3: "لا يُعدّ أي شيء على المنصّة نصيحة استثمارية/مالية؛ يُرجى مراجعة مستشار مرخَّص.",
+    p4: "في السياقات عالية المخاطر، لا يجوز أن تكون إجاباتنا الأساس الوحيد أو الغالب لقراراتك."
+  },
+  s5: {
+    title: "5) الحقوق الشخصية والعرض العلني للنتائج",
+    p1: "يُحظر إعداد تنبؤات عن أشخاص طبيعيين حظروا علنًا أو مباشرةً هذا الاستخدام.",
+    p2: "يُحظر عرض أو الترويج علنًا لنتائج التنبؤات المتعلقة بطرف ثالث أو مؤسسات أو منظمات أو دول أو أنظمة من دون إذن صريح منهم أو أساس قانوني صالح آخر.",
+    p3: "للإبلاغ عن انتهاكات السمعة أو الحقوق الشخصية، راجع القسم 18 (الإشعارات وإزالة المحتوى)."
+  },
+  s6: {
+    title: "6) محتوى المستخدم والسلوك",
+    p1: "أنت وحدك المسؤول عن المحتوى الذي ترسله (نصوص، صور، روابط، بيانات). يجب ألا يكون المحتوى غير قانوني أو زائفًا أو مسيئًا أو تشهيريًا أو تمييزيًا أو مُهدِّدًا أو منتهكًا لحقوق الآخرين.",
+    p2: "يُحظر إساءة استخدام المنصّة (مثل انتهاكات الأمان، استخراج البيانات آليًا (scraping)، الرسائل المزعجة، التضليل، التلاعب، التحايل على الحدود)."
+  },
+  s7: {
+    title: "7) الملكية الفكرية وحظر المشاركة غير المصرح بها",
+    p1: "محتوى المنصّة محميٌّ بحقوق الملكية الفكرية. يُحظر حظرًا تامًا النسخ أو التوزيع أو مشاركة المحتوى — بما في ذلك لقطات الشاشة — دون إذن.",
+    p2: "ترد القواعد التفصيلية بشأن التراخيص والاستخدام المسموح به في شروط الاستخدام."
+  },
+  s8: {
+    title: "8) معلومات المصلحة العامة والسمعة",
+    p1: "ليست المنصّة مصدرًا رسميًا للمعلومات العامة أو التنبيهات أو الإحصاءات.",
+    p2: "لا نتحمّل مسؤولية الاعتماد على معلومات المصلحة العامة (مثل تنبيهات السلامة، والانتخابات، والصحة العامة) ولا نضمن دقتها.",
+    p3: "نحترم كرامة وسمعة الأفراد والشركات والمجتمعات. إذا كنت ترى أن أي محتوى ضار أو تشهيري أو غير دقيق، فيُرجى التواصل معنا (راجع القسم 22)."
+  },
+  s9: {
+    title: "9) التوافر التقني والأداء",
+    p1: "تُقدَّم الخدمة \"كما هي\" و\"حسب التوافر\". لا نضمن توافراً دون انقطاع أو توافقاً كاملاً مع جميع الأجهزة/المتصفحات/الملحقات/الإضافات أو تشغيلاً خالياً من الأخطاء.",
+    p2: "قد تحدث انقطاعات وتأخيرات وفقدان للبيانات وصيانة وتحديثات وتغييرات وظيفية دون إشعار مسبق.",
+    p3: "لا نتحمل المسؤولية عن الأضرار الناتجة عن التوقف أو المشكلات التقنية أو البرمجيات الخبيثة أو هجمات أطراف ثالثة، إلا بالقدر الذي يقتضيه القانون المعمول به."
+  },
+  s10: {
+    title: "10) الدقة وحداثة المعلومات والمصادر",
+    p1: "قد تكون إجابات الذكاء الاصطناعي غير دقيقة أو قديمة أو غير مكتملة أو ملتبسة أو متحيزة.",
+    p2: "قد تستخدم المنصة البيانات التي ترسلها و/أو المعلومات المتاحة علناً؛ ولا نجري دائماً تحققاً مستقلاً.",
+    p3: "يجب عليك التحقق من المعلومات قبل الاعتماد عليها."
+  },
+  s11: {
+    title: "11) روابط وخدمات الأطراف الثالثة",
+    p1: "قد تحتوي المنصّة على روابط لمواقع مستقلة وخدمات تابعة لأطراف ثالثة.",
+    p2: "لا نتحكّم في محتواها أو ممارساتها ولا نؤيدها ولا نتحمل مسؤولية عنها. استخدامك لها على مسؤوليتك الخاصة."
+  },
+  s12: {
+    title: "12) الحسابات والأمان والبيانات",
+    p1: "أنت مسؤول عن الأنشطة التي تتم ضمن حسابك، ما لم يكن سوء الاستخدام ناتجًا حصريًا عن خطئنا.",
+    p2: "للاطّلاع على تفاصيل معالجة البيانات، راجع سياسة الخصوصية."
+  },
+  s13: {
+    title: "13) القيود العمرية",
+    p1: "لا يجوز لمن هم دون 13 عامًا استخدام المنصّة.",
+    p2: "يجوز لمن تتراوح أعمارهم بين 13 و18 عامًا استخدام المنصّة بموافقة وإشراف الوالد/الوصي وفقًا للقانون المعمول به."
+  },
+  s14: {
+    title: "14) التحيّز والأخلاقيات ومكافحة التمييز",
+    p1: "قد تعكس نماذج الذكاء الاصطناعي تحيّزات موجودة في بياناتها.",
+    p2: "يُحظر استخدام المنصّة لأغراض تمييزية أو غير قانونية. تقع على عاتقك مسؤولية الامتثال للقوانين والمعايير الأخلاقية المعمول بها."
+  },
+  s15: {
+    title: "15) الميزات التجريبية وبيئات الاختبار",
+    p1: "قد تكون بعض الميزات في مرحلة تجريبية (بيتا) وتُقدَّم دون أي ضمانات، لأغراض الاختبار فقط، وقد تتضمن أخطاء أو انقطاعات أو تغييرات."
+  },
+  s16: {
+    title: "16) تحديد المسؤولية (بالقدر الذي يسمح به القانون)",
+    p1: "إلى أقصى حد يسمح به القانون، لا نُسأل نحن وشركاؤنا والشركات التابعة لنا وموظفونا ووكلاؤنا عن الأضرار غير المباشرة أو العرضية أو الخاصة أو التبعية أو العقابية (التأديبية)؛ أو فقدان الأرباح أو الإيرادات أو البيانات أو السمعة؛ أو انقطاع الأعمال؛ أو تكاليف الحصول على خدمات بديلة؛ أو الأضرار الناشئة عن الاعتماد على محتوى المنصّة.",
+    p2: "حيث لا يمكن استبعاد المسؤولية بالكامل، تُحدَّد بحدٍّ أقصاه إجمالي المبالغ التي دفعتها لاستخدام المنصّة خلال الشهرين (2) السابقين للحدث الذي نشأ عنه الادعاء.",
+    p3: "لا يستبعد أي شيء في هذا القسم ولا يحد من المسؤولية عن سوء النية، أو الخطأ الجسيم، أو الحقوق التي لا يجوز التنازل عنها بموجب القانون المعمول به (مثل حقوق المستهلك)."
+  },
+  s17: {
+    title: "17) التعويض وإبراء الذمة (indemnity)",
+    lead: "توافق على تعويضنا وإبرائنا من مطالبات الغير والالتزامات والأضرار والخسائر والتكاليف (بما في ذلك أتعاب المحامين المعقولة) الناشئة عن:",
+    a: "a) محتواك أو استخدامك للمنصّة بالمخالفة لهذه القواعد أو للقانون؛",
+    b: "b) انتهاك حقوق الغير؛",
+    c: "c) إساءة استخدام حسابك."
+  },
+  s18: {
+    title: "18) الإشعارات وإزالة المحتوى (notice & action)",
+    lead: "إذا كنت ترى أن محتوى على المنصّة ينتهك حقوقك (مثل التشهير أو انتهاك العلامة التجارية/حقوق الطبع والنشر/الخصوصية)، فأرسل إشعارًا إلى forecastlerteam@gmail.com يتضمن:",
+    i1: "• اسمك الكامل وبيانات الاتصال؛",
+    i2: "• وصفًا واضحًا وموقع المحتوى (عنوان URL، لقطة شاشة)؛",
+    i3: "• الأساس القانوني لطلبك (مثل «تشهير»، «انتهاك حقوق الطبع والنشر»)؛",
+    i4: "• تصريحًا يؤكد صحة الادعاءات.",
+    foot: "أثناء المراجعة قد نقيّد مؤقتًا أو نزيل المحتوى محل النزاع، ونطلب معلومات إضافية، ونتصرف خلال فترة معقولة وفقًا للقانون المعمول به."
+  },
+  s19: {
+    title: "19) الإصدارات اللغوية والترجمات",
+    p1: "قد تتوافر المنصّة بعدّة لغات. عند وجود أي تعارض بين ترجمات هذا الإخلاء من المسؤولية، تكون النسخة الإنجليزية هي المرجع، ما لم يقتضِ القانون المحلي صراحة خلاف ذلك."
+  },
+  s20: {
+    title: "20) التغييرات والتحديثات",
+    p1: "يجوز لنا تعديل هذا الإخلاء من المسؤولية أو تحديثه في أي وقت. تسري التغييرات عند نشرها في هذه الصفحة مع تاريخ مُحدَّث. إن استمرارك في استخدام المنصّة بعد التغييرات يعني قبولك لها."
+  },
+  s21: {
+    title: "21) القانون الحاكم والاختصاص القضائي",
+    p1: "يخضع هذا الإخلاء من المسؤولية لقوانين جمهورية صربيا (ما لم تنص قواعد موطنك الآمرة على خلاف ذلك). تختص محكمة سوبوتيتسا نوعيًا ومكانيًا، ما لم يقتضِ القانون خلاف ذلك."
+  },
+  s22: {
+    title: "22) جهة الاتصال",
+    p1: "فريق Forecastler",
+    p2: "البريد الإلكتروني: forecastlerteam@gmail.com"
+  }
+},
+
+hi: {
+  headerLinks: { home: "मुखपृष्ठ", about: "हमारे बारे में", contact: "संपर्क करें", blog: "ब्लॉग" },
+  footerLinks: { disclaimer:"अस्वीकरण", terms:"उपयोग की शर्तें", privacy:"गोपनीयता नीति", cookies:"कुकी नीति", sitemap:"साइटमैप", faq:"सामान्य प्रश्न" },
+  meta: {
+    title: "अस्वीकरण",
+    effective: "प्रभावी तिथि: 17 जून 2025",
+    updated:  "अंतिम अद्यतन: 15 अगस्त 2025",
+    intro: "यह दस्तावेज़ Forecastler प्लेटफ़ॉर्म (\"प्लेटफ़ॉर्म\", \"हम\", \"हमें\", \"हमारा\") के उपयोग से संबंधित सामान्य अस्वीकरण और सूचनाएँ निर्धारित करता है। प्लेटफ़ॉर्म का उपयोग करने पर, आप इस अस्वीकरण को उपयोग की शर्तों और गोपनीयता नीति के साथ स्वीकार करते हैं। यदि आप सहमत नहीं हैं, तो कृपया प्लेटफ़ॉर्म का उपयोग न करें।"
+  },
+  s1: {
+    title: "1) सेवा का विवरण और सूचनात्मक उद्देश्य",
+    p1: "प्लेटफ़ॉर्म कृत्रिम बुद्धिमत्ता द्वारा जनित सूचनात्मक उत्तर प्रदान करता है (हाँ/नहीं का उत्तर और संभाव्यता प्रतिशत).",
+    p2: "यह सामग्री और आकलन कानूनी, वित्तीय, निवेश, चिकित्सकीय, मनोवैज्ञानिक, सुरक्षा, कर-संबंधी या किसी अन्य प्रकार की पेशेवर सलाह नहीं हैं.",
+    p3: "हम किसी भी उत्तर की सटीकता, पूर्णता, सामयिकता या आपकी विशिष्ट स्थिति के अनुरूपता की गारंटी नहीं देते। सामग्री पर निर्भरता आपका स्वयं का जोखिम है."
+  },
+  s2: {
+    title: "2) पूर्वानुमान और सांख्यिकीय आकलनों की सीमाएँ",
+    p1: "संभावना के आकलन हेयुरिस्टिक होते हैं और ऐसे मॉडलों पर आधारित होते हैं जिनमें सांख्यिकीय सीमाएँ, संभावित पक्षपात और त्रुटियाँ हो सकती हैं.",
+    p2: "प्लेटफ़ॉर्म भविष्य की भविष्यवाणी नहीं करता और किसी घटना के होने या न होने की गारंटी नहीं देता.",
+    p3: "परिणाम दर्ज किए गए संदर्भ, प्रदान की गई जानकारी की गुणवत्ता और बाहरी परिस्थितियों में परिवर्तन पर निर्भर करते हैं."
+  },
+  s3: {
+    title: "3) व्यक्तिगत जिम्मेदारी और निर्णय-लेना",
+    p1: "प्लेटफ़ॉर्म की सामग्री के आधार पर लिए गए अपने निर्णयों और किए गए कार्यों के लिए आप पूर्ण रूप से स्वयं ज़िम्मेदार हैं.",
+    p2: "परिणामी (जैसे चिकित्सा, वित्तीय, कानूनी, सुरक्षा) निर्णयों के लिए किसी योग्य विशेषज्ञ से परामर्श करें.",
+    p3: "आपात स्थिति में संबंधित सेवाओं से संपर्क करें (आपातकालीन चिकित्सा, पुलिस, अग्निशमन)."
+  },
+  s4: {
+    title: "4) स्वास्थ्य, कानून, वित्त और अन्य संवेदनशील क्षेत्र",
+    p1: "प्लेटफ़ॉर्म पर कुछ भी चिकित्सकीय सलाह, निदान या उपचार नहीं है; कृपया किसी स्वास्थ्य-विशेषज्ञ से परामर्श करें.",
+    p2: "प्लेटफ़ॉर्म पर कुछ भी कानूनी सलाह नहीं है; किसी वकील से परामर्श करें.",
+    p3: "प्लेटफ़ॉर्म पर कुछ भी निवेश/वित्तीय सलाह नहीं है; किसी लाइसेंसधारी सलाहकार से परामर्श करें.",
+    p4: "उच्च-जोखिम संदर्भों में हमारे उत्तर आपके निर्णयों का एकमात्र या प्रमुख आधार नहीं होने चाहिए."
+  },
+  s5: {
+    title: "5) व्यक्तिगत अधिकार और परिणामों का सार्वजनिक प्रदर्शन",
+    p1: "ऐसे भौतिक व्यक्तियों पर भविष्यवाणियाँ बनाना निषिद्ध है जिन्होंने सार्वजनिक रूप से या सीधे ऐसी उपयोग पर रोक लगाई है.",
+    p2: "तीसरे पक्षों, संस्थानों, संगठनों, देशों या प्रणालियों से संबंधित पूर्वानुमानों के परिणामों का उनकी स्पष्ट अनुमति या अन्य वैध कानूनी आधार के बिना सार्वजनिक प्रदर्शन या प्रचार निषिद्ध है.",
+    p3: "प्रतिष्ठा या व्यक्तिगत अधिकारों के उल्लंघन की रिपोर्ट के लिए, अनुभाग 18 (सूचनाएँ और सामग्री हटाना) देखें."
+  },
+  s6: {
+    title: "6) उपयोगकर्ता सामग्री और आचरण",
+    p1: "आप द्वारा सबमिट की गई सामग्री (पाठ, चित्र, लिंक, डेटा) के लिए आप स्वयं जिम्मेदार हैं। सामग्री अवैध, झूठी, आपत्तिजनक, मानहानिकारक, भेदभावपूर्ण, धमकीपूर्ण नहीं होनी चाहिए और न ही दूसरों के अधिकारों का उल्लंघन करना चाहिए.",
+    p2: "प्लेटफ़ॉर्म का दुरुपयोग वर्जित है (जैसे सुरक्षा उल्लंघन, स्क्रैपिंग, स्पैम, दुष्प्रचार, हेरफेर, सीमाओं का परिहार)."
+  },
+  s7: {
+    title: "7) बौद्धिक संपदा और बिना अनुमति साझा करने पर रोक",
+    p1: "प्लेटफ़ॉर्म की सामग्री बौद्धिक संपदा अधिकारों से संरक्षित है। सामग्री की बिना अनुमति कॉपी, वितरण या साझा करना — स्क्रीनशॉट सहित — सख्त वर्जित है.",
+    p2: "लाइसेंस और अनुमत उपयोग के विस्तृत नियम उपयोग की शर्तों में दिए गए हैं."
+  },
+  s8: {
+    title: "8) जन-हित जानकारी और प्रतिष्ठा",
+    p1: "प्लेटफ़ॉर्म सार्वजनिक जानकारी, अलर्ट या आँकड़ों का आधिकारिक स्रोत नहीं है.",
+    p2: "हम जन-हित जानकारी (जैसे सुरक्षा अलर्ट, चुनाव, सार्वजनिक स्वास्थ्य) पर निर्भरता के लिए जिम्मेदार नहीं हैं और न ही उसकी सटीकता की गारंटी देते हैं.",
+    p3: "हम व्यक्तियों, कंपनियों और समुदायों की गरिमा और प्रतिष्ठा का सम्मान करते हैं। यदि आपको कोई सामग्री हानिकारक, मानहानिकारक या गलत लगती है, तो हमसे संपर्क करें (अनुभाग 22 देखें)."
+  },
+  s9: {
+    title: "9) तकनीकी उपलब्धता और प्रदर्शन",
+    p1: "सेवा \"जैसी है\" और \"उपलब्धता के आधार पर\" प्रदान की जाती है। हम निर्बाध उपलब्धता, सभी उपकरणों/ब्राउज़रों/एक्सटेंशनों/प्लगइन्स के साथ पूर्ण अनुकूलता, या त्रुटिरहित संचालन की गारंटी नहीं देते।",
+    p2: "बिना सूचना के आउटेज, विलंब, डेटा हानि, रखरखाव, अपडेट और कार्यात्मक परिवर्तन हो सकते हैं।",
+    p3: "लागू कानून द्वारा आवश्यक सीमा को छोड़कर, डाउनटाइम, तकनीकी समस्याओं, मैलवेयर या तृतीय-पक्ष हमलों से होने वाले नुकसान के लिए हम उत्तरदायी नहीं हैं।"
+  },
+  s10: {
+    title: "10) शुद्धता, सामयिकता और स्रोत",
+    p1: "एआई उत्तर गलत, पुराने, अपूर्ण, अस्पष्ट या पक्षपाती हो सकते हैं।",
+    p2: "प्लेटफ़ॉर्म आपके द्वारा सबमिट किए गए डेटा और/या सार्वजनिक रूप से उपलब्ध जानकारी का उपयोग कर सकता है; हम हमेशा स्वतंत्र सत्यापन नहीं करते।",
+    p3: "उस पर निर्भर होने से पहले आपको जानकारी सत्यापित करनी चाहिए।"
+  },
+  s11: {
+    title: "11) थर्ड-पार्टी लिंक और सेवाएँ",
+    p1: "प्लेटफ़ॉर्म में स्वतंत्र वेबसाइटों और तृतीय-पक्ष सेवाओं के लिंक हो सकते हैं.",
+    p2: "हम उनके कंटेंट या प्रथाओं को नियंत्रित/समर्थन नहीं करते और उसके लिए ज़िम्मेदार नहीं हैं। उनका उपयोग आपके अपने जोखिम पर है."
+  },
+  s12: {
+    title: "12) खाते, सुरक्षा और डेटा",
+    p1: "जब तक दुरुपयोग केवल हमारी गलती से न हुआ हो, आपके खाते के तहत होने वाली गतिविधियों के लिए आप ज़िम्मेदार हैं.",
+    p2: "डेटा प्रोसेसिंग के विवरण के लिए गोपनीयता नीति देखें."
+  },
+  s13: {
+    title: "13) आयु प्रतिबंध",
+    p1: "13 वर्ष से कम आयु के व्यक्ति प्लेटफ़ॉर्म का उपयोग नहीं कर सकते.",
+    p2: "13–18 वर्ष के व्यक्ति माता-पिता/अभिभावक की सहमति और निगरानी में, लागू कानून के अनुसार, प्लेटफ़ॉर्म का उपयोग कर सकते हैं."
+  },
+  s14: {
+    title: "14) पक्षपात, नैतिकता और भेदभाव-रोधी",
+    p1: "एआई मॉडल अपने डेटा में मौजूद पक्षपात को प्रतिबिंबित कर सकते हैं.",
+    p2: "भेदभावपूर्ण या गैरकानूनी उद्देश्यों के लिए प्लेटफ़ॉर्म का उपयोग वर्जित है। लागू कानूनों और नैतिक मानकों के अनुपालन की जिम्मेदारी आपकी है."
+  },
+  s15: {
+    title: "15) बीटा फीचर्स और प्रयोग",
+    p1: "कुछ फीचर्स बीटा में हो सकते हैं, बिना किसी वारंटी के केवल परीक्षण हेतु दिए जाते हैं, और इनमें त्रुटियाँ, बाधाएँ या बदलाव हो सकते हैं."
+  },
+  s16: {
+    title: "16) देयता की सीमा (कानून द्वारा अनुमति प्राप्त सीमा तक)",
+    p1: "कानून द्वारा अनुमत अधिकतम सीमा तक, हम तथा हमारे पार्टनर, संबद्ध संस्थाएँ, कर्मचारी और एजेंट किसी भी परोक्ष, आकस्मिक, विशेष, परिणामी या दंडात्मक क्षति; लाभ/राजस्व/डेटा/प्रतिष्ठा की हानि; व्यवसाय में व्यवधान; वैकल्पिक सेवाएँ प्राप्त करने की लागत; या प्लेटफ़ॉर्म सामग्री पर निर्भरता से उत्पन्न क्षति के लिए उत्तरदायी नहीं हैं.",
+    p2: "जहाँ देयता पूरी तरह से बाहर नहीं की जा सकती, वहाँ यह उस कुल राशि तक सीमित है जो आपने दावे को जन्म देने वाली घटना से पूर्व के दो (2) महीनों में प्लेटफ़ॉर्म के उपयोग हेतु चुकाई है.",
+    p3: "इस अनुभाग में कुछ भी जानबूझकर किए गए दुराचरण, घोर लापरवाही, या लागू कानून के अंतर्गत अविच्छेद्य अधिकारों (जैसे उपभोक्ता अधिकार) के लिए देयता को बाहर या सीमित नहीं करता."
+  },
+  s17: {
+    title: "17) क्षतिपूर्ति और दायित्व-मुक्ति (indemnity)",
+    lead: "आप सहमति देते हैं कि निम्न कारणों से उत्पन्न तीसरे पक्ष के दावों, देयताओं, क्षति, हानि और लागतों (उचित वकील-शुल्क सहित) के विरुद्ध हमें क्षतिपूर्ति करेंगे और सुरक्षित रखेंगे:",
+    a: "a) आपके कंटेंट या प्लेटफ़ॉर्म के उपयोग द्वारा इन नियमों या कानून का उल्लंघन;",
+    b: "b) तीसरे पक्ष के अधिकारों का उल्लंघन;",
+    c: "c) आपके खाते का दुरुपयोग."
+  },
+  s18: {
+    title: "18) सूचनाएँ और सामग्री हटाना (notice & action)",
+    lead: "यदि आपको लगता है कि प्लेटफ़ॉर्म पर कोई सामग्री आपके अधिकारों का उल्लंघन करती है (जैसे मानहानि, ट्रेडमार्क/कॉपीराइट/गोपनीयता उल्लंघन), तो निम्न शामिल करते हुए forecastlerteam@gmail.com पर सूचना भेजें:",
+    i1: "• आपका पूरा नाम और संपर्क विवरण;",
+    i2: "• सामग्री का स्पष्ट वर्णन और उसका स्थान (URL, स्क्रीनशॉट);",
+    i3: "• आपके अनुरोध का कानूनी आधार (जैसे “मानहानि”, “कॉपीराइट उल्लंघन”);",
+    i4: "• एक घोषणा कि आपके कथन सत्य हैं.",
+    foot: "विचार-विमर्श के दौरान हम विवादित सामग्री को अस्थायी रूप से सीमित/हटा सकते हैं, अतिरिक्त जानकारी माँग सकते हैं और लागू कानून के अनुसार वाजिब समय में कार्य करेंगे."
+  },
+  s19: {
+    title: "19) भाषा संस्करण और अनुवाद",
+    p1: "प्लेटफ़ॉर्म कई भाषाओं में उपलब्ध हो सकता है। इस अस्वीकरण के अनुवादों के बीच किसी भी असंगति की स्थिति में, जब तक स्थानीय क़ानून स्पष्ट रूप से अन्यथा न कहे, अंग्रेज़ी संस्करण मान्य होगा."
+  },
+  s20: {
+    title: "20) परिवर्तन और अपडेट",
+    p1: "हम इस अस्वीकरण में कभी भी संशोधन या अपडेट कर सकते हैं। परिवर्तन इस पेज पर अद्यतन तिथि के साथ प्रकाशित होते ही प्रभावी हो जाते हैं। परिवर्तनों के बाद प्लेटफ़ॉर्म का आपका निरंतर उपयोग आपके द्वारा उनकी स्वीकृति को दर्शाता है."
+  },
+  s21: {
+    title: "21) प्रযोज্য क़ानून और अधिकार क्षेत्र",
+    p1: "यह अस्वीकरण सर्बिया गणराज्य के क़ानूनों के अधीन है (जब तक आपके निवास-स्थान के अनिवार्य नियम अन्यथा न कहें)। क़ानून द्वारा अन्यथा अनिवार्य न होने पर, विषय-वस्तु और क्षेत्राधिकार के लिए सुबोटिका की अदालत सक्षम होगी."
+  },
+  s22: {
+    title: "22) संपर्क",
+    p1: "Forecastler टीम",
+    p2: "ईमेल: forecastlerteam@gmail.com"
+  }
+},
+
+zh: {
+  headerLinks: { home: "首页", about: "关于我们", contact: "联系我们", blog: "博客" },
+  footerLinks: { disclaimer:"免责声明", terms:"使用条款", privacy:"隐私政策", cookies:"Cookie 政策", sitemap:"网站地图", faq:"常见问题" },
+  meta: {
+    title: "免责声明",
+    effective: "生效日期：2025年6月17日",
+    updated:  "最后更新：2025年8月15日",
+    intro: "本文件规定了有关使用 Forecastler 平台（\"平台\"、\"我们\"、\"我方\"、\"我们的\"）的一般免责声明和通知。使用本平台即表示您同意本免责声明以及《使用条款》与《隐私政策》。如您不同意，请勿使用本平台."
+  },
+  s1: {
+    title: "1）服务说明与信息用途",
+    p1: "本平台提供由人工智能生成的信息性回答（是/否的回答及概率百分比）。",
+    p2: "内容与评估不构成法律、金融、投资、医疗、心理、安全、税务或任何其他专业建议。",
+    p3: "我们不保证任何回答对您特定情况的准确性、完整性、时效性或适用性。您对内容的依赖风险自负。"
+  },
+  s2: {
+    title: "2）预测与统计估计的边界",
+    p1: "概率估计具有启发式性质，基于存在统计局限、可能偏差与错误的模型。",
+    p2: "本平台不预知未来，也不保证任何事件一定会或不会发生。",
+    p3: "结果取决于输入的上下文、所提供信息的质量以及外部环境的变化。"
+  },
+  s3: {
+    title: "3）个人责任与决策",
+    p1: "您对基于本平台内容所作出的决定和采取的行动承担全部责任。",
+    p2: "对于具有后果的决策（如医疗、金融、法律、安全等），请咨询合格的专业人士。",
+    p3: "紧急情况下，请联系相关部门（急救、警方、消防）。"
+  },
+  s4: {
+    title: "4）健康、法律、金融及其他敏感领域",
+    p1: "本平台上的任何内容均不构成医疗建议、诊断或治疗；请咨询医疗专业人士。",
+    p2: "本平台上的任何内容均不构成法律建议；请咨询律师。",
+    p3: "本平台上的任何内容均不构成投资/金融建议；请咨询持牌顾问。",
+    p4: "在高风险情境下，我们的回答不应成为您决策的唯一或主要依据。"
+  },
+  s5: {
+    title: "5）个人权利与结果的公开展示",
+    p1: "禁止对已公开或直接禁止此类使用的自然人制作预测。",
+    p2: "未经明确许可或其他合法依据，禁止公开展示或宣传与第三方、机构、组织、国家或系统相关的预测结果。",
+    p3: "如需报告名誉或人格权侵害，请参见第18节（通知与内容移除）。"
+  },
+  s6: {
+    title: "6）用户内容与行为",
+    p1: "您对自己提交的内容（文本、图片、链接、数据）负全部责任。内容不得违法、虚假、冒犯、诽谤、歧视、带有威胁，或侵犯他人权益。",
+    p2: "禁止滥用平台（例如：安全违规、数据爬取（scraping）、垃圾信息、虚假信息/误导信息、操纵、规避限制）。"
+  },
+  s7: {
+    title: "7）知识产权与禁止未经授权的分享",
+    p1: "平台内容受知识产权保护。严禁未经授权复制、传播或分享内容——包括截图在内。",
+    p2: "有关许可与允许使用的详细规则，见《使用条款》。"
+  },
+  s8: {
+    title: "8）公共利益信息与声誉",
+    p1: "本平台并非公共信息、警报或统计数据的官方来源。",
+    p2: "对公共利益信息（如安全警报、选举、公共卫生）的依赖所致后果我们不承担责任，亦不保证其准确性。",
+    p3: "我们尊重个人、公司与社区的尊严与名誉。若您认为任何内容有害、诽谤或不准确，请与我们联系（见第 22 节）。"
+  },
+  s9: {
+    title: "9) 技术可用性与性能",
+    p1: "本服务按 \"原样\" 且按 \"可用性\" 提供。我们不保证不间断可用、与所有设备/浏览器/扩展/插件完全兼容，或绝对无错运行。",
+    p2: "可能在未通知的情况下发生中断、延迟、数据丢失、维护、更新以及功能变更。",
+    p3: "除适用法律要求的范围外，我们不对因停机、技术问题、恶意软件或第三方攻击导致的损害承担责任."
+  },
+  s10: {
+    title: "10) 准确性、时效性与来源",
+    p1: "AI 答复可能不准确、过时、不完整、含糊或存在偏见。",
+    p2: "平台可能使用您提交的数据和/或公开可得的信息；我们并不总是进行独立核验。",
+    p3: "在依赖信息之前，您必须进行核实。"
+  },
+  s11: {
+    title: "11）第三方链接与服务",
+    p1: "平台可能包含指向独立网站和第三方服务的链接。",
+    p2: "我们不控制、不背书、也不对其内容或做法负责。使用风险由您自行承担。"
+  },
+  s12: {
+    title: "12）账户、安全与数据",
+    p1: "除非滥用完全由我们的过错造成，您需对在您账户下发生的活动负责。",
+    p2: "有关数据处理的详细信息，请参阅《隐私政策》。"
+  },
+  s13: {
+    title: "13）年龄限制",
+    p1: "13 岁以下个人不得使用本平台。",
+    p2: "13–18 岁个人须在父母/监护人同意与监督下并依照适用法律使用本平台。"
+  },
+  s14: {
+    title: "14）偏见、伦理与反歧视",
+    p1: "AI 模型可能反映其训练数据中的偏见。",
+    p2: "禁止将平台用于歧视性或违法目的。您有责任遵守适用法律和伦理规范。"
+  },
+  s15: {
+    title: "15）测试版功能与实验",
+    p1: "部分功能可能处于测试版，仅用于测试，按“无任何保证”提供，可能包含错误、中断或变更。"
+  },
+  s16: {
+    title: "16）责任限制（在法律允许的最大范围内）",
+    p1: "在法律允许的最大范围内，我们及我们的合作伙伴、关联方、员工与代理不对任何间接、附带、特殊、后果性或惩罚性（示范性）损害；利润、收入、数据或商誉的损失；业务中断；替代服务的采购成本；或因依赖平台内容而产生的损害承担责任。",
+    p2: "在无法完全免除责任的情况下，责任上限为引发索赔事件发生前两（2）个月内您为使用本平台所支付的总金额。",
+    p3: "本节不排除也不限制因故意不当行为、重大过失，或适用法律规定的其他不可放弃权利（如消费者权利）而产生的责任。"
+  },
+  s17: {
+    title: "17）赔偿与免责（indemnity）",
+    lead: "您同意就以下情形引起的第三方索赔、责任、损害、损失和费用（包括合理的律师费）对我们进行赔偿并使我们免受损害：",
+    a: "a) 您的内容或违反本规则/法律使用本平台；",
+    b: "b) 对第三方权利的侵害；",
+    c: "c) 您的账户被滥用。"
+  },
+  s18: {
+    title: "18）通知与内容移除（notice & action）",
+    lead: "若您认为平台上的内容侵犯了您的权利（如诽谤、商标/版权/隐私侵权），请发送邮件至 forecastlerteam@gmail.com，内容包括：",
+    i1: "• 您的全名和联系方式；",
+    i2: "• 对内容的清晰描述及其位置（URL、截图）；",
+    i3: "• 您主张的法律依据（例如“诽谤”“版权侵权”）；",
+    i4: "• 确认陈述真实性的声明。",
+    foot: "在审查期间，我们可暂时限制或移除争议内容，可能要求补充信息，并将在适用法律允许的合理期限内处理。"
+  },
+  s19: {
+    title: "19）语言版本与翻译",
+    p1: "平台可能提供多种语言版本。若本免责声明的各译本之间存在任何不一致，除非当地法律明确要求另行处理，否则以英文版本为准。"
+  },
+  s20: {
+    title: "20）变更与更新",
+    p1: "我们可随时修改或更新本免责声明。变更在本页发布并更新日期后即生效。您在变更后继续使用平台即表示接受这些变更。"
+  },
+  s21: {
+    title: "21）适用法律与管辖",
+    p1: "本免责声明受塞尔维亚共和国法律管辖（除非您居住地的强制性规定另有要求）。除法律强制另有规定外，苏博蒂察（Subotica）法院对其享有事项及地域管辖权。"
+  },
+  s22: {
+    title: "22）联系方式",
+    p1: "Forecastler 团队",
+    p2: "邮箱：forecastlerteam@gmail.com"
+  }
+},
+
+ja: {
+  headerLinks: { home: "ホーム", about: "私たちについて", contact: "お問い合わせ", blog: "ブログ" },
+  footerLinks: { disclaimer:"免責事項", terms:"利用規約", privacy:"プライバシーポリシー", cookies:"クッキーポリシー", sitemap:"サイトマップ", faq:"よくある質問" },
+  meta: {
+    title: "免責事項",
+    effective: "施行日：2025年6月17日",
+    updated:  "最終更新日：2025年8月15日",
+    intro: "本書は Forecastler プラットフォーム（\"プラットフォーム\"、\"当社\"、\"当方\"、\"当社の\"）の利用に関する一般的な免責および告知事項を定めるものです。プラットフォームを利用することで、本免責事項と利用規約・プライバシーポリシーに同意したものとみなされます。ご同意いただけない場合は、プラットフォームをご利用にならないでください。"
+  },
+  s1: {
+    title: "1）サービスの説明と情報提供の目的",
+    p1: "本プラットフォームは、人工知能が生成する情報提供を目的とした回答（はい/いいえの回答と確率のパーセンテージ）を提供します。",
+    p2: "コンテンツおよび評価は、法的・金融・投資・医療・心理・安全・税務その他いかなる専門的助言も構成しません。",
+    p3: "お客様の特定の状況に対する回答の正確性、完全性、最新性または適合性は保証しません。コンテンツの利用は自己責任で行ってください。"
+  },
+  s2: {
+    title: "2）予測と統計的推定の限界",
+    p1: "確率の推定はヒューリスティックであり、統計的な制約や偏り、誤りを含み得るモデルに基づきます。",
+    p2: "本プラットフォームは未来を予言せず、ある出来事が起こる／起こらないことを保証しません。",
+    p3: "結果は、入力されたコンテキスト、提供情報の質、外部状況の変化に左右されます。"
+  },
+  s3: {
+    title: "3）個人の責任と意思決定",
+    p1: "プラットフォームの内容に基づいて行う決定および行動についての責任は、全てご自身にあります。",
+    p2: "影響の大きい決定（例：医療、金融、法的、安全）については、資格を有する専門家にご相談ください。",
+    p3: "緊急時には、所轄の機関（救急、警察、消防）に連絡してください。"
+  },
+  s4: {
+    title: "4）健康・法務・金融などのセンシティブ分野",
+    p1: "本プラットフォーム上のいかなる内容も医療上の助言、診断、治療を構成しません。医療専門家にご相談ください。",
+    p2: "本プラットフォーム上のいかなる内容も法的助言を構成しません。弁護士にご相談ください。",
+    p3: "本プラットフォーム上のいかなる内容も投資／金融アドバイスを構成しません。認可を受けたアドバイザーにご相談ください。",
+    p4: "高リスクの状況では、当社の回答を意思決定の唯一または主要な根拠としてはなりません。"
+  },
+  s5: {
+    title: "5）個人の権利および結果の公的表示",
+    p1: "そのような利用を公に又は直接禁止した自然人に関する予測の作成は禁止されています。",
+    p2: "第三者、機関、団体、国家またはシステムに関する予測結果を、明示的な許可または他の有効な法的根拠なく、公に表示または宣伝することは禁止されています。",
+    p3: "名誉や人格権の侵害を報告する場合は、第18節（通知とコンテンツ削除）をご参照ください。"
+  },
+  s6: {
+    title: "6）ユーザーコンテンツと行動",
+    p1: "提出するコンテンツ（テキスト、画像、リンク、データ）についての責任は全てご自身にあります。コンテンツは、違法、虚偽、攻撃的、名誉毀損的、差別的、脅迫的であってはならず、他者の権利を侵害してはなりません。",
+    p2: "プラットフォームの不正利用は禁止です（例：セキュリティ違反、スクレイピング、スパム、偽情報、操作、制限の回避）。"
+  },
+  s7: {
+    title: "7）知的財産権と無断共有の禁止",
+    p1: "プラットフォームのコンテンツは知的財産権により保護されています。コンテンツの無断複製・配布・共有—スクリーンショットを含む—は厳禁です。",
+    p2: "ライセンスおよび許可される利用に関する詳細な規定は、利用規約に定められています。"
+  },
+  s8: {
+    title: "8）公益情報と評判",
+    p1: "本プラットフォームは、公的情報・警報・統計の公式な情報源ではありません。",
+    p2: "公益情報（例：安全警報、選挙、公衆衛生）への依拠について当社は責任を負わず、その正確性も保証しません。",
+    p3: "当社は個人・企業・コミュニティの尊厳と評判を尊重します。害を及ぼす、名誉毀損的、または不正確な内容があるとお考えの場合はご連絡ください（第22節をご参照ください）。"
+  },
+  s9: {
+    title: "9) 技術的な可用性とパフォーマンス",
+    p1: "本サービスは「現状有姿」および「提供可能な範囲」で提供されます。すべてのデバイス/ブラウザ/拡張機能/プラグインとの完全互換性、無停止の提供、またはエラーのない動作は保証しません。",
+    p2: "予告なく停止、遅延、データ損失、保守、アップデート、機能変更が発生する場合があります。",
+    p3: "適用法で求められる範囲を除き、ダウンタイム、技術的問題、マルウェア、第三者の攻撃に起因する損害について当社は責任を負いません。"
+  },
+  s10: {
+    title: "10) 正確性・適時性・情報源",
+    p1: "AI の回答は、不正確、古い、不完全、曖昧、または偏りがある場合があります。",
+    p2: "プラットフォームは、あなたが送信したデータや公開情報を使用することがあります；常に独立検証を行うわけではありません。",
+    p3: "依拠する前に必ず情報を確認してください。"
+  },
+  s11: {
+    title: "11）第三者リンクとサービス",
+    p1: "本プラットフォームには、独立したウェブサイトや第三者サービスへのリンクが含まれる場合があります。",
+    p2: "それらの内容や運用について当社は管理・承認せず、責任も負いません。利用は自己責任で行ってください。"
+  },
+  s12: {
+    title: "12）アカウント・セキュリティ・データ",
+    p1: "不正利用が当社の専らの過失による場合を除き、アカウント下で生じる行為についてはお客様が責任を負います。",
+    p2: "データ処理の詳細はプライバシーポリシーをご参照ください。"
+  },
+  s13: {
+    title: "13）年齢制限",
+    p1: "13歳未満の個人は本プラットフォームを利用できません。",
+    p2: "13～18歳の個人は、適用法に従い、保護者の同意と監督のもとで利用できます。"
+  },
+  s14: {
+    title: "14）バイアス・倫理・差別禁止",
+    p1: "AI モデルは、そのデータに内在するバイアスを反映する場合があります。",
+    p2: "差別的または違法な目的でのプラットフォーム利用は禁止です。適用法および倫理基準の遵守はお客様の責任です。"
+  },
+  s15: {
+    title: "15）ベータ機能と実験",
+    p1: "一部の機能はベータ版として提供され、保証はなく、テスト目的に限られ、エラー・中断・変更を含む場合があります。"
+  },
+  s16: {
+    title: "16）責任の制限（適用法で許される範囲で）",
+    p1: "適用法で認められる最大限の範囲で、当社および当社のパートナー、関連会社、従業員、代理人は、間接的・付随的・特別・結果的または懲罰的（示例的）損害、利益／売上／データ／信用の喪失、事業中断、代替サービスの調達費用、またはプラットフォームのコンテンツへの依拠に起因する損害について責任を負いません。",
+    p2: "責任を完全に免除できない場合、その上限は、請求原因となった事象の発生前2か月間に本プラットフォームの利用のためにお客様が支払った総額までとします。",
+    p3: "本項のいかなる内容も、故意の不正行為、重過失、または適用法に基づく放棄できない権利（例：消費者の権利）に関する責任を除外または制限するものではありません。"
+  },
+  s17: {
+    title: "17）補償および免責（indemnity）",
+    lead: "次に起因して第三者からの請求、負債、損害、損失および費用（合理的な弁護士費用を含む）が発生した場合、当社を補償し、免責することに同意します：",
+    a: "a) 本規定または法令に反するあなたのコンテンツまたはプラットフォームの利用；",
+    b: "b) 第三者の権利の侵害；",
+    c: "c) あなたのアカウントの不正利用。"
+  },
+  s18: {
+    title: "18）通知とコンテンツ削除（notice & action）",
+    lead: "プラットフォーム上のコンテンツがあなたの権利を侵害しているとお考えの場合（例：名誉毀損、商標・著作権・プライバシー侵害）、以下を含む通知を forecastlerteam@gmail.com までお送りください：",
+    i1: "• 氏名（フルネーム）と連絡先；",
+    i2: "• コンテンツの明確な説明と所在（URL、スクリーンショット）；",
+    i3: "• 申立ての法的根拠（例：「名誉毀損」「著作権侵害」）；",
+    i4: "• 記載内容が真実であることの宣誓（声明）。",
+    foot: "審査期間中、当社は争点となっているコンテンツを一時的に制限または削除し、追加情報を求め、適用法に従い妥当な期間内に対応することがあります。"
+  },
+  s19: {
+    title: "19）言語版と翻訳",
+    p1: "本プラットフォームは複数の言語で提供される場合があります。本免責事項の翻訳間に不一致がある場合、現地法で明示的に別段の定めがない限り、英語版が優先します。"
+  },
+  s20: {
+    title: "20）変更および更新",
+    p1: "当社は本免責事項をいつでも改訂・更新できます。変更は、このページに更新日付きで掲載された時点で効力を生じます。変更後もプラットフォームを継続利用することで、当該変更に同意したものとみなされます。"
+  },
+  s21: {
+    title: "21）準拠法および管轄",
+    p1: "本免責事項はセルビア共和国の法令に準拠します（お客様の居住地の強行規定が別段の定めを置く場合を除く）。法令で義務付けられる場合を除き、事項および地域管轄を有する裁判所はスボティツァの裁判所です。"
+  },
+  s22: {
+    title: "22）連絡先",
+    p1: "Forecastler チーム",
+    p2: "メール：forecastlerteam@gmail.com"
+    }
+  }
 };
 
 // Helperi: pokušaj bez sufiksa, pa sa "-en"
