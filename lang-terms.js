@@ -2070,135 +2070,135 @@ function setLanguage(lang) {
   }
 
   // META
-  setTxtAny ("tu-title",   t.meta.title);
-  setTxtAny ("tu-meta-1",  t.meta.effective);
-  setTxtAny ("tu-meta-2",  t.meta.updated);
-  setTxtAny ("tu-intro",   t.meta.intro);
+  setTxtAny ("terms-title",   t.meta.title);
+  setTxtAny ("terms-meta-1",  t.meta.effective);
+  setTxtAny ("terms-meta-2",  t.meta.updated);
+  setTxtAny ("terms-intro",   t.meta.intro);
 
   // 1
-  setTxtAny  ("tu-s1-title", t.s1.title);
-  setHTMLAny ("tu-s1-1",     t.s1.p1);
-  setHTMLAny ("tu-s1-2",     t.s1.p2);
-  setTxtAny  ("tu-s1-3",     t.s1.p3);
+  setTxtAny  ("terms-s1-title", t.s1.title);
+  setHTMLAny ("terms-s1-1",     t.s1.p1);
+  setHTMLAny ("terms-s1-2",     t.s1.p2);
+  setTxtAny  ("terms-s1-3",     t.s1.p3);
 
   // 2 (ima <strong> i foot)
-  setTxtAny  ("tu-s2-title", t.s2.title);
-  setHTMLAny ("tu-s2-1",     t.s2.p1);
-  setHTMLAny ("tu-s2-2",     t.s2.p2);
-  setHTMLAny ("tu-s2-3",     t.s2.p3);
-  setHTMLAny ("tu-s2-4",     t.s2.p4);
-  setTxtAny  ("tu-s2-foot",  t.s2.foot);
+  setTxtAny  ("terms-s2-title", t.s2.title);
+  setHTMLAny ("terms-s2-1",     t.s2.p1);
+  setHTMLAny ("terms-s2-2",     t.s2.p2);
+  setHTMLAny ("terms-s2-3",     t.s2.p3);
+  setHTMLAny ("terms-s2-4",     t.s2.p4);
+  setTxtAny  ("terms-s2-foot",  t.s2.foot);
 
   // 3 (pododeljci)
-  setTxtAny  ("tu-s3-title",    t.s3.title);
+  setTxtAny  ("terms-s3-title",    t.s3.title);
 
-  setHTMLAny ("tu-s3-1-title",  t.s3.d31);
-  setTxtAny  ("tu-s3-1-1",      t.s3.d31_1);
-  setTxtAny  ("tu-s3-1-2",      t.s3.d31_2);
-  setHTMLAny ("tu-s3-1-note",   t.s3.d31_note);
+  setHTMLAny ("terms-s3-1-title",  t.s3.d31);
+  setTxtAny  ("terms-s3-1-1",      t.s3.d31_1);
+  setTxtAny  ("terms-s3-1-2",      t.s3.d31_2);
+  setHTMLAny ("terms-s3-1-note",   t.s3.d31_note);
 
-  setHTMLAny ("tu-s3-2-title",  t.s3.d32);
-  setHTMLAny ("tu-s3-2-1",      t.s3.d32_1);
-  setHTMLAny ("tu-s3-2-2",      t.s3.d32_2);
+  setHTMLAny ("terms-s3-2-title",  t.s3.d32);
+  setHTMLAny ("terms-s3-2-1",      t.s3.d32_1);
+  setHTMLAny ("terms-s3-2-2",      t.s3.d32_2);
 
-  setHTMLAny ("tu-s3-3-title",  t.s3.d33);
-  setTxtAny  ("tu-s3-3-1",      t.s3.d33_1);
-  setTxtAny  ("tu-s3-3-2",      t.s3.d33_2);
-  setHTMLAny ("tu-s3-3-eu-1",   t.s3.d33_eu_1);
-  setTxtAny  ("tu-s3-3-eu-2",   t.s3.d33_eu_2);
-  setTxtAny  ("tu-s3-3-eu-3",   t.s3.d33_eu_3);
-  setTxtAny  ("tu-s3-3-eu-4",   t.s3.d33_eu_4);
-  setHTMLAny ("tu-s3-3-note",   t.s3.d33_note);
+  setHTMLAny ("terms-s3-3-title",  t.s3.d33);
+  setTxtAny  ("terms-s3-3-1",      t.s3.d33_1);
+  setTxtAny  ("terms-s3-3-2",      t.s3.d33_2);
+  setHTMLAny ("terms-s3-3-eu-1",   t.s3.d33_eu_1);
+  setTxtAny  ("terms-s3-3-eu-2",   t.s3.d33_eu_2);
+  setTxtAny  ("terms-s3-3-eu-3",   t.s3.d33_eu_3);
+  setTxtAny  ("terms-s3-3-eu-4",   t.s3.d33_eu_4);
+  setHTMLAny ("terms-s3-3-note",   t.s3.d33_note);
 
-  setHTMLAny ("tu-s3-4-title",  t.s3.d34);
-  setTxtAny  ("tu-s3-4-1",      t.s3.d34_1);
-  setTxtAny  ("tu-s3-4-2",      t.s3.d34_2);
+  setHTMLAny ("terms-s3-4-title",  t.s3.d34);
+  setTxtAny  ("terms-s3-4-1",      t.s3.d34_1);
+  setTxtAny  ("terms-s3-4-2",      t.s3.d34_2);
 
-  setHTMLAny ("tu-s3-5-title",  t.s3.d35);
-  setTxtAny  ("tu-s3-5-1",      t.s3.d35_1);
-  setTxtAny  ("tu-s3-5-2",      t.s3.d35_2);
-  setTxtAny  ("tu-s3-5-3",      t.s3.d35_3);
+  setHTMLAny ("terms-s3-5-title",  t.s3.d35);
+  setTxtAny  ("terms-s3-5-1",      t.s3.d35_1);
+  setTxtAny  ("terms-s3-5-2",      t.s3.d35_2);
+  setTxtAny  ("terms-s3-5-3",      t.s3.d35_3);
 
   // 4
-  setTxtAny ("tu-s4-title", t.s4.title);
-  setTxtAny ("tu-s4-intro", t.s4.intro);
-  setTxtAny ("tu-s4-1",     t.s4.p1);
-  setTxtAny ("tu-s4-2",     t.s4.p2);
-  setTxtAny ("tu-s4-3",     t.s4.p3);
-  setTxtAny ("tu-s4-4",     t.s4.p4);
-  setTxtAny ("tu-s4-5",     t.s4.p5);
-  setTxtAny ("tu-s4-6",     t.s4.p6);
-  setTxtAny ("tu-s4-7",     t.s4.p7);
+  setTxtAny ("terms-s4-title", t.s4.title);
+  setTxtAny ("terms-s4-intro", t.s4.intro);
+  setTxtAny ("terms-s4-1",     t.s4.p1);
+  setTxtAny ("terms-s4-2",     t.s4.p2);
+  setTxtAny ("terms-s4-3",     t.s4.p3);
+  setTxtAny ("terms-s4-4",     t.s4.p4);
+  setTxtAny ("terms-s4-5",     t.s4.p5);
+  setTxtAny ("terms-s4-6",     t.s4.p6);
+  setTxtAny ("terms-s4-7",     t.s4.p7);
 
   // 5
-  setTxtAny ("tu-s5-title", t.s5.title);
-  setTxtAny ("tu-s5-1",     t.s5.p1);
-  setTxtAny ("tu-s5-2",     t.s5.p2);
-  setTxtAny ("tu-s5-3",     t.s5.p3);
-  setTxtAny ("tu-s5-4",     t.s5.p4);
-  setTxtAny ("tu-s5-5",     t.s5.p5);
-  setTxtAny ("tu-s5-6",     t.s5.p6);
-  setTxtAny ("tu-s5-7",     t.s5.p7);
+  setTxtAny ("terms-s5-title", t.s5.title);
+  setTxtAny ("terms-s5-1",     t.s5.p1);
+  setTxtAny ("terms-s5-2",     t.s5.p2);
+  setTxtAny ("terms-s5-3",     t.s5.p3);
+  setTxtAny ("terms-s5-4",     t.s5.p4);
+  setTxtAny ("terms-s5-5",     t.s5.p5);
+  setTxtAny ("terms-s5-6",     t.s5.p6);
+  setTxtAny ("terms-s5-7",     t.s5.p7);
 
   // 6
-  setTxtAny  ("tu-s6-title", t.s6.title);
-  setTxtAny  ("tu-s6-intro", t.s6.intro);
-  setTxtAny  ("tu-s6-1",     t.s6.p1);
-  setTxtAny  ("tu-s6-2",     t.s6.p2);
-  setTxtAny  ("tu-s6-3",     t.s6.p3);
-  setTxtAny  ("tu-s6-4",     t.s6.p4);
-  setHTMLAny ("tu-s6-5",     t.s6.p5);
-  setTxtAny  ("tu-s6-foot",  t.s6.foot);
+  setTxtAny  ("terms-s6-title", t.s6.title);
+  setTxtAny  ("terms-s6-intro", t.s6.intro);
+  setTxtAny  ("terms-s6-1",     t.s6.p1);
+  setTxtAny  ("terms-s6-2",     t.s6.p2);
+  setTxtAny  ("terms-s6-3",     t.s6.p3);
+  setTxtAny  ("terms-s6-4",     t.s6.p4);
+  setHTMLAny ("terms-s6-5",     t.s6.p5);
+  setTxtAny  ("terms-s6-foot",  t.s6.foot);
 
   // 7
-  setTxtAny ("tu-s7-title", t.s7.title);
-  setTxtAny ("tu-s7-lead",  t.s7.lead);
-  setTxtAny ("tu-s7-1",     t.s7.p1);
-  setTxtAny ("tu-s7-2",     t.s7.p2);
+  setTxtAny ("terms-s7-title", t.s7.title);
+  setTxtAny ("terms-s7-lead",  t.s7.lead);
+  setTxtAny ("terms-s7-1",     t.s7.p1);
+  setTxtAny ("terms-s7-2",     t.s7.p2);
 
   // 8
-  setTxtAny ("tu-s8-title", t.s8.title);
-  setTxtAny ("tu-s8-1",     t.s8.p1);
-  setTxtAny ("tu-s8-2",     t.s8.p2);
+  setTxtAny ("terms-s8-title", t.s8.title);
+  setTxtAny ("terms-s8-1",     t.s8.p1);
+  setTxtAny ("terms-s8-2",     t.s8.p2);
 
   // 9
-  setTxtAny ("tu-s9-title", t.s9.title);
-  setTxtAny ("tu-s9-1",     t.s9.p1);
+  setTxtAny ("terms-s9-title", t.s9.title);
+  setTxtAny ("terms-s9-1",     t.s9.p1);
 
   // 10
-  setTxtAny  ("tu-s10-title",   t.s10.title);
-  setTxtAny  ("tu-s10-intro",   t.s10.intro);
-  setHTMLAny ("tu-s10-1",       t.s10.p1);
-  setHTMLAny ("tu-s10-2",       t.s10.p2);
-  setHTMLAny ("tu-s10-3",       t.s10.p3);
-  setHTMLAny ("tu-s10-no-storage", t.s10.nostore);
+  setTxtAny  ("terms-s10-title",   t.s10.title);
+  setTxtAny  ("terms-s10-intro",   t.s10.intro);
+  setHTMLAny ("terms-s10-1",       t.s10.p1);
+  setHTMLAny ("terms-s10-2",       t.s10.p2);
+  setHTMLAny ("terms-s10-3",       t.s10.p3);
+  setHTMLAny ("terms-s10-no-storage", t.s10.nostore);
 
   // 11
-  setTxtAny ("tu-s11-title", t.s11.title);
-  setTxtAny ("tu-s11-1",     t.s11.p1);
-  setTxtAny ("tu-s11-2",     t.s11.p2);
-  setTxtAny ("tu-s11-3",     t.s11.p3);
-  setTxtAny ("tu-s11-4",     t.s11.p4);
+  setTxtAny ("terms-s11-title", t.s11.title);
+  setTxtAny ("terms-s11-1",     t.s11.p1);
+  setTxtAny ("terms-s11-2",     t.s11.p2);
+  setTxtAny ("terms-s11-3",     t.s11.p3);
+  setTxtAny ("terms-s11-4",     t.s11.p4);
 
   // 12..17
-  setTxtAny ("tu-s12-title", t.s12.title);
-  setTxtAny ("tu-s12-1",     t.s12.p1);
+  setTxtAny ("terms-s12-title", t.s12.title);
+  setTxtAny ("terms-s12-1",     t.s12.p1);
 
-  setTxtAny ("tu-s13-title", t.s13.title);
-  setTxtAny ("tu-s13-1",     t.s13.p1);
+  setTxtAny ("terms-s13-title", t.s13.title);
+  setTxtAny ("terms-s13-1",     t.s13.p1);
 
-  setTxtAny ("tu-s14-title", t.s14.title);
-  setTxtAny ("tu-s14-1",     t.s14.p1);
+  setTxtAny ("terms-s14-title", t.s14.title);
+  setTxtAny ("terms-s14-1",     t.s14.p1);
 
-  setTxtAny ("tu-s15-title", t.s15.title);
-  setTxtAny ("tu-s15-1",     t.s15.p1);
+  setTxtAny ("terms-s15-title", t.s15.title);
+  setTxtAny ("terms-s15-1",     t.s15.p1);
 
-  setTxtAny ("tu-s16-title", t.s16.title);
-  setTxtAny ("tu-s16-1",     t.s16.p1);
+  setTxtAny ("terms-s16-title", t.s16.title);
+  setTxtAny ("terms-s16-1",     t.s16.p1);
 
-  setTxtAny ("tu-s17-title", t.s17.title);
-  setTxtAny ("tu-s17-1",     t.s17.p1);
-  setTxtAny ("tu-s17-2",     t.s17.p2);
+  setTxtAny ("terms-s17-title", t.s17.title);
+  setTxtAny ("terms-s17-1",     t.s17.p1);
+  setTxtAny ("terms-s17-2",     t.s17.p2);
 
   // Footer
   if (t.footerLinks){
