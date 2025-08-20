@@ -334,6 +334,7 @@ es: {
     p8: "Entradas indebidas (datos personales de terceros sin base, información confidencial, contenido que no tiene derecho a divulgar).",
     p9: "Eludir restricciones de uso (por ejemplo, mediante VPN/proxy) cuando sea contrario a la ley o a estos Términos."
   },
+  s8: {
     title: "8) Propiedad intelectual y licencias",
     p1: "<strong>Nuestro contenido.</strong> Todos los derechos sobre el software, el diseño, los textos, los logotipos y demás elementos de la Plataforma nos pertenecen a nosotros o a nuestros licenciantes. Usted no adquiere ningún derecho salvo un derecho limitado a usar la Plataforma conforme a estos Términos.",
     p2: "<strong>Su Entrada.</strong> Nos concede una licencia no exclusiva, transferible, libre de regalías y de alcance mundial para usar su Entrada a fin de: (a) prestar y mejorar el servicio, y (b) con fines de seguridad/diagnóstico, conforme a la Política de Privacidad.",
