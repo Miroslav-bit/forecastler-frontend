@@ -529,7 +529,6 @@ fr: {
     title: "12) Enfants et mineurs",
     p1: "La Plateforme n’est pas destinée aux moins de 13 ans. Les personnes de 13 à 18 ans peuvent l’utiliser avec le consentement et la supervision des parents/tuteurs. Si vous estimez que nous traitons les données d’un enfant sans base valable, veuillez nous contacter."
   },
-fr: {
   s13: {
     title: "13) Liens de tiers",
     p1: "Les sites externes ont leurs propres politiques ; nous ne sommes pas responsables de leur contenu ni de leurs pratiques. Nous recommandons de consulter leurs politiques avant utilisation."
