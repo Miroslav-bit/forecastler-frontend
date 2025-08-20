@@ -499,6 +499,14 @@
       border-bottom: 2px solid currentColor;
     }
 
+    /* Veće slovo za "HERE" u CTA bloku */
+    .main-section.cta .cta-link{
+      font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+      font-weight: 800;        /* već je tako, ali ostavljeno radi jasnoće */
+      line-height: 1.25;
+      letter-spacing: .2px;
+    }
+
     /* Responsivnost: na manjim ekranima slika iznad teksta */
     @media (max-width: 900px) {
       .prophecy-layout {
@@ -686,7 +694,6 @@
 
         <div class="prop-forecast-date" aria-label="Forecast date">
           <span id="planet-1-forecast-date-en">Forecast date: 17.06.2025.</span>
-          <span id="planet-1-forecast-date-sr" style="display:none">Datum prognoze: 15. avgust 2025.</span>
         </div>
 
         <!-- 2) Uvodni tekst (sitniji) -->
@@ -740,7 +747,6 @@
 
         <div class="prop-forecast-date" aria-label="Forecast date">
           <span id="planet-2-forecast-date-en">Forecast date: 17.06.2025.</span>
-          <span id="planet-2-forecast-date-sr" style="display:none">Datum prognoze: 15. avgust 2025.</span>
         </div>
 
         <!-- 2) Uvodni tekst (sitniji) -->
@@ -794,7 +800,6 @@
 
         <div class="prop-forecast-date" aria-label="Forecast date">
           <span id="planet-3-forecast-date-en">Forecast date: 17.06.2025.</span>
-          <span id="planet-3-forecast-date-sr" style="display:none">Datum prognoze: 15. avgust 2025.</span>
         </div>
 
         <!-- 2) Uvodni tekst (sitniji) -->
@@ -826,7 +831,7 @@
       You can also ask the AI about your future or the future of other people, objects, places, and events.
     </p>
     <p>
-      <a class="link-white" id="blog-cta-2-en" class="cta-link" href="index.html">HERE</a>
+      <a id="blog-cta-2-en" class="cta-link link-white" href="index.html">HERE</a>
     </p>
   </div>
 
