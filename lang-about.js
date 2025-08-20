@@ -66,7 +66,7 @@ const translations = {
       p6: "Veća transparentnost (jasnije objašnjenje zašto je procena takva, gde su granice modela i kako da poboljšaš unos).",
       p7: "Verujemo da budućnost ne treba da bude enigma, već skup informisanih verovatnoća. Ako deliš tu viziju, pitaj, testiraj i predlaži — jer Forecastler raste zajedno sa svojom zajednicom."
     }
-  }
+  },
 
 es: {
   headerLinks: { home: "Inicio", about: "Sobre nosotros", contact: "Contacto", blog: "Blog" },
@@ -125,7 +125,6 @@ fr: {
     p6: "<strong>5) Limites :</strong> L'IA peut se tromper — en particulier lorsque les entrées sont rares ou contradictoires, ou lorsque les événements dépendent de nombreux facteurs imprévisibles. Forecastler ne prétend pas connaître l'avenir ; il estime des probabilités à partir des données disponibles.",
     p7: "<strong>Remarque :</strong> Forecastler ne fournit pas de conseils médicaux, financiers ou juridiques. Considérez les résultats comme une aide à la décision, et non comme des résultats garantis."
   },
-fr: {
   dev: {
     title: "Le développement de Forecastler",
     p1: "Forecastler, en tant que plateforme et interface de prédiction assistée par IA, est en développement depuis <strong>décembre 2024</strong> à <strong>Subotica, République de Serbie</strong>. Le projet a été officiellement lancé le <strong>17 juin 2025</strong> et continue d’évoluer de manière itérative.",
@@ -455,8 +454,7 @@ zh: {
     p3: "天气预报就是经典例子：在可靠测量、模型与数学的支持下，优质数据会产生有用的预测。然而在现实世界中，我们很少拥有完整数据；系统复杂且对初始条件敏感，因此更实际的做法是以概率而非确定性来表述。",
     p4: "在科学哲学中有一个比喻——“拉普拉斯妖”，一种理想的智能，如果它知道宇宙中每个粒子的位置与速度，就能计算出过去与未来。但在实践中，这样的完全知识并不存在。",
     p5: "尽管如此，这一思想强调了关键点：我们的数据越完整、质量越高，预测就越可靠。现代人工智能正有助于此——作为一种能够快速整合海量信息并提供未来结果概率估计的工具。"
-  }
-},
+  },
   work: {
     title: "Forecastler 的工作原理",
     p1: "<strong>Forecastler</strong> 将人工智能作为一种当代的预测方法，使其成为以透明、易懂且具有统计依据的方式生成个体化预测的先驱性尝试之一。",
