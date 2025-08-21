@@ -456,6 +456,7 @@
     textarea:focus::placeholder { color: transparent; }
 
     .is-hidden { display: none !important; }
+    .is-disabled { opacity: .45; pointer-events: none; filter: grayscale(1); }
 
   </style>
 </head>
@@ -765,6 +766,9 @@
     // Dugme za slanje pitanja (label + aria)
     const sendBtn = document.getElementById("send-button");
     if (sendBtn) {
+      sendBtn.disabled = false;
+      sendBtn.classList.remove("is-hidden","is-disabled");
+      sendBtn.removeAttribute("aria-disabled");
       sendBtn.querySelector(".btn-label").textContent = t.sendButton;
       sendBtn.title = t.sendButton;
       sendBtn.setAttribute("aria-label", t.sendButton);
@@ -1037,14 +1041,14 @@
     });
 
     async function posaljiPitanje() {
-      // spreči duplo slanje (i Enter prečice, botove, itd.)
-        if (window.forecastlerQuestionLocked) return;
+      if (window.forecastlerQuestionLocked) return;
         window.forecastlerQuestionLocked = true;
 
-        const sendBtn = document.getElementById("send-question-btn");
+        const sendBtn = document.getElementById("send-button"); // ✅ PRAVI ID
         if (sendBtn) {
+          // odmah učini vizuelno neaktivnim (neklikabilno)
           sendBtn.disabled = true;
-          sendBtn.classList.add("is-hidden");     // PRIKRIVANJE DUGMETA ZA SLANJE
+          sendBtn.classList.add("is-disabled");
           sendBtn.setAttribute("aria-disabled","true");
         }
 
@@ -1066,9 +1070,15 @@
       verovatnocaText.textContent = "";
 
       if (!pitanje) {
-        alert("Enter a question before submitting.");
-        return;
-      }
+          alert("Enter a question before submitting.");
+          window.forecastlerQuestionLocked = false;
+          if (sendBtn) {
+            sendBtn.disabled = false;
+            sendBtn.classList.remove("is-disabled","is-hidden");
+            sendBtn.removeAttribute("aria-disabled");
+          }
+          return;
+        }
 
       const dateRegex = /([0-3]?\d)[.\/\-]([01]?\d)[.\/\-](\d{4})/g;
       let match;
@@ -1085,9 +1095,15 @@
       }
 
       if (foundPastDate) {
-        alert("Ask a question related to the future.");
-        return;
-      }
+          alert("Ask a question related to the future.");
+          window.forecastlerQuestionLocked = false;
+          if (sendBtn) {
+            sendBtn.disabled = false;
+            sendBtn.classList.remove("is-disabled","is-hidden");
+            sendBtn.removeAttribute("aria-disabled");
+          }
+          return;
+        }
 
       const danas = new Date().toLocaleDateString('sr-RS');
       const uvodniTekst = `Današnji datum je ${danas}.`;
@@ -1108,6 +1124,12 @@
         if (res.status === 400) {
           const podaci = await res.json();
           alert(podaci.poruka || "The answer is not in a recognizable format.");
+          window.forecastlerQuestionLocked = false;
+          if (sendBtn) {
+            sendBtn.disabled = false;
+            sendBtn.classList.remove("is-disabled","is-hidden");
+            sendBtn.removeAttribute("aria-disabled");
+          }
           return;
         }
 
@@ -1121,15 +1143,32 @@
           verovatnocaText.innerHTML = `${t.dynamic.probabilityLabel} <strong>${procenat}</strong>`;
           odgovorText.style.display = "block";
           verovatnocaText.style.display = "block";
+          if (sendBtn) {
+            // nakon pristizanja odgovora: potpuno sakrij
+            sendBtn.classList.add("is-hidden");
+          }
           if (askNewBtn) askNewBtn.style.display = "inline-flex";
         } else {
           odgovorText.textContent = t.alerts.unrecognizedResponse;
           odgovorText.style.display = "block";
+          // dozvoli ponovni pokušaj (nema smisla terati refresh)
+          window.forecastlerQuestionLocked = false;
+          if (sendBtn) {
+            sendBtn.disabled = false;
+            sendBtn.classList.remove("is-disabled","is-hidden");
+            sendBtn.removeAttribute("aria-disabled");
+          }
         }
 
       } catch (err) {
         odgovorText.textContent = t.alerts.serverError;
         odgovorText.style.display = "block";
+        window.forecastlerQuestionLocked = false;
+        if (sendBtn) {
+          sendBtn.disabled = false;
+          sendBtn.classList.remove("is-disabled","is-hidden");
+          sendBtn.removeAttribute("aria-disabled");
+        }
       }
     }
   </script>
