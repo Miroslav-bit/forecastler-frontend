@@ -88,7 +88,7 @@ For current situations: list all participants, the course of events so far, and 
       delete: "Delete",
       saveDescription: "Save description",
       deleteDescription: "Delete description",
-      cancel: "Cancel"
+      cancel: "Cancel",
       askNewQuestion: "Ask a new question"
     },
     placeholders: {
@@ -185,7 +185,7 @@ Za trenutne situacije: navedite sve učesnike, dosadašnji tok događaja i klju�
       delete: "Obriši ",
       saveDescription: "Sačuvaj opis",
       deleteDescription: "Obriši opis",
-      cancel: "Otkaži"
+      cancel: "Otkaži",
       askNewQuestion: "Postavite novo pitanje"
     },
     placeholders: {
@@ -283,7 +283,7 @@ Para situaciones actuales: indique todos los participantes, el desarrollo hasta 
       delete: "Eliminar",
       saveDescription: "Guardar descripción",
       deleteDescription: "Eliminar descripción",
-      cancel: "Cancelar"
+      cancel: "Cancelar",
       askNewQuestion: "Hacer una nueva pregunta"
     },
     placeholders: {
@@ -380,7 +380,7 @@ Pour des situations actuelles : indiquez tous les participants, le déroulement 
       delete: "Effacer",
       saveDescription: "Enregistrer la description",
       deleteDescription: "Supprimer la description",
-      cancel: "Annuler"
+      cancel: "Annuler",
       askNewQuestion: "Poser une nouvelle question"
     },
     placeholders: {
@@ -478,7 +478,7 @@ Für aktuelle Situationen: Nennen Sie alle Beteiligten, den bisherigen Verlauf u
       delete: "Löschen",
       saveDescription: "Beschreibung speichern",
       deleteDescription: "Beschreibung löschen",
-      cancel: "Abbrechen"
+      cancel: "Abbrechen",
       askNewQuestion: "Eine neue Frage stellen"
     },
     placeholders: {
@@ -576,7 +576,7 @@ Para situações atuais: mencione todos os envolvidos, o andamento até o moment
       delete: "Excluir",
       saveDescription: "Salvar descrição",
       deleteDescription: "Excluir descrição",
-      cancel: "Cancelar"
+      cancel: "Cancelar",
       askNewQuestion: "Fazer uma nova pergunta"
     },
     placeholders: {
@@ -674,7 +674,7 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
       delete: "Elimina",
       saveDescription: "Salva descrizione",
       deleteDescription: "Elimina descrizione",
-      cancel: "Annulla"
+      cancel: "Annulla",
       askNewQuestion: "Fai una nuova domanda"
     },
     placeholders: {
@@ -772,7 +772,7 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
       delete: "Удалить",
       saveDescription: "Сохранить описание",
       deleteDescription: "Удалить описание",
-      cancel: "Отмена"
+      cancel: "Отмена",
       askNewQuestion: "Задать новый вопрос"
     },
     placeholders: {
@@ -870,7 +870,7 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
       delete: "Usuń",
       saveDescription: "Zapisz opis",
       deleteDescription: "Usuń opis",
-      cancel: "Anuluj"
+      cancel: "Anuluj",
       askNewQuestion: "Zadaj nowe pytanie"
     },
     placeholders: {
@@ -968,7 +968,7 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
       delete: "Видалити",
       saveDescription: "Зберегти опис",
       deleteDescription: "Видалити опис",
-      cancel: "Скасувати"
+      cancel: "Скасувати",
       askNewQuestion: "Поставити нове запитання"
     },
     placeholders: {
@@ -1066,7 +1066,7 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       delete: "Sil",
       saveDescription: "Açıklamayı kaydet",
       deleteDescription: "Açıklamayı sil",
-      cancel: "İptal"
+      cancel: "İptal",
       askNewQuestion: "Yeni bir soru sor"
     },
     placeholders: {
@@ -1163,7 +1163,7 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       delete: "حذف",
       saveDescription: "حفظ الوصف",
       deleteDescription: "حذف الوصف",
-      cancel: "إلغاء"
+      cancel: "إلغاء",
       askNewQuestion: "اطرح سؤالًا جديدًا"
     },
     placeholders: {
@@ -1261,7 +1261,7 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       delete: "हटाएँ",
       saveDescription: "विवरण सहेजें",
       deleteDescription: "विवरण हटाएँ",
-      cancel: "रद्द करें"
+      cancel: "रद्द करें",
       askNewQuestion: "नया प्रश्न पूछें"
     },
     placeholders: {
@@ -1354,7 +1354,7 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       delete: "删除",
       saveDescription: "保存描述",
       deleteDescription: "删除描述",
-      cancel: "取消"
+      cancel: "取消",
       askNewQuestion: "提出一个新问题"
     },
     placeholders: {
@@ -1452,7 +1452,7 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       delete: "削除",
       saveDescription: "説明を保存",
       deleteDescription: "説明を削除",
-      cancel: "キャンセル"
+      cancel: "キャンセル",
       askNewQuestion: "新しい質問をする"
     },
     placeholders: {
