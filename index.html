@@ -455,6 +455,8 @@
     /* Na fokusu placeholder nestaje (ponovo se vidi kada je polje prazno i izgubi fokus) */
     textarea:focus::placeholder { color: transparent; }
 
+    .is-hidden { display: none !important; }
+
   </style>
 </head>
 <body>
@@ -671,6 +673,8 @@
     return text.trim().split(/\s+/).filter(Boolean).length;
   }
 
+  window.forecastlerQuestionLocked = false;
+
   // Ograničenje za opis (max 1000 reči)
   document.getElementById("kontekst").addEventListener("input", function() {
     let words = countWords(this.value);
@@ -858,6 +862,36 @@
       }
     });
 
+    document.addEventListener("DOMContentLoaded", () => {
+      if (sessionStorage.getItem("forecastler:newQuestion") === "1") {
+        sessionStorage.removeItem("forecastler:newQuestion");
+
+        // očisti stare rezultate i sakrij "Ask a new question"
+        const ans  = document.getElementById("odgovor-tekst");
+        const prob = document.getElementById("odgovor-verovatnoca");
+        const ask  = document.getElementById("ask-new-question");
+        if (ans)  ans.style.display  = "none";
+        if (prob) prob.style.display = "none";
+        if (ask)  ask.style.display  = "none";
+
+        // reset “lock”-a i vrati dugme za slanje
+        window.forecastlerQuestionLocked = false;
+        const sendBtn = document.getElementById("send-question-btn");
+        if (sendBtn) {
+          sendBtn.disabled = false;
+          sendBtn.classList.remove("is-hidden");  // DUGME OPET DOSTUPNO
+          sendBtn.removeAttribute("aria-disabled");
+        }
+
+        // očisti i fokusiraj polje za novo pitanje
+        const q = document.getElementById("pitanje");
+        if (q) {
+          q.value = "";
+          q.focus({ preventScroll: true });
+        }
+      }
+    });
+
     // ==== MULTI-SUBJECT STORAGE (localStorage) ====
     const CONTEXTS_KEY = "forecastler:contexts:v1";   // mapa: { key: { name, text, ts } }
     const CURRENT_KEY  = "forecastler:currentKey:v1"; // aktivni subjekat (key)
@@ -1003,6 +1037,21 @@
     });
 
     async function posaljiPitanje() {
+      // spreči duplo slanje (i Enter prečice, botove, itd.)
+        if (window.forecastlerQuestionLocked) return;
+        window.forecastlerQuestionLocked = true;
+
+        const sendBtn = document.getElementById("send-question-btn");
+        if (sendBtn) {
+          sendBtn.disabled = true;
+          sendBtn.classList.add("is-hidden");     // PRIKRIVANJE DUGMETA ZA SLANJE
+          sendBtn.setAttribute("aria-disabled","true");
+        }
+
+      // kada dobijete i prikažete odgovor + verovatnoću:
+        document.getElementById("odgovor-tekst").style.display = "block";
+        document.getElementById("odgovor-verovatnoca").style.display = "block";
+
       const askNewBtn = document.getElementById("ask-new-question");
       if (askNewBtn) askNewBtn.style.display = "none";
 
