@@ -1,609 +1,911 @@
-// lang-blog-planet.js (robustan za blog-planet.html sa -en sufiksima)
-let trenutniJezik = localStorage.getItem('forecastlerLang') || 'en';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KN6QXFQ161"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-const translations = {
-  en: {
-    headerLinks: { home: "Home", about: "About Us", contact: "Contact", blog: "Blog" },
-    footerLinks: { disclaimer:"Disclaimer", terms:"Terms of Use", privacy:"Privacy Policy", cookies:"Cookie Policy", sitemap:"Sitemap", faq:"FAQ" },
-    page: { title: "Artificial Intelligence Forecasts for Population, Social Relations, and Religion" },
-    cta: {
-      p1: "You can also ask the AI about your future or the future of other people, objects, places, and events",
-      here: "HERE"
-    },
-    s1: {
-      forecast: "Forecast date: 17.06.2025.",
-      lead: "The Earth’s population reached 5 billion in 1987 and rose to 8 billion by 2022. The fastest growth is occurring in Eastern Africa and in South and Southeast Asia.",
-      qLabel: "Question for AI:",
-      qText: "Will the global population exceed 9 billion by 2030?",
-      aLabel: "AI answer:",
-      aText: "NO. Probability 5%"
-    },
-    s2: {
-      forecast: "Forecast date: 17.06.2025.",
-      lead: "The largest inflows of migrants to Europe come from Africa and Southwest Asia. In 2023, about 4.3 million migrants settled in Europe, and by 2024 migrants accounted for roughly 9.9% of the continent’s total population. Political crises and armed conflicts in parts of the world are driving migration to Europe.",
-      qLabel: "Question for AI:",
-      qText: "During 2025, will more than 1 million new migrants from Asia and Africa arrive in Europe?",
-      aLabel: "AI answer:",
-      aText: "YES. Probability 85%"
-    },
-    s3: {
-      forecast: "Forecast date: 17.06.2025.",
-      lead: "There are approximately 2.2 billion Christians, 2 billion Muslims, and 1.2 billion Hindus worldwide; other religions make up the remaining share of the population. Islam is the fastest-growing religion, as are certain movements within Christianity and other religious groups.",
-      qLabel: "Question for AI:",
-      qText: "By 2050, will a new religion emerge that attracts more than one billion followers?",
-      aLabel: "AI answer:",
-      aText: "NO. Probability 1%"
+    gtag('config', 'G-KN6QXFQ161');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forecastler – Society</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('images/background.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
     }
-  },
-
-  sr: {
-    headerLinks: { home: "Početna", about: "O nama", contact: "Kontakt", blog: "Blog" },
-    footerLinks: { disclaimer:"Odricanje od odgovornosti", terms:"Uslovi korišćenja", privacy:"Politika privatnosti", cookies:"Politika kolačića", sitemap:"Mapa sajta", faq:"FAQ" },
-    page: { title: "Prognoze veštačke inteligencije za stanovništvo, društvene odnose i religiju" },
-    cta: {
-      p1: "Možete pitati AI i o svojoj budućnosti ili o budućnosti drugih ljudi, predmeta, mesta i događaja",
-      here: "OVDE"
-    },
-    s1: {
-      forecast: "Datum prognoze: 17.06.2025.",
-      lead: "Broj stanovnika na Zemlji 1987. godine dostigao je 5 milijardi, a do 2022. porastao je na 8 milijardi. Najveći rast beleže istočna Afrika te južna i jugoistočna Azija.",
-      qLabel: "Pitanje za AI:",
-      qText: "Da li će broj stanovnika premašiti 9 milijardi do 2030. godine?",
-      aLabel: "Odgovor AI:",
-      aText: "NE. Verovatnoća 5%"
-    },
-    s2: {
-      forecast: "Datum prognoze: 17.06.2025.",
-      lead: "Najveći priliv migranata u Evropu dolazi iz Afrike i jugozapadne Azije. Tokom 2023. godine u Evropu se doselilo oko 4,3 miliona migranata, a do 2024. migranti su činili oko 9,9% ukupnog stanovništva evropskog kontinenta. Političke krize i ratni sukobi u pojedinim delovima sveta podstiču priliv migranata u Evropu.",
-      qLabel: "Pitanje za AI:",
-      qText: "Da li će tokom 2025. godine u Evropu pristizati više od 1 miliona novih migranata iz Azije i Afrike?",
-      aLabel: "Odgovor AI:",
-      aText: "DA. Verovatnoća 85%"
-    },
-    s3: {
-      forecast: "Datum prognoze: 17.06.2025.",
-      lead: "U svetu ima približno 2,2 milijarde hrišćana, 2 milijarde muslimana i 1,2 milijarde hindusa, dok ostale religije čine preostali deo stanovništva. Najbrže rastu islam, kao i pojedini pokreti unutar hrišćanstva i drugih verskih zajednica.",
-      qLabel: "Pitanje za AI:",
-      qText: "Da li će se do 2050. godine pojaviti nova religija koja će pridobiti više od milijardu pristalica?",
-      aLabel: "Odgovor AI:",
-      aText: "NE. Verovatnoća 1%"
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-  },
-
-es: {
-  headerLinks: { home: "Inicio", about: "Sobre nosotros", contact: "Contacto", blog: "Blog" },
-  footerLinks: { disclaimer:"Aviso legal", terms:"Términos de uso", privacy:"Política de privacidad", cookies:"Política de cookies", sitemap:"Mapa del sitio", faq:"Preguntas frecuentes" },
-  page: { title: "Pronósticos de Inteligencia Artificial sobre Población, Relaciones Sociales y Religión" },
-  cta: {
-    p1: "También puedes preguntar a la IA sobre tu futuro o el de otras personas, objetos, lugares y eventos",
-    here: "AQUÍ"
-  },
-  s1: {
-    forecast: "Fecha del pronóstico: 17.06.2025.",
-    lead: "La población de la Tierra alcanzó los 5 mil millones en 1987 y llegó a 8 mil millones en 2022. El crecimiento más rápido se registra en África Oriental y en el sur y sudeste de Asia.",
-    qLabel: "Pregunta para la IA:",
-    qText: "¿La población mundial superará los 9 mil millones para 2030?",
-    aLabel: "Respuesta de la IA:",
-    aText: "NO. Probabilidad 5%"
-  },
-  s2: {
-    forecast: "Fecha del pronóstico: 17.06.2025.",
-    lead: "Los mayores flujos de migrantes hacia Europa provienen de África y del suroeste de Asia. En 2023, unos 4,3 millones de migrantes se establecieron en Europa y, para 2024, los migrantes representaban aproximadamente el 9,9% de la población total del continente. Las crisis políticas y los conflictos armados en distintas regiones impulsan la migración hacia Europa.",
-    qLabel: "Pregunta para la IA:",
-    qText: "Durante 2025, ¿llegarán a Europa más de 1 millón de nuevos migrantes de Asia y África?",
-    aLabel: "Respuesta de la IA:",
-    aText: "SÍ. Probabilidad 85%"
-  },
-  s3: {
-    forecast: "Fecha del pronóstico: 17.06.2025.",
-    lead: "Hay aproximadamente 2,2 mil millones de cristianos, 2 mil millones de musulmanes y 1,2 mil millones de hindúes en el mundo; otras religiones componen el resto de la población. El islam es la religión de crecimiento más rápido, al igual que ciertos movimientos dentro del cristianismo y otros grupos religiosos.",
-    qLabel: "Pregunta para la IA:",
-    qText: "Para 2050, ¿surgirá una nueva religión que atraiga a más de mil millones de fieles?",
-    aLabel: "Respuesta de la IA:",
-    aText: "NO. Probabilidad 1%"
-  }
-},
-
-fr: {
-  headerLinks: { home: "Accueil", about: "À propos", contact: "Contact", blog: "Blog" },
-  footerLinks: { disclaimer:"Mentions légales", terms:"Conditions d'utilisation", privacy:"Politique de confidentialité", cookies:"Politique relative aux cookies", sitemap:"Plan du site", faq:"FAQ" },
-  page: { title: "Prévisions d’intelligence artificielle sur la population, les relations sociales et la religion" },
-  cta: {
-    p1: "Vous pouvez aussi interroger l’IA sur votre avenir ou celui d’autres personnes, objets, lieux et événements",
-    here: "ICI"
-  },
-  s1: {
-    forecast: "Date du pronostic : 17.06.2025.",
-    lead: "La population de la Terre a atteint 5 milliards en 1987 et 8 milliards en 2022. La croissance la plus rapide a lieu en Afrique de l’Est ainsi qu’en Asie du Sud et du Sud-Est.",
-    qLabel: "Question pour l’IA :",
-    qText: "La population mondiale dépassera-t-elle 9 milliards d’ici 2030 ?",
-    aLabel: "Réponse de l’IA :",
-    aText: "NON. Probabilité 5 %"
-  },
-  s2: {
-    forecast: "Date du pronostic : 17.06.2025.",
-    lead: "Les plus grands afflux de migrants vers l’Europe proviennent d’Afrique et d’Asie du Sud-Ouest. En 2023, environ 4,3 millions de migrants se sont installés en Europe et, en 2024, les migrants représentaient environ 9,9 % de la population du continent. Les crises politiques et les conflits armés dans certaines régions du monde alimentent ces migrations vers l’Europe.",
-    qLabel: "Question pour l’IA :",
-    qText: "En 2025, plus d’un million de nouveaux migrants d’Asie et d’Afrique arriveront-ils en Europe ?",
-    aLabel: "Réponse de l’IA :",
-    aText: "OUI. Probabilité 85 %"
-  },
-  s3: {
-    forecast: "Date du pronostic : 17.06.2025.",
-    lead: "On compte environ 2,2 milliards de chrétiens, 2 milliards de musulmans et 1,2 milliard d’hindous dans le monde ; les autres religions représentent le reste de la population. L’islam est la religion connaissant la croissance la plus rapide, tout comme certains mouvements au sein du christianisme et d’autres groupes religieux.",
-    qLabel: "Question pour l’IA :",
-    qText: "D’ici 2050, une nouvelle religion attirera-t-elle plus d’un milliard d’adeptes ?",
-    aLabel: "Réponse de l’IA :",
-    aText: "NON. Probabilité 1 %"
-  }
-},
-
-de: {
-  headerLinks: { home: "Startseite", about: "Über uns", contact: "Kontakt", blog: "Blog" },
-  footerLinks: { disclaimer:"Haftungsausschluss", terms:"Nutzungsbedingungen", privacy:"Datenschutzerklärung", cookies:"Cookie-Richtlinie", sitemap:"Sitemap", faq:"FAQ" },
-  page: { title: "KI-Prognosen zu Bevölkerung, sozialen Beziehungen und Religion" },
-  cta: {
-    p1: "Sie können die KI auch zu Ihrer Zukunft oder zur Zukunft anderer Menschen, Objekte, Orte und Ereignisse befragen",
-    here: "HIER"
-  },
-  s1: {
-    forecast: "Prognosedatum: 17.06.2025.",
-    lead: "Die Erdbevölkerung erreichte 1987 fünf Milliarden und stieg bis 2022 auf acht Milliarden. Das schnellste Wachstum findet in Ostafrika sowie in Süd- und Südostasien statt.",
-    qLabel: "Frage an die KI:",
-    qText: "Wird die Weltbevölkerung bis 2030 neun Milliarden überschreiten?",
-    aLabel: "KI-Antwort:",
-    aText: "NEIN. Wahrscheinlichkeit 5 %"
-  },
-  s2: {
-    forecast: "Prognosedatum: 17.06.2025.",
-    lead: "Die größten Zuwanderungsströme nach Europa kommen aus Afrika und Südwestasien. 2023 ließen sich rund 4,3 Millionen Migrant*innen in Europa nieder; 2024 machten Migrant*innen etwa 9,9 % der Gesamtbevölkerung des Kontinents aus. Politische Krisen und bewaffnete Konflikte in Teilen der Welt treiben die Migration nach Europa.",
-    qLabel: "Frage an die KI:",
-    qText: "Werden 2025 mehr als 1 Million neue Migrant*innen aus Asien und Afrika in Europa ankommen?",
-    aLabel: "KI-Antwort:",
-    aText: "JA. Wahrscheinlichkeit 85 %"
-  },
-  s3: {
-    forecast: "Prognosedatum: 17.06.2025.",
-    lead: "Weltweit gibt es etwa 2,2 Milliarden Christinnen und Christen, 2 Milliarden Musliminnen und Muslime sowie 1,2 Milliarden Hinduistinnen und Hinduisten; andere Religionen stellen den verbleibenden Anteil. Der Islam wächst am schnellsten, ebenso bestimmte Bewegungen innerhalb des Christentums und anderer Religionsgemeinschaften.",
-    qLabel: "Frage an die KI:",
-    qText: "Wird bis 2050 eine neue Religion entstehen, die mehr als eine Milliarde Anhänger gewinnt?",
-    aLabel: "KI-Antwort:",
-    aText: "NEIN. Wahrscheinlichkeit 1 %"
-  }
-},
-
-pt: {
-  headerLinks: { home: "Início", about: "Sobre nós", contact: "Contato", blog: "Blog" },
-  footerLinks: { disclaimer:"Aviso legal", terms:"Termos de uso", privacy:"Política de Privacidade", cookies:"Política de Cookies", sitemap:"Mapa do site", faq:"Perguntas frequentes" },
-  page: { title: "Previsões de IA para População, Relações Sociais e Religião" },
-  cta: {
-    p1: "Você também pode perguntar à IA sobre o seu futuro ou o futuro de outras pessoas, objetos, lugares e eventos",
-    here: "AQUI"
-  },
-  s1: {
-    forecast: "Data da previsão: 17.06.2025.",
-    lead: "A população da Terra chegou a 5 bilhões em 1987 e alcançou 8 bilhões em 2022. O crescimento mais rápido ocorre na África Oriental e no Sul e Sudeste Asiático.",
-    qLabel: "Pergunta para a IA:",
-    qText: "A população mundial ultrapassará 9 bilhões até 2030?",
-    aLabel: "Resposta da IA:",
-    aText: "NÃO. Probabilidade 5%"
-  },
-  s2: {
-    forecast: "Data da previsão: 17.06.2025.",
-    lead: "Os maiores fluxos de migrantes para a Europa vêm da África e do Sudoeste Asiático. Em 2023, cerca de 4,3 milhões de migrantes se estabeleceram na Europa e, em 2024, os migrantes representavam aproximadamente 9,9% da população total do continente. Crises políticas e conflitos armados em várias regiões impulsionam a migração para a Europa.",
-    qLabel: "Pergunta para a IA:",
-    qText: "Em 2025, mais de 1 milhão de novos migrantes da Ásia e da África chegarão à Europa?",
-    aLabel: "Resposta da IA:",
-    aText: "SIM. Probabilidade 85%"
-  },
-  s3: {
-    forecast: "Data da previsão: 17.06.2025.",
-    lead: "Há aproximadamente 2,2 bilhões de cristãos, 2 bilhões de muçulmanos e 1,2 bilhão de hindus no mundo; as demais religiões compõem o restante. O islamismo é a religião que mais cresce, assim como certos movimentos dentro do cristianismo e de outros grupos religiosos.",
-    qLabel: "Pergunta para a IA:",
-    qText: "Até 2050, surgirá uma nova religião que atraia mais de um bilhão de seguidores?",
-    aLabel: "Resposta da IA:",
-    aText: "NÃO. Probabilidade 1%"
-  }
-},
-
-it: {
-  headerLinks: { home: "Home", about: "Chi siamo", contact: "Contatti", blog: "Blog" },
-  footerLinks: { disclaimer:"Note legali", terms:"Termini di utilizzo", privacy:"Informativa sulla privacy", cookies:"Informativa sui cookie", sitemap:"Mappa del sito", faq:"FAQ" },
-  page: { title: "Previsioni di IA su popolazione, relazioni sociali e religione" },
-  cta: {
-    p1: "Puoi anche chiedere all’IA del tuo futuro o del futuro di altre persone, oggetti, luoghi ed eventi",
-    here: "QUI"
-  },
-  s1: {
-    forecast: "Data della previsione: 17.06.2025.",
-    lead: "La popolazione della Terra ha raggiunto i 5 miliardi nel 1987 ed è salita a 8 miliardi nel 2022. La crescita più rapida si registra nell’Africa orientale e nell’Asia meridionale e sud-orientale.",
-    qLabel: "Domanda per l’IA:",
-    qText: "La popolazione mondiale supererà i 9 miliardi entro il 2030?",
-    aLabel: "Risposta dell’IA:",
-    aText: "NO. Probabilità 5%"
-  },
-  s2: {
-    forecast: "Data della previsione: 17.06.2025.",
-    lead: "I maggiori afflussi di migranti verso l’Europa provengono dall’Africa e dall’Asia sud-occidentale. Nel 2023 circa 4,3 milioni di migranti si sono stabiliti in Europa e, nel 2024, i migranti rappresentavano circa il 9,9% della popolazione del continente. Crisi politiche e conflitti armati in varie aree del mondo alimentano la migrazione verso l’Europa.",
-    qLabel: "Domanda per l’IA:",
-    qText: "Nel corso del 2025 arriveranno in Europa più di 1 milione di nuovi migranti dall’Asia e dall’Africa?",
-    aLabel: "Risposta dell’IA:",
-    aText: "SÌ. Probabilità 85%"
-  },
-  s3: {
-    forecast: "Data della previsione: 17.06.2025.",
-    lead: "Vi sono circa 2,2 miliardi di cristiani, 2 miliardi di musulmani e 1,2 miliardi di indù nel mondo; le altre religioni costituiscono la restante quota della popolazione. L’islam è la religione in crescita più rapida, così come alcuni movimenti all’interno del cristianesimo e di altri gruppi religiosi.",
-    qLabel: "Domanda per l’IA:",
-    qText: "Entro il 2050 emergerà una nuova religione capace di attirare oltre un miliardo di fedeli?",
-    aLabel: "Risposta dell’IA:",
-    aText: "NO. Probabilità 1%"
-  }
-},
-
-pl: {
-  headerLinks: { home: "Strona główna", about: "O nas", contact: "Kontakt", blog: "Blog" },
-  footerLinks: { disclaimer:"Nota prawna", terms:"Warunki korzystania", privacy:"Polityka prywatności", cookies:"Polityka plików cookie", sitemap:"Mapa strony", faq:"FAQ" },
-  page: { title: "Prognozy SI dotyczące ludności, relacji społecznych i religii" },
-  cta: {
-    p1: "Możesz też zapytać SI o swoją przyszłość lub o przyszłość innych osób, obiektów, miejsc i wydarzeń",
-    here: "TUTAJ"
-  },
-  s1: {
-    forecast: "Data prognozy: 17.06.2025.",
-    lead: "Liczba ludności Ziemi osiągnęła 5 mld w 1987 r., a w 2022 r. wzrosła do 8 mld. Najszybszy wzrost notuje się w Afryce Wschodniej oraz w Azji Południowej i Południowo-Wschodniej.",
-    qLabel: "Pytanie do SI:",
-    qText: "Czy do 2030 r. populacja świata przekroczy 9 mld?",
-    aLabel: "Odpowiedź SI:",
-    aText: "NIE. Prawdopodobieństwo 5%"
-  },
-  s2: {
-    forecast: "Data prognozy: 17.06.2025.",
-    lead: "Największe napływy migrantów do Europy pochodzą z Afryki i Azji Południowo-Zachodniej. W 2023 r. ok. 4,3 mln migrantów osiedliło się w Europie, a w 2024 r. migranci stanowili ok. 9,9% całej populacji kontynentu. Kryzysy polityczne i konflikty zbrojne w różnych regionach świata napędzają migrację do Europy.",
-    qLabel: "Pytanie do SI:",
-    qText: "Czy w 2025 r. do Europy przybędzie ponad 1 milion nowych migrantów z Azji i Afryki?",
-    aLabel: "Odpowiedź SI:",
-    aText: "TAK. Prawdopodobieństwo 85%"
-  },
-  s3: {
-    forecast: "Data prognozy: 17.06.2025.",
-    lead: "Na świecie jest około 2,2 mld chrześcijan, 2 mld muzułmanów i 1,2 mld hinduistów; pozostałą część stanowią wyznawcy innych religii. Islam jest najszybciej rosnącą religią, podobnie jak niektóre ruchy w obrębie chrześcijaństwa i innych grup religijnych.",
-    qLabel: "Pytanie do SI:",
-    qText: "Czy do 2050 r. powstanie nowa religia, która przyciągnie ponad miliard wyznawców?",
-    aLabel: "Odpowiedź SI:",
-    aText: "NIE. Prawdopodobieństwo 1%"
-  }
-},
-
-uk: {
-  headerLinks: { home: "Головна", about: "Про нас", contact: "Контакти", blog: "Блог" },
-  footerLinks: { disclaimer:"Відмова від відповідальності", terms:"Умови використання", privacy:"Політика конфіденційності", cookies:"Політика щодо файлів cookie", sitemap:"Карта сайту", faq:"Поширені запитання" },
-  page: { title: "Прогнози ШІ щодо населення, соціальних відносин та релігії" },
-  cta: {
-    p1: "Ви також можете запитати ШІ про своє майбутнє або про майбутнє інших людей, об’єктів, місць та подій",
-    here: "ТУТ"
-  },
-  s1: {
-    forecast: "Дата прогнозу: 17.06.2025.",
-    lead: "Населення Землі досягло 5 млрд у 1987 році і зросло до 8 млрд у 2022-му. Найшвидше зростання відбувається у Східній Африці та в Південній і Південно-Східній Азії.",
-    qLabel: "Питання до ШІ:",
-    qText: "Чи перевищить світове населення 9 млрд до 2030 року?",
-    aLabel: "Відповідь ШІ:",
-    aText: "НІ. Ймовірність 5%"
-  },
-  s2: {
-    forecast: "Дата прогнозу: 17.06.2025.",
-    lead: "Найбільші потоки мігрантів до Європи походять з Африки та Південно-Західної Азії. У 2023 році близько 4,3 млн мігрантів оселилися в Європі, а у 2024-му мігранти становили приблизно 9,9% населення континенту. Політичні кризи та збройні конфлікти у світі спричиняють міграцію до Європи.",
-    qLabel: "Питання до ШІ:",
-    qText: "Упродовж 2025 року чи прибуде до Європи понад 1 млн нових мігрантів з Азії та Африки?",
-    aLabel: "Відповідь ШІ:",
-    aText: "ТАК. Імовірність 85%"
-  },
-  s3: {
-    forecast: "Дата прогнозу: 17.06.2025.",
-    lead: "У світі приблизно 2,2 млрд християн, 2 млрд мусульман і 1,2 млрд індуїстів; інші релігії становлять решту населення. Іслам — релігія з найшвидшими темпами зростання, як і певні течії в християнстві та інших релігійних групах.",
-    qLabel: "Питання до ШІ:",
-    qText: "До 2050 року чи з’явиться нова релігія, що залучить понад один мільярд послідовників?",
-    aLabel: "Відповідь ШІ:",
-    aText: "НІ. Імовірність 1%"
-  }
-},
-
-ru: {
-  headerLinks: { home: "Главная", about: "О нас", contact: "Контакты", blog: "Блог" },
-  footerLinks: { disclaimer:"Отказ от ответственности", terms:"Условия использования", privacy:"Политика конфиденциальности", cookies:"Политика в отношении файлов cookie", sitemap:"Карта сайта", faq:"Частые вопросы" },
-  page: { title: "Прогнозы ИИ по населению, социальным отношениям и религии" },
-  cta: {
-    p1: "Вы также можете спросить ИИ о своём будущем или о будущем других людей, объектов, мест и событий",
-    here: "ЗДЕСЬ"
-  },
-  s1: {
-    forecast: "Дата прогноза: 17.06.2025.",
-    lead: "Население Земли достигло 5 млрд в 1987 году и выросло до 8 млрд к 2022-му. Самые высокие темпы роста наблюдаются в Восточной Африке, а также в Южной и Юго-Восточной Азии.",
-    qLabel: "Вопрос к ИИ:",
-    qText: "Превысит ли численность населения мира 9 млрд к 2030 году?",
-    aLabel: "Ответ ИИ:",
-    aText: "НЕТ. Вероятность 5 %"
-  },
-  s2: {
-    forecast: "Дата прогноза: 17.06.2025.",
-    lead: "Крупнейшие потоки мигрантов в Европу идут из Африки и Юго-Западной Азии. В 2023 году около 4,3 млн мигрантов обосновались в Европе, а к 2024-му мигранты составляли примерно 9,9 % общего населения континента. Политические кризисы и вооружённые конфликты в ряде регионов мира стимулируют миграцию в Европу.",
-    qLabel: "Вопрос к ИИ:",
-    qText: "В течение 2025 года прибудет ли в Европу более 1 млн новых мигрантов из Азии и Африки?",
-    aLabel: "Ответ ИИ:",
-    aText: "ДА. Вероятность 85 %"
-  },
-  s3: {
-    forecast: "Дата прогноза: 17.06.2025.",
-    lead: "В мире примерно 2,2 млрд христиан, 2 млрд мусульман и 1,2 млрд индуистов; прочие религии составляют оставшуюся долю населения. Ислам — самая быстрорастущая религия, как и некоторые движения внутри христианства и других религиозных групп.",
-    qLabel: "Вопрос к ИИ:",
-    qText: "К 2050 году возникнет ли новая религия, которая привлечёт более миллиарда последователей?",
-    aLabel: "Ответ ИИ:",
-    aText: "НЕТ. Вероятность 1 %"
-  }
-},
-
-tr: {
-  headerLinks: { home: "Ana sayfa", about: "Hakkımızda", contact: "İletişim", blog: "Blog" },
-  footerLinks: { disclaimer:"Yasal Uyarı", terms:"Kullanım Şartları", privacy:"Gizlilik Politikası", cookies:"Çerez Politikası", sitemap:"Site haritası", faq:"SSS" },
-  page: { title: "Nüfus, Toplumsal İlişkiler ve Din için Yapay Zekâ Tahminleri" },
-  cta: {
-    p1: "YZ’ye kendi geleceğinizin veya diğer kişiler, nesneler, yerler ve olayların geleceğinin ne olacağını da sorabilirsiniz",
-    here: "BURADA"
-  },
-  s1: {
-    forecast: "Tahmin tarihi: 17.06.2025.",
-    lead: "Dünya nüfusu 1987’de 5 milyara ulaştı ve 2022’de 8 milyara yükseldi. En hızlı artış Doğu Afrika ile Güney ve Güneydoğu Asya’da görülüyor.",
-    qLabel: "YZ’ye soru:",
-    qText: "Küresel nüfus 2030’a kadar 9 milyarı aşacak mı?",
-    aLabel: "YZ yanıtı:",
-    aText: "HAYIR. Olasılık %5"
-  },
-  s2: {
-    forecast: "Tahmin tarihi: 17.06.2025.",
-    lead: "Avrupa’ya en büyük göç akışları Afrika ve Güneybatı Asya’dan geliyor. 2023’te yaklaşık 4,3 milyon göçmen Avrupa’ya yerleşti ve 2024 itibarıyla göçmenler kıta nüfusunun yaklaşık %9,9’unu oluşturdu. Dünyanın bazı bölgelerindeki siyasi krizler ve silahlı çatışmalar Avrupa’ya göçü tetikliyor.",
-    qLabel: "YZ’ye soru:",
-    qText: "2025 boyunca Asya ve Afrika’dan Avrupa’ya 1 milyondan fazla yeni göçmen gelecek mi?",
-    aLabel: "YZ yanıtı:",
-    aText: "EVET. Olasılık %85"
-  },
-  s3: {
-    forecast: "Tahmin tarihi: 17.06.2025.",
-    lead: "Dünya genelinde yaklaşık 2,2 milyar Hristiyan, 2 milyar Müslüman ve 1,2 milyar Hindu bulunmaktadır; kalan nüfus diğer dinlere mensuptur. İslam en hızlı büyüyen dindir; Hristiyanlık içindeki bazı hareketler ve diğer dinî gruplar da hızla büyümektedir.",
-    qLabel: "YZ’ye soru:",
-    qText: "2050’ye kadar 1 milyardan fazla takipçi çeken yeni bir din ortaya çıkacak mı?",
-    aLabel: "YZ yanıtı:",
-    aText: "HAYIR. Olasılık %1"
-  }
-},
-
-ar: {
-  headerLinks: { home: "الصفحة الرئيسية", about: "من نحن", contact: "اتصل بنا", blog: "المدونة" },
-  footerLinks: { disclaimer:"إخلاء المسؤولية", terms:"شروط الاستخدام", privacy:"سياسة الخصوصية", cookies:"سياسة ملفات تعريف الارتباط", sitemap:"خريطة الموقع", faq:"الأسئلة الشائعة" },
-  page: { title: "تنبؤات الذكاء الاصطناعي بشأن السكان والعلاقات الاجتماعية والدين" },
-  cta: {
-    p1: "يمكنك أيضًا سؤال الذكاء الاصطناعي عن مستقبلك أو مستقبل أشخاص وأشياء وأماكن وأحداث أخرى",
-    here: "هنا"
-  },
-  s1: {
-    forecast: "تاريخ التنبؤ: 17.06.2025.",
-    lead: "بلغ عدد سكان الأرض 5 مليارات عام 1987 وارتفع إلى 8 مليارات بحلول 2022. أسرع معدلات النمو تحدث في شرق إفريقيا وجنوب وجنوب شرق آسيا.",
-    qLabel: "سؤال للذكاء الاصطناعي:",
-    qText: "هل سيتجاوز عدد سكان العالم 9 مليارات بحلول 2030؟",
-    aLabel: "إجابة الذكاء الاصطناعي:",
-    aText: "لا. الاحتمال 5%"
-  },
-  s2: {
-    forecast: "تاريخ التنبؤ: 17.06.2025.",
-    lead: "أكبر تدفقات المهاجرين إلى أوروبا تأتي من إفريقيا وجنوب غرب آسيا. في عام 2023 استقر نحو 4.3 ملايين مهاجر في أوروبا، وبحلول 2024 شكّل المهاجرون نحو 9.9% من إجمالي سكان القارة. تؤدي الأزمات السياسية والنزاعات المسلحة في مناطق مختلفة إلى دفع الهجرة نحو أوروبا.",
-    qLabel: "سؤال للذكاء الاصطناعي:",
-    qText: "خلال عام 2025، هل سيصل إلى أوروبا أكثر من مليون مهاجر جديد من آسيا وإفريقيا؟",
-    aLabel: "إجابة الذكاء الاصطناعي:",
-    aText: "نعم. الاحتمال 85%"
-  },
-  s3: {
-    forecast: "تاريخ التنبؤ: 17.06.2025.",
-    lead: "يوجد عالميًا نحو 2.2 مليار مسيحي، و2 مليار مسلم، و1.2 مليار هندوسي؛ وتشكل الديانات الأخرى الباقي. الإسلام هو الأسرع نموًا، وكذلك بعض الحركات داخل المسيحية ومجموعات دينية أخرى.",
-    qLabel: "سؤال للذكاء الاصطناعي:",
-    qText: "بحلول 2050، هل ستظهر ديانة جديدة تجتذب أكثر من مليار تابع؟",
-    aLabel: "إجابة الذكاء الاصطناعي:",
-    aText: "لا. الاحتمال 1%"
-  }
-},
-
-hi: {
-  headerLinks: { home: "मुखपृष्ठ", about: "हमारे बारे में", contact: "संपर्क करें", blog: "ब्लॉग" },
-  footerLinks: { disclaimer:"अस्वीकरण", terms:"उपयोग की शर्तें", privacy:"गोपनीयता नीति", cookies:"कुकी नीति", sitemap:"साइटमैप", faq:"सामान्य प्रश्न" },
-  page: { title: "जनसंख्या, सामाजिक संबंधों और धर्म के लिए कृत्रिम बुद्धिमत्ता पूर्वानुमान" },
-  cta: {
-    p1: "आप AI से अपने भविष्य या अन्य लोगों, वस्तुओं, स्थानों और घटनाओं के भविष्य के बारे में भी पूछ सकते हैं",
-    here: "यहाँ"
-  },
-  s1: {
-    forecast: "पूर्वानुमान तिथि: 17.06.2025.",
-    lead: "पृथ्वी की जनसंख्या 1987 में 5 बिलियन तक पहुँची और 2022 तक 8 बिलियन हो गई। सबसे तेज़ वृद्धि पूर्वी अफ्रीका तथा दक्षिण और दक्षिण-पूर्व एशिया में हो रही है。",
-    qLabel: "AI से प्रश्न:",
-    qText: "क्या 2030 तक वैश्विक जनसंख्या 9 बिलियन से अधिक हो जाएगी?",
-    aLabel: "AI का उत्तर:",
-    aText: "नहीं। प्रायिकता 5%"
-  },
-  s2: {
-    forecast: "पूर्वानुमान तिथि: 17.06.2025.",
-    lead: "यूरोप में सबसे बड़े प्रवासी प्रवाह अफ्रीका और दक्षिण-पश्चिम एशिया से आते हैं। 2023 में लगभग 4.3 मिलियन प्रवासी यूरोप में बस गए और 2024 तक प्रवासी महाद्वीप की कुल जनसंख्या का लगभग 9.9% थे। दुनिया के कुछ हिस्सों में राजनीतिक संकट और सशस्त्र संघर्ष यूरोप की ओर प्रवासन को बढ़ाते हैं。",
-    qLabel: "AI से प्रश्न:",
-    qText: "क्या 2025 के दौरान एशिया और अफ्रीका से 10 लाख से अधिक नए प्रवासी यूरोप पहुँचेंगे?",
-    aLabel: "AI का उत्तर:",
-    aText: "हाँ। प्रायिकता 85%"
-  },
-  s3: {
-    forecast: "पूर्वानुमान तिथि: 17.06.2025.",
-    lead: "दुनिया में लगभग 2.2 बिलियन ईसाई, 2 बिलियन मुस्लिम और 1.2 बिलियन हिंदू हैं; शेष जनसंख्या अन्य धर्मों से है। इस्लाम सबसे तेज़ी से बढ़ने वाला धर्म है; ईसाई धर्म और अन्य धार्मिक समूहों के कुछ आंदोलनों में भी तेज़ वृद्धि हो रही है。",
-    qLabel: "AI से प्रश्न:",
-    qText: "क्या 2050 तक कोई नया धर्म उभरेगा जो एक बिलियन से अधिक अनुयायियों को आकर्षित करे?",
-    aLabel: "AI का उत्तर:",
-    aText: "नहीं। प्रायिकता 1%"
-  }
-},
-
-zh: {
-  headerLinks: { home: "首页", about: "关于我们", contact: "联系我们", blog: "博客" },
-  footerLinks: { disclaimer:"免责声明", terms:"使用条款", privacy:"隐私政策", cookies:"Cookie 政策", sitemap:"网站地图", faq:"常见问题" },
-  page: { title: "关于人口、社会关系与宗教的人工智能预测" },
-  cta: {
-    p1: "你还可以让 AI 预测你的未来，或他人、物体、地点与事件的未来",
-    here: "这里"
-  },
-  s1: {
-    forecast: "预测日期：17.06.2025.",
-    lead: "地球人口在 1987 年达到 50 亿，到 2022 年增至 80 亿。增速最快的地区是东非以及南亚和东南亚。",
-    qLabel: "向 AI 提问：",
-    qText: "到 2030 年，全球人口会超过 90 亿吗？",
-    aLabel: "AI 的回答：",
-    aText: "否。概率 5%"
-  },
-  s2: {
-    forecast: "预测日期：17.06.2025.",
-    lead: "流入欧洲的最大移民来源地为非洲和西南亚。2023 年约有 430 万移民在欧洲定居；到 2024 年，移民约占欧洲总人口的 9.9%。世界部分地区的政治危机和武装冲突推动了向欧洲的迁移。",
-    qLabel: "向 AI 提问：",
-    qText: "在 2025 年期间，来自亚洲和非洲、赴欧洲的新移民是否会超过 100 万？",
-    aLabel: "AI 的回答：",
-    aText: "是。概率 85%"
-  },
-  s3: {
-    forecast: "预测日期：17.06.2025.",
-    lead: "全球约有 22 亿基督徒、20 亿穆斯林和 12 亿印度教徒；其他宗教构成其余人口。伊斯兰教是增长最快的宗教，基督教内部及其他宗教的一些运动也在快速发展。",
-    qLabel: "向 AI 提问：",
-    qText: "到 2050 年，会出现一个拥有超过 10 亿信徒的新宗教吗？",
-    aLabel: "AI 的回答：",
-    aText: "否。概率 1%"
-  }
-},
-
-ja: {
-  headerLinks: { home: "ホーム", about: "私たちについて", contact: "お問い合わせ", blog: "ブログ" },
-  footerLinks: { disclaimer:"免責事項", terms:"利用規約", privacy:"プライバシーポリシー", cookies:"クッキーポリシー", sitemap:"サイトマップ", faq:"よくある質問" },
-  page: { title: "人口・社会関係・宗教に関するAI予測" },
-  cta: {
-    p1: "AI に、あなた自身の将来や他者・物体・場所・出来事の将来についても質問できます",
-    here: "こちら"
-  },
-  s1: {
-    forecast: "予測日：17.06.2025.",
-    lead: "地球の人口は 1987 年に 50 億人、2022 年には 80 億人に達しました。最も急速な増加は東アフリカおよび南アジア・東南アジアで起きています。",
-    qLabel: "AI への質問：",
-    qText: "2030 年までに世界人口は 90 億人を超えますか？",
-    aLabel: "AI の回答：",
-    aText: "いいえ。確率 5%"
-  },
-  s2: {
-    forecast: "予測日：17.06.2025.",
-    lead: "欧州への移民流入の最大の出身地はアフリカと西南アジアです。2023 年には約 430 万人が欧州に定住し、2024 年には移民が欧州総人口の約 9.9% を占めました。世界各地の政治的危機や武力紛争が欧州への移動を後押ししています。",
-    qLabel: "AI への質問：",
-    qText: "2025 年中に、アジアとアフリカから欧州へ新たに 100 万人を超える移民が到着しますか？",
-    aLabel: "AI の回答：",
-    aText: "はい。確率 85%"
-  },
-  s3: {
-    forecast: "予測日：17.06.2025.",
-    lead: "世界にはおよそ 22 億人のキリスト教徒、20 億人のムスリム、12 億人のヒンドゥー教徒がいます。その他の宗教が残りを占めます。イスラム教は最も成長が速い宗教であり、キリスト教内部や他宗教の一部の運動も成長しています。",
-    qLabel: "AI への質問：",
-    qText: "2050 年までに、10 億人超の信者を引きつける新しい宗教が誕生しますか？",
-    aLabel: "AI の回答：",
-    aText: "いいえ。確率 1%"
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
     }
+    header .language-select span {
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+      cursor: pointer;
+    }
+    .main-section {
+      background-color: rgba(135, 206, 235, 0.45);
+      color: white;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: clamp(720px, 90vw, 1100px);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      box-sizing: border-box;
+    }
+    .illustration {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .illustration img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .main-section h1,
+    .main-section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #F0F8FF;
+    }
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 1rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    #kontekst {
+      height: 200px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    #pitanje {
+      height: 100px;
+    }
+    button {
+      background-color: #4b6cb7;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #3b5aa6;
+    }
+    .odgovor-box {
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: #e2e8f0;
+      border-left: 5px solid #4b6cb7;
+      color: black;
+    }
+
+    body[dir="rtl"] {
+      text-align: right;
+      direction: rtl;
+      font-family: 'Cairo', 'Arial', 'Tahoma', sans-serif;
+    }
+
+    body[dir="rtl"] input,
+    body[dir="rtl"] textarea {
+      text-align: right;
+      direction: rtl;
+    }
+
+    body[dir="rtl"] li {
+      text-align: right;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-img {
+      height: 42px;
+      width: auto;
+      border-radius: 50%;
+    }
+
+    .site-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .header-left {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .site-title {
+        font-size: 1.2rem;
+      }
+
+      /* === Header menu (hamburger) === */
+.menu-wrap{ position: relative; }
+
+      .menu-button{
+        display:inline-flex; flex-direction:column; justify-content:center; gap:4px;
+        width:42px; height:42px; border:none; border-radius:.6rem;
+        background: var(--btn-blue); color:#fff; cursor:pointer;
+      }
+      .menu-button:hover, .menu-button:focus{ background: var(--btn-blue-hover); outline:none; }
+
+      /* tri vodoravne bele linije */
+      .menu-button .bar{
+        width:22px; height:2px; background:#fff; display:block; margin:0 auto;
+      }
+
+      /* padajuća lista */
+      .menu-dropdown{
+        position:absolute; top: calc(100% + 8px); right:0; /* poravnanje uz dugme */
+        min-width: 180px;
+        background: rgba(0,0,0,.9);
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0,0,0,.25);
+        padding:.4rem;
+        display:none;
+        z-index: 1200;
+      }
+      .menu-dropdown.open{ display:block; }
+
+      .menu-item{
+        display:block; padding:.6rem .8rem; border-radius:.5rem;
+        color:#fff; text-decoration:none; font-weight:600;
+      }
+      .menu-item:hover{ background: rgba(255,255,255,.12); }
+
+      /* RTL podrška: padajuće ulevo od dugmeta */
+      body[dir="rtl"] .menu-dropdown{ left:0; right:auto; }
+
+      /* Mali ekrani: menu dugme ostaje kompaktno uz logo i naslov */
+
+      @media (max-width:600px){
+        .menu-button{ width:40px; height:40px; }
+      }
+
+      .menu-container {
+        position: relative;
+        display: inline-block;
+        margin-left: 15px;
+      }
+
+      .menu-btn {
+        width: 42px;
+        height: 42px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: .6rem;
+        background: var(--btn-blue);
+        color: #fff;
+        cursor: pointer;
+      }
+      .menu-btn:hover,
+      .menu-btn:focus {
+        background: var(--btn-blue-hover);
+        outline: none;
+      }
+
+      .menu-dropdown {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: rgba(0,0,0,0.9);
+        min-width: 150px;
+        z-index: 1000;
+        border-radius: 5px;
+      }
+
+      .menu-dropdown a {
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .menu-dropdown a:hover {
+        background-color: rgba(255,255,255,0.2);
+      }
+
+      .language-select {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0.5rem;
+        width: 100%;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    :root{
+      --btn-blue:#1e3a8a;
+      --btn-blue-hover:#172554;
+      --chip-ice:#dbeafe;        /* nežno svetlo plava */
+      --chip-text:#0f172a;       /* tamnoplava za tekst na ice */
+    }
+
+    /* DEFAULT chip */
+    .subject-chip{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:.45rem .9rem;
+      border-radius:9999px;
+      background:var(--chip-ice);
+      color:var(--chip-text);
+      border:2px solid var(--btn-blue);
+      font-weight:600;
+      cursor:pointer;
+      box-shadow:0 1px 0 rgba(0,0,0,.12);
+      transition:transform .06s ease, background .15s ease;
+    }
+    .subject-chip:hover{ transform:translateY(-1px); }
+
+    /* AKTIVNI chip */
+    .subject-chip.active{
+      background:#0093DD;
+      color:#fff;
+      border-color:var(--btn-blue);
+    }
+
+    :root{
+      --btn-blue:#1e3a8a;        /* tamno plava */
+      --btn-blue-hover:#172554;  /* tamnija na hover/focus */
+    }
+
+    .btn{
+      display:inline-flex; align-items:center; gap:.5rem;
+      padding:.6rem 1rem; border:none; border-radius:.6rem;
+      background:var(--btn-blue); color:#fff; font-weight:600; cursor:pointer;
+    }
+    .btn:hover, .btn:focus{ background:var(--btn-blue-hover); outline:none }
+    .btn:disabled{ opacity:.5; cursor:not-allowed }
+
+    .btn-icon{ width:20px; height:20px; flex:0 0 20px }
+    .btn-label{ line-height:1 }
+
+    @media (max-width:640px){
+      .btn{ padding:.6rem }      /* kompaktnije */
+      .btn-label{ display:none } /* samo ikonice */
+    }
+
+    /* Omotač oko textarea da bismo mogli da pozicioniramo ikonice unutra */
+    .context-wrap{ position: relative; }
+
+    /* Daj prostora da tekst ne upadne ispod plutajućih dugmadi */
+    #kontekst{
+      padding-right: 92px;   /* prostor za dve ikonice desno */
+      padding-bottom: 56px;  /* malo prostora ispod */
+    }
+
+    /* Kontejner za ikonice u dnu textarea */
+    .floating-actions{
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      display: flex;
+      gap: 8px;
+    }
+
+    /* === Floating SEND unutar drugog placeholdera === */
+    .question-wrap { position: relative; }
+
+    /* da tekst ne upada ispod dugmeta */
+    #pitanje {
+      padding-right: 56px;
+      padding-bottom: 56px;
+    }
+
+    /* zadržavamo .btn-label zbog prevoda, ali je vizuelno krijemo */
+    .icon-btn .btn-label { display: none; }
+
+    /* (opciono) ako želite da u RTL režimu dugme bude dole levo */
+    body[dir="rtl"] .question-wrap .floating-actions { left: 8px; right: auto; }
+
+    /* Kompaktno ikonično dugme (u tamno plavoj) */
+    .icon-btn{
+      width: 42px; height: 42px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border: none; border-radius: .6rem;
+      background: var(--btn-blue); color: #fff; cursor: pointer;
+    }
+    .icon-btn:hover, .icon-btn:focus{ background: var(--btn-blue-hover); outline: none; }
+
+    /* Ravnanje redova sa dugmadima i fleksibilnim inputom */
+    .subject-manager{
+      display: grid !important;
+      grid-template-columns: auto minmax(160px, 1fr) auto auto;
+      gap: .5rem;
+      align-items: center;
+    }
+
+    /* Input sme da se skupi ispod širine sadržaja */
+    #subject-name{
+      min-width: 0;
+    }
+
+    /* Spreči lomljenje teksta u dugmadi */
+    .btn-label{
+      white-space: nowrap;
+    }
+
+    @media (max-width: 520px){
+      .subject-manager{
+        grid-template-columns: auto minmax(120px, 1fr) auto auto; /* 4 kolone i na mobilnom */
+        column-gap: .4rem;
+      }
+      .btn{ padding:.5rem .6rem; }           /* kompaktnije dugmadi */
+      #subject-name{ min-width: 0; }         /* spreči prelivanje inputa */
+    }
+
+    /* === Fix: subject chips na mobilnom da ne zauzimaju punu širinu === */
+    #subject-list{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:flex-start;
+    }
+
+    .subject-chip{
+      flex: 0 0 auto !important;   /* ne rasteži se */
+      white-space: nowrap;          /* ne lomi tekst u 2 reda */
+      max-width: 100%;
+    }
+
+    /* Na malim ekranima malo kompaktnije dugme-čipovi */
+    @media (max-width: 600px){
+      .subject-chip{
+        padding: .4rem .7rem;
+        font-size: .95rem;
+      }
+    }
+
+    /* --- Desktop nav: po difoltu skrivena (mobilni prikaz) --- */
+    .desktop-nav{
+      display: none;
+    }
+
+    /* --- Linkovi u desktop navigaciji --- */
+    .desktop-nav a{
+      color: #fff;
+      text-decoration: none;
+      margin: 0 .9rem;
+      font-weight: 600;
+      line-height: 1;
+    }
+    .desktop-nav a:hover{
+      text-decoration: underline;
+    }
+
+    /* --- Desktop raspored (≥ 601px) --- */
+    @media (min-width: 601px){
+      /* sakrij hamburger na desktopu */
+      .menu-container{ display: none; }
+
+      /* centriraj nav u hederu */
+      header{
+        display:flex;
+        align-items:center;
+        gap: 1rem;
+      }
+      .header-left{ /* logo+naslov ostaju levo */
+        display:flex; align-items:center; gap:1rem;
+      }
+      .desktop-nav{
+        display:flex;            /* prikaži linkove */
+        flex: 1;                 /* zauzmi sredinu */
+        justify-content: center; /* centriraj vodoravno */
+        gap: .25rem;
+      }
+      .language-select{
+        margin-left: auto;       /* guraj zastavice desno */
+        display:flex; align-items:center; gap:.35rem;
+      }
+    }
+
+    /* ===== BLOG SUBPAGE LAYOUT ===== */
+    .main-section h2 { text-align: center; }           /* već ima belu boju iz .main-section */
+    .main-section p  { text-align: center; }
+
+    /* Kartica proročanstva */
+    .main-section.prophecy { position: relative; }
+    .prophecy-layout {
+      display: grid;
+      grid-template-columns: minmax(220px, 340px) 1fr; /* slika levo, tekst desno */
+      gap: 20px;
+      align-items: center;
+    }
+
+    /* Leva slika */
+    .prophecy-media img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
+
+    /* Desna kolona */
+    .prophecy-content { text-align: left; }
+    .prop-lead { font-size: 0.95rem; opacity: 0.95; margin-top: 2px; }
+
+    /* Pitanje/odgovor (bold, dve linije) */
+    .prop-q, .prop-a { font-weight: 700; line-height: 1.35; margin: 10px 0; }
+    .q-label, .a-label { display: block; opacity: 0.9; }
+    .q-text,  .a-text  { display: block; }
+
+    /* Validacija u donjem desnom uglu bloka */
+    .prop-validation {
+      position: absolute;
+      right: 18px;
+      bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+    }
+    .prop-validation.success { color: #ffd400; }  /* žuta */
+    .prop-validation.fail    { color: #ff6b6b; }  /* svetlo crvena */
+    .validation-mark { font-size: 1.25em; }
+
+    /* CTA */
+    .main-section.cta p { margin: 6px 0; }
+    .cta-link {
+      font-weight: 800;
+      text-decoration: none;
+      border-bottom: 2px solid currentColor;
+    }
+
+    /* Veće slovo za "HERE" u CTA bloku */
+    .main-section.cta .cta-link{
+      font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+      font-weight: 800;        /* već je tako, ali ostavljeno radi jasnoće */
+      line-height: 1.25;
+      letter-spacing: .2px;
+    }
+
+    /* Responsivnost: na manjim ekranima slika iznad teksta */
+    @media (max-width: 900px) {
+      .prophecy-layout {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .prophecy-content { text-align: center; }
+      .prop-validation { position: static; justify-content: center; margin-top: 6px; }
+    }
+
+    /* === BLOG: poravnanje i tipografija u desnom stubu === */
+    .main-section.prophecy .prophecy-content,
+    .main-section.prophecy .prophecy-content p,
+    .main-section.prophecy .prophecy-content .prop-lead,
+    .main-section.prophecy .prophecy-content .prop-q,
+    .main-section.prophecy .prophecy-content .prop-a{
+      text-align: left;   /* pregazi .main-section p { text-align:center } */
+    }
+
+    /* i na mobilnom ostaje levo */
+    @media (max-width: 900px){
+      .main-section.prophecy .prophecy-content{ text-align: left; }
+    }
+
+    /* jači i veći tekst samog pitanja/odgovora */
+    .main-section.prophecy .prop-q .q-text,
+    .main-section.prophecy .prop-a .a-text{
+      font-size: clamp(1.3rem, 2.4vw, 1.9rem); /* skoro kao h2 */
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: .2px;
+    }
+
+    /* labeli (“Pitanje za AI:”, “Odgovor AI:”) malo manji od teksta ispod */
+    .main-section.prophecy .prop-q .q-label,
+    .main-section.prophecy .prop-a .a-label{
+      font-size: clamp(1rem, 1.6vw, 1.15rem);
+      font-weight: 700;
+      opacity: .9;
+    }
+
+    /* Omogućava apsolutno pozicioniranje unutar sadržaja */
+    .prophecy .prophecy-content {
+      position: relative;
+    }
+
+    /* Gornji desni ugao: datum prognoze */
+    .prophecy .prop-forecast-date {
+      position: absolute;
+      top: .6rem;
+      right: .8rem;
+      font-size: .875rem;
+      line-height: 1.2;
+      opacity: .85;
+      font-weight: 500;
+      /* po želji: background blur/tag
+      background: rgba(0,0,0,.04);
+      padding: .25rem .5rem;
+      border-radius: .5rem;
+      */
+    }
+
+    /* Donji desni ugao: kontejner */
+    .prophecy .prop-foot {
+      position: absolute;
+      right: .8rem;
+      bottom: .8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: .4rem; /* razmak između linka i validacije */
+    }
+
+    /* Link ka izvoru potvrde */
+    .prophecy .prop-source {
+      font-size: .875rem;
+      text-decoration: underline;
+    }
+    .prophecy .prop-source:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
+
+    /* === BLOG-PLANET: linijski raspored novih tekstova === */
+
+    /* 1) Datum prognoze: posebna linija iznad uvoda, desno poravnat */
+    .main-section.prophecy .prop-forecast-date{
+      position: static;        /* skini absolute */
+      display: block;          /* zauzmi ceo red */
+      text-align: right;       /* desno poravnanje */
+      margin-bottom: .4rem;    /* malo razmaka ispod */
+    }
+
+    /* 2) Validacija i izvor: posebne linije ispod odgovora, desno poravnate */
+    .main-section.prophecy .prop-foot{
+      position: static;        /* skini absolute dnu kartice */
+      margin-top: .5rem;       /* razmak iznad */
+      display: flex;
+      flex-direction: column;  /* jedan ispod drugog */
+      align-items: flex-end;   /* desno poravnanje */
+      gap: .3rem;              /* razmak između validacije i linka */
+    }
+
+    /* 3) Ako je negde ostao absolute na validaciji – poništi ga unutar .prop-foot */
+    .main-section.prophecy .prop-foot .prop-validation{
+      position: static;
+      right: auto;
+      bottom: auto;
+    }
+
+    /* Utility za bele linkove */
+    .link-white,
+    .link-white:visited { color:#fff !important; }
+
+    .link-white:hover { color:#fff; text-decoration: underline; opacity:.95; }
+
+    .link-white:focus-visible { outline:2px solid #fff; outline-offset:2px; }
+
+    .logo-link { display:inline-flex; align-items:center; padding:4px; }
+    .site-title-link { display:inline-block; text-decoration:none; color:inherit; padding:4px; }
+    .site-title-link:hover, .site-title-link:focus { text-decoration:underline; }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <a href="index.html" class="logo-link" aria-label="Go to home">
+        <img src="images/transparentlogo.png" alt="Forecastler logo" class="logo-img" />
+      </a>
+      <a href="index.html" class="site-title-link">Forecastler</a>
+      <div class="menu-container">
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        <div class="menu-dropdown" id="menuDropdown">
+          <a id="mnav-home"    href="index.html">Home</a>
+          <a id="mnav-about"   href="about.html">About Us</a>
+          <a id="mnav-contact" href="contact.html">Contact</a>
+          <a id="mnav-blog"    href="blog.html">Blog</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="desktop-nav" aria-label="Primary">
+      <a id="nav-home"    href="index.html">Home</a>
+      <a id="nav-about"   href="about.html">About Us</a>
+      <a id="nav-contact" href="contact.html">Contact</a>
+      <a id="nav-blog"    href="blog.html">Blog</a>
+    </nav>
+
+    <div class="language-select">
+      <span onclick="setLanguage('ar')"><img src="flags/sa.png" alt="AR" width="24" height="18"></span>
+      <span onclick="setLanguage('de')"><img src="flags/de.png" alt="DE" width="24" height="18"></span>
+      <span onclick="setLanguage('en')"><img src="flags/gb.png" alt="EN" width="24" height="18"></span>
+      <span onclick="setLanguage('es')"><img src="flags/es.png" alt="ES" width="24" height="18"></span>
+      <span onclick="setLanguage('fr')"><img src="flags/fr.png" alt="FR" width="24" height="18"></span>
+      <span onclick="setLanguage('hi')"><img src="flags/in.png" alt="HI" width="24" height="18"></span>
+      <span onclick="setLanguage('it')"><img src="flags/it.png" alt="IT" width="24" height="18"></span>
+      <span onclick="setLanguage('ja')"><img src="flags/jp.png" alt="JA" width="24" height="18"></span>
+      <span onclick="setLanguage('pl')"><img src="flags/pl.png" alt="PL" width="24" height="18"></span>
+      <span onclick="setLanguage('pt')"><img src="flags/pt.png" alt="PT" width="24" height="18"></span>
+      <span onclick="setLanguage('ru')"><img src="flags/ru.png" alt="RU" width="24" height="18"></span>
+      <span onclick="setLanguage('sr')"><img src="flags/rs.png" alt="SR" width="24" height="18"></span>
+      <span onclick="setLanguage('tr')"><img src="flags/tr.png" alt="TR" width="24" height="18"></span>
+      <span onclick="setLanguage('uk')"><img src="flags/ua.png" alt="UA" width="24" height="18"></span>
+      <span onclick="setLanguage('zh')"><img src="flags/cn.png" alt="ZH" width="24" height="18"></span>
+    </div>
+  </header>
+
+  <!-- UVODNI BLOK -->
+  <div class="main-section">
+    <h2 id="blog-planet-title-en">Artificial Intelligence Forecasts for Population, Social Relations, and Religion.</h2>
+  </div>
+
+  <!-- GLAVNI BLOK #1 -->
+  <div class="main-section prophecy">
+    <div class="prophecy-layout">
+      <!-- 1) Slika (levo) -->
+      <div class="prophecy-media">
+        <img src="img/blog/drustvo/broj_stanovnika.webp" alt="Earthquake news illustration" loading="lazy">
+      </div>
+
+      <!-- Desna kolona: uvod + pitanje + odgovor -->
+      <div class="prophecy-content">
+
+        <div class="prop-forecast-date" aria-label="Forecast date">
+          <span id="planet-1-forecast-date-en">Forecast date: 17.06.2025.</span>
+        </div>
+
+        <!-- 2) Uvodni tekst (sitniji) -->
+        <p class="prop-lead" id="planet-1-lead-en">
+          The Earth’s population reached 5 billion in 1987 and rose to 8 billion by 2022. The fastest growth is occurring in Eastern Africa and in South and Southeast Asia.
+        </p>
+
+        <!-- 3) Pitanje (bold, 2 reda) -->
+        <p class="prop-q">
+          <span class="q-label" id="planet-1-q-label-en">Question for AI:</span>
+          <span class="q-text" id="planet-1-q-text-en">
+            Will the global population exceed 9 billion by 2030?
+          </span>
+        </p>
+
+        <!-- 4) Odgovor (bold, 2 reda) -->
+        <p class="prop-a">
+          <span class="a-label" id="planet-1-a-label-en">AI answer:</span>
+          <span class="a-text" id="planet-1-a-text-en">NO. Probability 5%</span>
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- GLAVNI BLOK #2 -->
+  <div class="main-section prophecy">
+    <div class="prophecy-layout">
+      <!-- 1) Slika (levo) -->
+      <div class="prophecy-media">
+        <img src="img/blog/drustvo/migranti.webp" alt="Earthquake news illustration" loading="lazy">
+      </div>
+
+      <!-- Desna kolona: uvod + pitanje + odgovor -->
+      <div class="prophecy-content">
+
+        <div class="prop-forecast-date" aria-label="Forecast date">
+          <span id="planet-2-forecast-date-en">Forecast date: 17.06.2025.</span>
+        </div>
+
+        <!-- 2) Uvodni tekst (sitniji) -->
+        <p class="prop-lead" id="planet-2-lead-en">
+          The largest inflows of migrants to Europe come from Africa and Southwest Asia. In 2023, about 4.3 million migrants settled in Europe, and by 2024 migrants accounted for roughly 9.9% of the continent’s total population. Political crises and armed conflicts in parts of the world are driving migration to Europe.
+        </p>
+
+        <!-- 3) Pitanje (bold, 2 reda) -->
+        <p class="prop-q">
+          <span class="q-label" id="planet-2-q-label-en">Question for AI:</span>
+          <span class="q-text" id="planet-2-q-text-en">
+            During 2025, will more than 1 million new migrants from Asia and Africa arrive in Europe?
+          </span>
+        </p>
+
+        <!-- 4) Odgovor (bold, 2 reda) -->
+        <p class="prop-a">
+          <span class="a-label" id="planet-2-a-label-en">AI answer:</span>
+          <span class="a-text" id="planet-2-a-text-en">YES. Probability 85%</span>
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- GLAVNI BLOK #3 -->
+  <div class="main-section prophecy">
+    <div class="prophecy-layout">
+      <!-- 1) Slika (levo) -->
+      <div class="prophecy-media">
+        <img src="img/blog/drustvo/nova_religija.webp" alt="Earthquake news illustration" loading="lazy">
+      </div>
+
+      <!-- Desna kolona: uvod + pitanje + odgovor -->
+      <div class="prophecy-content">
+
+        <div class="prop-forecast-date" aria-label="Forecast date">
+          <span id="planet-3-forecast-date-en">Forecast date: 17.06.2025.</span>
+        </div>
+
+        <!-- 2) Uvodni tekst (sitniji) -->
+        <p class="prop-lead" id="planet-3-lead-en">
+          There are approximately 2.2 billion Christians, 2 billion Muslims, and 1.2 billion Hindus worldwide; other religions make up the remaining share of the population. Islam is the fastest-growing religion, as are certain movements within Christianity and other religious groups.
+        </p>
+
+        <!-- 3) Pitanje (bold, 2 reda) -->
+        <p class="prop-q">
+          <span class="q-label" id="planet-3-q-label-en">Question for AI:</span>
+          <span class="q-text" id="planet-3-q-text-en">
+            By 2050, will a new religion emerge that attracts more than one billion followers?
+          </span>
+        </p>
+
+        <!-- 4) Odgovor (bold, 2 reda) -->
+        <p class="prop-a">
+          <span class="a-label" id="planet-3-a-label-en">AI answer:</span>
+          <span class="a-text" id="planet-3-a-text-en">NO. Probability 1%</span>
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ZAVRŠNI BLOK -->
+  <div class="main-section cta">
+    <p id="blog-cta-1-en">
+      You can also ask the AI about your future or the future of other people, objects, places, and events.
+    </p>
+    <p>
+      <a id="blog-cta-2-en" class="cta-link link-white" href="index.html">HERE</a>
+    </p>
+  </div>
+
+  <footer style="padding: 2rem; background-color: rgba(0, 0, 0, 0.6); font-size: 0.95rem; color: white; text-align: center;">
+    <div style="margin-bottom: 1rem;">
+      <a id="link-disclaimer" href="disclaimer.html" style="margin: 0 0.5rem; color: inherit; text-decoration: none;">Disclaimer</a> |
+      <a id="link-terms"      href="terms.html"      style="margin: 0 0.5rem; color: inherit; text-decoration: none;">Terms of Use</a> |
+      <a id="link-privacy"    href="privacy.html"    style="margin: 0 0.5rem; color: inherit; text-decoration: none;">Privacy Policy</a> |
+      <a id="link-cookies"    href="cookies.html"    style="margin: 0 0.5rem; color: inherit; text-decoration: none;">Cookie Policy</a> |
+      <a id="link-sitemap"    href="sitemap.html"    style="margin: 0 0.5rem; color: inherit; text-decoration: none;">Sitemap</a> |
+      <a id="link-faq"        href="faq.html"        style="margin: 0 0.5rem; color: inherit; text-decoration: none;">FAQ</a>
+    </div>
+    <div style="margin-bottom: 0.5rem;">
+      e-mail: <strong>forecastler@gmail.com</strong> | Facebook: | Instagram: | Youtube: | TikTok:
+    </div>
+    <div>
+      Created by Miroslav Ostrogonac, 2025.
+    </div>
+  </footer>
+
+  <script src="lang-blog-society.js"></script>
+
+  <script>
+    const supportedLanguages = [
+      'en', 'sr', 'es', 'fr', 'de', 'it', 'pt', 'pl',
+      'ru', 'uk', 'tr', 'ar', 'hi', 'zh', 'ja'
+    ];
+
+    function detectLanguage() {
+      const savedLang = localStorage.getItem('forecastlerLang');
+      if (savedLang && supportedLanguages.includes(savedLang)) {
+        setLanguage(savedLang);
+        return;
+      }
+
+      const browserLang = navigator.language.slice(0, 2);
+      const fallbackLang = 'en';
+
+      if (supportedLanguages.includes(browserLang)) {
+        setLanguage(browserLang);
+      } else {
+        setLanguage(fallbackLang);
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', detectLanguage);
+
+  (function(){
+    const btn = document.getElementById('menu-button');
+    const dd  = document.getElementById('menu-dropdown');
+
+    if(!btn || !dd) return;
+
+    function closeMenu(){
+      dd.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+    }
+    function toggleMenu(e){
+      e.stopPropagation();
+      const isOpen = dd.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(isOpen));
+    }
+
+    btn.addEventListener('click', toggleMenu);
+
+    // Zatvaranje na klik van menija
+    document.addEventListener('click', (e)=>{
+      if(!dd.classList.contains('open')) return;
+      const clickedInside = dd.contains(e.target) || btn.contains(e.target);
+      if(!clickedInside) closeMenu();
+    });
+
+    // Zatvaranje na Escape
+    document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeMenu(); });
+
+    // Zatvori nakon klika na stavku menija
+    dd.querySelectorAll('.menu-item').forEach(a=>{
+      a.addEventListener('click', closeMenu);
+    });
+
+    // (opciono) Ako budeš želeo prevod naslova menija:
+    // ako u translations[lang].headerLinks postoji, primeni:
+    if (typeof T === 'function') {
+      const t = T();
+      if (t.headerLinks){
+        const map = {
+          'nav-home':'home',
+          'nav-about':'about',
+          'nav-contact':'contact',
+          'nav-blog':'blog'
+        };
+        Object.entries(map).forEach(([id,key])=>{
+          const el = document.getElementById(id);
+          if (el && t.headerLinks[key]) el.textContent = t.headerLinks[key];
+        });
+      }
+    }
+  })();
+
+  function toggleMenu() {
+    var menu = document.getElementById("menuDropdown");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
   }
-};
+  </script>
 
-// Helperi: pokušaj bez sufiksa, pa sa "-en"
-function byId(id){
-  return document.getElementById(id) || document.getElementById(id + "-en");
-}
-function setTxtAny(id, txt){
-  const el = byId(id);
-  if (el && typeof txt === "string") el.textContent = txt;
-}
-// Ako postoji par -en/-sr, sakrij/prikaži zavisno od jezika
-function togglePair(baseId, lang){
-  const en = document.getElementById(baseId + "-en");
-  const sr = document.getElementById(baseId + "-sr");
-  if (!en || !sr) return; // nema para — ništa
-  if (lang === "sr"){ sr.style.display = ""; en.style.display = "none"; }
-  else { en.style.display = ""; sr.style.display = "none"; }
-}
-
-function setLanguage(lang) {
-  const t = translations[lang] || translations.en;
-  localStorage.setItem('forecastlerLang', lang);
-  trenutniJezik = lang;
-
-  // Header (desktop + mobile)
-  if (t.headerLinks){
-    setTxtAny("nav-home", t.headerLinks.home);
-    setTxtAny("nav-about", t.headerLinks.about);
-    setTxtAny("nav-contact", t.headerLinks.contact);
-    setTxtAny("nav-blog", t.headerLinks.blog);
-
-    setTxtAny("mnav-home", t.headerLinks.home);
-    setTxtAny("mnav-about", t.headerLinks.about);
-    setTxtAny("mnav-contact", t.headerLinks.contact);
-    setTxtAny("mnav-blog", t.headerLinks.blog);
-  }
-
-  // Naslov stranice
-  setTxtAny("blog-planet-title", t.page.title);
-
-  // Sekcija 1
-  setTxtAny("planet-1-forecast-date", t.s1.forecast);
-  setTxtAny("planet-1-lead",          t.s1.lead);
-  setTxtAny("planet-1-q-label",       t.s1.qLabel);
-  setTxtAny("planet-1-q-text",        t.s1.qText);
-  setTxtAny("planet-1-a-label",       t.s1.aLabel);
-  setTxtAny("planet-1-a-text",        t.s1.aText);
-  // Ako postoje -en/-sr parovi, prebaci vidljivost
-  togglePair("planet-1-forecast-date", lang);
-
-  // Sekcija 2
-  setTxtAny("planet-2-forecast-date", t.s2.forecast);
-  setTxtAny("planet-2-lead",          t.s2.lead);
-  setTxtAny("planet-2-q-label",       t.s2.qLabel);
-  setTxtAny("planet-2-q-text",        t.s2.qText);
-  setTxtAny("planet-2-a-label",       t.s2.aLabel);
-  setTxtAny("planet-2-a-text",        t.s2.aText);
-  togglePair("planet-2-forecast-date", lang);
-
-  // Sekcija 3
-  setTxtAny("planet-3-forecast-date", t.s3.forecast);
-  setTxtAny("planet-3-lead",          t.s3.lead);
-  setTxtAny("planet-3-q-label",       t.s3.qLabel);
-  setTxtAny("planet-3-q-text",        t.s3.qText);
-  setTxtAny("planet-3-a-label",       t.s3.aLabel);
-  setTxtAny("planet-3-a-text",        t.s3.aText);
-  togglePair("planet-3-forecast-date", lang);
-
-  // CTA
-  setTxtAny("blog-cta-1", t.cta.p1);
-  setTxtAny("blog-cta-2", t.cta.here);
-
-  // Footer
-  if (t.footerLinks){
-    setTxtAny("link-disclaimer", t.footerLinks.disclaimer);
-    setTxtAny("link-terms",      t.footerLinks.terms);
-    setTxtAny("link-privacy",    t.footerLinks.privacy);
-    setTxtAny("link-cookies",    t.footerLinks.cookies);
-    setTxtAny("link-sitemap",    t.footerLinks.sitemap);
-    setTxtAny("link-faq",        t.footerLinks.faq);
-  }
-
-  // RTL
-  document.body.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
-}
-
-// Inicijalizacija
-document.addEventListener("DOMContentLoaded", () => {
-  const saved  = localStorage.getItem('forecastlerLang');
-  const browser = (navigator.language || 'en').slice(0,2);
-  const initial = saved || (browser === 'sr' ? 'sr' : 'en');
-  setLanguage(initial);
-});
-
-// izloži funkciju za klik na zastavice
-window.setLanguage = setLanguage;
+</body>
+</html>
