@@ -828,17 +828,35 @@
       applyRuntimeTranslations();
     });
 
-    // NEW: ponašanje "Ask a new question"
+    // NEW: ponašanje "Ask a new question" — prvo refresh
     const askNewBtn = document.getElementById("ask-new-question");
     if (askNewBtn) {
       askNewBtn.addEventListener("click", () => {
-        document.getElementById("pitanje").value = "";
-        document.getElementById("pitanje").focus();
-        document.getElementById("odgovor-tekst").style.display = "none";
-        document.getElementById("odgovor-verovatnoca").style.display = "none";
-        askNewBtn.style.display = "none";
+        sessionStorage.setItem("forecastler:newQuestion", "1"); // jednokratni signal
+        location.reload(); // osveži stranicu (Adsense će povući nove oglase)
       });
     }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      if (sessionStorage.getItem("forecastler:newQuestion") === "1") {
+        sessionStorage.removeItem("forecastler:newQuestion");
+
+        // sakrij stare rezultate i dugme (defanzivno)
+        const ans = document.getElementById("odgovor-tekst");
+        const prob = document.getElementById("odgovor-verovatnoca");
+        const ask = document.getElementById("ask-new-question");
+        if (ans)  ans.style.display  = "none";
+        if (prob) prob.style.display = "none";
+        if (ask)  ask.style.display  = "none";
+
+        // očisti i fokusiraj polje za pitanje
+        const q = document.getElementById("pitanje");
+        if (q) {
+          q.value = "";
+          q.focus({ preventScroll: true });
+        }
+      }
+    });
 
     // ==== MULTI-SUBJECT STORAGE (localStorage) ====
     const CONTEXTS_KEY = "forecastler:contexts:v1";   // mapa: { key: { name, text, ts } }
