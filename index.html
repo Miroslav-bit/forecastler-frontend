@@ -449,6 +449,12 @@
     .site-title-link { display:inline-block; text-decoration:none; color:inherit; padding:4px; }
     .site-title-link:hover, .site-title-link:focus { text-decoration:underline; }
 
+    /* Placeholders vidljivi dok polje nije fokusirano */
+    textarea::placeholder { opacity: .75; }
+
+    /* Na fokusu placeholder nestaje (ponovo se vidi kada je polje prazno i izgubi fokus) */
+    textarea:focus::placeholder { color: transparent; }
+
   </style>
 </head>
 <body>
@@ -540,7 +546,7 @@
     <div id="subject-list" class="subject-list" style="display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem;"></div>
 
     <div class="context-wrap">
-      <textarea id="kontekst" placeholder=" "></textarea>
+      <textarea id="kontekst" placeholder="Description of the subject..."></textarea>
 
       <div class="floating-actions">
         <!-- Save description (disk) -->
@@ -569,7 +575,7 @@
     <p id="question-label">Ask a question about the future that can be answered with YES or NO:</p>
 
     <div class="question-wrap">
-      <textarea id="pitanje" placeholder=" "></textarea>
+      <textarea id="pitanje"  placeholder="A question..."></textarea>
 
       <div class="floating-actions">
         <button id="send-button" class="icon-btn" onclick="posaljiPitanje()" aria-label="Submit question" title="Submit question">
@@ -728,6 +734,12 @@
     // Placeholder za ime subjekta
     const nameInput = document.getElementById("subject-name");
     if (nameInput) nameInput.placeholder = t.placeholders.subjectName;
+
+    // Placeholders za textarea polja
+    const ctxTA = document.getElementById("kontekst");
+    const qTA  = document.getElementById("pitanje");
+    if (ctxTA) ctxTA.placeholder = (t.placeholders && t.placeholders.context)  || "Description of the subject...";
+    if (qTA)   qTA.placeholder   = (t.placeholders && t.placeholders.question) || "A question...";
 
     // Dugme za slanje pitanja (label + aria)
     const sendBtn = document.getElementById("send-button");
