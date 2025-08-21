@@ -91,7 +91,9 @@ For current situations: list all participants, the course of events so far, and 
       cancel: "Cancel"
     },
     placeholders: {
-      subjectName: "Subject name"
+      subjectName: "Subject name",
+      context: "Description of the subject...",
+      question: "A question..."
     }
   },
 
@@ -185,7 +187,9 @@ Za trenutne situacije: navedite sve učesnike, dosadašnji tok događaja i klju�
       cancel: "Otkaži"
     },
     placeholders: {
-      subjectName: "Naziv subjekta"
+      subjectName: "Naziv subjekta",
+      context: "Opis subjekta...",
+      question: "Pitanje..."
     }
   },
 
@@ -280,7 +284,9 @@ Para situaciones actuales: indique todos los participantes, el desarrollo hasta 
       cancel: "Cancelar"
     },
     placeholders: {
-      subjectName: "Nombre del sujeto"
+      subjectName: "Nombre del sujeto",
+      context: "Descripción del sujeto...",
+      question: "Una pregunta..."
     }
   },
 
@@ -374,7 +380,9 @@ Pour des situations actuelles : indiquez tous les participants, le déroulement 
       cancel: "Annuler"
     },
     placeholders: {
-      subjectName: "Nom du sujet"
+      subjectName: "Nom du sujet",
+      context: "Description du sujet...",
+      question: "Une question..."
     }
   },
 
@@ -469,7 +477,9 @@ Für aktuelle Situationen: Nennen Sie alle Beteiligten, den bisherigen Verlauf u
       cancel: "Abbrechen"
     },
     placeholders: {
-      subjectName: "Betreffname"
+      subjectName: "Name des Themas",
+      context: "Beschreibung des Themas...",
+      question: "Eine Frage..."
     }
   },
 
@@ -564,7 +574,9 @@ Para situações atuais: mencione todos os envolvidos, o andamento até o moment
       cancel: "Cancelar"
     },
     placeholders: {
-      subjectName: "Nome do assunto"
+      subjectName: "Nome do assunto",
+      context: "Descrição do assunto...",
+      question: "Uma pergunta..."
     }
   },
 
@@ -659,7 +671,9 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
       cancel: "Annulla"
     },
     placeholders: {
-      subjectName: "Nome del soggetto"
+      subjectName: "Nome dell'argomento",
+      context: "Descrizione dell'argomento...",
+      question: "Una domanda..."
     }
   },
 
@@ -754,7 +768,9 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
       cancel: "Отмена"
     },
     placeholders: {
-      subjectName: "Название темы"
+      subjectName: "Название темы",
+      context: "Описание темы...",
+      question: "Вопрос..."
     }
   },
 
@@ -849,7 +865,9 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
       cancel: "Anuluj"
     },
     placeholders: {
-      subjectName: "Nazwa tematu"
+      subjectName: "Nazwa tematu",
+      context: "Opis tematu...",
+      question: "Pytanie..."
     }
   },
 
@@ -944,7 +962,9 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
       cancel: "Скасувати"
     },
     placeholders: {
-      subjectName: "Назва теми"
+      subjectName: "Назва теми",
+      context: "Опис теми...",
+      question: "Питання..."
     }
   },
 
@@ -1039,7 +1059,9 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       cancel: "İptal"
     },
     placeholders: {
-      subjectName: "Konu adı"
+      subjectName: "Konu adı",
+      context: "Konu açıklaması...",
+      question: "Bir soru..."
     }
   },
 
@@ -1133,7 +1155,9 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       cancel: "إلغاء"
     },
     placeholders: {
-      subjectName: "اسم الموضوع"
+      subjectName: "اسم الموضوع",
+      context: "وصف الموضوع...",
+      question: "سؤال..."
     }
   },
 
@@ -1228,7 +1252,9 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       cancel: "रद्द करें"
     },
     placeholders: {
-      subjectName: "विषय का नाम"
+      subjectName: "विषय का नाम",
+      context: "विषय का विवरण...",
+      question: "एक प्रश्न..."
     }
   },
 
@@ -1318,7 +1344,9 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       cancel: "取消"
     },
     placeholders: {
-      subjectName: "主题名称"
+      subjectName: "主题名称",
+      context: "主题描述…",
+      question: "一个问题…"
     }
   },
 
@@ -1413,7 +1441,9 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       cancel: "キャンセル"
     },
     placeholders: {
-      subjectName: "件名"
+      subjectName: "テーマ名",
+      context: "テーマの説明…",
+      question: "質問…"
     }
   }
 };
