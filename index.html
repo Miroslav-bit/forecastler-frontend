@@ -590,6 +590,11 @@
 
     <div id="odgovor-tekst" class="odgovor-box" style="display:none;"></div>
     <div id="odgovor-verovatnoca" class="odgovor-box" style="display:none;"></div>
+
+    <!-- NEW: dugme za novo pitanje (skriveno dok se ne dobije odgovor) -->
+    <button id="ask-new-question" class="btn" style="display:none; margin-top:1rem;">
+      Ask a new question
+    </button>
   </div>
 
   <div class="main-section">
@@ -719,6 +724,18 @@
     if (saveBtn) saveBtn.textContent = t.buttons.save;
     if (delBtn)  delBtn.textContent  = t.buttons.delete;
 
+    // NEW: "Ask a new question" dugme (label/title/aria)
+    const askBtn = document.getElementById("ask-new-question");
+    if (askBtn) {
+      const label =
+        (t.buttons && t.buttons.askNewQuestion) ||
+        t.askNewQuestion ||
+        "Ask a new question";
+      askBtn.textContent = label;
+      askBtn.title = label;
+      askBtn.setAttribute("aria-label", label);
+    }
+
     // Ikonice nad opisom (title/aria-label)
     const saveDesc = document.getElementById("save-context");
     const delDesc  = document.getElementById("clear-context");
@@ -810,6 +827,18 @@
       loadSavedContext(); // učitaj ako postoji
       applyRuntimeTranslations();
     });
+
+    // NEW: ponašanje "Ask a new question"
+    const askNewBtn = document.getElementById("ask-new-question");
+    if (askNewBtn) {
+      askNewBtn.addEventListener("click", () => {
+        document.getElementById("pitanje").value = "";
+        document.getElementById("pitanje").focus();
+        document.getElementById("odgovor-tekst").style.display = "none";
+        document.getElementById("odgovor-verovatnoca").style.display = "none";
+        askNewBtn.style.display = "none";
+      });
+    }
 
     // ==== MULTI-SUBJECT STORAGE (localStorage) ====
     const CONTEXTS_KEY = "forecastler:contexts:v1";   // mapa: { key: { name, text, ts } }
@@ -956,6 +985,9 @@
     });
 
     async function posaljiPitanje() {
+      const askNewBtn = document.getElementById("ask-new-question");
+      if (askNewBtn) askNewBtn.style.display = "none";
+
       const kontekst = document.getElementById("kontekst").value.trim();
       const pitanje = document.getElementById("pitanje").value.trim();
       const odgovorText = document.getElementById("odgovor-tekst");
@@ -1022,6 +1054,7 @@
           verovatnocaText.innerHTML = `${t.dynamic.probabilityLabel} <strong>${procenat}</strong>`;
           odgovorText.style.display = "block";
           verovatnocaText.style.display = "block";
+          if (askNewBtn) askNewBtn.style.display = "inline-flex";
         } else {
           odgovorText.textContent = t.alerts.unrecognizedResponse;
           odgovorText.style.display = "block";
