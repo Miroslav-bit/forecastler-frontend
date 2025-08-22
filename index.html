@@ -1207,12 +1207,18 @@
 
     // --- napravi payload iz UI-ja ---
     function getSharePayload() {
-      return {
-        q: document.getElementById("pitanje").value.trim(),
-        a: document.getElementById("odgovor-tekst").innerText.trim(),
-        p: document.getElementById("odgovor-verovatnoca").innerText.trim()
-      };
+      const q = document.getElementById("pitanje").value.trim();
+      const a = document.getElementById("odgovor-tekst").innerText.trim();
+      const p = document.getElementById("odgovor-verovatnoca").innerText.trim();
+
+      // Opis može biti vrlo dug; skratimo ga da link ne eksplodira
+      const rawDesc = document.getElementById("kontekst").value.trim();
+      const MAX_DESC_CHARS = 1200; // po želji 800–1500; provereno prolazi u većini klijenata
+      const d = rawDesc ? (rawDesc.length > MAX_DESC_CHARS ? (rawDesc.slice(0, MAX_DESC_CHARS) + "…") : rawDesc) : "";
+
+      return { q, a, p, d }; // d = description
     }
+
     function buildShareUrl(payload) {
       const base = location.origin + location.pathname;
       return base + "#forecast=" + b64urlEncode(JSON.stringify(payload));
@@ -1341,6 +1347,12 @@
       const prob = document.getElementById("odgovor-verovatnoca");
       prob.textContent = data.p;
       prob.style.display = "block";
+    }
+
+    // Ako link nosi i opis, upiši ga u textarea
+    if (data.d) {
+      const ta = document.getElementById("kontekst");
+      if (ta) ta.value = data.d;
     }
 
     // Pokaži Share + Ask a new question
