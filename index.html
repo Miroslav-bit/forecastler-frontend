@@ -840,14 +840,17 @@
       applyRuntimeTranslations();
     });
 
-    // NEW: ponašanje "Ask a new question" — prvo refresh
-    const askNewBtn = document.getElementById("ask-new-question");
-    if (askNewBtn) {
-      askNewBtn.addEventListener("click", () => {
-        sessionStorage.setItem("forecastler:newQuestion", "1"); // jednokratni signal
-        location.reload(); // osveži stranicu (Adsense će povući nove oglase)
-      });
-    }
+    // NEW: ponašanje "Ask a new question" — prvo skini hash, pa refresh
+      const askNewBtn = document.getElementById("ask-new-question");
+      if (askNewBtn) {
+        askNewBtn.addEventListener("click", () => {
+          sessionStorage.setItem("forecastler:newQuestion", "1");
+          if (location.hash) {
+            history.replaceState(null, "", location.pathname + location.search);
+          }
+          location.reload();
+        });
+      }
 
     document.addEventListener("DOMContentLoaded", () => {
       if (sessionStorage.getItem("forecastler:newQuestion") === "1") {
@@ -884,7 +887,7 @@
 
         // reset “lock”-a i vrati dugme za slanje
         window.forecastlerQuestionLocked = false;
-        const sendBtn = document.getElementById("send-question-btn");
+        const sendBtn = document.getElementById("send-button");
         if (sendBtn) {
           sendBtn.disabled = false;
           sendBtn.classList.remove("is-hidden");  // DUGME OPET DOSTUPNO
@@ -1320,9 +1323,19 @@
       prob.style.display = "block";
     }
 
-    // odmah prikaži i share dugme
+    // pokaži Share i Ask a new question
     const shareBtn = document.getElementById("share-btn");
     if (shareBtn) shareBtn.style.display = "inline-flex";
+    const askNewBtn = document.getElementById("ask-new-question");
+    if (askNewBtn) askNewBtn.style.display = "inline-flex";
+
+    // sakrij/onemogući SEND dok je prikazan tuđi rezultat
+    const sendBtn = document.getElementById("send-button");
+    if (sendBtn) {
+      sendBtn.disabled = true;
+      sendBtn.classList.add("is-hidden","is-disabled");
+      sendBtn.setAttribute("aria-disabled","true");
+    }
   })();
   </script>
 
