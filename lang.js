@@ -96,6 +96,15 @@ For current situations: list all participants, the course of events so far, and 
       subjectName: "Subject name",
       context: "Description of the subject...",
       question: "A question..."
+    },
+    shareNotice: {
+      line1: "Sharing content about other persons or their property without their consent is prohibited.",
+      moreInfo: "More information:",
+      and: "and"
+    },
+    links: {
+      terms: "Terms of Use",
+      privacy: "Privacy Policy"
     }
   },
 
@@ -194,6 +203,15 @@ Za trenutne situacije: navedite sve učesnike, dosadašnji tok događaja i klju�
       subjectName: "Naziv subjekta",
       context: "Opis subjekta...",
       question: "Pitanje..."
+    },
+    shareNotice: {
+      line1: "Zabranjeno je deljenje sadržaja o drugim licima ili njihovoj imovini bez njihove saglasnosti.",
+      moreInfo: "Više informacija na stranicama",
+      and: "i"
+    },
+    links: {
+      terms: "Uslovi korišćenja",
+      privacy: "Politika privatnosti"
     }
   },
 
@@ -293,6 +311,15 @@ Para situaciones actuales: indique todos los participantes, el desarrollo hasta 
       subjectName: "Nombre del sujeto",
       context: "Descripción del sujeto...",
       question: "Una pregunta..."
+    },
+  shareNotice: {
+    line1: "Se prohíbe compartir contenido sobre otras personas o su propiedad sin su consentimiento.",
+    moreInfo: "Más información:",
+    and: "y"
+  },
+  links: {
+    terms: "Términos de uso",
+    privacy: "Política de privacidad"
     }
   },
 
@@ -391,6 +418,15 @@ Pour des situations actuelles : indiquez tous les participants, le déroulement 
       subjectName: "Nom du sujet",
       context: "Description du sujet...",
       question: "Une question..."
+    },
+  shareNotice: {
+    line1: "Il est interdit de partager du contenu concernant d’autres personnes ou leurs biens sans leur consentement.",
+    moreInfo: "Plus d’informations :",
+    and: "et"
+  },
+  links: {
+    terms: "Conditions d’utilisation",
+    privacy: "Politique de confidentialité"
     }
   },
 
@@ -490,6 +526,15 @@ Für aktuelle Situationen: Nennen Sie alle Beteiligten, den bisherigen Verlauf u
       subjectName: "Name des Themas",
       context: "Beschreibung des Themas...",
       question: "Eine Frage..."
+    },
+  shareNotice: {
+    line1: "Das Teilen von Inhalten über andere Personen oder deren Eigentum ohne deren Einwilligung ist verboten.",
+    moreInfo: "Weitere Informationen:",
+    and: "und"
+  },
+  links: {
+    terms: "Nutzungsbedingungen",
+    privacy: "Datenschutzerklärung"
     }
   },
 
@@ -589,6 +634,15 @@ Para situações atuais: mencione todos os envolvidos, o andamento até o moment
       subjectName: "Nome do assunto",
       context: "Descrição do assunto...",
       question: "Uma pergunta..."
+    },
+  shareNotice: {
+    line1: "É proibido compartilhar conteúdo sobre outras pessoas ou seus bens sem o consentimento delas.",
+    moreInfo: "Mais informações:",
+    and: "e"
+  },
+  links: {
+    terms: "Termos de Uso",
+    privacy: "Política de Privacidade"
     }
   },
 
@@ -688,6 +742,15 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
       subjectName: "Nome dell'argomento",
       context: "Descrizione dell'argomento...",
       question: "Una domanda..."
+    },
+  shareNotice: {
+    line1: "È vietato condividere contenuti su altre persone o sui loro beni senza il loro consenso.",
+    moreInfo: "Maggiori informazioni:",
+    and: "e"
+  },
+  links: {
+    terms: "Termini d’uso",
+    privacy: "Informativa sulla privacy"
     }
   },
 
@@ -787,6 +850,15 @@ Per situazioni attuali: indica tutti i partecipanti, lo svolgimento fino ad ora 
       subjectName: "Название темы",
       context: "Описание темы...",
       question: "Вопрос..."
+    },
+  shareNotice: {
+    line1: "Запрещено распространять контент о других лицах или их имуществе без их согласия.",
+    moreInfo: "Дополнительная информация:",
+    and: "и"
+  },
+  links: {
+    terms: "Условия использования",
+    privacy: "Политика конфиденциальности"
     }
   },
 
@@ -886,6 +958,15 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
       subjectName: "Nazwa tematu",
       context: "Opis tematu...",
       question: "Pytanie..."
+    },
+  shareNotice: {
+    line1: "Zabronione jest udostępnianie treści dotyczących innych osób lub ich mienia bez ich zgody.",
+    moreInfo: "Więcej informacji:",
+    and: "i"
+  },
+  links: {
+    terms: "Warunki korzystania",
+    privacy: "Polityka prywatności"
     }
   },
 
@@ -985,6 +1066,15 @@ Dla bieżących sytuacji – podaj uczestników, dotychczasowy przebieg wydarze�
       subjectName: "Назва теми",
       context: "Опис теми...",
       question: "Питання..."
+    },
+  shareNotice: {
+    line1: "Заборонено поширювати контент про інших осіб або їхнє майно без їхньої згоди.",
+    moreInfo: "Додаткова інформація:",
+    and: "і"
+  },
+  links: {
+    terms: "Умови користування",
+    privacy: "Політика конфіденційності"
     }
   },
 
@@ -1084,6 +1174,15 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       subjectName: "Konu adı",
       context: "Konu açıklaması...",
       question: "Bir soru..."
+    },
+  shareNotice: {
+    line1: "Diğer kişiler veya mülkleri hakkında izinsiz içerik paylaşmak yasaktır.",
+    moreInfo: "Daha fazla bilgi:",
+    and: "ve"
+  },
+  links: {
+    terms: "Kullanım Koşulları",
+    privacy: "Gizlilik Politikası"
     }
   },
 
@@ -1182,6 +1281,15 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       subjectName: "اسم الموضوع",
       context: "وصف الموضوع...",
       question: "سؤال..."
+    },
+  shareNotice: {
+    line1: "يُحظر مشاركة محتوى عن أشخاص آخرين أو ممتلكاتهم دون موافقتهم.",
+    moreInfo: "مزيد من المعلومات:",
+    and: "و"
+  },
+  links: {
+    terms: "شروط الاستخدام",
+    privacy: "سياسة الخصوصية"
     }
   },
 
@@ -1281,6 +1389,15 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       subjectName: "विषय का नाम",
       context: "विषय का विवरण...",
       question: "एक प्रश्न..."
+    },
+  shareNotice: {
+    line1: "अन्य व्यक्तियों या उनकी संपत्ति के बारे में, उनकी सहमति के बिना सामग्री साझा करना निषिद्ध है।",
+    moreInfo: "अधिक जानकारी:",
+    and: "और"
+  },
+  links: {
+    terms: "उपयोग की शर्तें",
+    privacy: "गोपनीयता नीति"
     }
   },
 
@@ -1375,6 +1492,15 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       subjectName: "主题名称",
       context: "主题描述…",
       question: "一个问题…"
+    },
+  shareNotice: {
+    line1: "未经当事人同意，禁止分享有关他人或其财产的内容。",
+    moreInfo: "更多信息：",
+    and: "和"
+  },
+  links: {
+    terms: "使用条款",
+    privacy: "隐私政策"
     }
   },
 
@@ -1474,6 +1600,15 @@ Mevcut bir durum için: tüm tarafları, olayın gidişatını ve önemli gerçe
       subjectName: "テーマ名",
       context: "テーマの説明…",
       question: "質問…"
+    },
+  shareNotice: {
+    line1: "本人の同意なく、他者やその財産に関するコンテンツを共有することは禁止されています。",
+    moreInfo: "詳細情報：",
+    and: "と"
+  },
+  links: {
+    terms: "利用規約",
+    privacy: "プライバシーポリシー"
     }
   }
 };
