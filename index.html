@@ -596,11 +596,26 @@
 
     <!-- NEW: dugme za novo pitanje (skriveno dok se ne dobije odgovor) -->
     <button id="ask-new-question" class="btn" style="display:none; margin-top:1rem;">
-      Ask a new question
+      <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <!-- ikonica za pitanje (question mark in circle) -->
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M9.09 9a3 3 0 1 1 5.82 1c0 2-3 2-3 4"/>
+        <line x1="12" y1="17" x2="12" y2="17"/>
+      </svg>
+      <span class="btn-label">Ask a new question</span>
     </button>
 
     <button id="share-btn" class="btn" style="display:none; margin-top:0.5rem;">
-      Share
+      <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <!-- ikonica za deljenje (share/arrow) -->
+        <circle cx="18" cy="5" r="3"/>
+        <circle cx="6" cy="12" r="3"/>
+        <circle cx="18" cy="19" r="3"/>
+        <path d="M8.59 13.51l6.83 3.98M15.42 6.51l-6.83 3.98"/>
+      </svg>
+      <span class="btn-label">Share</span>
     </button>
   </div>
 
