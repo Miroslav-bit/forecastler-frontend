@@ -617,6 +617,19 @@
       </svg>
       <span class="btn-label">Share</span>
     </button>
+
+    <!-- Share disclaimer (skriven dok nema rezultata) -->
+    <p id="share-disclaimer" style="display:none; margin:.5rem 0 0; font-size:.95rem; color:#fff;">
+      <span id="share-disc-line1">Sharing content about other persons or their property without their consent is prohibited.</span>
+      <br>
+      <span id="share-disc-line2-pre">More information:</span>
+      <a id="share-disc-terms" href="terms.html" style="color:#fff; text-decoration:underline;">Terms of Use</a>
+      <span> &nbsp; </span>
+      <span id="share-disc-and">and</span>
+      <span> &nbsp; </span>
+      <a id="share-disc-privacy" href="privacy.html" style="color:#fff; text-decoration:underline;">Privacy Policy</a>
+    </p>
+
   </div>
 
   <div class="main-section">
@@ -770,6 +783,19 @@
       shareBtn.title = label;
       shareBtn.setAttribute("aria-label", label);
     }
+
+    // Share disclaimer translations
+    const d1 = document.getElementById("share-disc-line1");
+    const d2pre = document.getElementById("share-disc-line2-pre");
+    const dAnd = document.getElementById("share-disc-and");
+    const dTerms = document.getElementById("share-disc-terms");
+    const dPriv = document.getElementById("share-disc-privacy");
+
+    if (d1 && t.shareNotice && t.shareNotice.line1) d1.textContent = t.shareNotice.line1;
+    if (d2pre && t.shareNotice && t.shareNotice.moreInfo) d2pre.textContent = t.shareNotice.moreInfo;
+    if (dAnd && t.shareNotice && t.shareNotice.and) dAnd.textContent = t.shareNotice.and;
+    if (dTerms && t.links && t.links.terms) dTerms.textContent = t.links.terms;
+    if (dPriv && t.links && t.links.privacy) dPriv.textContent = t.links.privacy;
 
     // Ikonice nad opisom (title/aria-label)
     const saveDesc = document.getElementById("save-context");
@@ -1195,6 +1221,8 @@
           if (askNewBtn) askNewBtn.style.display = "inline-flex";
           const shareBtn = document.getElementById("share-btn");
           if (shareBtn) shareBtn.style.display = "inline-flex";
+          const disc = document.getElementById("share-disclaimer");
+          if (disc) disc.style.display = "block";
         } else {
           odgovorText.textContent = t.alerts.unrecognizedResponse;
           odgovorText.style.display = "block";
@@ -1387,6 +1415,9 @@
 
     const askNewBtn = document.getElementById("ask-new-question");
     if (askNewBtn) askNewBtn.style.display = "inline-flex";
+
+    const disc = document.getElementById("share-disclaimer");
+    if (disc) disc.style.display = "block";
 
     // Sakrij/onemogući Send
     const sendBtn = document.getElementById("send-button");
