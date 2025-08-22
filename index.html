@@ -598,6 +598,10 @@
     <button id="ask-new-question" class="btn" style="display:none; margin-top:1rem;">
       Ask a new question
     </button>
+
+    <button id="share-btn" class="btn" style="display:none; margin-top:0.5rem;">
+      Share
+    </button>
   </div>
 
   <div class="main-section">
@@ -1148,6 +1152,8 @@
             sendBtn.classList.add("is-hidden");
           }
           if (askNewBtn) askNewBtn.style.display = "inline-flex";
+          const shareBtn = document.getElementById("share-btn");
+          if (shareBtn) shareBtn.style.display = "inline-flex";
         } else {
           odgovorText.textContent = t.alerts.unrecognizedResponse;
           odgovorText.style.display = "block";
@@ -1170,6 +1176,31 @@
           sendBtn.removeAttribute("aria-disabled");
         }
       }
+    }
+
+    // --- ENCODE/DECODE helperi ---
+    function b64urlEncode(str) {
+      return btoa(unescape(encodeURIComponent(str)))
+        .replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+    }
+    function b64urlDecode(str) {
+      try {
+        const pad = str.length % 4 ? "=".repeat(4 - (str.length % 4)) : "";
+        return decodeURIComponent(escape(atob(str.replace(/-/g, "+").replace(/_/g, "/") + pad)));
+      } catch { return ""; }
+    }
+
+    // --- napravi payload iz UI-ja ---
+    function getSharePayload() {
+      return {
+        q: document.getElementById("pitanje").value.trim(),
+        a: document.getElementById("odgovor-tekst").innerText.trim(),
+        p: document.getElementById("odgovor-verovatnoca").innerText.trim()
+      };
+    }
+    function buildShareUrl(payload) {
+      const base = location.origin + location.pathname;
+      return base + "#forecast=" + b64urlEncode(JSON.stringify(payload));
     }
   </script>
 
@@ -1254,6 +1285,45 @@
     var menu = document.getElementById("menuDropdown");
     menu.style.display = (menu.style.display === "block") ? "none" : "block";
   }
+
+  document.getElementById("share-btn").addEventListener("click", async () => {
+    const url = buildShareUrl(getSharePayload());
+    const title = "Forecastler prediction";
+    const text = "Check this forecast:";
+
+    if (navigator.share) {
+      try {
+        await navigator.share({ title, text, url });
+      } catch (e) { /* korisnik odustao */ }
+    } else {
+      prompt("Copy this link and share it:", url);
+    }
+  });
+
+   (function hydrateFromUrl() {
+    const m = location.hash.match(/#forecast=([A-Za-z0-9\-_]+)/);
+    if (!m) return;
+    const decoded = b64urlDecode(m[1]);
+    if (!decoded) return;
+    let data;
+    try { data = JSON.parse(decoded); } catch { return; }
+
+    if (data.q) document.getElementById("pitanje").value = data.q;
+    if (data.a) {
+      const ans = document.getElementById("odgovor-tekst");
+      ans.textContent = data.a;
+      ans.style.display = "block";
+    }
+    if (data.p) {
+      const prob = document.getElementById("odgovor-verovatnoca");
+      prob.textContent = data.p;
+      prob.style.display = "block";
+    }
+
+    // odmah prikaži i share dugme
+    const shareBtn = document.getElementById("share-btn");
+    if (shareBtn) shareBtn.style.display = "inline-flex";
+  })();
   </script>
 
 </body>
