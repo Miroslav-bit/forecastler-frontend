@@ -770,12 +770,24 @@
     // Dugme za slanje pitanja (label + aria)
     const sendBtn = document.getElementById("send-button");
     if (sendBtn) {
-      sendBtn.disabled = false;
-      sendBtn.classList.remove("is-hidden","is-disabled");
-      sendBtn.removeAttribute("aria-disabled");
-      sendBtn.querySelector(".btn-label").textContent = t.sendButton;
+      // uvek osveži label/aria
+      const lbl = sendBtn.querySelector(".btn-label");
+      if (lbl) lbl.textContent = t.sendButton;
       sendBtn.title = t.sendButton;
       sendBtn.setAttribute("aria-label", t.sendButton);
+
+      const openedViaShare = !!window.forecastFromShare || location.hash.includes("#forecast=");
+      if (openedViaShare) {
+        // ostaje skriven i blokiran u "review" režimu
+        sendBtn.disabled = true;
+        sendBtn.classList.add("is-hidden", "is-disabled");
+        sendBtn.setAttribute("aria-disabled", "true");
+      } else {
+        // normalan režim
+        sendBtn.disabled = false;
+        sendBtn.classList.remove("is-hidden", "is-disabled");
+        sendBtn.removeAttribute("aria-disabled");
+      }
     }
 
     // Dugmad za CRUD subjekta – title/aria-label
@@ -1306,54 +1318,46 @@
    (function hydrateFromUrl() {
     const m = location.hash.match(/#forecast=([A-Za-z0-9\-_]+)/);
     if (!m) return;
+
     const decoded = b64urlDecode(m[1]);
     if (!decoded) return;
+
     let data;
     try { data = JSON.parse(decoded); } catch { return; }
 
-    window.forecastFromShare = true; // <— otvoreno iz šerovanog linka
+    // signal da je otvoreno iz šerovanog linka
+    window.forecastFromShare = true;
 
+    // Popuni UI
     if (data.q) document.getElementById("pitanje").value = data.q;
+
     if (data.a) {
       const ans = document.getElementById("odgovor-tekst");
       ans.textContent = data.a;
       ans.style.display = "block";
     }
+
     if (data.p) {
       const prob = document.getElementById("odgovor-verovatnoca");
       prob.textContent = data.p;
       prob.style.display = "block";
     }
 
-    // pokaži Share i Ask a new question
+    // Pokaži Share + Ask a new question
     const shareBtn = document.getElementById("share-btn");
     if (shareBtn) shareBtn.style.display = "inline-flex";
+
     const askNewBtn = document.getElementById("ask-new-question");
     if (askNewBtn) askNewBtn.style.display = "inline-flex";
 
+    // Sakrij/onemogući Send
     const sendBtn = document.getElementById("send-button");
     if (sendBtn) {
-      const openedViaShare = !!window.forecastFromShare || location.hash.includes('#forecast=');
-
-      // uvek ažuriraj tekst/aria
-      const label = t.sendButton;
-      const lblEl = sendBtn.querySelector(".btn-label");
-      if (lblEl) lblEl.textContent = label;
-      sendBtn.title = label;
-      sendBtn.setAttribute("aria-label", label);
-
-      if (openedViaShare) {
-        // Ako smo u „review” režimu iz šerovanog linka — drži SEND ugašenim i skrivenim
-        sendBtn.disabled = true;
-        sendBtn.classList.add("is-hidden","is-disabled");
-        sendBtn.setAttribute("aria-disabled","true");
-      } else {
-        // U normalnom režimu — obezbedi da je vidljiv i aktivan
-        sendBtn.disabled = false;
-        sendBtn.classList.remove("is-hidden","is-disabled");
-        sendBtn.removeAttribute("aria-disabled");
-      }
+      sendBtn.disabled = true;
+      sendBtn.classList.add("is-hidden", "is-disabled");
+      sendBtn.setAttribute("aria-disabled", "true");
     }
+  })();
   </script>
 
 </body>
