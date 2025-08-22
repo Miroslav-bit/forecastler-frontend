@@ -755,17 +755,20 @@
         (t.buttons && t.buttons.askNewQuestion) ||
         t.askNewQuestion ||
         "Ask a new question";
-      askBtn.textContent = label;
+      const lblEl = askBtn.querySelector(".btn-label");
+      if (lblEl) lblEl.textContent = label;  // ← menjamo samo labelu
       askBtn.title = label;
       askBtn.setAttribute("aria-label", label);
     }
 
     // NEW: "Share" dugme (label/title/aria)
     const shareBtn = document.getElementById("share-btn");
-    if (shareBtn && t.buttons && t.buttons.share) {
-      shareBtn.textContent = t.buttons.share;
-      shareBtn.title = t.buttons.share;
-      shareBtn.setAttribute("aria-label", t.buttons.share);
+    if (shareBtn) {
+      const label = (t.buttons && t.buttons.share) || "Share";
+      const lblEl = shareBtn.querySelector(".btn-label");
+      if (lblEl) lblEl.textContent = label;  // ← menjamo samo labelu
+      shareBtn.title = label;
+      shareBtn.setAttribute("aria-label", label);
     }
 
     // Ikonice nad opisom (title/aria-label)
