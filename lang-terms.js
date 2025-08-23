@@ -132,7 +132,7 @@ const translations = {
       p5: "<strong>No waiver.</strong> Failure to enforce a right does not constitute a waiver."
     },
 
-    s19: { title: "19) Contact", p1: "Forecastler Team", p2: "Email: forecastlerteam@gmail.com" }
+    s19: { title: "19) Contact", p1: "Forecastler Team" }
   },
 
   sr: {
@@ -265,7 +265,7 @@ const translations = {
       p5: "<strong>Neodricanje.</strong> Propust u ostvarivanju prava ne predstavlja odricanje od tog prava."
     },
 
-    s19: { title: "19) Kontakt", p1: "Forecastler tim", p2: "Imejl: forecastlerteam@gmail.com" }
+    s19: { title: "19) Kontakt", p1: "Forecastler tim", p2: " }
   },
 
 es: {
@@ -396,7 +396,7 @@ es: {
     p4: "<strong>Acuerdo íntegro.</strong> Estos Términos, la Política de Privacidad, la Política de Cookies y el Descargo de responsabilidad constituyen el acuerdo íntegro respecto de la Plataforma.",
     p5: "<strong>No renuncia.</strong> La falta de ejercicio o aplicación de un derecho no constituye renuncia."
   },
-  s19: { title: "19) Contacto", p1: "Forecastler Team", p2: "Correo electrónico: forecastlerteam@gmail.com" }
+  s19: { title: "19) Contacto", p1: "Forecastler Team" }
 },
 
 fr: {
@@ -527,7 +527,7 @@ fr: {
     p4: "<strong>Intégralité de l’accord.</strong> Les présentes Conditions, la Politique de confidentialité, la Politique des cookies et la Clause de non-responsabilité constituent l’accord intégral relatif à la Plateforme.",
     p5: "<strong>Absence de renonciation.</strong> Le défaut d’exercer un droit ne vaut pas renonciation."
   },
-  s19: { title: "19) Contact", p1: "Forecastler Team", p2: "E-mail : forecastlerteam@gmail.com" }
+  s19: { title: "19) Contact", p1: "Forecastler Team" }
 },
 
 de: {
@@ -658,7 +658,7 @@ de: {
     p4: "<strong>Gesamtvereinbarung.</strong> Diese Bedingungen, die Datenschutzerklärung, die Cookie-Richtlinie und der Haftungsausschluss bilden die Gesamtvereinbarung zur Plattform.",
     p5: "<strong>Kein Verzicht.</strong> Die Nichtdurchsetzung eines Rechts gilt nicht als Verzicht."
   },
-  s19: { title: "19) Kontakt", p1: "Forecastler Team", p2: "E-Mail: forecastlerteam@gmail.com" }
+  s19: { title: "19) Kontakt", p1: "Forecastler Team" }
 },
 
 pt: {
@@ -789,7 +789,7 @@ pt: {
     p4: "<strong>Acordo integral.</strong> Estes Termos, a Política de Privacidade, a Política de Cookies e o Aviso Legal constituem o acordo integral sobre a Plataforma.",
     p5: "<strong>Ausência de renúncia.</strong> A não aplicação de um direito não constitui renúncia."
   },
-  s19: { title: "19) Contato", p1: "Forecastler Team", p2: "E-mail: forecastlerteam@gmail.com" }
+  s19: { title: "19) Contato", p1: "Forecastler Team" }
 },
 
 it: {
@@ -920,7 +920,7 @@ it: {
     p4: "<strong>Intero accordo.</strong> I presenti Termini, l’Informativa sulla privacy, la Cookie Policy e la Dichiarazione di esclusione di responsabilità costituiscono l’intero accordo relativo alla Piattaforma.",
     p5: "<strong>Nessuna rinuncia.</strong> La mancata tutela di un diritto non costituisce rinuncia."
   },
-  s19: { title: "19) Contatti", p1: "Forecastler Team", p2: "E-mail: forecastlerteam@gmail.com" }
+  s19: { title: "19) Contatti", p1: "Forecastler Team" }
 },
 
 pl: {
@@ -1051,7 +1051,7 @@ pl: {
     p4: "<strong>Całość umowy.</strong> Niniejsze Warunki, Polityka prywatności, Polityka plików cookie oraz Oświadczenie o wyłączeniu odpowiedzialności stanowią całość umowy dotyczącej Platformy.",
     p5: "<strong>Brak zrzeczenia się.</strong> Zaniechanie egzekwowania prawa nie stanowi zrzeczenia się tego prawa."
   },
-  s19: { title: "19) Kontakt", p1: "Forecastler Team", p2: "E-mail: forecastlerteam@gmail.com" }
+  s19: { title: "19) Kontakt", p1: "Forecastler Team" }
 },
 
 uk: {
@@ -1182,7 +1182,7 @@ uk: {
     p4: "<strong>Повна угода.</strong> Ці Умови, Політика конфіденційності, Політика файлів cookie та Відмова від відповідальності становлять повну угоду щодо Платформи.",
     p5: "<strong>Відсутність відмови.</strong> Нездатність/бездіяльність щодо захисту права не є відмовою від нього."
   },
-  s19: { title: "19) Контакти", p1: "Forecastler Team", p2: "Електронна пошта: forecastlerteam@gmail.com" }
+  s19: { title: "19) Контакти", p1: "Forecastler Team" }
 },
 
 ru: {
@@ -1313,7 +1313,7 @@ ru: {
     p4: "<strong>Полнота соглашения.</strong> Настоящие Условия, Политика конфиденциальности, Политика файлов cookie и Отказ от ответственности составляют полное соглашение относительно Платформы.",
     p5: "<strong>Отсутствие отказа.</strong> Неосуществление права не означает отказ от него."
   },
-  s19: { title: "19) Контакты", p1: "Forecastler Team", p2: "E-mail: forecastlerteam@gmail.com" }
+  s19: { title: "19) Контакты", p1: "Forecastler Team" }
 },
 
 tr: {
@@ -1392,7 +1392,7 @@ tr: {
     p4: "<strong>Tam sözleşme.</strong> Bu Şartlar, Gizlilik Politikası, Çerez Politikası ve Sorumluluk Reddi, Platforma ilişkin tam mutabakatı oluşturur.",
     p5: "<strong>Feragat yok.</strong> Bir hakkın uygulanmaması feragat anlamına gelmez."
   },
-  s19: { title: "19) İletişim", p1: "Forecastler Team", p2: "E-posta: forecastlerteam@gmail.com" }
+  s19: { title: "19) İletişim", p1: "Forecastler Team" }
 },
 
 ar: {
@@ -1523,7 +1523,7 @@ ar: {
     p4: "<strong>الاتفاق الكامل.</strong> تشكل هذه الشروط وسياسة الخصوصية وسياسة ملفات تعريف الارتباط وبيان إخلاء المسؤولية الاتفاق الكامل بخصوص المنصة.",
     p5: "<strong>عدم التنازل.</strong> عدم إنفاذ حق لا يُعد تنازلاً عنه."
   },
-  s19: { title: "19) جهة الاتصال", p1: "Forecastler Team", p2: "البريد الإلكتروني: forecastlerteam@gmail.com" }
+  s19: { title: "19) جهة الاتصال", p1: "Forecastler Team" }
 },
 
 hi: {
@@ -1654,7 +1654,7 @@ hi: {
     p4: "<strong>सम्पूर्ण समझौता.</strong> ये शर्तें, गोपनीयता नीति, कुकीज़ नीति और अस्वीकरण—मिलकर प्लेटफ़ॉर्म के संबंध में सम्पूर्ण समझौता बनाते हैं.",
     p5: "<strong>अधिकार-त्याग नहीं.</strong> किसी अधिकार को लागू न करना, उसके त्याग के रूप में नहीं माना जाएगा."
   },
-  s19: { title: "19) संपर्क", p1: "Forecastler Team", p2: "ईमेल: forecastlerteam@gmail.com" }
+  s19: { title: "19) संपर्क", p1: "Forecastler Team" }
 },
 
 zh: {
@@ -1785,7 +1785,7 @@ zh: {
     p4: "<strong>完整协议。</strong> 本条款、《隐私政策》、《Cookie 政策》及《免责声明》共同构成关于本平台的完整协议。",
     p5: "<strong>不弃权。</strong> 未行使或未执行任何权利不构成对该权利的放弃。"
   },
-  s19: { title: "19) 联系方式", p1: "Forecastler Team", p2: "电子邮箱：forecastlerteam@gmail.com" }
+  s19: { title: "19) 联系方式", p1: "Forecastler Team" }
 },
 
 ja: {
@@ -1916,7 +1916,7 @@ ja: {
     p4: "<strong>完全合意。</strong> 本規約、プライバシーポリシー、クッキーポリシーおよび免責事項は、プラットフォームに関する完全な合意を構成します。",
     p5: "<strong>権利不放棄。</strong> 権利を行使しないことは、当該権利の放棄を意味しません。"
   },
-  s19: { title: "19) 連絡先", p1: "Forecastler Team", p2: "メール: forecastlerteam@gmail.com" }
+  s19: { title: "19) 連絡先", p1: "Forecastler Team" }
   }
 };
 
