@@ -23,7 +23,6 @@ const translations = {
       title: "Kontakt",
       p1: "Ako imate bilo kakvih pitanja, povratnih informacija ili sugestija u vezi sa platformom Forecastler, slobodno nas kontaktirajte u bilo koje vreme. Vaš doprinos je dragocen i pomaže nam da poboljšamo uslugu.",
       p2: "Forecastler tim",
-      p3: "Imejl: forecastlerteam@gmail.com",
       p4: "Pratite nas:",
       p6: "Napomena: zvanične adrese i dodatni kanali za kontakt biće blagovremeno objavljeni."
     }
@@ -276,4 +275,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // izloži funkciju za klik na zastavice
 window.setLanguage = setLanguage;
-
