@@ -449,6 +449,22 @@
     .site-title-link { display:inline-block; text-decoration:none; color:inherit; padding:4px; }
     .site-title-link:hover, .site-title-link:focus { text-decoration:underline; }
 
+    /* ubaci u <style> deo stranice ili u globalni CSS */
+    .social-footer{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:.75rem;          /* RAZMAK između ikonica */
+      margin:.75rem 0;     /* malo vazduha iznad/ispod */
+    }
+    .social-footer a{
+      display:inline-flex;
+      width:28px; height:28px;   /* veća “klik zona” */
+    }
+    .social-footer img{
+      width:22px; height:22px;   /* stvarna veličina ikone */
+    }
+
   </style>
 </head>
 <body>
@@ -636,7 +652,10 @@
   <!-- 16) Communications and notices (notice & action) -->
   <div class="main-section">
     <h2 id="terms-s16-title">16) Communications and notices (notice &amp; action)</h2>
-    <p id="terms-s16-lead">Report violations (defamation, copyright/trademark, unlawful content) to forecastlerteam@gmail.com with:</p>
+    <p id="terms-s16-lead">Report violations (defamation, copyright/trademark, unlawful content) to 
+      <a href="mailto:forecastlerteam@gmail.com">forecastlerteam@gmail.com</a>
+      with:
+    </p>
     <p id="terms-s16-1">• a description and location (URL/screenshot),</p>
     <p id="terms-s16-2">• the legal basis for your claim,</p>
     <p id="terms-s16-3">• your contact details and a truthfulness statement.</p>
@@ -663,7 +682,9 @@
   <div class="main-section">
     <h2 id="terms-s19-title">19) Contact</h2>
     <p id="terms-s19-1">Forecastler Team</p>
-    <p id="terms-s19-2">Email: forecastlerteam@gmail.com</p>
+    <p id="terms-s19-2">Email:
+      <a href="mailto:forecastlerteam@gmail.com">forecastlerteam@gmail.com</a>
+    </p>
   </div>
 
   <footer style="padding: 2rem; background-color: rgba(0, 0, 0, 0.6); font-size: 0.95rem; color: white; text-align: center;">
@@ -675,9 +696,44 @@
       <a id="link-sitemap"    href="sitemap.html"    style="margin: 0 0.5rem; color: inherit; text-decoration: none;">Sitemap</a> |
       <a id="link-faq"        href="faq.html"        style="margin: 0 0.5rem; color: inherit; text-decoration: none;">FAQ</a>
     </div>
-    <div style="margin-bottom: 0.5rem;">
-      e-mail: <strong>forecastler@gmail.com</strong> | Facebook: | Instagram: | Youtube: | TikTok:
-    </div>
+
+    <footer class="social-footer">
+      <a href="mailto:forecastlerteam@gmail.com" aria-label="Email" title="Email">
+        <img
+          src="images/icons/email@1x.png"
+          srcset="images/icons/email@1x.png 1x, images/icons/email@2x.png 2x"
+          width="22" height="22" alt="" loading="lazy" decoding="async">
+      </a>
+
+      <a href="https://facebook.com/Forecastler" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+        <img
+          src="images/icons/facebook@1x.png"
+          srcset="images/icons/facebook@1x.png 1x, images/icons/facebook@2x.png 2x"
+          width="22" height="22" alt="" loading="lazy" decoding="async">
+      </a>
+
+      <a href="https://instagram.com/Forecastler" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+        <img
+          src="images/icons/instagram@1x.png"
+          srcset="images/icons/instagram@1x.png 1x, images/icons/instagram@2x.png 2x"
+          width="22" height="22" alt="" loading="lazy" decoding="async">
+      </a>
+
+      <a href="https://youtube.com/@Forecastler" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube">
+        <img
+          src="images/icons/youtube@1x.png"
+          srcset="images/icons/youtube@1x.png 1x, images/icons/youtube@2x.png 2x"
+          width="22" height="22" alt="" loading="lazy" decoding="async">
+      </a>
+
+      <a href="https://tiktok.com/@Forecastler" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok">
+        <img
+          src="images/icons/tiktok@1x.png"
+          srcset="images/icons/tiktok@1x.png 1x, images/icons/tiktok@2x.png 2x"
+          width="22" height="22" alt="" loading="lazy" decoding="async">
+      </a>
+    </footer>
+
     <div>
       Created by Miroslav Ostrogonac, 2025.
     </div>
