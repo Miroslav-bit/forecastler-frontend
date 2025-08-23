@@ -449,34 +449,6 @@
     .site-title-link { display:inline-block; text-decoration:none; color:inherit; padding:4px; }
     .site-title-link:hover, .site-title-link:focus { text-decoration:underline; }
 
-    /* Email link — konzistentan hover/active + kratki "klik" flash */
-    #contact-email-en{
-      cursor: pointer;
-      text-decoration: underline;
-      transition: color .12s ease, filter .12s ease;
-    }
-
-    #contact-email-en:hover{               /* desktop hover */
-      text-decoration: none;
-      color: #ffd24d;
-    }
-
-    #contact-email-en:active,              /* odmah pri pritisku */
-    #contact-email-en.is-tapping{          /* klasa iz JS-a (mob/desktop) */
-      color: #ffb700;
-      filter: brightness(1.05);
-    }
-
-    /* (opciono) "kao visited" posle klika — trajna nijansa */
-    #contact-email-en.visited-like{
-      color: #c7e3ff;
-    }
-
-    /* iOS/Android vizuelni tap highlight */
-    #contact-email-en{
-      -webkit-tap-highlight-color: rgba(255,210,77,.35);
-    }
-
   </style>
 </head>
 <body>
@@ -651,35 +623,8 @@
     menu.style.display = (menu.style.display === "block") ? "none" : "block";
   }
 
-    // 1) iOS Safari: omogući :active pseudo-klasu
-    document.addEventListener('touchstart', function(){}, {passive:true});
-
-    // 2) Instant vizuelni feedback i (opciono) trajna nijansa "visited-like"
-    (function(){
-      const el = document.getElementById('contact-email-en');
-      if(!el) return;
-
-      // Kratki "flash" na dodir/klik – odmah se vidi reakcija
-      const flashOn = () => { el.classList.add('is-tapping'); };
-      const flashOff = () => { setTimeout(()=>el.classList.remove('is-tapping'), 160); };
-
-      el.addEventListener('touchstart', flashOn, {passive:true});
-      el.addEventListener('touchend',   flashOff, {passive:true});
-      el.addEventListener('mousedown',  flashOn);
-      el.addEventListener('mouseup',    flashOff);
-      el.addEventListener('mouseleave', flashOff);
-
-      // (Opcionalno) Emuliraj "visited" efekat nakon prvog klika
-      const KEY = 'contact_email_clicked';
-      if (localStorage.getItem(KEY) === '1') el.classList.add('visited-like');
-      el.addEventListener('click', ()=> {
-        try {
-          localStorage.setItem(KEY, '1');
-          el.classList.add('visited-like');
-        } catch(e) {}
-      });
-    })();
   </script>
 
 </body>
 </html>
+
