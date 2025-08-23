@@ -449,38 +449,32 @@
     .site-title-link { display:inline-block; text-decoration:none; color:inherit; padding:4px; }
     .site-title-link:hover, .site-title-link:focus { text-decoration:underline; }
 
-    /* 1) Osnovno: učini da svi mailto linkovi izgledaju "klikabilno" */
-    a[href^="mailto:"] {
-      cursor: pointer;                 /* ruka na desktopu */
+    /* Email link — konzistentan hover/active + kratki "klik" flash */
+    #contact-email-en{
+      cursor: pointer;
       text-decoration: underline;
-      transition: color .12s ease;
+      transition: color .12s ease, filter .12s ease;
     }
 
-    /* 2) Hover (desktop) */
-    a[href^="mailto:"]:hover {
+    #contact-email-en:hover{               /* desktop hover */
       text-decoration: none;
-      color: #ffd24d;                  /* primer: žuta pri hoveru */
+      color: #ffd24d;
     }
 
-    /* 3) Active (kliknut / tapnut) */
-    a[href^="mailto:"]:active {
-      color: #ffb700;                  /* još tamnija pri samom kliku */
+    #contact-email-en:active,              /* odmah pri pritisku */
+    #contact-email-en.is-tapping{          /* klasa iz JS-a (mob/desktop) */
+      color: #ffb700;
+      filter: brightness(1.05);
     }
 
-    /* 4) Visited (da se vidi da je korišćen) */
-    a[href^="mailto:"]:visited {
-      color: #c7e3ff;                  /* blago drugačija nijansa */
+    /* (opciono) "kao visited" posle klika — trajna nijansa */
+    #contact-email-en.visited-like{
+      color: #c7e3ff;
     }
 
-    /* 5) Fokus (tastatura / pristupačnost) */
-    a[href^="mailto:"]:focus-visible {
-      outline: 2px solid #ffd24d;
-      outline-offset: 2px;
-    }
-
-    /* 6) Mobilni tap highlight (Safari/Chrome na Android/iOS) */
-    a[href^="mailto:"] {
-      -webkit-tap-highlight-color: rgba(255, 210, 77, 0.35);
+    /* iOS/Android vizuelni tap highlight */
+    #contact-email-en{
+      -webkit-tap-highlight-color: rgba(255,210,77,.35);
     }
 
   </style>
