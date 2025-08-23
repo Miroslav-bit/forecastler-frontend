@@ -650,6 +650,35 @@
     var menu = document.getElementById("menuDropdown");
     menu.style.display = (menu.style.display === "block") ? "none" : "block";
   }
+
+    // 1) iOS Safari: omogući :active pseudo-klasu
+    document.addEventListener('touchstart', function(){}, {passive:true});
+
+    // 2) Instant vizuelni feedback i (opciono) trajna nijansa "visited-like"
+    (function(){
+      const el = document.getElementById('contact-email-en');
+      if(!el) return;
+
+      // Kratki "flash" na dodir/klik – odmah se vidi reakcija
+      const flashOn = () => { el.classList.add('is-tapping'); };
+      const flashOff = () => { setTimeout(()=>el.classList.remove('is-tapping'), 160); };
+
+      el.addEventListener('touchstart', flashOn, {passive:true});
+      el.addEventListener('touchend',   flashOff, {passive:true});
+      el.addEventListener('mousedown',  flashOn);
+      el.addEventListener('mouseup',    flashOff);
+      el.addEventListener('mouseleave', flashOff);
+
+      // (Opcionalno) Emuliraj "visited" efekat nakon prvog klika
+      const KEY = 'contact_email_clicked';
+      if (localStorage.getItem(KEY) === '1') el.classList.add('visited-like');
+      el.addEventListener('click', ()=> {
+        try {
+          localStorage.setItem(KEY, '1');
+          el.classList.add('visited-like');
+        } catch(e) {}
+      });
+    })();
   </script>
 
 </body>
