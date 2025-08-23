@@ -449,6 +449,22 @@
     .site-title-link { display:inline-block; text-decoration:none; color:inherit; padding:4px; }
     .site-title-link:hover, .site-title-link:focus { text-decoration:underline; }
 
+    /* ubaci u <style> deo stranice ili u globalni CSS */
+    .social-footer{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:.75rem;          /* RAZMAK između ikonica */
+      margin:.75rem 0;     /* malo vazduha iznad/ispod */
+    }
+    .social-footer a{
+      display:inline-flex;
+      width:28px; height:28px;   /* veća “klik zona” */
+    }
+    .social-footer img{
+      width:22px; height:22px;   /* stvarna veličina ikone */
+    }
+
   </style>
 </head>
 <body>
