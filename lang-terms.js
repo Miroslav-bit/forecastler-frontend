@@ -265,7 +265,7 @@ const translations = {
       p5: "<strong>Neodricanje.</strong> Propust u ostvarivanju prava ne predstavlja odricanje od tog prava."
     },
 
-    s19: { title: "19) Kontakt", p1: "Forecastler tim", p2: " }
+    s19: { title: "19) Kontakt", p1: "Forecastler tim" }
   },
 
 es: {
