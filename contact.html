@@ -465,36 +465,17 @@
       width:22px; height:22px;   /* stvarna veličina ikone */
     }
 
-    /* Kontejner liste sa mrežama */
     .social-links { list-style: none; margin: 0; padding: 0; }
-    .social-links li { margin: .25rem 0; }
+    .social-links li { margin: .3rem 0; }
 
-    /* Svi linkovi u listi: plavi i podvučeni */
-    .social-links a,
-    .social-links a:visited { 
-      color: #1a0dab; 
-      text-decoration: underline; 
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      color: #1a0dab;
+      text-decoration: underline;
     }
-
-    /* Ikonica ispred linka */
-    .social-links a::before {
-      content: "";
-      display: inline-block;
-      width: 20px; 
-      height: 20px;
-      margin-right: .4rem;
-      vertical-align: -4px;  /* fino poravnanje sa tekstom */
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-    }
-
-    /* MAPIRAJ NA ISTE IKONICE KAO U FOOTER-U (zameni putanje ispod!) */
-    .social-links a.facebook::before  { background-image: url("images/icons/facebook@2x.png"); }
-    .social-links a.instagram::before { background-image: url("images/icons/instagram@2x.png"); }
-    .social-links a.youtube::before   { background-image: url("images/icons/youtube@2x.png"); }
-    .social-links a.tiktok::before    { background-image: url("images/icons/tiktok@2x.png"); }
-    .social-links a.gmail::before     { background-image: url("images/icons/email@2x.png"); }
+    .social-links img { width: 22px; height: 22px; }
 
   </style>
 </head>
@@ -559,11 +540,46 @@
     <p id="contact-text-4-en"><strong>Follow us:</strong></p>
     <p id="contact-text-5-en">
     <ul class="social-links">
-      <li><a class="gmail"    href="mailto:forecastlerteam@gmail.com">forecastlerteam@gmail.com</a></li>
-      <li><a class="facebook" href="https://facebook.com/forecastler" target="_blank" rel="noopener">Facebook</a></li>
-      <li><a class="instagram"href="https://instagram.com/forecastler" target="_blank" rel="noopener">Instagram</a></li>
-      <li><a class="youtube"  href="https://youtube.com/@forecastler" target="_blank" rel="noopener">YouTube</a></li>
-      <li><a class="tiktok"   href="https://tiktok.com/@forecastler" target="_blank" rel="noopener">TikTok</a></li>
+
+      <li>
+        <a href="https://facebook.com/Forecastler" target="_blank" rel="noopener" class="facebook">
+          <img
+            src="images/icons/facebook@1x.png"
+            srcset="images/icons/facebook@1x.png 1x, images/icons/facebook@2x.png 2x"
+            width="22" height="22" alt="Facebook">
+          <span>Facebook</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://instagram.com/Forecastler" target="_blank" rel="noopener" class="instagram">
+          <img
+            src="images/icons/instagram@1x.png"
+            srcset="images/icons/instagram@1x.png 1x, images/icons/instagram@2x.png 2x"
+            width="22" height="22" alt="Instagram">
+          <span>Instagram</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://youtube.com/@Forecastler" target="_blank" rel="noopener" class="youtube">
+          <img
+            src="images/icons/youtube@1x.png"
+            srcset="images/icons/youtube@1x.png 1x, images/icons/youtube@2x.png 2x"
+            width="22" height="22" alt="YouTube">
+          <span>YouTube</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://tiktok.com/@Forecastler" target="_blank" rel="noopener" class="tiktok">
+          <img
+            src="images/icons/tiktok@1x.png"
+            srcset="images/icons/tiktok@1x.png 1x, images/icons/tiktok@2x.png 2x"
+            width="22" height="22" alt="TikTok">
+          <span>TikTok</span>
+        </a>
+      </li>
     </ul>
     </p>
 
