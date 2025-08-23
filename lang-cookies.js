@@ -50,8 +50,7 @@ const translations = {
 
     s7: {
       title: "7) Contact",
-      p1: "Forecastler Team",
-      p2: "Email: forecastlerteam@gmail.com"
+      p1: "Forecastler Team"
     }
   },
 
@@ -103,8 +102,7 @@ const translations = {
 
     s7: {
       title: "7) Kontakt",
-      p1: "Forecastler tim",
-      p2: "Imejl: forecastlerteam@gmail.com"
+      p1: "Forecastler tim"
     }
   },
 
@@ -148,8 +146,7 @@ es: {
   },
   s7: {
     title: "7) Contacto",
-    p1: "Forecastler Team",
-    p2: "Correo electrónico: forecastlerteam@gmail.com"
+    p1: "Forecastler Team"
   }
 },
 
@@ -193,8 +190,7 @@ fr: {
   },
   s7: {
     title: "7) Contact",
-    p1: "Forecastler Team",
-    p2: "E-mail : forecastlerteam@gmail.com"
+    p1: "Forecastler Team"
   }
 },
 
@@ -238,8 +234,7 @@ de: {
   },
   s7: {
     title: "7) Kontakt",
-    p1: "Forecastler Team",
-    p2: "E-Mail: forecastlerteam@gmail.com"
+    p1: "Forecastler Team"
   }
 },
 
@@ -283,8 +278,7 @@ pt: {
   },
   s7: {
     title: "7) Contato",
-    p1: "Forecastler Team",
-    p2: "E-mail: forecastlerteam@gmail.com"
+    p1: "Forecastler Team"
   }
 },
 
@@ -328,8 +322,7 @@ it: {
   },
   s7: {
     title: "7) Contatti",
-    p1: "Forecastler Team",
-    p2: "E-mail: forecastlerteam@gmail.com"
+    p1: "Forecastler Team"
   }
 },
 
@@ -373,8 +366,7 @@ pl: {
   },
   s7: {
     title: "7) Kontakt",
-    p1: "Forecastler Team",
-    p2: "E-mail: forecastlerteam@gmail.com"
+    p1: "Forecastler Team"
   }
 },
 
@@ -418,8 +410,7 @@ uk: {
   },
   s7: {
     title: "7) Контакти",
-    p1: "Forecastler Team",
-    p2: "Електронна пошта: forecastlerteam@gmail.com"
+    p1: "Forecastler Team"
   }
 },
 
@@ -463,8 +454,7 @@ ru: {
   },
   s7: {
     title: "7) Контакты",
-    p1: "Forecastler Team",
-    p2: "E-mail: forecastlerteam@gmail.com"
+    p1: "Forecastler Team"
   }
 },
 
@@ -508,8 +498,7 @@ tr: {
   },
   s7: {
     title: "7) İletişim",
-    p1: "Forecastler Team",
-    p2: "E-posta: forecastlerteam@gmail.com"
+    p1: "Forecastler Team"
   }
 },
 
@@ -553,8 +542,7 @@ ar: {
   },
   s7: {
     title: "7) جهة الاتصال",
-    p1: "Forecastler Team",
-    p2: "البريد الإلكتروني: forecastlerteam@gmail.com"
+    p1: "Forecastler Team"
   }
 },
 
@@ -598,8 +586,7 @@ hi: {
   },
   s7: {
     title: "7) संपर्क",
-    p1: "Forecastler Team",
-    p2: "ईमेल: forecastlerteam@gmail.com"
+    p1: "Forecastler Team"
   }
 },
 
@@ -643,8 +630,7 @@ zh: {
   },
   s7: {
     title: "7) 联系方式",
-    p1: "Forecastler Team",
-    p2: "电子邮箱：forecastlerteam@gmail.com"
+    p1: "Forecastler Team"
   }
 },
 
@@ -688,8 +674,7 @@ ja: {
   },
   s7: {
     title: "7) 連絡先",
-    p1: "Forecastler Team",
-    p2: "メール: forecastlerteam@gmail.com"
+    p1: "Forecastler Team"
     }
   }
 };
