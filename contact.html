@@ -449,6 +449,40 @@
     .site-title-link { display:inline-block; text-decoration:none; color:inherit; padding:4px; }
     .site-title-link:hover, .site-title-link:focus { text-decoration:underline; }
 
+    /* 1) Osnovno: učini da svi mailto linkovi izgledaju "klikabilno" */
+    a[href^="mailto:"] {
+      cursor: pointer;                 /* ruka na desktopu */
+      text-decoration: underline;
+      transition: color .12s ease;
+    }
+
+    /* 2) Hover (desktop) */
+    a[href^="mailto:"]:hover {
+      text-decoration: none;
+      color: #ffd24d;                  /* primer: žuta pri hoveru */
+    }
+
+    /* 3) Active (kliknut / tapnut) */
+    a[href^="mailto:"]:active {
+      color: #ffb700;                  /* još tamnija pri samom kliku */
+    }
+
+    /* 4) Visited (da se vidi da je korišćen) */
+    a[href^="mailto:"]:visited {
+      color: #c7e3ff;                  /* blago drugačija nijansa */
+    }
+
+    /* 5) Fokus (tastatura / pristupačnost) */
+    a[href^="mailto:"]:focus-visible {
+      outline: 2px solid #ffd24d;
+      outline-offset: 2px;
+    }
+
+    /* 6) Mobilni tap highlight (Safari/Chrome na Android/iOS) */
+    a[href^="mailto:"] {
+      -webkit-tap-highlight-color: rgba(255, 210, 77, 0.35);
+    }
+
   </style>
 </head>
 <body>
@@ -532,7 +566,7 @@
       <a id="link-faq"        href="faq.html"        style="margin: 0 0.5rem; color: inherit; text-decoration: none;">FAQ</a>
     </div>
     <div style="margin-bottom: 0.5rem;">
-      e-mail: <strong>forecastler@gmail.com</strong> | Facebook: | Instagram: | Youtube: | TikTok:
+      e-mail: <strong>forecastlerteam@gmail.com</strong> | Facebook: | Instagram: | Youtube: | TikTok:
     </div>
     <div>
       Created by Miroslav Ostrogonac, 2025.
