@@ -110,8 +110,7 @@ const translations = {
            p1: "This Disclaimer is governed by the laws of the Republic of Serbia (unless mandatory rules of your residence provide otherwise). The Subotica court shall have subject-matter and local jurisdiction, unless otherwise mandatorily required by law." },
 
     s22: { title: "22) Contact",
-           p1: "Forecastler Team",
-           p2: "Email: forecastlerteam@gmail.com" }
+           p1: "Forecastler Team",}
   },
 
   sr: {
@@ -222,8 +221,7 @@ const translations = {
            p1: "Na ovo Odricanje primenjuje se pravo Republike Srbije (osim ako obavezna pravila vašeg prebivališta ne propisuju drugačije). Za sporove je nadležan sud u Subotici, osim ako važeći propisi ne zahtevaju drukčiju nadležnost." },
 
     s22: { title: "22) Kontakt",
-           p1: "Forecastler tim",
-           p2: "Imejl: forecastlerteam@gmail.com" }
+           p1: "Forecastler tim"}
   },
 
 es: {
@@ -354,9 +352,7 @@ es: {
   },
   s22: {
     title: "22) Contacto",
-    p1: "Equipo Forecastler",
-    p2: "Correo electrónico: forecastlerteam@gmail.com"
-  }
+    p1: "Equipo Forecastler"}
 },
 
 fr: {
@@ -487,9 +483,7 @@ fr: {
   },
   s22: {
     title: "22) Contact",
-    p1: "Équipe Forecastler",
-    p2: "E-mail : forecastlerteam@gmail.com"
-  }
+    p1: "Équipe Forecastler"}
 },
 
 de: {
@@ -620,9 +614,7 @@ de: {
   },
   s22: {
     title: "22) Kontakt",
-    p1: "Forecastler-Team",
-    p2: "E-Mail: forecastlerteam@gmail.com"
-  }
+    p1: "Forecastler-Team"}
 },
 
 pt: {
@@ -753,9 +745,7 @@ pt: {
   },
   s22: {
     title: "22) Contato",
-    p1: "Equipe Forecastler",
-    p2: "E-mail: forecastlerteam@gmail.com"
-  }
+    p1: "Equipe Forecastler"}
 },
 
 it: {
@@ -886,9 +876,7 @@ it: {
   },
   s22: {
     title: "22) Contatti",
-    p1: "Team Forecastler",
-    p2: "Email: forecastlerteam@gmail.com"
-  }
+    p1: "Team Forecastler"}
 },
 
 pl: {
@@ -1019,9 +1007,7 @@ pl: {
   },
   s22: {
     title: "22) Kontakt",
-    p1: "Zespół Forecastlera",
-    p2: "E-mail: forecastlerteam@gmail.com"
-  }
+    p1: "Zespół Forecastlera"}
 },
 
 uk: {
@@ -1152,9 +1138,7 @@ uk: {
   },
   s22: {
     title: "22) Контакти",
-    p1: "Команда Forecastler",
-    p2: "Електронна пошта: forecastlerteam@gmail.com"
-  }
+    p1: "Команда Forecastler"}
 },
 
 ru: {
@@ -1285,9 +1269,7 @@ ru: {
   },
   s22: {
     title: "22) Контакты",
-    p1: "Команда Forecastler",
-    p2: "Эл. почта: forecastlerteam@gmail.com"
-  }
+    p1: "Команда Forecastler"}
 },
 
 tr: {
@@ -1418,9 +1400,7 @@ tr: {
   },
   s22: {
     title: "22) İletişim",
-    p1: "Forecastler Ekibi",
-    p2: "E-posta: forecastlerteam@gmail.com"
-  }
+    p1: "Forecastler Ekibi"}
 },
 
 ar: {
@@ -1551,9 +1531,7 @@ ar: {
   },
   s22: {
     title: "22) جهة الاتصال",
-    p1: "فريق Forecastler",
-    p2: "البريد الإلكتروني: forecastlerteam@gmail.com"
-  }
+    p1: "فريق Forecastler"}
 },
 
 hi: {
@@ -1684,9 +1662,7 @@ hi: {
   },
   s22: {
     title: "22) संपर्क",
-    p1: "Forecastler टीम",
-    p2: "ईमेल: forecastlerteam@gmail.com"
-  }
+    p1: "Forecastler टीम"}
 },
 
 zh: {
@@ -1817,9 +1793,7 @@ zh: {
   },
   s22: {
     title: "22）联系方式",
-    p1: "Forecastler 团队",
-    p2: "邮箱：forecastlerteam@gmail.com"
-  }
+    p1: "Forecastler 团队"}
 },
 
 ja: {
@@ -1950,9 +1924,7 @@ ja: {
   },
   s22: {
     title: "22）連絡先",
-    p1: "Forecastler チーム",
-    p2: "メール：forecastlerteam@gmail.com"
-    }
+    p1: "Forecastler チーム"}
   }
 };
 
