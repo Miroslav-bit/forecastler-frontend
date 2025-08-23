@@ -136,7 +136,7 @@ const translations = {
 
     s16: { title: "16) Language versions", p1: "The Platform may be available in multiple languages. In case of any inconsistency between translations, the English version prevails unless mandatory rules of your residence require otherwise." },
 
-    s17: { title: "17) Contact", p1: "Forecastler Team", p2: "Email: forecastlerteam@gmail.com" }
+    s17: { title: "17) Contact", p1: "Forecastler Team" }
   },
 
   // SR prevod
@@ -273,7 +273,7 @@ const translations = {
 
     s16: { title: "16) Jezičke verzije", p1: "Platforma može biti dostupna na više jezika. U slučaju neslaganja između prevoda, prednost ima engleska verzija, osim ako vaši lokalni propisi ne zahtevaju drugačije." },
 
-    s17: { title: "17) Kontakt", p1: "Forecastler tim", p2: "Imejl: forecastlerteam@gmail.com" }
+    s17: { title: "17) Kontakt", p1: "Forecastler tim" }
     },
 
 es: {
@@ -409,7 +409,7 @@ es: {
     title: "16) Versiones lingüísticas",
     p1: "La Plataforma puede estar disponible en varios idiomas. En caso de discrepancia entre traducciones, prevalece la versión en inglés salvo que las normas obligatorias de tu residencia dispongan lo contrario."
   },
-  s17: { title: "17) Contacto", p1: "Equipo Forecastler", p2: "Email: forecastlerteam@gmail.com" }
+  s17: { title: "17) Contacto", p1: "Equipo Forecastler" }
 },
 
 fr: {
@@ -545,7 +545,7 @@ fr: {
     title: "16) Versions linguistiques",
     p1: "La Plateforme peut être disponible en plusieurs langues. En cas d’incohérence entre traductions, la version anglaise prévaut, sauf disposition impérative contraire de votre pays de résidence."
   },
-  s17: { title: "17) Contact", p1: "Équipe Forecastler", p2: "Email: forecastlerteam@gmail.com" }
+  s17: { title: "17) Contact", p1: "Équipe Forecastler" }
 },
 
 de: {
@@ -681,7 +681,7 @@ de: {
     title: "16) Sprachversionen",
     p1: "Die Plattform kann in mehreren Sprachen verfügbar sein. Bei Abweichungen zwischen Übersetzungen ist die englische Fassung maßgeblich, sofern zwingende Vorschriften Ihres Wohnsitzes nichts anderes verlangen."
   },
-  s17: { title: "17) Kontakt", p1: "Forecastler Team", p2: "Email: forecastlerteam@gmail.com" }
+  s17: { title: "17) Kontakt", p1: "Forecastler Team" }
 },
 
 pt: {
@@ -817,7 +817,7 @@ pt: {
     title: "16) Versões linguísticas",
     p1: "A Plataforma pode estar disponível em vários idiomas. Em caso de divergência entre traduções, prevalece a versão em inglês, salvo regras obrigatórias do seu país em contrário."
   },
-  s17: { title: "17) Contacto", p1: "Equipe Forecastler", p2: "Email: forecastlerteam@gmail.com" }
+  s17: { title: "17) Contacto", p1: "Equipe Forecastler" }
 },
 
 it: {
@@ -953,7 +953,7 @@ it: {
     title: "16) Versioni linguistiche",
     p1: "La Piattaforma può essere disponibile in più lingue. In caso di incongruenze tra traduzioni, prevale la versione inglese salvo diversa previsione obbligatoria del paese di residenza."
   },
-  s17: { title: "17) Contatti", p1: "Team Forecastler", p2: "Email: forecastlerteam@gmail.com" }
+  s17: { title: "17) Contatti", p1: "Team Forecastler" }
 },
 
 pl: {
@@ -1089,7 +1089,7 @@ pl: {
     title: "16) Wersje językowe",
     p1: "Platforma może być dostępna w wielu językach. W przypadku rozbieżności między tłumaczeniami pierwszeństwo ma wersja angielska, chyba że obowiązkowe przepisy miejsca zamieszkania stanowią inaczej."
   },
-  s17: { title: "17) Kontakt", p1: "Zespół Forecastler", p2: "Email: forecastlerteam@gmail.com" }
+  s17: { title: "17) Kontakt", p1: "Zespół Forecastler" }
 },
 
 uk: {
@@ -1225,7 +1225,7 @@ uk: {
     title: "16) Мовні версії",
     p1: "Платформа може бути доступна кількома мовами. У разі невідповідностей між перекладами, пріоритет має англійська версія, якщо інше не вимагають імперативні норми вашої юрисдикції."
   },
-  s17: { title: "17) Контакт", p1: "Команда Forecastler", p2: "Email: forecastlerteam@gmail.com" }
+  s17: { title: "17) Контакт", p1: "Команда Forecastler" }
 },
 
 ru: {
@@ -1361,7 +1361,7 @@ ru: {
     title: "16) Языковые версии",
     p1: "Платформа может быть доступна на нескольких языках. В случае расхождений между переводами приоритет имеет английская версия, если иное не требуется императивными нормами вашей юрисдикции."
   },
-  s17: { title: "17) Контакты", p1: "Команда Forecastler", p2: "Email: forecastlerteam@gmail.com" }
+  s17: { title: "17) Контакты", p1: "Команда Forecastler" }
 },
 
 tr: {
@@ -1497,7 +1497,7 @@ tr: {
     title: "16) Dil sürümleri",
     p1: "Platform birden fazla dilde sunulabilir. Çeviriler arasında tutarsızlık olması hâlinde, ikamet ettiğiniz yerdeki zorunlu kurallar aksi yönde olmadıkça İngilizce sürüm geçerlidir."
   },
-  s17: { title: "17) İletişim", p1: "Forecastler Ekibi", p2: "Email: forecastlerteam@gmail.com" }
+  s17: { title: "17) İletişim", p1: "Forecastler Ekibi" }
 },
 
 ar: {
@@ -1633,7 +1633,7 @@ ar: {
     title: "16) النسخ اللغوية",
     p1: "قد تتوفر المنصّة بعدة لغات. في حال وجود أي تعارض بين الترجمات، تسود النسخة الإنجليزية ما لم تفرض قواعد إلزامية في بلد إقامتك خلاف ذلك."
   },
-  s17: { title: "17) جهة الاتصال", p1: "فريق Forecastler", p2: "Email: forecastlerteam@gmail.com" }
+  s17: { title: "17) جهة الاتصال", p1: "فريق Forecastler" }
 },
 
 hi: {
@@ -1769,7 +1769,7 @@ hi: {
     title: "16) भाषा संस्करण",
     p1: "प्लेटफ़ॉर्म कई भाषाओं में उपलब्ध हो सकता है। अनुवादों के बीच किसी भी असंगति की स्थिति में, जब तक आपके निवास की अनिवार्य नियम अन्यथा न कहें, अंग्रेज़ी संस्करण मान्य होगा।"
   },
-  s17: { title: "17) संपर्क", p1: "Forecastler टीम", p2: "Email: forecastlerteam@gmail.com" }
+  s17: { title: "17) संपर्क", p1: "Forecastler टीम" }
 },
 
 zh: {
@@ -1905,7 +1905,7 @@ zh: {
     title: "16）语言版本",
     p1: "平台可能提供多种语言版本。若各译文存在不一致，以英文版本为准，除非您居住地的强制性规则另有要求。"
   },
-  s17: { title: "17）联系", p1: "Forecastler 团队", p2: "Email: forecastlerteam@gmail.com" }
+  s17: { title: "17）联系", p1: "Forecastler 团队" }
 },
 
 ja: {
@@ -2041,7 +2041,7 @@ ja: {
     title: "16）言語版",
     p1: "本プラットフォームは複数言語で提供される場合があります。翻訳間に不一致がある場合、居住国の強行規定で別段の定めがない限り、英語版が優先します。"
   },
-  s17: { title: "17）連絡先", p1: "Forecastler チーム", p2: "Email: forecastlerteam@gmail.com" }
+  s17: { title: "17）連絡先", p1: "Forecastler チーム" }
   }
 };
 
