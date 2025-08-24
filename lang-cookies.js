@@ -9,7 +9,7 @@ const translations = {
     meta: {
       title: "Cookies Policy",
       effective: "Effective Date: 17 June 2025",
-      updated:  "Last Updated: 15 August 2025",
+      updated:  "Last Updated: 24 August 2025",
       intro: "This Policy explains how Forecastler uses cookies and similar technologies."
     },
 
@@ -61,7 +61,7 @@ const translations = {
     meta: {
       title: "Politika kolačića",
       effective: "Datum stupanja na snagu: 17. jun 2025.",
-      updated:  "Poslednje ažuriranje: 15. avgust 2025.",
+      updated:  "Poslednje ažuriranje: 24. avgust 2025.",
       intro: "Ova Politika objašnjava kako Forecastler koristi kolačiće i slične tehnologije."
     },
 
@@ -112,7 +112,7 @@ es: {
   meta: {
     title: "Política de cookies",
     effective: "Fecha de entrada en vigor: 17 de junio de 2025",
-    updated: "Última actualización: 15 de agosto de 2025",
+    updated: "Última actualización: 24 de agosto de 2025",
     intro: "Esta Política explica cómo Forecastler utiliza cookies y tecnologías similares."
   },
   s1: {
@@ -156,7 +156,7 @@ fr: {
   meta: {
     title: "Politique relative aux cookies",
     effective: "Date d’effet : 17 juin 2025",
-    updated: "Dernière mise à jour : 15 août 2025",
+    updated: "Dernière mise à jour : 24 août 2025",
     intro: "La présente Politique explique comment Forecastler utilise les cookies et technologies similaires."
   },
   s1: {
@@ -200,7 +200,7 @@ de: {
   meta: {
     title: "Cookie-Richtlinie",
     effective: "Gültig ab: 17. Juni 2025",
-    updated: "Zuletzt aktualisiert: 15. August 2025",
+    updated: "Zuletzt aktualisiert: 24. August 2025",
     intro: "Diese Richtlinie erläutert, wie Forecastler Cookies und ähnliche Technologien verwendet."
   },
   s1: {
@@ -244,7 +244,7 @@ pt: {
   meta: {
     title: "Política de Cookies",
     effective: "Data de vigência: 17 de junho de 2025",
-    updated: "Última atualização: 15 de agosto de 2025",
+    updated: "Última atualização: 24 de agosto de 2025",
     intro: "Esta Política explica como a Forecastler usa cookies e tecnologias semelhantes."
   },
   s1: {
@@ -288,7 +288,7 @@ it: {
   meta: {
     title: "Informativa sui cookie",
     effective: "Data di efficacia: 17 giugno 2025",
-    updated: "Ultimo aggiornamento: 15 agosto 2025",
+    updated: "Ultimo aggiornamento: 24 agosto 2025",
     intro: "La presente Informativa spiega come Forecastler utilizza i cookie e tecnologie simili."
   },
   s1: {
@@ -332,7 +332,7 @@ pl: {
   meta: {
     title: "Polityka plików cookie",
     effective: "Data wejścia w życie: 17 czerwca 2025",
-    updated: "Ostatnia aktualizacja: 15 sierpnia 2025",
+    updated: "Ostatnia aktualizacja: 24 sierpnia 2025",
     intro: "Niniejsza Polityka wyjaśnia, w jaki sposób Forecastler używa plików cookie i podobnych technologii."
   },
   s1: {
@@ -376,7 +376,7 @@ uk: {
   meta: {
     title: "Політика файлів cookie",
     effective: "Дата набрання чинності: 17 червня 2025",
-    updated: "Останнє оновлення: 15 серпня 2025",
+    updated: "Останнє оновлення: 24 серпня 2025",
     intro: "Ця Політика пояснює, як Forecastler використовує файли cookie та подібні технології."
   },
   s1: {
@@ -420,7 +420,7 @@ ru: {
   meta: {
     title: "Политика файлов cookie",
     effective: "Дата вступления в силу: 17 июня 2025 г.",
-    updated: "Последнее обновление: 15 августа 2025 г.",
+    updated: "Последнее обновление: 24 августа 2025 г.",
     intro: "Настоящая Политика объясняет, как Forecastler использует файлы cookie и аналогичные технологии."
   },
   s1: {
@@ -464,7 +464,7 @@ tr: {
   meta: {
     title: "Çerez Politikası",
     effective: "Yürürlük Tarihi: 17 Haziran 2025",
-    updated: "Son Güncelleme: 15 Ağustos 2025",
+    updated: "Son Güncelleme: 24 Ağustos 2025",
     intro: "Bu Politika, Forecastler’ın çerezleri ve benzer teknolojileri nasıl kullandığını açıklar."
   },
   s1: {
@@ -508,7 +508,7 @@ ar: {
   meta: {
     title: "سياسة ملفات تعريف الارتباط",
     effective: "تاريخ النفاذ: 17 يونيو 2025",
-    updated: "آخر تحديث: 15 أغسطس 2025",
+    updated: "آخر تحديث: 24 أغسطس 2025",
     intro: "تشرح هذه السياسة كيفية استخدام Forecastler لملفات تعريف الارتباط والتقنيات المماثلة."
   },
   s1: {
@@ -552,7 +552,7 @@ hi: {
   meta: {
     title: "कुकीज़ नीति",
     effective: "प्रभावी तिथि: 17 जून 2025",
-    updated: "अंतिम अपडेट: 15 अगस्त 2025",
+    updated: "अंतिम अपडेट: 24 अगस्त 2025",
     intro: "यह नीति बताती है कि Forecastler कुकीज़ और समान तकनीकों का कैसे उपयोग करता है."
   },
   s1: {
@@ -596,7 +596,7 @@ zh: {
   meta: {
     title: "Cookie 政策",
     effective: "生效日期：2025 年 6 月 17 日",
-    updated: "最近更新：2025 年 8 月 15 日",
+    updated: "最近更新：2025 年 8 月 24 日",
     intro: "本政策说明 Forecastler 如何使用 Cookie 及类似技术。"
   },
   s1: {
@@ -640,7 +640,7 @@ ja: {
   meta: {
     title: "クッキーポリシー",
     effective: "発効日：2025年6月17日",
-    updated: "最終更新日：2025年8月15日",
+    updated: "最終更新日：2025年8月24日",
     intro: "本ポリシーは、Forecastler がクッキーおよび類似技術をどのように使用するかを説明します。"
   },
   s1: {
