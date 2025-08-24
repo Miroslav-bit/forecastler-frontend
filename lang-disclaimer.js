@@ -9,7 +9,7 @@ const translations = {
     meta: {
       title: "Disclaimer",
       effective: "Effective Date: 17 June 2025",
-      updated:  "Last Updated: 15 August 2025",
+      updated:  "Last Updated: 24 August 2025",
       intro: "This document sets out general disclaimers and notices regarding the use of the Forecastler platform (the \"Platform\", \"we\", \"us\", \"our\"). By using the Platform, you accept this Disclaimer together with the Terms of Use and Privacy Policy. If you do not agree, please do not use the Platform."
     },
 
@@ -120,7 +120,7 @@ const translations = {
     meta: {
       title: "Odricanje od odgovornosti",
       effective: "Datum stupanja na snagu: 17. jun 2025.",
-      updated:  "Poslednje ažuriranje: 15. avgust 2025.",
+      updated:  "Poslednje ažuriranje: 24. avgust 2025.",
       intro: "Ovaj dokument sadrži opšta odricanja od odgovornosti i obaveštenja u vezi sa korišćenjem platforme Forecastler („Platforma“, „mi“, „nas“, „naše“). Korišćenjem Platforme prihvatate ovo Odricanje, zajedno sa Uslovima korišćenja i Politikom privatnosti. Ako se ne slažete, molimo vas da ne koristite Platformu."
     },
 
@@ -230,7 +230,7 @@ es: {
   meta: {
     title: "Aviso legal",
     effective: "Fecha de entrada en vigor: 17 de junio de 2025",
-    updated:  "Última actualización: 15 de agosto de 2025",
+    updated:  "Última actualización: 24 de agosto de 2025",
     intro: "Este documento establece los descargos de responsabilidad y avisos generales relativos al uso de la plataforma Forecastler (la \"Plataforma\", \"nosotros\", \"nos\", \"nuestro\"). Al utilizar la Plataforma, aceptas este Aviso legal junto con los Términos de uso y la Política de privacidad. Si no estás de acuerdo, por favor no uses la Plataforma."
   },
   s1: {
@@ -361,7 +361,7 @@ fr: {
   meta: {
     title: "Avertissement légal",
     effective: "Date d’entrée en vigueur : 17 juin 2025",
-    updated:  "Dernière mise à jour : 15 août 2025",
+    updated:  "Dernière mise à jour : 24 août 2025",
     intro: "Le présent document énonce les clauses de non-responsabilité et les avis généraux relatifs à l’utilisation de la plateforme Forecastler (« la \"Plateforme\", \"nous\", \"nous\", \"notre/nos\" »). En utilisant la Plateforme, vous acceptez le présent avertissement légal avec les Conditions d’utilisation et la Politique de confidentialité. Si vous n’êtes pas d’accord, veuillez ne pas utiliser la Plateforme."
   },
   s1: {
@@ -492,7 +492,7 @@ de: {
   meta: {
     title: "Haftungsausschluss",
     effective: "Geltungsdatum: 17. Juni 2025",
-    updated:  "Zuletzt aktualisiert: 15. August 2025",
+    updated:  "Zuletzt aktualisiert: 24. August 2025",
     intro: "Dieses Dokument legt allgemeine Haftungsausschlüsse und Hinweise zur Nutzung der Forecastler-Plattform (die \"Plattform\", \"wir\", \"uns\", \"unser\") fest. Durch die Nutzung der Plattform akzeptieren Sie diesen Haftungsausschluss zusammen mit den Nutzungsbedingungen und der Datenschutzerklärung. Wenn Sie nicht einverstanden sind, nutzen Sie die Plattform bitte nicht."
   },
   s1: {
@@ -623,7 +623,7 @@ pt: {
   meta: {
     title: "Aviso legal",
     effective: "Data de vigência: 17 de junho de 2025",
-    updated:  "Última atualização: 15 de agosto de 2025",
+    updated:  "Última atualização: 24 de agosto de 2025",
     intro: "Este documento estabelece isenções de responsabilidade e avisos gerais relativos ao uso da plataforma Forecastler (\"Plataforma\", \"nós\", \"nos\", \"nosso\"). Ao utilizar a Plataforma, você aceita este Aviso legal juntamente com os Termos de Uso e a Política de Privacidade. Se não concordar, não utilize a Plataforma."
   },
   s1: {
@@ -754,7 +754,7 @@ it: {
   meta: {
     title: "Disclaimer",
     effective: "Data di entrata in vigore: 17 giugno 2025",
-    updated:  "Ultimo aggiornamento: 15 agosto 2025",
+    updated:  "Ultimo aggiornamento: 24 agosto 2025",
     intro: "Il presente documento definisce le esclusioni di responsabilità e gli avvisi generali relativi all’uso della piattaforma Forecastler (la \"Piattaforma\", \"noi\", \"ci\", \"nostro\"). Utilizzando la Piattaforma accetti il presente Disclaimer insieme ai Termini di utilizzo e all’Informativa sulla privacy. Se non sei d’accordo, ti preghiamo di non utilizzare la Piattaforma."
   },
   s1: {
@@ -885,7 +885,7 @@ pl: {
   meta: {
     title: "Zastrzeżenia (Disclaimer)",
     effective: "Data wejścia w życie: 17 czerwca 2025 r.",
-    updated:  "Ostatnia aktualizacja: 15 sierpnia 2025 r.",
+    updated:  "Ostatnia aktualizacja: 24 sierpnia 2025 r.",
     intro: "Niniejszy dokument określa ogólne zastrzeżenia i informacje dotyczące korzystania z platformy Forecastler (\"Platforma\", \"my\", \"nas\", \"nasze\"). Korzystając z Platformy, akceptujesz niniejsze Zastrzeżenia wraz z Regulaminem i Polityką prywatności. Jeśli się nie zgadzasz, nie korzystaj z Platformy."
   },
   s1: {
@@ -1016,7 +1016,7 @@ uk: {
   meta: {
     title: "Застереження (Disclaimer)",
     effective: "Дата набрання чинності: 17 червня 2025 року",
-    updated:  "Останнє оновлення: 15 серпня 2025 року",
+    updated:  "Останнє оновлення: 24 серпня 2025 року",
     intro: "Цей документ встановлює загальні застереження та повідомлення щодо використання платформи Forecastler (\"Платформа\", \"ми\", \"нас\", \"наші\"). Користуючись Платформою, ви приймаєте це Застереження разом з Умовами використання та Політикою конфіденційності. Якщо ви не згодні, будь ласка, не користуйтеся Платформою."
   },
   s1: {
@@ -1147,7 +1147,7 @@ ru: {
   meta: {
     title: "Отказ от ответственности",
     effective: "Дата вступления в силу: 17 июня 2025 г.",
-    updated:  "Последнее обновление: 15 августа 2025 г.",
+    updated:  "Последнее обновление: 24 августа 2025 г.",
     intro: "Настоящий документ устанавливает общие оговорки и уведомления, касающиеся использования платформы Forecastler (\"Платформа\", \"мы\", \"нас\", \"наши\"). Пользуясь Платформой, вы принимаете настоящий отказ от ответственности вместе с Условиями использования и Политикой конфиденциальности. Если вы не согласны, пожалуйста, не используйте Платформу."
   },
   s1: {
@@ -1278,7 +1278,7 @@ tr: {
   meta: {
     title: "Feragatname",
     effective: "Yürürlük Tarihi: 17 Haziran 2025",
-    updated:  "Son Güncelleme: 15 Ağustos 2025",
+    updated:  "Son Güncelleme: 24 Ağustos 2025",
     intro: "Bu belge, Forecastler platformasının (\"Platform\", \"biz\", \"bize\", \"bizim\") kullanımına ilişkin genel feragat ve bildirimleri ortaya koyar. Platformu kullanarak bu Feragatname’yi, Kullanım Şartları ve Gizlilik Politikası ile birlikte kabul etmiş olursunuz. Kabul etmiyorsanız lütfen Platformu kullanmayın."
   },
   s1: {
@@ -1409,7 +1409,7 @@ ar: {
   meta: {
     title: "إخلاء المسؤولية",
     effective: "تاريخ السريان: 17 يونيو 2025",
-    updated:  "آخر تحديث: 15 أغسطس 2025",
+    updated:  "آخر تحديث: 24 أغسطس 2025",
     intro: "يضع هذا المستند إخلاءات المسؤولية العامة والإشعارات المتعلقة باستخدام منصة Forecastler (\"المنصة\", \"نحن\", \"لنا\", \"خاصتنا\"). باستخدامك المنصة، فإنك تقبل إشعار إخلاء المسؤولية هذا مع شروط الاستخدام وسياسة الخصوصية. إذا كنت لا توافق، فالرجاء عدم استخدام المنصة."
   },
   s1: {
@@ -1540,7 +1540,7 @@ hi: {
   meta: {
     title: "अस्वीकरण",
     effective: "प्रभावी तिथि: 17 जून 2025",
-    updated:  "अंतिम अद्यतन: 15 अगस्त 2025",
+    updated:  "अंतिम अद्यतन: 24 अगस्त 2025",
     intro: "यह दस्तावेज़ Forecastler प्लेटफ़ॉर्म (\"प्लेटफ़ॉर्म\", \"हम\", \"हमें\", \"हमारा\") के उपयोग से संबंधित सामान्य अस्वीकरण और सूचनाएँ निर्धारित करता है। प्लेटफ़ॉर्म का उपयोग करने पर, आप इस अस्वीकरण को उपयोग की शर्तों और गोपनीयता नीति के साथ स्वीकार करते हैं। यदि आप सहमत नहीं हैं, तो कृपया प्लेटफ़ॉर्म का उपयोग न करें।"
   },
   s1: {
@@ -1671,7 +1671,7 @@ zh: {
   meta: {
     title: "免责声明",
     effective: "生效日期：2025年6月17日",
-    updated:  "最后更新：2025年8月15日",
+    updated:  "最后更新：2025年8月24日",
     intro: "本文件规定了有关使用 Forecastler 平台（\"平台\"、\"我们\"、\"我方\"、\"我们的\"）的一般免责声明和通知。使用本平台即表示您同意本免责声明以及《使用条款》与《隐私政策》。如您不同意，请勿使用本平台."
   },
   s1: {
@@ -1802,7 +1802,7 @@ ja: {
   meta: {
     title: "免責事項",
     effective: "施行日：2025年6月17日",
-    updated:  "最終更新日：2025年8月15日",
+    updated:  "最終更新日：2025年8月24日",
     intro: "本書は Forecastler プラットフォーム（\"プラットフォーム\"、\"当社\"、\"当方\"、\"当社の\"）の利用に関する一般的な免責および告知事項を定めるものです。プラットフォームを利用することで、本免責事項と利用規約・プライバシーポリシーに同意したものとみなされます。ご同意いただけない場合は、プラットフォームをご利用にならないでください。"
   },
   s1: {
