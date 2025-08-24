@@ -10,7 +10,7 @@ const translations = {
     meta: {
       title: "Privacy Policy",
       effective: "Effective Date: 17 June 2025",
-      updated:  "Last Updated: 15 August 2025",
+      updated:  "Last Updated: 24 August 2025",
       intro: "This Policy explains how Forecastler (the “Platform”, “we”, “us”, “our”) collects, uses, shares, and protects your data when you use our services. By using the Platform, you confirm that you have read and understood this Policy together with our Terms of Use and Disclaimer. If you do not agree, please do not use the Platform."
     },
 
@@ -147,7 +147,7 @@ const translations = {
     meta: {
       title: "Politika privatnosti",
       effective: "Datum stupanja na snagu: 17. jun 2025.",
-      updated:  "Poslednje ažuriranje: 15. avgust 2025.",
+      updated:  "Poslednje ažuriranje: 24. avgust 2025.",
       intro: "Ova Politika objašnjava kako Forecastler („Platforma“, „mi“, „nas“, „naše“) prikuplja, koristi, deli i štiti vaše podatke kada koristite naše usluge. Korišćenjem Platforme potvrđujete da ste pročitali i razumeli ovu Politiku zajedno sa Uslovima korišćenja i Odricanjem od odgovornosti. Ako se ne slažete, molimo vas da ne koristite Platformu."
     },
 
@@ -282,7 +282,7 @@ es: {
   meta: {
     title: "Política de privacidad",
     effective: "Fecha de entrada en vigor: 17 de junio de 2025",
-    updated:  "Última actualización: 15 de agosto de 2025",
+    updated:  "Última actualización: 24 de agosto de 2025",
     intro: "Esta Política explica cómo Forecastler (la «Plataforma», «nosotros», «nos», «nuestro») recopila, utiliza, comparte y protege tus datos cuando usas nuestros servicios. Al utilizar la Plataforma, confirmas que has leído y comprendido esta Política junto con nuestros Términos de uso y Aviso legal. Si no estás de acuerdo, por favor no uses la Plataforma."
   },
   s1: {
@@ -418,7 +418,7 @@ fr: {
   meta: {
     title: "Politique de confidentialité",
     effective: "Date d’entrée en vigueur : 17 juin 2025",
-    updated:  "Dernière mise à jour : 15 août 2025",
+    updated:  "Dernière mise à jour : 24 août 2025",
     intro: "La présente Politique explique comment Forecastler (« la Plateforme », « nous », « notre ») collecte, utilise, partage et protège vos données lorsque vous utilisez nos services. En utilisant la Plateforme, vous confirmez avoir lu et compris la présente Politique ainsi que nos Conditions d’utilisation et l’Avertissement légal. Si vous n’êtes pas d’accord, veuillez ne pas utiliser la Plateforme."
   },
   s1: {
@@ -554,7 +554,7 @@ de: {
   meta: {
     title: "Datenschutzerklärung",
     effective: "Geltungsdatum: 17. Juni 2025",
-    updated:  "Zuletzt aktualisiert: 15. August 2025",
+    updated:  "Zuletzt aktualisiert: 24. August 2025",
     intro: "Diese Richtlinie erläutert, wie Forecastler (die „Plattform“, „wir“, „uns“, „unser“) Ihre Daten erhebt, nutzt, teilt und schützt, wenn Sie unsere Dienste nutzen. Durch die Nutzung der Plattform bestätigen Sie, dass Sie diese Richtlinie zusammen mit unseren Nutzungsbedingungen und dem Haftungsausschluss gelesen und verstanden haben. Wenn Sie nicht einverstanden sind, nutzen Sie die Plattform bitte nicht."
   },
   s1: {
@@ -690,7 +690,7 @@ pt: {
   meta: {
     title: "Política de Privacidade",
     effective: "Data de vigência: 17 de junho de 2025",
-    updated:  "Última atualização: 15 de agosto de 2025",
+    updated:  "Última atualização: 24 de agosto de 2025",
     intro: "Esta Política explica como a Forecastler (“Plataforma”, “nós”, “nos”, “nosso”) coleta, usa, compartilha e protege seus dados quando você utiliza nossos serviços. Ao usar a Plataforma, você confirma que leu e entendeu esta Política juntamente com os Termos de Uso e o Aviso legal. Se não concordar, não utilize a Plataforma."
   },
   s1: {
@@ -826,7 +826,7 @@ it: {
   meta: {
     title: "Informativa sulla privacy",
     effective: "Data di entrata in vigore: 17 giugno 2025",
-    updated:  "Ultimo aggiornamento: 15 agosto 2025",
+    updated:  "Ultimo aggiornamento: 24 agosto 2025",
     intro: "La presente Informativa spiega come Forecastler («la Piattaforma», «noi», «ci», «nostro») raccoglie, utilizza, condivide e protegge i tuoi dati quando utilizzi i nostri servizi. Utilizzando la Piattaforma, confermi di aver letto e compreso la presente Informativa insieme ai nostri Termini di utilizzo e al Disclaimer. Se non sei d’accordo, ti preghiamo di non utilizzare la Piattaforma."
   },
   s1: {
@@ -962,7 +962,7 @@ pl: {
   meta: {
     title: "Polityka prywatności",
     effective: "Data wejścia w życie: 17 czerwca 2025 r.",
-    updated:  "Ostatnia aktualizacja: 15 sierpnia 2025 r.",
+    updated:  "Ostatnia aktualizacja: 24 sierpnia 2025 r.",
     intro: "Niniejsza Polityka wyjaśnia, w jaki sposób Forecastler („Platforma”, „my”, „nas”, „nasze”) zbiera, wykorzystuje, udostępnia i chroni Twoje dane podczas korzystania z naszych usług. Korzystając z Platformy, potwierdzasz, że zapoznałeś(-aś) się z niniejszą Polityką wraz z Regulaminem i Zastrzeżeniami. Jeśli się nie zgadzasz, nie korzystaj z Platformy."
   },
   s1: {
@@ -1098,7 +1098,7 @@ uk: {
   meta: {
     title: "Політика конфіденційності",
     effective: "Дата набрання чинності: 17 червня 2025 року",
-    updated:  "Останнє оновлення: 15 серпня 2025 року",
+    updated:  "Останнє оновлення: 24 серпня 2025 року",
     intro: "Ця Політика пояснює, як Forecastler («Платформа», «ми», «нас», «наші») збирає, використовує, передає та захищає ваші дані під час користування нашими послугами. Користуючись Платформою, ви підтверджуєте, що прочитали й зрозуміли цю Політику разом з Умовами використання та Застереженням. Якщо ви не згодні, не використовуйте Платформу."
   },
   s1: {
@@ -1234,7 +1234,7 @@ ru: {
   meta: {
     title: "Политика конфиденциальности",
     effective: "Дата вступления в силу: 17 июня 2025 г.",
-    updated:  "Последнее обновление: 15 августа 2025 г.",
+    updated:  "Последнее обновление: 24 августа 2025 г.",
     intro: "Настоящая Политика объясняет, как Forecastler («Платформа», «мы», «нас», «наш/наши») собирает, использует, передаёт и защищает ваши данные при использовании наших сервисов. Пользуясь Платформой, вы подтверждаете, что прочитали и поняли настоящую Политику вместе с Условиями использования и Отказом от ответственности. Если вы не согласны, пожалуйста, не используйте Платформу."
   },
   s1: {
@@ -1370,7 +1370,7 @@ tr: {
   meta: {
     title: "Gizlilik Politikası",
     effective: "Yürürlük Tarihi: 17 Haziran 2025",
-    updated:  "Son Güncelleme: 15 Ağustos 2025",
+    updated:  "Son Güncelleme: 24 Ağustos 2025",
     intro: "Bu Politika, Forecastler’in (“Platform”, “biz”, “bize”, “bizim”) hizmetlerimizi kullandığınızda verilerinizi nasıl topladığını, kullandığını, paylaştığını ve koruduğunu açıklar. Platformu kullanarak, bu Politikayı Kullanım Şartlarımız ve Feragatname ile birlikte okuduğunuzu ve anladığınızı teyit edersiniz. Kabul etmiyorsanız lütfen Platformu kullanmayın."
   },
   s1: {
@@ -1506,7 +1506,7 @@ ar: {
   meta: {
     title: "سياسة الخصوصية",
     effective: "تاريخ السريان: 17 يونيو 2025",
-    updated:  "آخر تحديث: 15 أغسطس 2025",
+    updated:  "آخر تحديث: 24 أغسطس 2025",
     intro: "توضح هذه السياسة كيف تقوم Forecastler («المنصّة»، «نحن»، «لنا»، «خاصتنا») بجمع بياناتك واستخدامها ومشاركتها وحمايتها عند استخدامك خدماتنا. باستخدامك المنصّة، تؤكّد أنّك قرأت هذه السياسة وفهمتها مع شروط الاستخدام وإخلاء المسؤولية. إذا لم توافق، فيُرجى عدم استخدام المنصّة."
   },
   s1: {
@@ -1642,7 +1642,7 @@ hi: {
   meta: {
     title: "गोपनीयता नीति",
     effective: "प्रभावी तिथि: 17 जून 2025",
-    updated:  "अंतिम अद्यतन: 15 अगस्त 2025",
+    updated:  "अंतिम अद्यतन: 24 अगस्त 2025",
     intro: "यह नीति बताती है कि Forecastler (‘प्लेटफ़ॉर्म’, ‘हम’, ‘हमें’, ‘हमारा’) आपकी डेटा को हमारी सेवाओं के उपयोग के दौरान कैसे एकत्र, उपयोग, साझा और सुरक्षित करता है। प्लेटफ़ॉर्म का उपयोग करके, आप पुष्टि करते हैं कि आपने इस नीति को हमारे उपयोग की शर्तों और अस्वीकरण के साथ पढ़ व समझ लिया है। यदि आप सहमत नहीं हैं, तो कृपया प्लेटफ़ॉर्म का उपयोग न करें."
   },
   s1: {
@@ -1778,7 +1778,7 @@ zh: {
   meta: {
     title: "隐私政策",
     effective: "生效日期：2025年6月17日",
-    updated:  "最后更新：2025年8月15日",
+    updated:  "最后更新：2025年8月24日",
     intro: "本政策说明当您使用我们的服务时，Forecastler（“平台”、“我们”、“我方”、“我们的”）如何收集、使用、共享并保护您的数据。使用本平台即表示您已阅读并理解本政策以及《使用条款》和《免责声明》。如您不同意，请勿使用本平台。"
   },
   s1: {
@@ -1914,7 +1914,7 @@ ja: {
   meta: {
     title: "プライバシーポリシー",
     effective: "施行日：2025年6月17日",
-    updated:  "最終更新日：2025年8月15日",
+    updated:  "最終更新日：2025年8月24日",
     intro: "本ポリシーは、Forecastler（「プラットフォーム」「当社」「当方」「当社の」）が当社サービスの利用時にお客様のデータをどのように収集・利用・共有・保護するかを説明します。プラットフォームを利用することで、本ポリシーおよび利用規約・免責事項を読了し理解したことを確認したものとします。ご同意いただけない場合は、プラットフォームをご利用にならないでください。"
   },
   s1: {
