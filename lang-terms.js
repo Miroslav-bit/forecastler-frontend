@@ -9,7 +9,7 @@ const translations = {
     meta: {
       title: "Terms of Use",
       effective: "Effective Date: 17 June 2025",
-      updated:  "Last Updated: 15 August 2025",
+      updated:  "Last Updated: 24 August 2025",
       intro: "These Terms of Use (“Terms”) govern your access to and use of the Forecastler platform (the “Platform”, “we”, “us”, “our”). By using the Platform, you confirm that you have read and accepted these Terms together with our Privacy Policy, Cookies Policy, and Disclaimer. If you do not agree, please do not use the Platform."
     },
 
@@ -142,7 +142,7 @@ const translations = {
     meta: {
       title: "Uslovi korišćenja",
       effective: "Datum stupanja na snagu: 17. jun 2025.",
-      updated:  "Poslednje ažuriranje: 15. avgust 2025.",
+      updated:  "Poslednje ažuriranje: 24. avgust 2025.",
       intro: "Ovi Uslovi korišćenja („Uslovi“) uređuju pristup i korišćenje platforme Forecastler („Platforma“, „mi“, „nas“, „naše“). Korišćenjem Platforme potvrđujete da ste pročitali i prihvatili ove Uslove zajedno sa Politikom privatnosti, Politikom kolačića i Odricanjem od odgovornosti. Ako se ne slažete, molimo vas da ne koristite Platformu."
     },
 
@@ -274,7 +274,7 @@ es: {
   meta: {
     title: "Términos de uso",
     effective: "Fecha de entrada en vigor: 17 de junio de 2025",
-    updated: "Última actualización: 15 de agosto de 2025",
+    updated: "Última actualización: 24 de agosto de 2025",
     intro: "Estos Términos de uso (\"Términos\") regulan su acceso y uso de la plataforma Forecastler (la \"Plataforma\", \"nosotros\", \"nos\", \"nuestro\"). Al usar la Plataforma, usted confirma que ha leído y aceptado estos Términos junto con nuestra Política de Privacidad, Política de Cookies y Descargo de responsabilidad. Si no está de acuerdo, por favor no use la Plataforma."
   },
   s1: {
@@ -405,7 +405,7 @@ fr: {
   meta: {
     title: "Conditions d'utilisation",
     effective: "Date d'entrée en vigueur : 17 juin 2025",
-    updated: "Dernière mise à jour : 15 août 2025",
+    updated: "Dernière mise à jour : 24 août 2025",
     intro: "Les présentes Conditions d'utilisation (« Conditions ») régissent votre accès à la plateforme Forecastler et son utilisation (la « Plateforme », « nous », « nos », « notre »). En utilisant la Plateforme, vous confirmez avoir lu et accepté les présentes Conditions ainsi que notre Politique de confidentialité, notre Politique relative aux cookies et notre Clause de non-responsabilité. Si vous n'êtes pas d'accord, veuillez ne pas utiliser la Plateforme."
   },
   s1: {
@@ -536,7 +536,7 @@ de: {
   meta: {
     title: "Nutzungsbedingungen",
     effective: "Geltungsdatum: 17. Juni 2025",
-    updated: "Zuletzt aktualisiert: 15. August 2025",
+    updated: "Zuletzt aktualisiert: 24. August 2025",
     intro: "Diese Nutzungsbedingungen (\"Bedingungen\") regeln Ihren Zugriff auf die Forecastler-Plattform und deren Nutzung (die \"Plattform\", \"wir\", \"uns\", \"unser\"). Durch die Nutzung der Plattform bestätigen Sie, dass Sie diese Bedingungen zusammen mit unserer Datenschutzerklärung, Cookie-Richtlinie und dem Haftungsausschluss gelesen und akzeptiert haben. Wenn Sie nicht einverstanden sind, verwenden Sie die Plattform bitte nicht."
   },
   s1: {
@@ -667,7 +667,7 @@ pt: {
   meta: {
     title: "Termos de Uso",
     effective: "Data de vigência: 17 de junho de 2025",
-    updated: "Última atualização: 15 de agosto de 2025",
+    updated: "Última atualização: 24 de agosto de 2025",
     intro: "Estes Termos de Uso (\"Termos\") regem o seu acesso e uso da plataforma Forecastler (a \"Plataforma\", \"nós\", \"nos\", \"nosso\"). Ao usar a Plataforma, você confirma que leu e aceitou estes Termos juntamente com nossa Política de Privacidade, Política de Cookies e Aviso Legal. Se você não concorda, por favor não use a Plataforma."
   },
   s1: {
@@ -798,7 +798,7 @@ it: {
   meta: {
     title: "Termini di utilizzo",
     effective: "Data di entrata in vigore: 17 giugno 2025",
-    updated: "Ultimo aggiornamento: 15 agosto 2025",
+    updated: "Ultimo aggiornamento: 24 agosto 2025",
     intro: "I presenti Termini di utilizzo (\"Termini\") disciplinano l’accesso e l’uso della piattaforma Forecastler (la \"Piattaforma\", \"noi\", \"ci\", \"nostro/a\"). Utilizzando la Piattaforma, confermi di aver letto e accettato i presenti Termini insieme alla nostra Informativa sulla privacy, Politica sui cookie ed Esclusione di responsabilità. Se non sei d’accordo, non utilizzare la Piattaforma."
   },
   s1: {
@@ -929,7 +929,7 @@ pl: {
   meta: {
     title: "Warunki korzystania",
     effective: "Data wejścia w życie: 17 czerwca 2025 r.",
-    updated: "Ostatnia aktualizacja: 15 sierpnia 2025 r.",
+    updated: "Ostatnia aktualizacja: 24 sierpnia 2025 r.",
     intro: "Niniejsze Warunki korzystania (\"Warunki\") regulują dostęp do platformy Forecastler (\"Platforma\", \"my\", \"nas\", \"nasz\") i jej używanie. Korzystając z Platformy, potwierdzasz, że przeczytałeś(-aś) i akceptujesz niniejsze Warunki wraz z naszą Polityką prywatności, Polityką plików cookie oraz oświadczeniem o wyłączeniu odpowiedzialności. Jeśli się nie zgadzasz, nie korzystaj z Platformy."
   },
   s1: {
@@ -1060,7 +1060,7 @@ uk: {
   meta: {
     title: "Умови користування",
     effective: "Дата набрання чинності: 17 червня 2025 р.",
-    updated: "Останнє оновлення: 15 серпня 2025 р.",
+    updated: "Останнє оновлення: 24 серпня 2025 р.",
     intro: "Ці Умови користування («Умови») регулюють ваш доступ до платформи Forecastler та її використання («Платформа», «ми», «нас», «наш»). Користуючись Платформою, ви підтверджуєте, що прочитали та приймаєте ці Умови разом із нашою Політикою конфіденційності, Політикою файлів cookie та Відмовою від відповідальності. Якщо ви не згодні, будь ласка, не користуйтеся Платформою."
   },
   s1: {
@@ -1191,7 +1191,7 @@ ru: {
   meta: {
     title: "Условия использования",
     effective: "Дата вступления в силу: 17 июня 2025 г.",
-    updated: "Последнее обновление: 15 августа 2025 г.",
+    updated: "Последнее обновление: 24 августа 2025 г.",
     intro: "Настоящие Условия использования (\"Условия\") регулируют ваш доступ к платформе Forecastler и её использование (\"Платформа\", \"мы\", \"нас\", \"наш\"). Используя Платформу, вы подтверждаете, что прочитали и приняли эти Условия вместе с нашей Политикой конфиденциальности, Политикой файлов cookie и Отказом от ответственности. Если вы не согласны, пожалуйста, не используйте Платформу."
   },
   s1: {
@@ -1401,7 +1401,7 @@ ar: {
   meta: {
     title: "شروط الاستخدام",
     effective: "تاريخ السريان: 17 يونيو 2025",
-    updated: "آخر تحديث: 15 أغسطس 2025",
+    updated: "آخر تحديث: 24 أغسطس 2025",
     intro: "تحكم «شروط الاستخدام» هذه وصولك إلى منصة Forecastler («المنصة»، «نحن»، «لنا») واستخدامك لها. باستخدام المنصة، تؤكد أنك قرأت هذه الشروط وقبلتها مع سياسة الخصوصية وسياسة ملفات تعريف الارتباط وبيان إخلاء المسؤولية الخاص بنا. إذا كنت لا توافق، فالرجاء عدم استخدام المنصة."
   },
   s1: {
@@ -1532,7 +1532,7 @@ hi: {
   meta: {
     title: "उपयोग की शर्तें",
     effective: "प्रभावी तिथि: 17 जून 2025",
-    updated: "अंतिम अद्यतन: 15 अगस्त 2025",
+    updated: "अंतिम अद्यतन: 24 अगस्त 2025",
     intro: "ये उपयोग की शर्तें (\"शर्तें\") Forecastler प्लेटफ़ॉर्म (\"प्लेटफ़ॉर्म\", \"हम\", \"हमें\", \"हमारा/हमारे\") तक आपकी पहुँच और उसके उपयोग को नियंत्रित करती हैं। प्लेटफ़ॉर्म का उपयोग करके, आप पुष्टि करते हैं कि आपने इन शर्तों को हमारी गोपनीयता नीति, कुकीज़ नीति और अस्वीकरण के साथ पढ़ लिया है और स्वीकार किया है। यदि आप सहमत नहीं हैं, तो कृपया प्लेटफ़ॉर्म का उपयोग न करें।"
   },
   s1: {
@@ -1663,7 +1663,7 @@ zh: {
   meta: {
     title: "使用条款",
     effective: "生效日期：2025年6月17日",
-    updated: "最后更新：2025年8月15日",
+    updated: "最后更新：2025年8月24日",
     intro: "本《使用条款》（“条款”）规范您访问并使用 Forecastler 平台（“平台”、“我们”、“我方”）。使用本平台即表示您已阅读并接受本条款以及我们的《隐私政策》《Cookie 政策》和《免责声明》。如果您不同意，请不要使用本平台."
   },
   s1: {
@@ -1794,7 +1794,7 @@ ja: {
   meta: {
     title: "利用規約",
     effective: "施行日：2025年6月17日",
-    updated: "最終更新日：2025年8月15日",
+    updated: "最終更新日：2025年8月24日",
     intro: "本利用規約（「規約」）は、Forecastler プラットフォーム（「プラットフォーム」「当社」）へのアクセスおよびその利用を定めるものです。プラットフォームを利用することで、あなたは本規約と、当社のプライバシーポリシー、クッキーポリシー、免責事項を読み、同意したことを確認します。同意いただけない場合は、プラットフォームを利用しないでください。"
   },
   s1: {
